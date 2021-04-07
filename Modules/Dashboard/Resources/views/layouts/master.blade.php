@@ -286,7 +286,7 @@
 <script src="{{asset('vendor/datatables/jquery.dataTables.min.js')}}"></script>
 <script src="{{asset('vendor/datatables/dataTables.bootstrap4.min.js')}}"></script>
 <script src="{{asset('js/demo/datatables-demo.js')}}"></script>
-<script src="//code.jivosite.com/widget/a8wNYWI9B3" async></script>
+<script src="//code.jivosite.com/widget/XGnbXiV0lS" async></script>
 </body>
 
 </html>
