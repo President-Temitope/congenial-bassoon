@@ -124,21 +124,27 @@ class StartupSeederTableSeeder extends Seeder
          * Investment seed runner
          */
         Investment::create([
-           'title' => 'Testing',
-           'price' => 1,
-           'proposed_amount' => 5
+           'name' => 'Testing 1',
+           'priceRangeOne' => 100,
+            'priceRangeTwo' => 1000,
+           'description' => 'Helloo',
+            'percentage' => 25
         ],[
-           'title' => 'Testing 1',
-           'price' => 100,
-           'proposed_amount' => 500
+           'name' => 'Testing 2',
+            'priceRangeOne' => 100,
+           'priceRangeTwo' => 1000,
+           'proposed_amount' => 50000,
+            'description' => 'Helloo',
+            'percentage' => 50
+
         ],[
-           'title' => 'Testing 2',
-           'price' => 1000,
-           'proposed_amount' => 50000
-        ],[
-           'title' => 'Testing 3',
-           'price' => 10000,
-           'proposed_amount' => 500000
+           'name' => 'Testing 3',
+            'priceRangeOne' => 100,
+            'priceRangeTwo' => 1000,
+            'description' => 'Helloo',
+            'percentage' => 200
+
+
         ]);
     }
 
