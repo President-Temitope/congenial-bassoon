@@ -2231,7 +2231,7 @@ Link tag
         });
     });
 </script>
-<div align="left">
+<div style="float: left; margin-right: 1000px;">
     <script src="//code.jivosite.com/widget/XGnbXiV0lS" async></script>
 </div>
 
