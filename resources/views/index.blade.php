@@ -1568,7 +1568,7 @@
                             <div class="testimonial-5">
                                 <div class="testimonial-pic-block radius-bx">
                                     <div class="testimonial-pic radius">
-                                        <img src="images/testimonials/pic1.jpg" width="132" height="132" alt="">
+                                        <img src="images/testimonials/pic1.jpeg" width="132" height="132" alt="">
                                     </div>
                                 </div>
                                 <div class="testimonial-text clearfix">
@@ -1585,7 +1585,7 @@
                             <div class="testimonial-5">
                                 <div class="testimonial-pic-block radius-bx">
                                     <div class="testimonial-pic radius">
-                                        <img src="images/testimonials/pic2.jpg" width="132" height="132" alt="">
+                                        <img src="images/testimonials/pic2.jpeg" width="132" height="132" alt="">
                                     </div>
                                 </div>
                                 <div class="testimonial-text clearfix">
@@ -1603,7 +1603,7 @@
                             <div class="testimonial-5">
                                 <div class="testimonial-pic-block radius-bx">
                                     <div class="testimonial-pic radius">
-                                        <img src="images/testimonials/pic3.jpg" width="132" height="132" alt="">
+                                        <img src="images/testimonials/pic3.jpeg" width="132" height="132" alt="">
                                     </div>
                                 </div>
                                 <div class="testimonial-text clearfix">
@@ -1620,7 +1620,7 @@
                             <div class="testimonial-5">
                                 <div class="testimonial-pic-block radius-bx">
                                     <div class="testimonial-pic radius">
-                                        <img src="images/testimonials/pic4.jpg" width="132" height="132" alt="">
+                                        <img src="images/testimonials/pic4.jpeg" width="132" height="132" alt="">
                                     </div>
                                 </div>
                                 <div class="testimonial-text clearfix">
@@ -1973,7 +1973,7 @@
                                 @enderror
                             </div>
                         </div>
-                        <button type="button" class="site-button-secondry text-uppercase btn-block m-b10">Submit</button> <span class="font-12">Don't have an account? <a href="javascript:;" class="text-primary">Register Here</a></span>
+                        <button type="submit" class="site-button-secondry text-uppercase btn-block m-b10">Submit</button> <span class="font-12">Don't have an account? <a href="javascript:;" class="text-primary">Register Here</a></span>
                     </form>
                 </div>
                 <div class="modal-footer text-center">
@@ -2205,7 +2205,6 @@ Link tag
 ===== -->
 <!-- ------------------------ -->
 <script src="js/rev-script-1.js"></script>
-</body>
 <script>
     $(document).ready(function(){
         // Add smooth scrolling to all links
@@ -2232,7 +2231,9 @@ Link tag
         });
     });
 </script>
-<script src="//code.jivosite.com/widget/XGnbXiV0lS" async></script>
-<!-- Mirrored from thewebmax.com/bitinvest// by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 20 Feb 2021 11:22:48 GMT -->
+<div align="left">
+    <script src="//code.jivosite.com/widget/XGnbXiV0lS" async></script>
+</div>
 
+</body>
 </html>
