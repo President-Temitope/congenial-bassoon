@@ -2061,7 +2061,7 @@
                         <div class="form-group">
                             <div class="input-group"> <span class="input-group-addon"><i class="fa fa-key cus-icon" style="font-size: 15px;"></i></span>
                                 <input id="confirm-password" placeholder="Confirm Password" type="password"
-                                       class="form-control @error('password-confirm') is-invalid @enderror" name="password-confirm" required
+                                       class="form-control @error('password-confirm') is-invalid @enderror" name="password-confirmation" required
                                        autocomplete="current-password">
 
                                 @error('password-confirm')
