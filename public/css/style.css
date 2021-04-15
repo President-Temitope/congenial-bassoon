@@ -1367,7 +1367,7 @@ ol.list-num-count.list-outline-none > li:before {
 .p-tb60 {padding-bottom:60px; padding-top:60px;}
 .p-tb70 {padding-bottom:70px; padding-top:70px;}
 .p-tb80 {padding-bottom:80px; padding-top:80px;}
-.p-tb90 {padding-bottom:90px; padding-top:90px;}
+.p-tb90 {padding-bottom:30px; padding-top:90px;}
 .p-tb100 {padding-bottom:100px; padding-top:100px;}
 .p-tb120 {padding-bottom:120px; padding-top:120px;}
 .p-tb150 {padding-bottom:150px; padding-top:150px;}
@@ -7909,7 +7909,7 @@ top: -16px !important;
 
 .marquee {
 
-margin-top: 200px!important;
+margin-top: 5px!important;
 
 }
 
@@ -9579,7 +9579,7 @@ header .logo{
 
 .site-footer p,
 .site-footer li { 
-	font-size:13px;
+	font-size:11px;
 	line-height:20px;
 }
 
@@ -9804,13 +9804,13 @@ footer .container {
 	6. scroll top btn css
 -------------------------------------*/
 button.scroltop { 
-	height: 55px;  
-	width: 55px;
-	background:#161616;  
-	border:3px solid;
+	height: 90px;  
+	width: 90px;
+	background:transparent!important;  
+	border:0;
 	position: fixed;   
-	right: 15px;   
-	bottom:15px;
+	right: 10px;   
+	bottom: 100px;
 	font-size:11px;
 	line-height:16px;
 	font-weight:bold;
@@ -9818,7 +9818,8 @@ button.scroltop {
 	margin:0; 
 	padding:0;    
 	cursor: pointer;    
-	display: none;    
+	display: none;  
+	outline: none;
 
 
 	text-align:center;  
@@ -9931,7 +9932,7 @@ button.scroltop {
 	line-height:16px;
 }
 button.scroltop span {
-    font-size: 10px;
+    font-size: 20px;
     line-height: 10px;
 }
 }
@@ -12689,6 +12690,7 @@ ol.commentlist li::after {
 @media only screen and (max-width:991px) {
 .home-about-section {
 	background-image:none !important;
+	margin: 0px!important;
 }	
 .home-about-section .wt-right-part{
 	margin-top:30px;

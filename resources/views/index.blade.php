@@ -484,7 +484,7 @@
     .marquee {
 
         position: relative;
-        bottom: 200px!important;
+        bottom: 5px!important;
     }
 
     .logo-modal {
@@ -707,7 +707,7 @@
                 <div class="container">
                     <div class="logo-header mostion">
                         <a href="/" class="MyLink">
-                            <img class="logo-dark" src="./images/logo/ClipartKey_78890.png" style="" alt="" width="15" height="20"> <span class="mb-0">Crypto&nbsp;&nbsp;&nbsp;bolt</span>
+                            <!-- <img class="logo-dark" src="./images/logo/ClipartKey_78890.png" style="" alt="" width="15" height="20"> <span class="mb-0">Crypto&nbsp;&nbsp;&nbsp;bolt</span> -->
                         </a>
                     </div>
                     <!-- NAV Toggle Button -->
@@ -732,12 +732,12 @@
                     <!-- MAIN Vav -->
                     <div class="header-nav navbar-collapse collapse ">
                         <ul class=" nav navbar-nav">
-                            <li class="active has-child"> <a href="javascript:;">Home</a>
+                            <li class="active has-child"> <a href="index.php">Home</a>
                                 <div class=" glyphicon glyphicon-plus submenu-toogle"></div>
-                            </li>
-                            <li class="has-child"> <a href="#prices">INVEST</a>
+                            </li>@auth
+                            <li class="has-child"> <a href="#prices">invest</a>
                                 <div class=" glyphicon glyphicon-plus submenu-toogle"></div>
-                            </li>
+                            </li>@endauth
                             <li class="has-child"> <a href="#how-it-work">HOW IT WORK</a>
                                 <div class=" glyphicon glyphicon-plus submenu-toogle"></div>
                             </li>
@@ -825,11 +825,11 @@
 											</span>
                                     </div>
                                     <!-- LAYER NR. 6 [ for see all service botton ] -->
-                                    <div class="tp-caption tp-resizeme" id="slide-100-layer-6" data-x="['left','left','left','left']" data-hoffset="['30','30','30','100']" data-y="['top','top','top','top']" data-voffset="['530','530','530','600']" data-lineheight="['none','none','none','none']" data-width="['300','300','300','300']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
+                                    <!-- <div class="tp-caption tp-resizeme" id="slide-100-layer-6" data-x="['left','left','left','left']" data-hoffset="['30','30','30','100']" data-y="['top','top','top','top']" data-voffset="['530','530','530','600']" data-lineheight="['none','none','none','none']" data-width="['300','300','300','300']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
                                     {"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":2000,"ease":"Power4.easeOut"},
                                     {"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
                                     ]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index:13; text-transform:uppercase;"> <a href="#" class="site-button  slider-btn-left" style="pointer-events: none;">Login</a>
-                                    </div>
+                                    </div> -->
                                     <!-- LAYER NR. 7 [ for more detail botton ] -->
                                     <div class="tp-caption tp-resizeme" id="slide-100-layer-7" data-x="['left','left','left','left']" data-hoffset="['220','220','220','320']" data-y="['top','top','top','top']" data-voffset="['530','530','530','600']" data-lineheight="['none','none','none','none']" data-width="['300','300','300','300']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
                                     {"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":2000,"ease":"Power4.easeOut"},
@@ -904,11 +904,11 @@
                                     border-width:0px;"> <span style="font-family: 'Poppins', sans-serif;">Invest and Earn anywhere, We accept Bitcoin from all over the world by one single click!</span>
                                     </div>
                                     <!-- LAYER NR. 6 [ for see all service botton ] -->
-                                    <div class="tp-caption tp-resizeme" id="slide-101-layer-6" data-x="['left','left','left','left']" data-hoffset="['30','30','30','100']" data-y="['top','top','top','top']" data-voffset="['530','530','530','600']" data-lineheight="['none','none','none','none']" data-width="['300','300','300','300']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
+                                    <!-- <div class="tp-caption tp-resizeme" id="slide-101-layer-6" data-x="['left','left','left','left']" data-hoffset="['30','30','30','100']" data-y="['top','top','top','top']" data-voffset="['530','530','530','600']" data-lineheight="['none','none','none','none']" data-width="['300','300','300','300']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
                                     {"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":2000,"ease":"Power4.easeOut"},
                                     {"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
                                     ]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index:13; text-transform:uppercase;"> <a href="javascript:;" class="site-button slider-btn-left" style="pointer-events: none;">Login</a>
-                                    </div>
+                                    </div> -->
                                     <!-- LAYER NR. 7 [ for more detail botton ] -->
                                     <div class="tp-caption tp-resizeme" id="slide-101-layer-7" data-x="['left','left','left','left']" data-hoffset="['220','220','220','320']" data-y="['top','top','top','top']" data-voffset="['530','530','530','600']" data-lineheight="['none','none','none','none']" data-width="['300','300','300','300']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
                                     {"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":2000,"ease":"Power4.easeOut"},
@@ -1004,11 +1004,11 @@
                                     border-width:0px;"> <span style="font-family: 'Poppins', sans-serif;">Just start investing with us and enjoying our best Interest While We Do The rest for you.</span>
                                     </div>
                                     <!-- LAYER NR. 6 [ for see all service botton ] -->
-                                    <div class="tp-caption tp-resizeme" id="slide-102-layer-6" data-x="['left','left','left','left']" data-hoffset="['30','30','30','100']" data-y="['top','top','top','top']" data-voffset="['530','530','530','600']" data-lineheight="['none','none','none','none']" data-width="['300','300','300','300']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
+                                    <!-- <div class="tp-caption tp-resizeme" id="slide-102-layer-6" data-x="['left','left','left','left']" data-hoffset="['30','30','30','100']" data-y="['top','top','top','top']" data-voffset="['530','530','530','600']" data-lineheight="['none','none','none','none']" data-width="['300','300','300','300']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
                                     {"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":2000,"ease":"Power4.easeOut"},
                                     {"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
                                     ]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index:13; text-transform:uppercase;"> <a href="javascript:;" class="site-button slider-btn-left" style="pointer-events: none;">Login</a>
-                                    </div>
+                                    </div> -->
                                     <!-- LAYER NR. 7 [ for more detail botton ] -->
                                     <div class="tp-caption tp-resizeme" id="slide-102-layer-7" data-x="['left','left','left','left']" data-hoffset="['220','220','220','320']" data-y="['top','top','top','top']" data-voffset="['530','530','530','600']" data-lineheight="['none','none','none','none']" data-width="['300','300','300','300']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
                                     {"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":2000,"ease":"Power4.easeOut"},
@@ -1348,8 +1348,8 @@
                                 </div>
                                 <div class="icon-content">
                                     <div class="step-number">1</div>
-                                    <h4 class="wt-tilte text-uppercase font-weight-500" style="">Create your wallet</h4>
-                                    <p style="color: #000;">Once your Registration is accepted, It's quite easy & you'll gain access to all our live investment opportunities, as well as be able to start raising investment.</p>
+                                    <h4 class="wt-tilte text-uppercase font-weight-500" style="">Open an Account</h4>
+                                    <p style="color: #000;">Make Cryptobolt Account for free. No credit card information needed. Once your Registration is accepted, It's quite easy & you'll gain access to all our live investment opportunities, as well as be able to start raising investment.</p>
                                     <!-- <p>Once your Registration is accepted,you will automatically become a newest member of the investment platform.</p> -->
                                 </div>
                             </div>
@@ -1364,8 +1364,8 @@
                                 </div>
                                 <div class="icon-content text-white">
                                     <div class="step-number active">2</div>
-                                    <h4 class="wt-tilte text-uppercase font-weight-500">Make payments</h4>
-                                    <p>Like any business, you need working capital to get started. So to start profiting with us. You need invest any amount you desire of $100 or more.</p>
+                                    <h4 class="wt-tilte text-uppercase font-weight-500">Make a Deposit</h4>
+                                    <p>Fund your account you need working capital to get started in a matter of seconds. You need invest any amount you desire or more.</p>
                                 </div>
                             </div>
                         </div>
@@ -1379,8 +1379,8 @@
                                 </div>
                                 <div class="icon-content">
                                     <div class="step-number">3</div>
-                                    <h4 class="wt-tilte text-uppercase font-weight-500" style="">Start Earning</h4>
-                                    <p style="color: #000;">For only one Click our Team of experts constantly analyzes individual projects and save you time .</p>
+                                    <h4 class="wt-tilte text-uppercase font-weight-500" style="">Invest and Earning</h4>
+                                    <p style="color: #000;">Start growing your investment beyond your expectation For only one Click our Team of experts constantly analyzes individual projects and save you time .</p>
                                 </div>
                             </div>
                         </div>
@@ -1414,10 +1414,10 @@
                         <div class="wt-box graph-part-right text-white">	<strong class="text-uppercase title-first"><a class="header-logo"><img class="logo-about" src="./images/logo/ClipartKey_78890.png" style="" alt="" width="15" height="20">
                                     <span class="logo-about-text" style="font-size: 28px;">Crypto&nbsp;&nbsp;&nbsp;bolt</span></a></strong>
                             <!-- <h6 class="text-uppercase text-primary display-block title-second">Our co-investment platform allows everyday investors to invest alongside institutional and professional investors. </h6> -->
-                            <p class="text-white">Focus is vital when considering investments that offer the potential to deliver sustainable investment growth and positive social and environmental impact. Which is why we only concentrate on sectors where our team have considerable experience and success</p>
+                            <p class="text-white">Cryptobolt is a professional investment service company with high support team who emphasis on building up and creating a  fast-growing digital asset. Our company focus on great income opportunities. Which is why we only concentrate on sectors where our team have considerable experience and success.</p>
                             <br>
                             <br>
-                            <p class="text-white" <strong>Seeing the benefits of bitcoin investment, more and more people are ready to invest in bitcoin. This is a very beneficial aspect of bitcoin for bitcoin investors. As the demand and value of bitcoin increases with more people than ever using bitcoin as the primary currency, the price of bitcoin will eventually increase. With the passage of every single day.</strong>
+                            <p class="text-white" <strong>We offer various insured services involved in the Blockchain with our prime interest in Financial and Investment planning. Benefits of bitcoin investment, more and more people are ready to invest in bitcoin. This is a very beneficial aspect of bitcoin for bitcoin investors. As the demand and value of bitcoin increases with more people than ever using bitcoin as the primary currency, the price of bitcoin will eventually increase. With the passage of every single day.</strong>
                             </p>
                             <ul class="list-check-circle primary">
                                 <!-- <li>Governments support bitcoin . </li> -->
@@ -1433,10 +1433,10 @@
                             </div>
                             <div class="feature-card-content">
                                 <h6 class="text-uppercase text-primary display-block title-second">Our co-investment platform allows everyday investors to invest alongside institutional and professional investors. </h6>
-                                <p class="feature-card-desc">
-                                <p class="zeta color--foxtrot" style="color: #fff;">Cryptobolt secure & private is a branding name of Investment Growth Capital which is registered in Germany &nbsp;(Company No. 08155332),&nbsp;it authorised and regulated in the United State,United kingdom etc.</p>
-                                <br>
-                                <br>
+                                <!-- <p class="feature-card-desc"> -->
+                                <!-- <p class="zeta color--foxtrot" style="color: #fff;">Cryptobolt secure & private is a branding name of Investment Growth Capital which is registered in Germany &nbsp;(Company No. 08155332),&nbsp;it authorised and regulated in the United State,United kingdom etc.</p> -->
+                                <!-- <br>
+                                <br> -->
                                 <ul class="list-check-circle primary">
                                     <p class="text-white">Main features :</p>
                                     <li class="text-white">High growth opportunities</li>
@@ -1575,8 +1575,8 @@
                                     <div class="testimonial-paragraph"> <span class="fa fa-quote-left text-primary"></span>
                                         <p>I Fell in love with the platform the moment i saw it. itsclean and simple design was what sealed the deal for me.</p>
                                     </div>
-                                    <div class="testimonial-detail clearfix"> <strong class="testimonial-name">RINDA SMITH</strong>
-                                        <span class="testimonial-position text-primary p-t10">Founder</span>
+                                    <div class="testimonial-detail clearfix"> <strong class="testimonial-name">Clara Dandrea</strong>
+                                        <span class="testimonial-position text-primary p-t10">@claradandreadavies</span>
                                     </div>
                                 </div>
                             </div>
@@ -1585,7 +1585,8 @@
                             <div class="testimonial-5">
                                 <div class="testimonial-pic-block radius-bx">
                                     <div class="testimonial-pic radius">
-                                        <img src="images/testimonials/pic2.jpeg" width="132" height="132" alt="">
+                                        <!-- <img src="images/testimonials/pic2.jpeg" width="132" height="132" alt=""> -->
+                                        <img src="images/testimonials/pic4.jpeg" width="132" height="132" alt="">
                                     </div>
                                 </div>
                                 <div class="testimonial-text clearfix">
@@ -1593,8 +1594,8 @@
                                         <p>I've learnrd a lot the financial markets While working with this company.
                                             <br>Now i can invest and Earn money.</p>
                                     </div>
-                                    <div class="testimonial-detail clearfix"> <strong class="testimonial-name">AHMAD BRAMANT</strong>
-                                        <span class="testimonial-position text-primary p-t10">Founder</span>
+                                    <div class="testimonial-detail clearfix"> <strong class="testimonial-name">Danny F. Michaels</strong>
+                                        <span class="testimonial-position text-primary p-t10">@dannyfmichael</span>
                                     </div>
                                 </div>
                             </div>
@@ -1610,8 +1611,8 @@
                                     <div class="testimonial-paragraph"> <span class="fa fa-quote-left text-primary"></span>
                                         <p>An easy and affordable way to dive into investing.</p>
                                     </div>
-                                    <div class="testimonial-detail clearfix"> <strong class="testimonial-name">ASHISH KHATRI</strong>
-                                        <span class="testimonial-position text-primary p-t10">Founder</span>
+                                    <div class="testimonial-detail clearfix"> <strong class="testimonial-name">Clara Dandrea</strong>
+                                        <span class="testimonial-position text-primary p-t10">@claradandreadavies</span>
                                     </div>
                                 </div>
                             </div>
@@ -1620,15 +1621,15 @@
                             <div class="testimonial-5">
                                 <div class="testimonial-pic-block radius-bx">
                                     <div class="testimonial-pic radius">
-                                        <img src="images/testimonials/pic4.jpeg" width="132" height="132" alt="">
+                                         <img src="images/testimonials/pic2.jpeg" width="132" height="132" alt="">
                                     </div>
                                 </div>
                                 <div class="testimonial-text clearfix">
                                     <div class="testimonial-paragraph"> <span class="fa fa-quote-left text-primary"></span>
                                         <p>Contacting support was simple and easy. I was surrised by how quickly they actually get back to me.</p>
                                     </div>
-                                    <div class="testimonial-detail clearfix"> <strong class="testimonial-name">BRIAN MURPHY</strong>
-                                        <span class="testimonial-position text-primary p-t10">Founder</span>
+                                    <div class="testimonial-detail clearfix"> <strong class="testimonial-name">Kimberly K. Kingsley</strong>
+                                        <span class="testimonial-position text-primary p-t10">@__kimberlykimmy</span>
                                     </div>
                                 </div>
                             </div>
@@ -1784,16 +1785,7 @@
                         <div class="widget widget_about">
                             <h4 class="widget-title text-white">About Company</h4>
                             <div class="logo-footer clearfix p-b15">
-                                <a href="/" class="MyLink-footer">
-                                    <img class="logo-dark-footer" src="./images/logo/ClipartKey_78890.png" style="position: relative;left: 52%;top: 10px;" alt="" width="15" height="20"><span class="h2 mb-0" style="
-    font-size: 31px;
-    FONT-FAMILY: Calibri,sans-serif,serif,EmojiFont;
-    font-weight: bold;
-    color: #FF9800;
-    position: relative;
-    top: 4px;
-">Crypto&nbsp;&nbsp;&nbsp;bolt</span>
-                                </a>
+                                <p class="zeta color--foxtrot" style="color: #fff;">Cryptobolt Branding is a professional investment services company with high support team that emphasis on building up and creating a fast-growing digital asset. We make Growth Capital which is registered in Germany &nbsp;(Company No. 08155332),&nbsp;it authorised and regulated in the  South Korea,Japan, united-states, United kingdom  and Others etc.</p>
                             </div>
                             <!-- <p>Thewebmax ipsum dolor sit amet, consectetuer adipiscing elit,
                                   sed diam nonummy nibh euismod tincidunt ut laoreet dolore agna aliquam erat .
@@ -1861,7 +1853,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row" id="contact-us">
+                <!-- <div class="row" id="contact-us">
                     <div class="col-md-3 col-sm-6  p-tb20">
                         <div class="wt-icon-box-wraper left  bdr-1 bdr-gray-dark p-tb15 p-lr10 clearfix">
                             <div class="icon-md text-primary"> <span class="iconmoon-travel"></span>
@@ -1900,12 +1892,10 @@
                             </div>
                             <div class="icon-content text-white">
                                 <h5 class="wt-tilte text-uppercase m-b0">Email</h5>
-                                <p class="m-b0">Cryptobolt1@gmail.com</p>
-                                <p>Cryptobolt1@gmail.com</p>
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
         <!-- FOOTER COPYRIGHT -->
@@ -1978,7 +1968,7 @@
                 </div>
                 <div class="modal-footer text-center">
                     <div class="text-center">
-                        <a href="/" class="MyLink">
+                        <!-- <a href="/" class="MyLink">
                             <img class="logo-modal" src="./images/logo/ClipartKey_78890.png" alt="" width="15" height="20"><span class="h2 mb-0" style="
     font-size: 31px;
     FONT-FAMILY: Calibri,sans-serif,serif,EmojiFont;
@@ -1988,7 +1978,7 @@
     top: -22px;
     left: -13px;
 ">Crypto&nbsp;&nbsp;&nbsp;bolt</span>
-                        </a>
+                        </a> -->
                     </div>
                 </div>
             </div>
@@ -2107,7 +2097,7 @@
                 </div>
                 <div class="modal-footer text-center">
                     <div class="text-center">
-                        <a href="/" class="MyLink">
+                        <!-- <a href="/" class="MyLink">
                             <img class="logo-modal" src="./images/logo/ClipartKey_78890.png" alt="" width="15" height="20"><span class="h2 mb-0" style="
     font-size: 31px;
     FONT-FAMILY: Calibri,sans-serif,serif,EmojiFont;
@@ -2117,13 +2107,15 @@
     top: -22px;
     left: -13px;
 ">Crypto&nbsp;&nbsp;&nbsp;bolt</span>
-                        </a>
+                        </a> -->
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<!--  -->
 <!-- LOADING AREA START ===== -->
 <div class="loading-area">
     <div class="loading-box"></div>
