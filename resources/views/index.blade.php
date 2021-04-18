@@ -692,10 +692,28 @@
                                 </div>
                             </div>
                             <ul class="list-unstyled e-p-bx pull-right" style="position: relative; top: 16px;">
+                                @guest
                                 <li><a href="#" data-toggle="modal" data-target="#Login-form"><i class="fa fa-user"></i>Login</a>
                                 </li>
                                 <li><a href="#" data-toggle="modal" data-target="#Register-form"><i class="fa fa-sign-in"></i>Register</a>
                                 </li>
+
+                                @else
+                                    <li class="has-child"> {{Auth::user()->fullName()}}<i class="fa fa-chevron-down" style="color: #fff;"></i>
+                                        <div class=" glyphicon glyphicon-plus submenu-toogle"></div>
+                                         <ul class="sub-menu">
+
+                                            <li><a href="/dashboard">DASHBOARD</a></li>
+                                            <li><a href="{{ route('logout') }}"
+                                                   onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">LOGOUT</a></li>
+
+                                        </ul>
+                                    </li>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                        @csrf
+                                    </form>
+                                @endguest
                             </ul>
                         </div>
                     </div>
@@ -732,10 +750,10 @@
                     <!-- MAIN Vav -->
                     <div class="header-nav navbar-collapse collapse ">
                         <ul class=" nav navbar-nav">
-                            <li class="active has-child"> <a href="index.php">Home</a>
+                            <li class="active has-child"> <a href="/">HOME</a>
                                 <div class=" glyphicon glyphicon-plus submenu-toogle"></div>
                             </li>@auth
-                            <li class="has-child"> <a href="#prices">invest</a>
+                            <li class="has-child"> <a href="#prices">INVEST</a>
                                 <div class=" glyphicon glyphicon-plus submenu-toogle"></div>
                             </li>@endauth
                             <li class="has-child"> <a href="#how-it-work">HOW IT WORK</a>
@@ -1484,7 +1502,7 @@
                                 <h4>{{$investment->name}}</h4>
                                 <p>{{$investment->percentage}}<span class="currency">%</span>
                                 </p>
-                                <div class="pricing--desc">{!! $investment->description !!}</div>	<a class="btn btn--secondary btn--bordered btn--rounded" href="#">Invest Now</a>
+                                <div class="pricing--desc">{!! $investment->description !!}</div>	<a class="btn btn--secondary btn--bordered btn--rounded" href="/dashboard">Invest Now</a>
                             </div>
                             <!--  Pricing heading  -->
                             <div class="pricing--footer" style="
@@ -1905,7 +1923,7 @@
             <div class="container p-t30">
                 <div class="row">
                     <div class="wt-footer-bot-left">
-                        <span class="copyrights-text">© 2021 Your Company. All Rights Reserved.</span>
+                        <span class="copyrights-text">© 2021 {{config('app.name')}}. All Rights Reserved.</span>
                     </div>
                     <!-- <div class="center" style="padding: 20px;">
                         <span class="copyrights-text">All investing involves risk.</span>
@@ -1917,7 +1935,7 @@
                             </li>
                             <li><a href="javascript:void(0);">Privacy Policy</a>
                             </li>
-                            <li><a href="contact-1.html">Contact Us</a>
+                            <li><a href="">Contact Us</a>
                             </li>
                         </ul>
                     </div>
