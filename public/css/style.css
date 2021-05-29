@@ -1366,7 +1366,7 @@ ol.list-num-count.list-outline-none > li:before {
 .p-tb50 {padding-bottom:50px; padding-top:50px;}
 .p-tb60 {padding-bottom:60px; padding-top:60px;}
 .p-tb70 {padding-bottom:70px; padding-top:70px;}
-.p-tb80 {padding-bottom:80px; padding-top:80px;}
+.p-tb80 {padding-bottom:80px; padding-top:15px;}
 .p-tb90 {padding-bottom:30px; padding-top:90px;}
 .p-tb100 {padding-bottom:100px; padding-top:100px;}
 .p-tb120 {padding-bottom:120px; padding-top:120px;}
@@ -5700,9 +5700,10 @@ input[type=radio]:checked + label:before {
 /*-------------------------------------
 	18. Loading 
 -------------------------------------*/  
+
 /*18.1 loading - 1*/
 
-.loading-area{
+/* .loading-area{
 	width:100%;
 	height:100%;
 	position:fixed;
@@ -5711,6 +5712,8 @@ input[type=radio]:checked + label:before {
 	z-index:9999;
 	overflow:hidden;
 }
+
+
 .loading-box{
 	width:100%;
 	height:100%;
@@ -5735,6 +5738,7 @@ transform: translateY(-50%);
 }
 
 /*18.2 loading - 2*/
+
 .loading-cover,
 .loading-srh-bar,
 .loading-map {
@@ -5766,7 +5770,7 @@ transform: translateY(-50%);
 .alert-bx.alert-info {
 	padding:15px;
 	border:1px solid #bce8f1;
-} 
+}  */
 
 /*-------------------------------------
 	19. Widgets 
@@ -9159,31 +9163,39 @@ header .logo{
 }
 
 @media only screen and (max-width:680px) {
-.wt-bnr-text strong {
-	font-size:30px;
-	line-height: 30px;
-	margin: 0 0 0;
-}
-.wt-bnr-text span {
-    font-size: 14px;
-    line-height: 18px;
-}
+
+	.wt-bnr-text strong {
+		font-size:30px;
+		line-height: 30px;
+		margin: 0 0 0;
+	}
+	.wt-bnr-text span {
+	font-size: 14px;
+	line-height: 18px;
+	}
 }
 
+
 @media only screen and (max-width:480px) {
-.wt-bnr-text strong {
-	font-size:20px;
-	line-height: 20px;
+
+	.wt-bnr-text strong {
+		font-size:20px;
+		line-height: 20px;
+	}
+
+	.wt-bnr-text span {
+	font-size: 12px;
+	line-height: 16px;
+	}
+
 }
-.wt-bnr-text span {
-    font-size: 12px;
-    line-height: 16px;
-}
-}
+
+
 /*-------------------------------------
 	1. inner page banner 
 -------------------------------------*/
 .wt-bnr-inr { 
+
 	height:300px;
 	background-size:cover; 
 	background-position:center center;
