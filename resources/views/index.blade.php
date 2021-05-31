@@ -725,10 +725,12 @@
 									</div>
 								</div>
 								<ul class="list-unstyled e-p-bx pull-right" style="position: relative; top: 16px;">
-									<li><a href="#" data-toggle="modal" data-target="#Login-form"><i class="fa fa-user"></i>Login</a>
+                                    @guest
+                                    <li><a href="#" data-toggle="modal" data-target="#Login-form"><i class="fa fa-user"></i>Login</a>
 									</li>
 									<li><a href="#" data-toggle="modal" data-target="#Register-form"><i class="fa fa-sign-in"></i>Register</a>
 									</li>
+                                        @endguest
 								</ul>
 							</div>
 						</div>
@@ -765,27 +767,46 @@
 						<!-- MAIN Vav -->
 						<div class="header-nav navbar-collapse collapse ">
 							<ul class=" nav navbar-nav">
-								<li class="active has-child"> <a href="index.php">Home</a>
+								<li class="active has-child"> <a href="/">Home</a>
 									<div class=" glyphicon glyphicon-plus submenu-toogle"></div>
-								</li>@auth
+								</li>{{--@auth
 								<li class="has-child"> <a href="#prices">invest</a>
 									<div class=" glyphicon glyphicon-plus submenu-toogle"></div>
-								</li>@endauth
+								</li>@endauth--}}
 								<li class="has-child"> <a href="#how-it-work">HOW IT WORK</a>
 									<div class=" glyphicon glyphicon-plus submenu-toogle"></div>
 								</li>
 								<li class="has-child"> <a href="#bitcoin-price">PRICES</a>
 									<div class=" glyphicon glyphicon-plus submenu-toogle"></div>
 								</li>
-								<li class="has-child"> <a href="#about-us">ABOUT US<i class="fa fa-chevron-down" style="color: #fff;"></i></a>
-									<div class=" glyphicon glyphicon-plus submenu-toogle"></div>
-									<!-- <ul class="sub-menu">
+								<li class="has-child"> <a href="#about-us">ABOUT US{{--<i class="fa fa-chevron-down" style="color: #fff;"></i>--}}</a>
+                                    <!-- <div class=" glyphicon glyphicon-plus submenu-toogle"></div>
+                                    <ul class="sub-menu">
 
                                     <li><a href="footer-fixed.html">CONTACT US</a></li>
                                     <li><a href="footer-light.html">FAQ</a></li>
                                     <li><a href="footer-dark.html">SERVICES</a></li>
                                 </ul> -->
 								</li>
+@auth
+                                <li class="has-child"> <a href="#">{{Auth::user()->fullName()}}<i class="fa fa-chevron-down" style="color: #fff;"></i></a>
+                                     <div class=" glyphicon glyphicon-plus submenu-toogle"></div>
+                                    <ul class="sub-menu">
+                                        <li><a href="/dashboard">Dashboard</a></li>
+                                        <li><a class="dropdown-item" href="{{ route('logout') }}"
+                                               onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                                {{ __('Logout') }}
+                                            </a>
+
+                                            <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                                  style="display: none;">
+                                                @csrf
+                                            </form>
+                                        </li>
+                                </ul>
+                                </li>
+@endauth
 							</ul>
 						</div>
 					</div>
@@ -1592,7 +1613,8 @@
 			</div>
 			<!-- SECTION CONTENT  END -->
 			<!-- OUR TEAM MEMBER SECTION START -->
-			<!-- OUR TEAM MEMBER SECTION END -->@auth
+			<!-- OUR TEAM MEMBER SECTION END -->
+    {{--    @auth
 			<!-- SECTION CONTENT START -->
 			<section id="prices" class="section-full pricing  p-t80 p-b80 bg-gray" style="background-image: url(&quot;assets/images/background/;);">
 				<div class="container">
@@ -1630,7 +1652,7 @@
 ">From ${{$investment->priceRangeOne}} to ${{$investment->priceRangeTwo}}</div>
 								<!--  Pricing Footer  -->
 							</div>
-						</div>{{--
+						</div>--}}{{--
 						<!-- .pricing-table End -->
 						<!-- Pricing Packge #2
 
@@ -1674,12 +1696,12 @@
 								<!--  Pricing Footer  -->
 							</div>
 						</div>
-						<!-- .pricing-table End -->--}} @endforeach @endif</div>
+						<!-- .pricing-table End -->--}}{{-- @endforeach @endif</div>
 					<!-- .row end -->
 				</div>
 				<!-- .container end -->
 			</section>
-			<!-- SECTION CONTENT  END -->@endauth
+			<!-- SECTION CONTENT  END -->@endauth--}}
 			<!-- LATEST BLOG SECTION START -->
 			<!-- LATEST BLOG SECTION END -->
 			<!-- CONTACT US SECTION END  -->
