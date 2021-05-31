@@ -123,29 +123,40 @@ class StartupSeederTableSeeder extends Seeder
         /**
          * Investment seed runner
          */
-        Investment::create([
-           'name' => 'Testing 1',
-           'priceRangeOne' => 100,
-            'priceRangeTwo' => 1000,
-           'description' => 'Helloo',
-            'percentage' => 25
-        ],[
-           'name' => 'Testing 2',
-            'priceRangeOne' => 100,
-           'priceRangeTwo' => 1000,
-           'proposed_amount' => 50000,
-            'description' => 'Helloo',
-            'percentage' => 50
+        $items = [
+            [
+                'name' => 'Testing 1',
+                'desc' => 'Testing 101',
+                'daily_interest' => '1',
+                'term_days' => '5',
+                'min_amount' => '52',
+                'max_amount' => '100',
+                'total_return' => '255'
 
-        ],[
-           'name' => 'Testing 3',
-            'priceRangeOne' => 100,
-            'priceRangeTwo' => 1000,
-            'description' => 'Helloo',
-            'percentage' => 200
+            ],[
+                'name' => 'Testing 2',
+                'desc' => 'Testing 102',
+                'daily_interest' => '1',
+                'term_days' => '5',
+                'min_amount' => '52',
+                'max_amount' => '100',
+                'total_return' => '255'
+
+            ],[
+                'name' => 'Testing 3',
+                'desc' => 'Testing 103',
+                'daily_interest' => '1',
+                'term_days' => '5',
+                'min_amount' => '52',
+                'max_amount' => '100',
+                'total_return' => '255'
 
 
-        ]);
+            ]
+        ];
+        foreach ($items as $item) {
+            Investment::create($item);
+        }
     }
 
 

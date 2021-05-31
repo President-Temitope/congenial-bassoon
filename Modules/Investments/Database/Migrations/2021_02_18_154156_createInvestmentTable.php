@@ -17,10 +17,12 @@ class CreateInvestmentTable extends Migration
         Schema::create('investments', function (Blueprint $table){
             $table->id();
             $table->string('name');
-            $table->float('priceRangeOne');
-            $table->float('priceRangeTwo');
-            $table->string('description');
-            $table->integer('percentage');
+            $table->string('desc');
+            $table->float('daily_interest');
+            $table->integer('term_days');
+            $table->float('min_amount');
+            $table->float('max_amount');
+            $table->float('total_return');
             $table->boolean('status')->default(true);
             $table->timestamps();
         });

@@ -88,10 +88,10 @@
 
 
 	.cus-icon {
-	
+
 	        font-size: 15px!important;
 	    }
-	
+
 	    .mb-0 {
 	        font-size: 31px;
 	        FONT-FAMILY: Calibri,sans-serif,serif,EmojiFont;
@@ -101,21 +101,21 @@
 	        top: -4px;
 	        left: -15px;
 	    }
-	
-	
+
+
 	    /* ==== custom hero header invite === */
-	
-	
+
+
 	    /* ========================= */
-	
+
 	    /* Aligning Text */
-	
-	
+
+
 	    .text--center {
 	        text-align: center !important;
 	    }
-	
-	
+
+
 	    /*------------------------------------*\
 	        #COLORS
 	    \*------------------------------------*/
@@ -123,33 +123,33 @@
 	    /*------------------------------------*\
 	        #Align
 	    \*------------------------------------*/
-	
+
 	    /* Small Devices, Tablets */
 	    /* Postion Helpers */
-	
-	
+
+
 	    /*------------------------------------*\
 	        #Blockquotes
 	    \*------------------------------------*/
-	
-	
+
+
 	    /*------------------------------------*\
 	        #BACKGROUNDS
 	    \*------------------------------------*/
 	    .bg-theme {
 	        background-color: #de7717 !important;
 	    }
-	
+
 	    .bg-gray {
 	        background-color: #000 !important;
 	    }
-	
+
 	    .bg-white {
 	        background-color: #ffffff !important;
 	    }
-	
-	
-	
+
+
+
 	    /*------------------------------------*\
 	        #BUTTONS
 	    \*------------------------------------*/
@@ -172,14 +172,14 @@
 	        transition: all 0.3s ease-in-out;
 	        /* width: 10%!important; */
 	    }
-	
+
 	    .btn.active,
 	    .btn:active {
 	        -moz-box-shadow: none;
 	        -webkit-box-shadow: none;
 	        box-shadow: none;
 	    }
-	
+
 	    /* Button Primary */
 	    .btn--primary1 {
 	        background-color: #1d3161;
@@ -188,24 +188,24 @@
 	        width: 65%;
 	        border-radius: 2px;
 	    }
-	
+
 	    .start-winning {
-	
+
 	        background-color: #1d3161;
 	        color: #ffffff;
 	        border: 0;
 	        width: 90%;
 	        border-radius: 2px;
-	
+
 	    }
-	
+
 	    .btn--primary:active,
 	    .btn--primary:focus,
 	    .btn--primary:hover {
 	        background-color: #0c3087;
 	        color: #fff;
 	    }
-	
+
 	    .btn--primary.btn--inverse:active,
 	    .btn--primary.btn--inverse:focus,
 	    .btn--primary.btn--inverse:hover {
@@ -213,14 +213,14 @@
 	        color: #ffb400;
 	        border-color: #ffffff;
 	    }
-	
+
 	    /* Button Secondary*/
 	    .btn--secondary {
 	        background-color: #282828;
 	        color: #ffffff;
 	        border: 2px solid #282828;
 	    }
-	
+
 	    .btn--secondary:active,
 	    .btn--secondary:focus,
 	    .btn--secondary:hover {
@@ -228,7 +228,7 @@
 	        color: #ffffff;
 	        border-color: #ffb400;
 	    }
-	
+
 	    .btn--secondary.btn--inverse:active,
 	    .btn--secondary.btn--inverse:focus,
 	    .btn--secondary.btn--inverse:hover {
@@ -236,14 +236,14 @@
 	        color: #282828;
 	        border-color: #ffffff;
 	    }
-	
+
 	    /* Button White */
 	    .btn--white {
 	        background-color: #ffffff;
 	        color: #282828;
 	        border: 2px solid #ffffff;
 	    }
-	
+
 	    .btn--white:active,
 	    .btn--white:focus,
 	    .btn--white:hover {
@@ -251,31 +251,31 @@
 	        color: #ffffff;
 	        border-color: #ffb400;
 	    }
-	
+
 	    /* Button Block */
 	    .btn--block {
 	        width: 100%;
 	    }
-	
+
 	    .btn--auto {
 	        width: auto;
 	    }
-	
+
 	    /* Button Rounded */
 	    .btn--rounded {
 	        border-radius: 50px;
 	    }
-	
+
 	    /* Button Link */
 	    .btn--link {
 	        background-color: transparent;
 	        border-color: transparent;
 	    }
-	
+
 	    .btn--link.btn--primary {
 	        color: #ffb400;
 	    }
-	
+
 	    .btn--link.btn--primary:active,
 	    .btn--link.btn--primary:focus,
 	    .btn--link.btn--primary:hover {
@@ -283,11 +283,11 @@
 	        background-color: transparent;
 	        border-color: transparent;
 	    }
-	
+
 	    .btn--link.btn--secondary {
 	        color: #282828;
 	    }
-	
+
 	    .btn--link.btn--secondary:active,
 	    .btn--link.btn--secondary:focus,
 	    .btn--link.btn--secondary:hover {
@@ -295,32 +295,32 @@
 	        background-color: transparent;
 	        border-color: transparent;
 	    }
-	
+
 	    /* Button Bordered */
-	
-	
-	
-	
+
+
+
+
 	    /* Button Action */
 	    /*
 	    /*------------------------------------*\
 	        #FORMS
 	    \*------------------------------------*/
-	
+
 	    /* Input Checkbox */
-	
+
 	    /*------------------------------------*\
 	        #MEDIA
 	    \*------------------------------------*/
-	
+
 	    /* Tab Vertical */
-	
-	
+
+
 	    /*------------------------------------*\
 	        #Accordion
 	    \*------------------------------------*/
 	    /* Accordion Base */
-	
+
 	    /*------------------------------------*\
 	        #PAGINATION
 	    \*------------------------------------*/
@@ -330,12 +330,12 @@
 	        -moz-border-radius: 0;
 	        border-radius: 0;
 	    }
-	
+
 	    .pagination > li {
 	        margin-right: 10px;
 	        display: inline-block;
 	    }
-	
+
 	    .pagination > li > a,
 	    .pagination > li > span {
 	        background-color: transparent;
@@ -352,7 +352,7 @@
 	        text-align: center;
 	        border-radius: 50%;
 	    }
-	
+
 	    .pagination > .active > a,
 	    .pagination > li:hover > a,
 	    .pagination > li > a:focus,
@@ -363,14 +363,14 @@
 	        color: #ffffff;
 	        border-color: #ffb400;
 	    }
-	
+
 	    .pagination > li:first-child > a,
 	    .pagination > li:first-child > span,
 	    .pagination > li:last-child > a,
 	    .pagination > li:last-child > span {
 	        border-radius: 50%;
 	    }
-	
+
 	    .pagination > .active > a,
 	    .pagination > .active > a:focus,
 	    .pagination > .active > a:hover,
@@ -379,36 +379,36 @@
 	    .pagination > .active > span:hover {
 	        border-color: #ffb400;
 	    }
-	
+
 	    /*------------------------------------*\
 	        #ALERT MESSAGE
 	    \*------------------------------------*/
-	
-	
+
+
 	    /*------------------------------------*\
 	        #BACK TO TOP
 	    \*------------------------------------*/
-	
-	
+
+
 	    /*------------------------------------*\
 	        #Range
 	    \*------------------------------------*/
-	
-	
+
+
 	    /*------------------------------------*\
 	        #FEATRUE BOX
 	    \*------------------------------------*/
-	
+
 	    /*------------------------------------*\
 	        #MODALS
 	    \*------------------------------------*/
-	
-	
+
+
 	    /*------------------------------------*\
 	        #Market Data
 	    \*------------------------------------*/
-	
-	
+
+
 	    /*------------------------------------*\
 	        #PRICING-SECTION
 	    \*------------------------------------*/
@@ -416,7 +416,7 @@
 	        position: relative;
 	        text-align: center;
 	    }
-	
+
 	    .pricing-panel .pricing--heading {
 	        box-shadow: 0 10px 20px rgba(224, 224, 224, 0.4);
 	        border-radius: 2px;
@@ -424,14 +424,14 @@
 	        padding: 50px 64px;
 	        margin-bottom: 30px;
 	    }
-	
+
 	    .pricing-panel .pricing--heading .pricing--icon {
 	        margin-right: auto;
 	        margin-left: auto;
 	        text-align: center;
 	        margin-bottom: 30px;
 	    }
-	
+
 	    .pricing-panel .pricing--heading h4 {
 	        font-size: 15px;
 	        font-weight: 700;
@@ -440,7 +440,7 @@
 	        margin-bottom: 17px;
 	        text-transform: capitalize;
 	    }
-	
+
 	    .pricing-panel .pricing--heading p {
 	        font-family: 'Exo 2', sans-serif;
 	        color: #333333;
@@ -449,7 +449,7 @@
 	        line-height: 1;
 	        margin-bottom: 16px;
 	    }
-	
+
 	    .pricing-panel .pricing--heading .pricing--desc {
 	        color: #a5a5a5;
 	        font-size: 15px;
@@ -457,17 +457,17 @@
 	        line-height: 21px;
 	        margin-bottom: 46px;
 	    }
-	
+
 	    .pricing-panel .btn--secondary {
 	        border: 2px solid rgba(34, 34, 34, 0.1);
 	    }
-	
+
 	    .pricing-panel .pricing--footer {
 	        color: #fff;
 	        font-size: 14px;
 	        font-weight: 700;
 	    }
-	
+
 	    .pricing-active .pricing-panel .pricing--heading {
 	        background-image: -moz-linear-gradient(180deg, #f8a137 0%, #fbac47 64%, #feb756 100%);
 	        background-image: -webkit-linear-gradient(180deg, #f8a137 0%, #fbac47 64%, #feb756 100%);
@@ -476,12 +476,12 @@
 	        padding: 70px 64px;
 	        margin-top: -20px;
 	    }
-	
+
 	    .pricing-active .pricing-panel .pricing--heading p,
 	    .pricing-active .pricing-panel .pricing--heading .pricing--desc {
 	        color: #ffffff;
 	    }
-	
+
 	    .pricing--notes {
 	        color: #a5a5a5;
 	        font-size: 16px;
@@ -490,42 +490,42 @@
 	        text-align: center;
 	        margin-top: 50px;
 	    }
-	
+
 	    /* pricing #2 */
 	    .pricing-2 {
 	        overflow: visible;
 	    }
-	
+
 	    .pricing-2 .pricing-wrapper {
 	        margin-top: -240px;
 	        position: relative;
 	        z-index: 2;
 	    }
-	
-	
-	
+
+
+
 	    /*------------------------------------*\
 	        #BLOG-SECTION / CUSTOM CHANGES
 	    \*------------------------------------*/
 	    .logo-dark {
-	
+
 	        position: relative;
 	        left: 43%;
 	        top: 0px;
 	    }
-	
+
 	    .marquee {
-	
+
 	        position: relative;
 	        bottom: 5px!important;
 	    }
-	
+
 	    .logo-modal {
-	
+
 	        position: relative;
 	        left: 34%;
 	        bottom: 17px;
-	
+
 	    }
 	    /* =================== */
 	    /*------------------------------------*\
@@ -534,20 +534,20 @@
 	    .ccc-widget.ccc-header-v3 {
 	        padding: 20px 0;
 	    }
-	
+
 	    .bitcoin-tracker-dark .ccc-widget.ccc-header-v3 {
 	        background-color: #1b1a1a!important;
 	    }
-	
+
 	    .ccc-widget.ccc-header-v3 .ccc-header-v3-price-logo {
 	        margin-right: 9px;
 	    }
-	
+
 	    .bitcoin-tracker-dark .ccc-header-v3-price-value {
 	        color: #a5a5a5 !important;
 	        font-size: 12px !important;
 	    }
-	
+
 	    .bitcoin-tracker-dark .ccc-header-v3-price-name {
 	        color: #f9f9f9 !important;
 	        font-size: 14px !important;
@@ -555,16 +555,16 @@
 	        margin-right: 6px !important;
 	        text-transform: capitalize !important;
 	    }
-	
+
 	    .bitcoin-tracker-theme .ccc-widget.ccc-header-v3 {
 	        background-color: #ffb400 !important;
 	    }
-	
+
 	    .bitcoin-tracker-theme .ccc-header-v3-price-value {
 	        color: #282828 !important;
 	        font-size: 12px !important;
 	    }
-	
+
 	    .bitcoin-tracker-theme .ccc-header-v3-price-name {
 	        color: #1b1a1a !important;
 	        font-size: 14px !important;
@@ -572,24 +572,24 @@
 	        margin-right: 6px !important;
 	        text-transform: capitalize !important;
 	    }
-	
+
 	    /**/
 	    .ccc-widget.ccc-chart {
 	        background-color: #fff;
 	        border-radius: 5px;
 	    }
-	
+
 	    .ccc-widget.ccc-chart > div {
 	        background-color: transparent!important;
 	        border: none!important;
 	    }
-	
+
 	    .ccc-widget.ccc-chart .header-div {
 	        background-color: transparent!important;
 	        border: none!important;
 	        padding: 40px 40px 26px 40px !important;
 	    }
-	
+
 	    .ccc-widget.ccc-chart .header-div a:last-of-type {
 	        font-size: 0 !important;
 	        border-radius: 0!important;
@@ -597,7 +597,7 @@
 	        height: 42px;
 	        position: relative;
 	    }
-	
+
 	    .ccc-widget.ccc-chart .header-div a:last-of-type:before {
 	        position: absolute;
 	        content: "";
@@ -609,7 +609,7 @@
 	        margin-top: -6px;
 	        background: #ffffff;
 	    }
-	
+
 	    /* .ccc-widget.ccc-chart .header-div a:last-of-type:after {
 	        position: absolute;
 	        content: "";
@@ -621,50 +621,50 @@
 	        margin-left: -6px;
 	        background: #ffffff;
 	    } */
-	
+
 	    .ccc-widget.ccc-chart div:nth-child(2) {
 	        padding: 10px 30px 10px 40px!important;
 	    }
-	
+
 	    .ccc-widget.ccc-chart div:nth-child(2) a {
 	        font-family: 'Exo 2', sans-serif;
 	        font-size: 40px;
 	        font-weight: 300;
 	    }
-	
+
 	    .ccc-widget.ccc-chart div:nth-child(3) {
 	        padding-left: 44px !important;
 	    }
-	
+
 	    .ccc-widget.ccc-chart div:nth-child(4) {
 	        padding-right: 44px !important;
 	    }
-	
+
 	    .ccc-widget.ccc-chart div:last-of-type {
 	        margin-top: 36px !important;
 	    }
-	
+
 	    /* Bitcoin Converter */
 	    .bitcoin-converter {
 	        background-color: #ffb400;
 	        padding: 31px;
 	    }
-	
+
 	    .bitcoin-converter .cryptonatorwidget {
 	        padding: 0 !important;
 	        border: none !important;
 	    }
-	
+
 	    .bitcoin-converter table {
 	        border: none;
 	        background-color: #ffb400;
 	    }
-	
+
 	    .bitcoin-converter table tbody tr td {
 	        border: none;
 	        padding: 9px;
 	    }
-	
+
 	    .bitcoin-converter input,
 	    .bitcoin-converter select {
 	        border-radius: 2px;
@@ -678,14 +678,14 @@
 	        border: none;
 	        padding-left: 16px;
 	    }
-	
+
 	    .logo-about {
-	
+
 	        position: relative;
 	        left: 163px;
-	
+
 	    }
-	
+
 	    /* =================== */
 </style>
 
@@ -890,7 +890,7 @@
                                     {"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index: 13;">
 											<img src="images/main-slider/slider2/bitcoin.png" alt="">
 											<img src="images/main-slider/slider2/1200px-Ethereum-icon-purple.svg.png" alt="">
-											<img src="images/main-slider/slider2/litecoin-34-646075.png" alt="">		
+											<img src="images/main-slider/slider2/litecoin-34-646075.png" alt="">
 										</div>
 
 <style>
@@ -1164,7 +1164,7 @@
 										<div class="tp-caption tp-resizeme" id="slide-101-layer-9" data-x="['right','right','right','right']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="[''180,'180','180','180']" data-frames='[{"from":"x:100;y:0;z:0;rX:0;rY:0;rZ:0;sX:0.75;sY:0.75;skX:0;skY:0;opacity:0;","speed":1500,"to":"o:1;","delay":3000,"ease":"Power3.easeOut"},
                                     {"delay":"wait","speed":300,"to":"opacity:0;","ease":"nothing"}]' style="z-index: 13;">
 											<!-- <img src="images/main-slider/slider2/agent.png" alt="" style="position: relative!important; top:270px!important; width:200px!important;height:200px!important;"> -->
-											
+
 										</div>
 										<!-- LAYER NR. 10 [ for more detail botton ] -->
 										<div class="tp-caption tp-resizeme" id="slide-101-layer-10" data-x="['right','right','right','right']" data-hoffset="['-80','-80','-80','-80']" data-y="['top','top','top','top']" data-voffset="[''100,'100','100','100']" data-frames='[{"from":"x:0;y:0;z:0;rX:0;rY:0;rZ:0;sX:0.75;sY:0.75;skX:0;skY:0;opacity:0;","speed":1500,"to":"o:1;","delay":4000,"ease":"Power3.easeOut"},
@@ -2282,21 +2282,21 @@ ction-head text-center">	<span class="wt-title-subline font-16 text-gray-dark m-
 		$(document).ready(function(){
 		        // Add smooth scrolling to all links
 		        $("a").on('click', function(event) {
-		
+
 		            // Make sure this.hash has a value before overriding default behavior
 		            if (this.hash !== "") {
 		                // Prevent default anchor click behavior
 		                event.preventDefault();
-		
+
 		                // Store hash
 		                var hash = this.hash;
-		
+
 		                // Using jQuery's animate() method to add smooth page scroll
 		                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
 		                $('html, body').animate({
 		                    scrollTop: $(hash).offset().top
 		                }, 400, function(){
-		
+
 		                    // Add hash (#) to URL when done scrolling (default click behavior)
 		                    window.location.hash = hash;
 		                });
@@ -2304,7 +2304,7 @@ ction-head text-center">	<span class="wt-title-subline font-16 text-gray-dark m-
 		        });
 		    });
 	</script>
-	
+
 	<div style="float: left; margin-right: 1000px;">
 		<script src="//code.jivosite.com/widget/XGnbXiV0lS" async></script>
 	</div>

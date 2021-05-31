@@ -18,8 +18,8 @@ class CreateUsersTable extends Migration
             $table->string('firstname');
             $table->string('lastname');
             $table->string('email')->unique();
-            $table->string('cryptocurrency');
-            $table->string('wallet_address');
+            $table->string('cryptocurrency')->nullable()->default(null);
+            $table->string('wallet_address')->nullable()->default(null);
             $table->string('password');
             $table->rememberToken();
             $table->timestamp('email_verified_at')->nullable();

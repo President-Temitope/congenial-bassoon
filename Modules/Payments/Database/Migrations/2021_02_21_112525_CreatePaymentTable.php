@@ -18,6 +18,8 @@ class CreatePaymentTable extends Migration
             $table->id();
             $table->integer('investment_id');
             $table->integer('user_id');
+            $table->string('payment_method');
+            $table->string('payment_method_address');
             $table->enum('status',['Approved','Pending'])->default('Pending');
             $table->timestamps();
         });
