@@ -511,7 +511,7 @@
 
 	        position: relative;
 	        left: 0%;
-	        top: 0px;
+	        top: 2px;
 	    }
 
 	    .marquee {
@@ -742,7 +742,7 @@
 					<div class="container">
 						<div class="logo-header mostion">
 							<a href="/" class="MyLink">
-								<img class="logo-dark" src="{{asset('img/logo1.png')}}" style="" alt="{{config('app.name')}}" width="15" height="20">
+								<img class="logo-dark" src="{{asset('img/logo1.png')}}" style="" alt="{{config('app.name')}}" width="95" height="70">
 							</a>
 						</div>
 						<!-- NAV Toggle Button -->

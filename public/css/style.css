@@ -7852,7 +7852,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 	margin-left:0;
 	margin-right:0;
 	width: 0px;
-	height:90px;
+	/* height:90px; */
 	position:relative;
 	z-index:9;
 }
