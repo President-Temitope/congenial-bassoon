@@ -371,7 +371,7 @@
 
 <body class="nk-body npc-invest bg-lighter ">
 <div class="nk-app-root">
-    <div class="nk-wrap " style="background-color: rgb(218 218 218);">
+    <div class="nk-wrap " style="background-color: #000;">
         <div class="nk-header nk-header-fluid nk-header-fixed is-theme  nk-header-fixed">
             <div class="container-xl wide-lg">
                 <div class="nk-header-wrap">
@@ -414,9 +414,6 @@
                                     </div>
                                 </button>
                                 <div id="myDropdown" class="dropdown-content">
-                                    <!-- <a href="#home">Home</a>
-                                    <a href="#about">About</a>
-                                    <a href="#contact">Contact</a> -->
                                     <div class="user-card">
                                         <div class="user-avatar">
                                             <div class="user-avatar sm"><em class="icon ni ni-user-alt"></em>
