@@ -10,7 +10,7 @@
 	<meta name="robots" content="" />
 	<meta name="description" content="" />
 	<!-- FAVICONS ICON -->
-	<link rel="icon" href="./" type="image/x-icon" />
+	<link rel="icon" href="{{asset('img/logo1.png')}}" type="image/x-icon" />
 	<link rel="shortcut icon" type="image/x-icon" href="./" />
 	<!-- PAGE TITLE HERE -->
 	<title>CRYPTOBOLT | Online</title>
@@ -742,7 +742,7 @@
 					<div class="container">
 						<div class="logo-header mostion">
 							<a href="/" class="MyLink">
-								<!-- <img class="logo-dark" src="./images/logo/ClipartKey_78890.png" style="" alt="" width="15" height="20"> <span class="mb-0">Crypto&nbsp;&nbsp;&nbsp;bolt</span> -->
+								<img class="logo-dark" src="{{asset('img/logo1.png')}}" style="" alt="{{config('app.name')}}" width="15" height="20">
 							</a>
 						</div>
 						<!-- NAV Toggle Button -->

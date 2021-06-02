@@ -8,8 +8,8 @@
     <meta name="description" content="A powerful and conceptual apps base dashboard template that especially build for developers and programmers.">
     <link rel="shortcut icon" href="../images/favicon.png">
     <title>DashBoard | {{config('app.name')}}</title>
-    <link rel="stylesheet" href="css/dashlite0875.css">
-    <link id="skin-default" rel="stylesheet" href="css/theme0875.css">
+    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
+    <!-- <link id="skin-default" rel="stylesheet" href="css/theme0875.css"> -->
 </head>
 
 
@@ -512,53 +512,7 @@
                             </li>
                             <li class="hide-mb-sm"><a href="#" class="nk-quick-nav-icon"><em class="icon ni ni-signout"></em></a>
                             </li>
-                            <!-- <li class="dropdown user-dropdown order-sm-first">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <div class="user-toggle">
-                                        <div class="user-avatar sm"><em class="icon ni ni-user-alt"></em>
-                                        </div>
-                                        <div class="user-info d-none d-xl-block">
-                                            <div class="user-status user-status-unverified">Unverified</div>
-                                            <div class="user-name dropdown-indicator">Abu Bin Ishityak</div>
-                                        </div>
-                                    </div>
-                                </a>
-                                <div class="dropdown-menu dropdown-menu-md dropdown-menu-right dropdown-menu-s1 is-light">
-                                    <div class="dropdown-inner user-card-wrap bg-lighter d-none d-md-block">
-                                        <div class="user-card">
-                                            <div class="user-avatar"><span>AB</span>
-                                            </div>
-                                            <div class="user-info"><span class="lead-text">Abu Bin Ishtiyak</span><span class="sub-text">info@softnio.com</span>
-                                            </div>
-                                            <div class="user-action"><a class="btn btn-icon mr-n2" href="profile-setting.html"><em class="icon ni ni-setting"></em></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="dropdown-inner user-account-info">
-                                        <h6 class="overline-title-alt">Account Balance</h6>
-                                        <div class="user-balance">1,494.23 <small class="currency currency-usd">USD</small>
-                                        </div>
-                                        <div class="user-balance-sub">Locked <span>15,495.39 <span class="currency currency-usd">USD</span></span>
-                                        </div><a href="#" class="link"><span>Withdraw Balance</span> <em class="icon ni ni-wallet-out"></em></a>
-                                    </div>
-                                    <div class="dropdown-inner">
-                                        <ul class="link-list">
-                                            <li><a href="profile.html"><em class="icon ni ni-user-alt"></em><span>View Profile</span></a>
-                                            </li>
-                                            <li><a href="profile-setting.html"><em class="icon ni ni-setting-alt"></em><span>Account Setting</span></a>
-                                            </li>
-                                            <li><a href="profile-activity.html"><em class="icon ni ni-activity-alt"></em><span>Login Activity</span></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="dropdown-inner">
-                                        <ul class="link-list">
-                                            <li><a href="#"><em class="icon ni ni-signout"></em><span>Sign out</span></a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li> -->
+                   
                         </ul>
                     </div>
                 </div>
