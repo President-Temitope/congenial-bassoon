@@ -7851,7 +7851,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 	margin-bottom:0;
 	margin-left:0;
 	margin-right:0;
-	width: 220px;
+	width: 0px;
 	height:90px;
 	position:relative;
 	z-index:9;

@@ -510,7 +510,7 @@
 	    .logo-dark {
 
 	        position: relative;
-	        left: 43%;
+	        left: 0%;
 	        top: 0px;
 	    }
 
