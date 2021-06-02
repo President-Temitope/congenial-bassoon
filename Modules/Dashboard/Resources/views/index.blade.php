@@ -1,11 +1,11 @@
-
 <html lang="zxx" class="js">
 
 <head>
     <meta charset="utf-8">
     <meta name="author" content="Softnio">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="A powerful and conceptual apps base dashboard template that especially build for developers and programmers.">
+    <meta name="description"
+          content="A powerful and conceptual apps base dashboard template that especially build for developers and programmers.">
     <link rel="shortcut icon" href="../images/favicon.png">
     <title>DashBoard | {{config('app.name')}}</title>
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
@@ -14,25 +14,59 @@
 
 
 <style>
-    @media only screen and (max-width: 767px){
+    @media only screen and (max-width: 767px) {
 
         .dropdown-content {
 
 
-            position: absolute!important;
-            right: -15px!important;
+            position: absolute !important;
+            right: -15px !important;
         }
 
 
     }
 
-    @media (min-width: 576px){.nk-content{padding:32px 22px}.nk-content-fluid{padding-left:22px;padding-right:22px}}@media (min-width: 992px){.nk-content-lg{padding-top:36px;padding-bottom:36px}.nk-content-fluid{padding-left:24px;padding-right:24px}}@media (min-width: 1660px){.nk-content-lg{padding-top:54px;padding-bottom:54px}.nk-content-fluid{padding-left:44px;padding-right:44px}}
+    @media (min-width: 576px) {
+        .nk-content {
+            padding: 32px 22px
+        }
+
+        .nk-content-fluid {
+            padding-left: 22px;
+            padding-right: 22px
+        }
+    }
+
+    @media (min-width: 992px) {
+        .nk-content-lg {
+            padding-top: 36px;
+            padding-bottom: 36px
+        }
+
+        .nk-content-fluid {
+            padding-left: 24px;
+            padding-right: 24px
+        }
+    }
+
+    @media (min-width: 1660px) {
+        .nk-content-lg {
+            padding-top: 54px;
+            padding-bottom: 54px
+        }
+
+        .nk-content-fluid {
+            padding-left: 44px;
+            padding-right: 44px
+        }
+    }
 
     .nk-menu-link {
 
-        transition-duration: 5ms!important;
+        transition-duration: 5ms !important;
 
     }
+
     .dropbtn {
         background-color: transparent;
         color: white;
@@ -51,7 +85,7 @@
         position: absolute;
         background-color: #f1f1f1;
         min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
     }
 
@@ -62,11 +96,17 @@
         display: block;
     }
 
-    .dropdown-content a:hover {background-color: #ddd;}
+    .dropdown-content a:hover {
+        background-color: #ddd;
+    }
 
-    .dropdown:hover .dropdown-content {display: block;}
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
 
-    .dropdown:hover .dropbtn {background-color: none;}
+    .dropdown:hover .dropbtn {
+        background-color: none;
+    }
 
     .dropdown-content {
         display: none;
@@ -86,9 +126,14 @@
         display: block;
     }
 
-    .dropdown a:hover {background-color: #ddd;}
+    .dropdown a:hover {
+        background-color: #ddd;
+    }
 
-    .show {display: block;}
+    .show {
+        display: block;
+    }
+
     /*===== GOOGLE FONTS =====*/
     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
 
@@ -294,17 +339,21 @@
         body {
             margin: 0;
         }
+
         .header {
             height: calc(var(--header-height) + 1rem);
         }
+
         .header__logo, .header__toggle {
             display: none;
         }
+
         .nav {
             width: 100%;
         }
+
         .nav__content {
-            -ms-grid-columns: (max-content)[3];
+            -ms-grid-columns: (max-content) [ 3 ];
             grid-template-columns: repeat(3, -webkit-max-content);
             grid-template-columns: repeat(3, max-content);
             -ms-grid-rows: 1fr;
@@ -315,9 +364,11 @@
             -ms-flex-pack: justify;
             justify-content: space-between;
         }
+
         .nav__close, .nav__profesion {
             display: none;
         }
+
         .nav__perfil {
             display: -webkit-box;
             display: -ms-flexbox;
@@ -326,6 +377,7 @@
             -ms-flex-align: center;
             align-items: center;
         }
+
         .nav__img {
             width: 32px;
             height: 32px;
@@ -335,24 +387,30 @@
             -ms-flex-align: center;
             align-items: center;
         }
+
         .nav__img img {
             width: 26px;
         }
+
         .nav__list {
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
         }
+
         .nav__item {
             margin: 0 .25rem;
         }
+
         .nav__link {
             padding: .5rem .8rem;
             border-radius: .25rem;
         }
+
         .nav__link:hover {
             background-color: var(--first-color);
         }
+
         .active {
             /* background-color: var(--first-color); */
 
@@ -380,20 +438,26 @@
                     <ion-icon name="menu-outline" class="header__toggle" id="nav-toggle"></ion-icon>
                     <div class="nk-header-brand">
                         <a href="../index-2.html" class="logo-link">
-                            <img class="logo-light logo-img" src="../images/logo.png" srcset="/demo6/images/logo2x.png 2x" alt="logo">
-                            <img class="logo-dark logo-img" src="../images/logo-dark.png" srcset="/demo6/images/logo-dark2x.png 2x" alt="logo-dark"><span class="nio-version">Invest</span>
+                            <img class="logo-light logo-img" src="../images/logo.png"
+                                 srcset="/demo6/images/logo2x.png 2x" alt="logo">
+                            <img class="logo-dark logo-img" src="../images/logo-dark.png"
+                                 srcset="/demo6/images/logo-dark2x.png 2x" alt="logo-dark"><span class="nio-version">Invest</span>
                         </a>
                     </div>
                     <nav class="nav nk-header-wrap" id="nav-menu">
                         <div class="nav__content bd-grid">
-                            <ion-icon name="close-outline" class="nav__close md hydrated" id="nav-close" role="img" aria-label="close outline"></ion-icon>
+                            <ion-icon name="close-outline" class="nav__close md hydrated" id="nav-close" role="img"
+                                      aria-label="close outline"></ion-icon>
                             <div class="nav__menu">
                                 <ul class="nav__list nk-menu-main">
-                                    <li class="nk-menu-item active"><a href="./index.html" class="nk-menu-link"><span class="nk-menu-text">Overview</span></a>
+                                    <li class="nk-menu-item active"><a href="./index.html" class="nk-menu-link"><span
+                                                class="nk-menu-text">Overview</span></a>
                                     </li>
-                                    <li class="nk-menu-item"><a href="./schemes.html" class="nk-menu-link"><span class="nk-menu-text">MY Plan</span></a>
+                                    <li class="nk-menu-item"><a href="./schemes.html" class="nk-menu-link"><span
+                                                class="nk-menu-text">MY Plan</span></a>
                                     </li>
-                                    <li class="nk-menu-item"><a href="./invest.html" class="nk-menu-link"><span class="nk-menu-text">Invest</span></a>
+                                    <li class="nk-menu-item"><a href="./invest.html" class="nk-menu-link"><span
+                                                class="nk-menu-text">Invest</span></a>
                                     </li>
                                     <!-- <li class="nk-menu-item"><a href="profile.html" class="nk-menu-link"><span class="nk-menu-text">Profile</span></a> --></li>
                                 </ul>
@@ -421,21 +485,30 @@
                                         </div>
                                         <div class="user-info"><span class="lead-text"></span><span class="sub-text">info@softnio.com</span>
                                         </div>
-                                        <div class="user-action"><a class="btn btn-icon mr-n2" href="/demo6/invest/profile-setting.html" style="position: relative;
+                                        <div class="user-action"><a class="btn btn-icon mr-n2"
+                                                                    href="/demo6/invest/profile-setting.html" style="position: relative;
     right: 20px;"><em class="icon ni ni-setting"></em></a>
                                         </div>
                                     </div>
-                                    <h6 class="overline-title-alt" style="position: relative;left: 12px;margin: 10px;">Account Balance</h6>
-                                    <div class="user-balance" style="position: relative; left: 12px;">1,494.23 <small class="currency currency-usd">USD</small>
+                                    <h6 class="overline-title-alt" style="position: relative;left: 12px;margin: 10px;">
+                                        Account Balance</h6>
+                                    <div class="user-balance" style="position: relative; left: 12px;">1,494.23 <small
+                                            class="currency currency-usd">USD</small>
                                     </div>
-                                    <div class="user-balance-sub" style="position: relative;left: 12px;">Locked <span>15,495.39 <span class="currency currency-usd">USD</span></span>
-                                    </div><a href="#" class="link"><span>Withdraw Balance</span> <em class="icon ni ni-wallet-out"></em></a>
+                                    <div class="user-balance-sub" style="position: relative;left: 12px;">Locked <span>15,495.39 <span
+                                                class="currency currency-usd">USD</span></span>
+                                    </div>
+                                    <a href="#" class="link"><span>Withdraw Balance</span> <em
+                                            class="icon ni ni-wallet-out"></em></a>
                                     <ul class="link-list">
-                                        <li><a href="/demo6/invest/profile.html"><em class="icon ni ni-user-alt"></em><span>View Profile</span></a>
+                                        <li><a href="/demo6/invest/profile.html"><em
+                                                    class="icon ni ni-user-alt"></em><span>View Profile</span></a>
                                         </li>
-                                        <li><a href="/demo6/invest/profile-setting.html"><em class="icon ni ni-setting-alt"></em><span>Account Setting</span></a>
+                                        <li><a href="/demo6/invest/profile-setting.html"><em
+                                                    class="icon ni ni-setting-alt"></em><span>Account Setting</span></a>
                                         </li>
-                                        <li><a href="/demo6/invest/profile-activity.html"><em class="icon ni ni-activity-alt"></em><span>Login Activity</span></a>
+                                        <li><a href="/demo6/invest/profile-activity.html"><em
+                                                    class="icon ni ni-activity-alt"></em><span>Login Activity</span></a>
                                         </li>
                                     </ul>
                                     <ul class="link-list">
@@ -450,12 +523,15 @@
                                     </div>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-xl dropdown-menu-right dropdown-menu-s1">
-                                    <div class="dropdown-head"><span class="sub-title nk-dropdown-title">Notifications</span><a href="#">Mark All as Read</a>
+                                    <div class="dropdown-head"><span
+                                            class="sub-title nk-dropdown-title">Notifications</span><a href="#">Mark All
+                                            as Read</a>
                                     </div>
                                     <div class="dropdown-body">
                                         <div class="nk-notification">
                                             <div class="nk-notification-item dropdown-inner">
-                                                <div class="nk-notification-icon"><em class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
+                                                <div class="nk-notification-icon"><em
+                                                        class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
                                                 </div>
                                                 <div class="nk-notification-content">
                                                     <div class="nk-notification-text">You have requested to <span>Widthdrawl</span>
@@ -464,15 +540,19 @@
                                                 </div>
                                             </div>
                                             <div class="nk-notification-item dropdown-inner">
-                                                <div class="nk-notification-icon"><em class="icon icon-circle bg-success-dim ni ni-curve-down-left"></em>
+                                                <div class="nk-notification-icon"><em
+                                                        class="icon icon-circle bg-success-dim ni ni-curve-down-left"></em>
                                                 </div>
                                                 <div class="nk-notification-content">
-                                                    <div class="nk-notification-text">Your <span>Deposit Order</span> is placed</div>
+                                                    <div class="nk-notification-text">Your <span>Deposit Order</span> is
+                                                        placed
+                                                    </div>
                                                     <div class="nk-notification-time">2 hrs ago</div>
                                                 </div>
                                             </div>
                                             <div class="nk-notification-item dropdown-inner">
-                                                <div class="nk-notification-icon"><em class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
+                                                <div class="nk-notification-icon"><em
+                                                        class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
                                                 </div>
                                                 <div class="nk-notification-content">
                                                     <div class="nk-notification-text">You have requested to <span>Widthdrawl</span>
@@ -481,14 +561,20 @@
                                                 </div>
                                             </div>
                                             <div class="nk-notification-item dropdown-inner">
-                                                <div class="nk-notification-icon"><em class="icon icon-circle bg-success-dim ni ni-curve-down-left"></em>
+                                                <div class="nk-notification-icon"><em
+                                                        class="icon icon-circle bg-success-dim ni ni-curve-down-left"></em>
                                                 </div>
                                                 <div class="nk-notification-content">
-                                                    <div class="nk-notification-text">Your <span>Deposit Order</span> is placed</div>
-                                                    <div class="nk-notification-time">2 hrs ago</div>f</div>
+                                                    <div class="nk-notification-text">Your <span>Deposit Order</span> is
+                                                        placed
+                                                    </div>
+                                                    <div class="nk-notification-time">2 hrs ago</div>
+                                                    f
+                                                </div>
                                             </div>
                                             <div class="nk-notification-item dropdown-inner">
-                                                <div class="nk-notification-icon"><em class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
+                                                <div class="nk-notification-icon"><em
+                                                        class="icon icon-circle bg-warning-dim ni ni-curve-down-right"></em>
                                                 </div>
                                                 <div class="nk-notification-content">
                                                     <div class="nk-notification-text">You have requested to <span>Widthdrawl</span>
@@ -497,10 +583,13 @@
                                                 </div>
                                             </div>
                                             <div class="nk-notification-item dropdown-inner">
-                                                <div class="nk-notification-icon"><em class="icon icon-circle bg-success-dim ni ni-curve-down-left"></em>
+                                                <div class="nk-notification-icon"><em
+                                                        class="icon icon-circle bg-success-dim ni ni-curve-down-left"></em>
                                                 </div>
                                                 <div class="nk-notification-content">
-                                                    <div class="nk-notification-text">Your <span>Deposit Order</span> is placed</div>
+                                                    <div class="nk-notification-text">Your <span>Deposit Order</span> is
+                                                        placed
+                                                    </div>
                                                     <div class="nk-notification-time">2 hrs ago</div>
                                                 </div>
                                             </div>
@@ -510,9 +599,10 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="hide-mb-sm"><a href="#" class="nk-quick-nav-icon"><em class="icon ni ni-signout"></em></a>
+                            <li class="hide-mb-sm"><a href="#" class="nk-quick-nav-icon"><em
+                                        class="icon ni ni-signout"></em></a>
                             </li>
-                   
+
                         </ul>
                     </div>
                 </div>
@@ -529,9 +619,10 @@
                                     </div>
                                     <div class="align-center flex-wrap pb-2 gx-4 gy-3">
                                         <div>
-                                            <h2 class="nk-block-title fw-normal">Abu Bin Ishtiyak</h2>
+                                            <h2 class="nk-block-title fw-normal">{{Auth::user()->fullName()}}</h2>
                                         </div>
-                                        <div><a href="./schemes.html" class="btn btn-white btn-light">My Plans <em class="icon ni ni-arrow-long-right ml-2"></em></a>
+                                        <div><a href="./schemes.html" class="btn btn-white btn-light">My Plans <em
+                                                    class="icon ni ni-arrow-long-right ml-2"></em></a>
                                         </div>
                                     </div>
                                     <div class="nk-block-des">
@@ -540,11 +631,14 @@
                                 </div>
                                 <div class="nk-block-head-content d-none d-md-block">
                                     <div class="nk-slider nk-slider-s1">
-                                        <div class="slider-init" data-slick="{&quot;dots&quot;: true, &quot;arrows&quot;: false, &quot;fade&quot;: true}">
+                                        <div class="slider-init"
+                                             data-slick="{&quot;dots&quot;: true, &quot;arrows&quot;: false, &quot;fade&quot;: true}">
                                             <div class="slider-item">
                                                 <div class="nk-iv-wg1">
                                                     <div class="nk-iv-wg1-sub sub-text">My Active Plans</div>
-                                                    <h6 class="nk-iv-wg1-info title">Silver - 4.76% for 21 Days</h6><a href="#" class="nk-iv-wg1-link link link-light"><em class="icon ni ni-trend-up"></em> <span>Check Details</span></a>
+                                                    <h6 class="nk-iv-wg1-info title">Silver - 4.76% for 21 Days</h6><a
+                                                        href="#" class="nk-iv-wg1-link link link-light"><em
+                                                            class="icon ni ni-trend-up"></em> <span>Check Details</span></a>
                                                     <div class="nk-iv-wg1-progress">
                                                         <div class="progress-bar bg-primary" data-progress="80"></div>
                                                     </div>
@@ -553,7 +647,9 @@
                                             <div class="slider-item">
                                                 <div class="nk-iv-wg1">
                                                     <div class="nk-iv-wg1-sub sub-text">My Active Plans</div>
-                                                    <h6 class="nk-iv-wg1-info title">Silver - 4.76% for 21 Days</h6><a href="#" class="nk-iv-wg1-link link link-light"><em class="icon ni ni-trend-up"></em> <span>Check Details</span></a>
+                                                    <h6 class="nk-iv-wg1-info title">Silver - 4.76% for 21 Days</h6><a
+                                                        href="#" class="nk-iv-wg1-link link link-light"><em
+                                                            class="icon ni ni-trend-up"></em> <span>Check Details</span></a>
                                                     <div class="nk-iv-wg1-progress">
                                                         <div class="progress-bar bg-primary" data-progress="80"></div>
                                                     </div>
@@ -562,7 +658,9 @@
                                             <div class="slider-item">
                                                 <div class="nk-iv-wg1">
                                                     <div class="nk-iv-wg1-sub sub-text">My Active Plans</div>
-                                                    <h6 class="nk-iv-wg1-info title">Silver - 4.76% for 21 Days</h6><a href="#" class="nk-iv-wg1-link link link-light"><em class="icon ni ni-trend-up"></em> <span>Check Details</span></a>
+                                                    <h6 class="nk-iv-wg1-info title">Silver - 4.76% for 21 Days</h6><a
+                                                        href="#" class="nk-iv-wg1-link link link-light"><em
+                                                            class="icon ni ni-trend-up"></em> <span>Check Details</span></a>
                                                     <div class="nk-iv-wg1-progress">
                                                         <div class="progress-bar bg-primary" data-progress="80"></div>
                                                     </div>
@@ -597,10 +695,12 @@
                                         <div class="card-inner">
                                             <div class="nk-iv-wg2">
                                                 <div class="nk-iv-wg2-title">
-                                                    <h6 class="title">Available Balance <em class="icon ni ni-info"></em></h6>
+                                                    <h6 class="title">Available Balance <em
+                                                            class="icon ni ni-info"></em></h6>
                                                 </div>
                                                 <div class="nk-iv-wg2-text">
-                                                    <div class="nk-iv-wg2-amount">105.94 <span class="change up"><span class="sign"></span>3.4%</span>
+                                                    <div class="nk-iv-wg2-amount">105.94 <span class="change up"><span
+                                                                class="sign"></span>3.4%</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -612,10 +712,12 @@
                                         <div class="card-inner">
                                             <div class="nk-iv-wg2">
                                                 <div class="nk-iv-wg2-title">
-                                                    <h6 class="title">Total Invested <em class="icon ni ni-info"></em></h6>
+                                                    <h6 class="title">Total Invested <em class="icon ni ni-info"></em>
+                                                    </h6>
                                                 </div>
                                                 <div class="nk-iv-wg2-text">
-                                                    <div class="nk-iv-wg2-amount">509,850.90 <span class="change up"><span class="sign"></span>2.8%</span>
+                                                    <div class="nk-iv-wg2-amount">509,850.90 <span
+                                                            class="change up"><span class="sign"></span>2.8%</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -627,10 +729,12 @@
                                         <div class="card-inner">
                                             <div class="nk-iv-wg2">
                                                 <div class="nk-iv-wg2-title">
-                                                    <h6 class="title">Total Profits <em class="icon ni ni-info"></em></h6>
+                                                    <h6 class="title">Total Profits <em class="icon ni ni-info"></em>
+                                                    </h6>
                                                 </div>
                                                 <div class="nk-iv-wg2-text">
-                                                    <div class="nk-iv-wg2-amount">50,600.48 <span class="change down"><span class="sign"></span>1.4%</span>
+                                                    <div class="nk-iv-wg2-amount">50,600.48 <span
+                                                            class="change down"><span class="sign"></span>1.4%</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -651,15 +755,21 @@
                                                 <div class="nk-iv-wg2-text">
                                                     <div class="nk-iv-wg2-amount ui-v2">12,587.96</div>
                                                     <ul class="nk-iv-wg2-list">
-                                                        <li><span class="item-label">Available Funds</span><span class="item-value">105.94</span>
+                                                        <li><span class="item-label">Available Funds</span><span
+                                                                class="item-value">105.94</span>
                                                         </li>
-                                                        <li><span class="item-label">Invested Funds</span><span class="item-value">12,582.02</span>
+                                                        <li><span class="item-label">Invested Funds</span><span
+                                                                class="item-value">12,582.02</span>
                                                         </li>
-                                                        <li class="total"><span class="item-label">Total</span><span class="item-value">12,587.96</span>
+                                                        <li class="total"><span class="item-label">Total</span><span
+                                                                class="item-value">12,587.96</span>
                                                         </li>
                                                     </ul>
                                                 </div>
-                                                <div class="nk-iv-wg2-cta"><a href="#" class="btn btn-primary btn-lg btn-block">Withdraw Funds</a><a href="./invest-form.html" class="btn btn-trans btn-block">Deposit Funds</a>
+                                                <div class="nk-iv-wg2-cta"><a href="#"
+                                                                              class="btn btn-primary btn-lg btn-block">Withdraw
+                                                        Funds</a><a href="./invest-form.html"
+                                                                    class="btn btn-trans btn-block">Deposit Funds</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -670,24 +780,35 @@
                                         <div class="card-inner h-100">
                                             <div class="nk-iv-wg2">
                                                 <div class="nk-iv-wg2-title">
-                                                    <h6 class="title">This Month Profit <em class="icon ni ni-info text-primary"></em></h6>
+                                                    <h6 class="title">This Month Profit <em
+                                                            class="icon ni ni-info text-primary"></em></h6>
                                                 </div>
                                                 <div class="nk-iv-wg2-text">
-                                                    <div class="nk-iv-wg2-amount ui-v2">1,457.23 <span class="change up"><span class="sign"></span>4.5%</span>
+                                                    <div class="nk-iv-wg2-amount ui-v2">1,457.23 <span
+                                                            class="change up"><span class="sign"></span>4.5%</span>
                                                     </div>
                                                     <ul class="nk-iv-wg2-list">
-                                                        <li><span class="item-label">Profits</span><span class="item-value">1,045.21</span>
+                                                        <li><span class="item-label">Profits</span><span
+                                                                class="item-value">1,045.21</span>
                                                         </li>
-                                                        <li><span class="item-label">Referrals</span><span class="item-value">212.02</span>
+                                                        <li><span class="item-label">Referrals</span><span
+                                                                class="item-value">212.02</span>
                                                         </li>
-                                                        <li><span class="item-label">Rewards</span><span class="item-value">200.00</span>
+                                                        <li><span class="item-label">Rewards</span><span
+                                                                class="item-value">200.00</span>
                                                         </li>
-                                                        <li class="total"><span class="item-label">Total Profit</span><span class="item-value">1,457.23</span>
+                                                        <li class="total"><span
+                                                                class="item-label">Total Profit</span><span
+                                                                class="item-value">1,457.23</span>
                                                         </li>
                                                     </ul>
                                                 </div>
-                                                <div class="nk-iv-wg2-cta"><a href="#" class="btn btn-primary btn-lg btn-block">Invest &amp; Earn</a>
-                                                    <div class="cta-extra">Earn up to 25$ <a href="#" class="link link-dark">Refer friend!</a>
+                                                <div class="nk-iv-wg2-cta"><a href="#"
+                                                                              class="btn btn-primary btn-lg btn-block">Invest
+                                                        &amp; Earn</a>
+                                                    <div class="cta-extra">Earn up to 25$ <a href="#"
+                                                                                             class="link link-dark">Refer
+                                                            friend!</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -702,20 +823,29 @@
                                                     <h6 class="title">My Investment</h6>
                                                 </div>
                                                 <div class="nk-iv-wg2-text">
-                                                    <div class="nk-iv-wg2-amount ui-v2">319 <span class="sub">03</span> Active</div>
+                                                    <div class="nk-iv-wg2-amount ui-v2">319 <span class="sub">03</span>
+                                                        Active
+                                                    </div>
                                                     <ul class="nk-iv-wg2-list">
-                                                        <li><span class="item-label"><a href="#">Silver</a> <small>- 4.76% for 21 Days</small></span><span class="item-value">2,500.00</span>
+                                                        <li><span class="item-label"><a href="#">Silver</a> <small>- 4.76% for 21 Days</small></span><span
+                                                                class="item-value">2,500.00</span>
                                                         </li>
-                                                        <li><span class="item-label"><a href="#">Silver</a> <small>- 4.76% for 21 Days</small></span><span class="item-value">2,000.00</span>
+                                                        <li><span class="item-label"><a href="#">Silver</a> <small>- 4.76% for 21 Days</small></span><span
+                                                                class="item-value">2,000.00</span>
                                                         </li>
-                                                        <li><span class="item-label"><a href="#">Dimond</a> <small>- 14.29% for 14 Days</small></span><span class="item-value">8,000.00</span>
+                                                        <li><span class="item-label"><a href="#">Dimond</a> <small>- 14.29% for 14 Days</small></span><span
+                                                                class="item-value">8,000.00</span>
                                                         </li>
-                                                        <li><span class="item-label"><a href="#">Starter</a> <small>- 1.67% for 30 Days</small></span><span class="item-value">335.00</span>
+                                                        <li><span class="item-label"><a href="#">Starter</a> <small>- 1.67% for 30 Days</small></span><span
+                                                                class="item-value">335.00</span>
                                                         </li>
                                                     </ul>
                                                 </div>
-                                                <div class="nk-iv-wg2-cta"><a href="#" class="btn btn-light btn-lg btn-block">See all Investment</a>
-                                                    <div class="cta-extra">Check out <a href="#" class="link link-dark">Analytic Report</a>
+                                                <div class="nk-iv-wg2-cta"><a href="#"
+                                                                              class="btn btn-light btn-lg btn-block">See
+                                                        all Investment</a>
+                                                    <div class="cta-extra">Check out <a href="#" class="link link-dark">Analytic
+                                                            Report</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -792,10 +922,10 @@
                 </div>
             </div>
         </div>
-        </div>
+    </div>
 </div>
 
-<script src="js/bundle0875.html"></script>
+{{--<script src="js/bundle0875.html"></script>--}}
 <script src="js/demo-settings0875.js"></script>
 <script src="js/charts/chart-invest0875.js"></script>
 <script src="js/scripts0875.html"></script>
@@ -808,7 +938,7 @@
     }
 
     // Close the dropdown if the user clicks outside of it
-    window.onclick = function(event) {
+    window.onclick = function (event) {
         if (!event.target.matches('.dropbtn')) {
             var dropdowns = document.getElementsByClassName("dropdown-content");
             var i;
@@ -821,7 +951,6 @@
         }
     }
 </script>
-<!-- Mirrored from dashlite.net/demo6/invest/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 11 May 2021 04:42:56 GMT -->
 </body>
 <!-- ===== IONICONS ===== -->
 <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
@@ -833,19 +962,19 @@
         closeMenu = document.getElementById('nav-close')
 
     /*SHOW*/
-    toggleMenu.addEventListener('click', ()=>{
+    toggleMenu.addEventListener('click', () => {
         navMenu.classList.toggle('show')
     })
 
     /*HIDDEN*/
-    closeMenu.addEventListener('click', ()=>{
+    closeMenu.addEventListener('click', () => {
         navMenu.classList.remove('show')
     })
 
     /*===== ACTIVE AND REMOVE MENU =====*/
     const navLink = document.querySelectorAll('.nav__link');
 
-    function linkAction(){
+    function linkAction() {
         /*Active link*/
         navLink.forEach(n => n.classList.remove('active'));
         this.classList.add('active');
@@ -853,6 +982,7 @@
         /*Remove menu mobile*/
         navMenu.classList.remove('show')
     }
+
     navLink.forEach(n => n.addEventListener('click', linkAction));
 </script>
 

@@ -780,7 +780,7 @@
 									<div class=" glyphicon glyphicon-plus submenu-toogle"></div>
 								</li>
 								<li class="has-child"> <a href="#about-us">ABOUT US{{--<i class="fa fa-chevron-down" style="color: #fff;"></i>--}}</a>
-	
+
 							</li>
 
 
@@ -809,7 +809,7 @@
 
 
 
-<div class="wrapper">
+{{--<div class="wrapper">
     <div class="navbar">
         <div class="right">
             <ul>
@@ -817,7 +817,7 @@
                 <a href="#">
                   <span>Admin</span></p><img src="./138-1387631_login-comments-windows-10-person-icon.png" alt="Admin" width="20" height="20"><i class="fas fa-angle-down"></i>
                 </a>
-                 
+
                 <div class="dropdown">
                     <ul>
                       <li><a href="#"><i class="fas fa-user"></i> Dashboard</a></li>
@@ -825,18 +825,18 @@
                       <li><a href="#"><i class="fas fa-sign-out-alt"></i> Signout</a></li>
                   </ul>
                 </div>
-                
+
               </li>
           </ul>
         </div>
     </div>
-</div>	
+</div>
 
 <script>
 	document.querySelector(".right ul li").addEventListener("click", function(){
 		  this.classList.toggle("active");
 	});
-</script>
+</script>--}}
 
 <style>
 
@@ -856,7 +856,7 @@ body{
   background: #000;
 }
 
-.wrapper{ 
+.wrapper{
   position: absolute;
   top: 35%;
   left: 50%;
