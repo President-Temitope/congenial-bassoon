@@ -1368,8 +1368,8 @@ body{
 									<p> <strong>Cryptocurrencies have become established investment commodities among major financial institutions, and have even been adopted by countries such as South Korea,Japan, united-states and Others. However, as with any investment there are benefits linked to market movements!
                                     </strong>
 									</p>
-									<p class="N wow slideInUp">Now you can start Investing Bitcoin, Ethereum and many cryptocurrencies fast, easily and safely from where ever you are. With great margin trading leverage and short sell options available with quick deposit &amp; withdrawal capability, you can start trading with us in seconds.</p> <a href="#" class="site-button text-uppercase m-r15">Read More</a>
-									<a href="#contact-us" class="site-button-secondry text-uppercase">Contact us</a>
+									<p class="N wow slideInUp">Now you can start Investing Bitcoin, Ethereum and many cryptocurrencies fast, easily and safely from where ever you are. With great margin trading leverage and short sell options available with quick deposit &amp; withdrawal capability, you can start trading with us in seconds.</p> 
+									<!-- <a href="#contact-us" class="site-button-secondry text-uppercase">Contact us</a> -->
 								</div>
 							</div>
 						</div>
@@ -1627,7 +1627,7 @@ body{
 								<div class="feature-card-icon pt-10">	<i class="icon-lock"></i>
 								</div>
 								<div class="feature-card-content">
-									<h6 class="text-uppercase text-primary display-block title-second">Our co-investment platform allows everyday investors to invest alongside institutional and professional investors. </h6>
+									<!-- <h6 class="text-uppercase text-primary display-block title-second">Our co-investment platform allows everyday investors to invest alongside institutional and professional investors. </h6> -->
 									<!-- <p class="feature-card-desc"> -->
 									<!-- <p class="zeta color--foxtrot" style="color: #fff;">Cryptobolt secure & private is a branding name of Investment Growth Capital which is registered in Germany &nbsp;(Company No. 08155332),&nbsp;it authorised and regulated in the United State,United kingdom etc.</p> -->
 									<!-- <br>
@@ -2083,44 +2083,7 @@ ction-head text-center">	<span class="wt-title-subline font-16 text-gray-dark m-
 							</div>
 						</div>
 						<!-- NEWSLETTER -->
-						<div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="3s">
-							<div class="widget widget_newsletter">
-								<h4 class="widget-title text-white">Newsletter</h4>
-								<div class="newsletter-bx">
-									<form role="search" method="post">
-										<div class="input-group">
-											<input name="news-letter" class="form-control" placeholder="ENTER YOUR EMAIL" type="text"> <span class="input-group-btn">
-                                            <button type="submit" class="site-button"><i class="fa fa-paper-plane-o"></i></button>
-                                        </span>
-										</div>
-									</form>
-								</div>
-							</div>
-							<!-- SOCIAL LINKS -->
-							<div class="widget widget_social_inks">
-								<h4 class="widget-title text-white">Social Links</h4>
-								<ul class="social-icons social-square social-darkest">
-									<li>
-										<a href="#" class="fa fa-facebook"></a>
-									</li>
-									<li>
-										<a href="#" class="fa fa-twitter"></a>
-									</li>
-									<li>
-										<a href="#" class="fa fa-linkedin"></a>
-									</li>
-									<li>
-										<a href="#" class="fa fa-rss"></a>
-									</li>
-									<li>
-										<a href="#" class="fa fa-youtube"></a>
-									</li>
-									<li>
-										<a href="https://instagram.com" class="fa fa-instagram"></a>
-									</li>
-								</ul>
-							</div>
-						</div>
+						
 					</div>
 					<!-- <div class="row" id="contact-us">
                     <div class="col-md-3 col-sm-6  p-tb20">
