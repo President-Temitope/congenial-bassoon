@@ -1609,11 +1609,12 @@ body{
                                     <!-- <span class="logo-about-text" style="font-size: 28px;">Crypto&nbsp;&nbsp;&nbsp;bolt</span> -->
 </a></strong>
 								<!-- <h6 class="text-uppercase text-primary display-block title-second">Our co-investment platform allows everyday investors to invest alongside institutional and professional investors. </h6> -->
-								<p class="text-white wow fadeInUp" style="margin: 15px;">Cryptobolt is a professional investment service company with high support team who emphasis on building up and creating a fast-growing digital asset. Our company focus on great income opportunities. Which is why we only concentrate on sectors where our team have considerable experience and success.</p>
+								<p class="text-white wow fadeInUp" style="margin: 15px;"> CRYPTOBOLT ©    is a professional Investment services company with high support team that emphasis on building up and creating a fast-growing Digital wealth. We make Growth Capital which is registered in Hong Kong ( We have agent around the countries for assistance ), it authorized and regulated in the South Korea, Japan etc .</p>
 								<br>
 								<br>
-								<p class="text-white wow fadeInUp" style="margin: 15px;">We offer various insured services involved in the Blockchain with our prime interest in Financial and Investment planning. Benefits of bitcoin investment, more and more people are ready to invest in bitcoin. This is a very beneficial aspect of bitcoin for bitcoin investors. As the demand and value of bitcoin increases with more people than ever using bitcoin as the primary currency, the price of bitcoin will eventually increase. With the passage of every single day.
+								<p class="text-white wow fadeInUp" style="margin: 15px;">We offer various insured services involved in the Blockchain with our prime interest in Financial and Investment planning. Benefits of bitcoin investment, more and more people are ready to invest in bitcoin. This is a very beneficial aspect of bitcoin for bitcoin investors.<br><br> CRYPTOBOLT © has been operating in South Korea, and Japan locally since 2009, until it was launched globally in 2011, making our investment program available for investors all over the world. In the epoch of development of electronic payment processors, we certainly can't remain aloof. With the advent of Bitcoins we are one of the first to appreciate the potential of cutting-edge digital currency and thoroughly examined all aspects of its mining. This prompted us to launch a data center that would generate cryptocoins.
 								</p>
+								<br>
 								<ul class="list-check-circle primary wow fadeInUp">
 									<!-- <li>Governments support bitcoin . </li> -->
 									<li>Bitcoin is one the backbone of almost all other cryptocurrencies.</li>
@@ -1661,6 +1662,7 @@ body{
 								<div class="pricing--heading text--center step-number-block">
 									<div class="pricing--icon">
 										<img src="images/testimonials/1.jpg" alt="" width="333" style="border-radius:5px;">
+										<div class="pricing--footer" style="position: relative;bottom: 35px;">SUN WANG</div>
 									</div>
 								</div>
 								<!--  Pricing heading  -->
@@ -1677,6 +1679,7 @@ body{
 								<div class="pricing--heading text--center step-number-block">
 									<div class="pricing--icon">
 										<img src="images/testimonials/2.jpg" alt="" width="333" style="border-radius:5px;">
+										<div class="pricing--footer" style="position: relative;bottom: 35px;">CHAI YUNG</div>
 									</div>
 									
 								</div>
@@ -1694,6 +1697,7 @@ body{
 								<div class="pricing--heading text--center step-number-block">
 									<div class="pricing--icon">
 										<img src="images/testimonials/3.jpg " alt="" width="333" style="border-radius:5px;">
+										<div class="pricing--footer" style="position: relative;bottom: 35px;">SAM SUN</div>
 									</div>
 									
 								</div>
