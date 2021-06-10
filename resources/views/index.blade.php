@@ -140,9 +140,9 @@
 	        background-color: #de7717 !important;
 	    }
 
-	    .bg-gray {
+	    /* .bg-gray {
 	        background-color: #000 !important;
-	    }
+	    } */
 
 	    .bg-white {
 	        background-color: #ffffff !important;
@@ -412,95 +412,6 @@
 	    /*------------------------------------*\
 	        #PRICING-SECTION
 	    \*------------------------------------*/
-	    .pricing-panel {
-	        position: relative;
-	        text-align: center;
-	    }
-
-	    .pricing-panel .pricing--heading {
-	        box-shadow: 0 10px 20px rgba(224, 224, 224, 0.4);
-	        border-radius: 2px;
-	        background-color: #ffffff;
-	        padding: 50px 64px;
-	        margin-bottom: 30px;
-	    }
-
-	    .pricing-panel .pricing--heading .pricing--icon {
-	        margin-right: auto;
-	        margin-left: auto;
-	        text-align: center;
-	        margin-bottom: 30px;
-	    }
-
-	    .pricing-panel .pricing--heading h4 {
-	        font-size: 15px;
-	        font-weight: 700;
-	        font-style: italic;
-	        line-height: 1;
-	        margin-bottom: 17px;
-	        text-transform: capitalize;
-	    }
-
-	    .pricing-panel .pricing--heading p {
-	        font-family: 'Exo 2', sans-serif;
-	        color: #333333;
-	        font-size: 90px;
-	        font-weight: 300;
-	        line-height: 1;
-	        margin-bottom: 16px;
-	    }
-
-	    .pricing-panel .pricing--heading .pricing--desc {
-	        color: #a5a5a5;
-	        font-size: 15px;
-	        font-weight: 400;
-	        line-height: 21px;
-	        margin-bottom: 46px;
-	    }
-
-	    .pricing-panel .btn--secondary {
-	        border: 2px solid rgba(34, 34, 34, 0.1);
-	    }
-
-	    .pricing-panel .pricing--footer {
-	        color: #fff;
-	        font-size: 14px;
-	        font-weight: 700;
-	    }
-
-	    .pricing-active .pricing-panel .pricing--heading {
-	        background-image: -moz-linear-gradient(180deg, #f8a137 0%, #fbac47 64%, #feb756 100%);
-	        background-image: -webkit-linear-gradient(180deg, #f8a137 0%, #fbac47 64%, #feb756 100%);
-	        background-image: -ms-linear-gradient(180deg, #f8a137 0%, #fbac47 64%, #feb756 100%);
-	        background-image:linear-gradient(180deg, #3758f8 0%, #1e5ae0 64%, #feb756 100%);
-	        padding: 70px 64px;
-	        margin-top: -20px;
-	    }
-
-	    .pricing-active .pricing-panel .pricing--heading p,
-	    .pricing-active .pricing-panel .pricing--heading .pricing--desc {
-	        color: #ffffff;
-	    }
-
-	    .pricing--notes {
-	        color: #a5a5a5;
-	        font-size: 16px;
-	        font-weight: 400;
-	        line-height: 24px;
-	        text-align: center;
-	        margin-top: 50px;
-	    }
-
-	    /* pricing #2 */
-	    .pricing-2 {
-	        overflow: visible;
-	    }
-
-	    .pricing-2 .pricing-wrapper {
-	        margin-top: -240px;
-	        position: relative;
-	        z-index: 2;
-	    }
 
 
 
@@ -742,7 +653,7 @@
 					<div class="container">
 						<div class="logo-header mostion">
 							<a href="/" class="MyLink">
-								<img class="logo-dark" src="{{asset('img/logo1.png')}}" style="" alt="{{config('app.name')}}" width="95" height="70">
+								<img class="logo-dark" src="{{asset('img/logo2.png')}}" style="" alt="{{config('app.name')}}" width="80" height="65">
 							</a>
 						</div>
 						<!-- NAV Toggle Button -->
@@ -809,28 +720,7 @@
 
 
 
-<div class="wrapper">
-    <div class="navbar">
-        <div class="right">
-            <ul>
-              <li>
-                <a href="#">
-                  <span>Admin</span></p><img src="./138-1387631_login-comments-windows-10-person-icon.png" alt="Admin" width="20" height="20"><i class="fas fa-angle-down"></i>
-                </a>
-                 
-                <div class="dropdown">
-                    <ul>
-                      <li><a href="#"><i class="fas fa-user"></i> Dashboard</a></li>
-                      <!-- <li><a href="#"><i class="fas fa-sliders-h"></i> Settings</a></li> -->
-                      <li><a href="#"><i class="fas fa-sign-out-alt"></i> Signout</a></li>
-                  </ul>
-                </div>
-                
-              </li>
-          </ul>
-        </div>
-    </div>
-</div>	
+	
 
 <script>
 	document.querySelector(".right ul li").addEventListener("click", function(){
@@ -1753,9 +1643,79 @@ body{
 								</div>
 							</div>
 						</div>
+
+
+					
+<section id="prices" class="section-full pricing  p-t80 p-b80 bg-gray">
+				<div class="container">
+					<div class="row clearfix">
+						
+					</div>
+					<!-- .row end -->
+					<div class="row">
+						<!-- Pricing Packge #1
+						============================================= -->
+						<div class="col-xs-12 col-sm-12 col-md-4 price-table wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
+							<div class="pricing-panel">
+								<!--  Pricing heading  -->
+								<div class="pricing--heading text--center step-number-block">
+									<div class="pricing--icon">
+										<img src="images/testimonials/1.jpg" alt="" width="333" style="border-radius:5px;">
+									</div>
+								</div>
+								<!--  Pricing heading  -->
+								
+								<!--  Pricing Footer  -->
+							</div>
+						</div>
+						<!-- .pricing-table End -->
+						<!-- Pricing Packge #2
+			============================================= -->
+						<div class="col-xs-12 col-sm-12 col-md-4 price-table pricing-active wow fadeInUp  animated animated" data-wow-delay="200ms" style="visibility: visible; animation-delay: 200ms; animation-name: fadeInUp;">
+							<div class="pricing-panel">
+								<!--  Pricing heading  -->
+								<div class="pricing--heading text--center step-number-block">
+									<div class="pricing--icon">
+										<img src="images/testimonials/2.jpg" alt="" width="333" style="border-radius:5px;">
+									</div>
+									
+								</div>
+								<!--  Pricing heading  -->
+								
+								<!--  Pricing Footer  -->
+							</div>
+						</div>
+						<!-- .pricing-table End -->
+						<!-- Pricing Packge #1
+			============================================= -->
+						<div class="col-xs-12 col-sm-12 col-md-4 price-table wow fadeInUp  animated animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+							<div class="pricing-panel">
+								<!--  Pricing heading  -->
+								<div class="pricing--heading text--center step-number-block">
+									<div class="pricing--icon">
+										<img src="images/testimonials/3.jpg " alt="" width="333" style="border-radius:5px;">
+									</div>
+									
+								</div>
+								
+							</div>
+						</div>
+						<!-- .pricing-table End -->
+					</div>
+					<!-- .row end -->
+				</div>
+				<!-- .container end -->
+			</section>
+
+
+
+
 					</div>
 				</div>
 			</div>
+
+
+
 			<!-- SECTION CONTENT  END -->
 			<!-- OUR TEAM MEMBER SECTION START -->
 			<!-- OUR TEAM MEMBER SECTION END -->

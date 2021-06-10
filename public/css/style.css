@@ -1590,7 +1590,7 @@ ol.list-num-count.list-outline-none > li:before {
 .bg-white{background-color:#FFF;}
 .bg-black{background-color:transparent;}
 .bg-black-light{background-color:#212121;}
-.bg-gray{background-color:#f5f6f6;}
+.bg-gray{background-color:transparent;}
 .bg-gray-light{background-color:#f1f1f1;}
 .bg-gray-dark{background-color:#d3d3d3;}
 .bg-red{background-color:#fb5455;}
@@ -8026,6 +8026,7 @@ top: -8px!important;
 }
 .boxed .site-header .container  {
 	width:auto;
+	height: 90px;
 }
 
 @media only screen and (max-width: 991px) {
