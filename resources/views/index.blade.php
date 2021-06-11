@@ -1615,12 +1615,15 @@ body{
 								<p class="text-white wow fadeInUp" style="margin: 15px;">We offer various insured services involved in the Blockchain with our prime interest in Financial and Investment planning. Benefits of bitcoin investment, more and more people are ready to invest in bitcoin. This is a very beneficial aspect of bitcoin for bitcoin investors.<br><br> CRYPTOBOLT © has been operating in South Korea, and Japan locally since 2009, until it was launched globally in 2011, making our investment program available for investors all over the world. In the epoch of development of electronic payment processors, we certainly can't remain aloof. With the advent of Bitcoins we are one of the first to appreciate the potential of cutting-edge digital currency and thoroughly examined all aspects of its mining. This prompted us to launch a data center that would generate cryptocoins.
 								</p>
 								<br>
-								<ul class="list-check-circle primary wow fadeInUp">
-									<!-- <li>Governments support bitcoin . </li> -->
+								<!-- <ul class="list-check-circle primary wow fadeInUp">
+									
 									<li>Bitcoin is one the backbone of almost all other cryptocurrencies.</li>
 									<li>Bitcoin will ultimately become the world’s most powerful currency.</li>
 									<li>Bitcoin will increase the profits of manifolds for all the bitcoin investors.</li>
-								</ul>
+								</ul> -->
+<p class="text-white wow fadeInUp" style="margin: 15px;">CRYPTOBOLT © is existing and the most important, is profitable!
+Our purpose is to help more and more people experience financial well-being. Together with our clients, we’re contributing to a more equitable and resilient world – today and for generations to come.</p>
+
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
@@ -1662,7 +1665,7 @@ body{
 								<div class="pricing--heading text--center step-number-block">
 									<div class="pricing--icon">
 										<img src="images/testimonials/1.jpg" alt="" width="333" style="border-radius:5px;">
-										<div class="pricing--footer" style="position: relative;bottom: 50px;">SūN CHENGUANG<br><p>Financial Analyst</p></div>
+										<div class="pricing--footer" style="position: relative;bottom: 50px; color: #000!important;">SūN CHENGUANG<br><p>Financial Analyst</p></div>
 										
 									</div>
 								</div>
@@ -1680,7 +1683,7 @@ body{
 								<div class="pricing--heading text--center step-number-block">
 									<div class="pricing--icon">
 										<img src="images/testimonials/2.jpg" alt="" width="333" style="border-radius:5px;">
-										<div class="pricing--footer" style="position: relative;bottom: 35px;">LIU HONG (CEO)</div>
+										<div class="pricing--footer" style="position: relative;bottom: 35px; color: #000!important;">LIU HONG (CEO)</div>
 									</div>
 									
 								</div>
@@ -1698,7 +1701,7 @@ body{
 								<div class="pricing--heading text--center step-number-block">
 									<div class="pricing--icon">
 										<img src="images/testimonials/3.jpg " alt="" width="333" style="border-radius:5px;">
-										<div class="pricing--footer" style="position: relative;bottom: 50px;">WANG BEOKUI<br><p>Financial Manager</p></div>
+										<div class="pricing--footer" style="position: relative;bottom: 50px; color: #000!important;">WANG BEOKUI<br><p>Financial Manager</p></div>
 										
 									</div>
 									
