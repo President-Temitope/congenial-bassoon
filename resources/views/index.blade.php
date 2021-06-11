@@ -1662,7 +1662,8 @@ body{
 								<div class="pricing--heading text--center step-number-block">
 									<div class="pricing--icon">
 										<img src="images/testimonials/1.jpg" alt="" width="333" style="border-radius:5px;">
-										<div class="pricing--footer" style="position: relative;bottom: 35px;">SUN WANG</div>
+										<div class="pricing--footer" style="position: relative;bottom: 50px;">SūN CHENGUANG<br><p>Financial Analyst</p></div>
+										
 									</div>
 								</div>
 								<!--  Pricing heading  -->
@@ -1679,7 +1680,7 @@ body{
 								<div class="pricing--heading text--center step-number-block">
 									<div class="pricing--icon">
 										<img src="images/testimonials/2.jpg" alt="" width="333" style="border-radius:5px;">
-										<div class="pricing--footer" style="position: relative;bottom: 35px;">CHAI YUNG</div>
+										<div class="pricing--footer" style="position: relative;bottom: 35px;">LIU HONG (CEO)</div>
 									</div>
 									
 								</div>
@@ -1697,7 +1698,8 @@ body{
 								<div class="pricing--heading text--center step-number-block">
 									<div class="pricing--icon">
 										<img src="images/testimonials/3.jpg " alt="" width="333" style="border-radius:5px;">
-										<div class="pricing--footer" style="position: relative;bottom: 35px;">SAM SUN</div>
+										<div class="pricing--footer" style="position: relative;bottom: 50px;">WANG BEOKUI<br><p>Financial Manager</p></div>
+										
 									</div>
 									
 								</div>
