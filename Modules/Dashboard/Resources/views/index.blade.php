@@ -679,10 +679,7 @@
                                         <a class="nk-news-item" href="#">
                                             <div class="nk-news-icon"><em class="icon ni ni-card-view"></em>
                                             </div>
-                                            <div class="nk-news-text">
-                                                <p>Do you know the latest update of 2019? <span> A overview of our is now available on YouTube</span>
-                                                </p><em class="icon ni ni-external"></em>
-                                            </div>
+
                                         </a>
                                     </div>
                                 </div>
@@ -699,7 +696,7 @@
                                                             class="icon ni ni-info"></em></h6>
                                                 </div>
                                                 <div class="nk-iv-wg2-text">
-                                                    <div class="nk-iv-wg2-amount">105.94 <span class="change up"><span
+                                                    <div class="nk-iv-wg2-amount">0 <span class="change up"><span
                                                                 class="sign"></span>3.4%</span>
                                                     </div>
                                                 </div>
@@ -716,7 +713,7 @@
                                                     </h6>
                                                 </div>
                                                 <div class="nk-iv-wg2-text">
-                                                    <div class="nk-iv-wg2-amount">509,850.90 <span
+                                                    <div class="nk-iv-wg2-amount">0 <span
                                                             class="change up"><span class="sign"></span>2.8%</span>
                                                     </div>
                                                 </div>
@@ -733,7 +730,7 @@
                                                     </h6>
                                                 </div>
                                                 <div class="nk-iv-wg2-text">
-                                                    <div class="nk-iv-wg2-amount">50,600.48 <span
+                                                    <div class="nk-iv-wg2-amount">0<span
                                                             class="change down"><span class="sign"></span>1.4%</span>
                                                     </div>
                                                 </div>
@@ -753,16 +750,16 @@
                                                     <h6 class="title">Balance in Account</h6>
                                                 </div>
                                                 <div class="nk-iv-wg2-text">
-                                                    <div class="nk-iv-wg2-amount ui-v2">12,587.96</div>
+                                                    <div class="nk-iv-wg2-amount ui-v2">0</div>
                                                     <ul class="nk-iv-wg2-list">
                                                         <li><span class="item-label">Available Funds</span><span
-                                                                class="item-value">105.94</span>
+                                                                class="item-value">0</span>
                                                         </li>
                                                         <li><span class="item-label">Invested Funds</span><span
-                                                                class="item-value">12,582.02</span>
+                                                                class="item-value">0</span>
                                                         </li>
                                                         <li class="total"><span class="item-label">Total</span><span
-                                                                class="item-value">12,587.96</span>
+                                                                class="item-value">0</span>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -784,22 +781,22 @@
                                                             class="icon ni ni-info text-primary"></em></h6>
                                                 </div>
                                                 <div class="nk-iv-wg2-text">
-                                                    <div class="nk-iv-wg2-amount ui-v2">1,457.23 <span
+                                                    <div class="nk-iv-wg2-amount ui-v2">0<span
                                                             class="change up"><span class="sign"></span>4.5%</span>
                                                     </div>
                                                     <ul class="nk-iv-wg2-list">
                                                         <li><span class="item-label">Profits</span><span
-                                                                class="item-value">1,045.21</span>
+                                                                class="item-value">0</span>
                                                         </li>
                                                         <li><span class="item-label">Referrals</span><span
-                                                                class="item-value">212.02</span>
+                                                                class="item-value">0</span>
                                                         </li>
                                                         <li><span class="item-label">Rewards</span><span
-                                                                class="item-value">200.00</span>
+                                                                class="item-value">0</span>
                                                         </li>
                                                         <li class="total"><span
                                                                 class="item-label">Total Profit</span><span
-                                                                class="item-value">1,457.23</span>
+                                                                class="item-value">0</span>
                                                         </li>
                                                     </ul>
                                                 </div>
