@@ -140,9 +140,9 @@
 	        background-color: #de7717 !important;
 	    }
 
-	    /* .bg-gray {
+	    .bg-gray {
 	        background-color: #000 !important;
-	    } */
+	    }
 
 	    .bg-white {
 	        background-color: #ffffff !important;
@@ -412,6 +412,95 @@
 	    /*------------------------------------*\
 	        #PRICING-SECTION
 	    \*------------------------------------*/
+	    .pricing-panel {
+	        position: relative;
+	        text-align: center;
+	    }
+
+	    .pricing-panel .pricing--heading {
+	        box-shadow: 0 10px 20px rgba(224, 224, 224, 0.4);
+	        border-radius: 2px;
+	        background-color: #ffffff;
+	        padding: 50px 64px;
+	        margin-bottom: 30px;
+	    }
+
+	    .pricing-panel .pricing--heading .pricing--icon {
+	        margin-right: auto;
+	        margin-left: auto;
+	        text-align: center;
+	        margin-bottom: 30px;
+	    }
+
+	    .pricing-panel .pricing--heading h4 {
+	        font-size: 15px;
+	        font-weight: 700;
+	        font-style: italic;
+	        line-height: 1;
+	        margin-bottom: 17px;
+	        text-transform: capitalize;
+	    }
+
+	    .pricing-panel .pricing--heading p {
+	        font-family: 'Exo 2', sans-serif;
+	        color: #333333;
+	        font-size: 90px;
+	        font-weight: 300;
+	        line-height: 1;
+	        margin-bottom: 16px;
+	    }
+
+	    .pricing-panel .pricing--heading .pricing--desc {
+	        color: #a5a5a5;
+	        font-size: 15px;
+	        font-weight: 400;
+	        line-height: 21px;
+	        margin-bottom: 46px;
+	    }
+
+	    .pricing-panel .btn--secondary {
+	        border: 2px solid rgba(34, 34, 34, 0.1);
+	    }
+
+	    .pricing-panel .pricing--footer {
+	        color: #fff;
+	        font-size: 14px;
+	        font-weight: 700;
+	    }
+
+	    .pricing-active .pricing-panel .pricing--heading {
+	        background-image: -moz-linear-gradient(180deg, #f8a137 0%, #fbac47 64%, #feb756 100%);
+	        background-image: -webkit-linear-gradient(180deg, #f8a137 0%, #fbac47 64%, #feb756 100%);
+	        background-image: -ms-linear-gradient(180deg, #f8a137 0%, #fbac47 64%, #feb756 100%);
+	        background-image:linear-gradient(180deg, #3758f8 0%, #1e5ae0 64%, #feb756 100%);
+	        padding: 70px 64px;
+	        margin-top: -20px;
+	    }
+
+	    .pricing-active .pricing-panel .pricing--heading p,
+	    .pricing-active .pricing-panel .pricing--heading .pricing--desc {
+	        color: #ffffff;
+	    }
+
+	    .pricing--notes {
+	        color: #a5a5a5;
+	        font-size: 16px;
+	        font-weight: 400;
+	        line-height: 24px;
+	        text-align: center;
+	        margin-top: 50px;
+	    }
+
+	    /* pricing #2 */
+	    .pricing-2 {
+	        overflow: visible;
+	    }
+
+	    .pricing-2 .pricing-wrapper {
+	        margin-top: -240px;
+	        position: relative;
+	        z-index: 2;
+	    }
 
 
 
@@ -421,8 +510,8 @@
 	    .logo-dark {
 
 	        position: relative;
-	        left: 0%;
-	        top: 2px;
+	        left: 43%;
+	        top: 0px;
 	    }
 
 	    .marquee {
@@ -653,7 +742,11 @@
 					<div class="container">
 						<div class="logo-header mostion">
 							<a href="/" class="MyLink">
+<<<<<<< HEAD
 								<img class="logo-dark" src="{{asset('img/logo1.png')}}" style="" alt="{{config('app.name')}}" width="120" height="50">
+=======
+								<img class="logo-dark" src="{{asset('img/logo1.png')}}" style="" alt="{{config('app.name')}}" width="15" height="20">
+>>>>>>> 67f5007da666bc26e9b02a63125b00d9c0d871d7
 							</a>
 						</div>
 						<!-- NAV Toggle Button -->
@@ -691,7 +784,7 @@
 									<div class=" glyphicon glyphicon-plus submenu-toogle"></div>
 								</li>
 								<li class="has-child"> <a href="#about-us">ABOUT US{{--<i class="fa fa-chevron-down" style="color: #fff;"></i>--}}</a>
-	
+
 							</li>
 
 
@@ -720,13 +813,34 @@
 
 
 
-	
+{{--<div class="wrapper">
+    <div class="navbar">
+        <div class="right">
+            <ul>
+              <li>
+                <a href="#">
+                  <span>Admin</span></p><img src="./138-1387631_login-comments-windows-10-person-icon.png" alt="Admin" width="20" height="20"><i class="fas fa-angle-down"></i>
+                </a>
+
+                <div class="dropdown">
+                    <ul>
+                      <li><a href="#"><i class="fas fa-user"></i> Dashboard</a></li>
+                      <!-- <li><a href="#"><i class="fas fa-sliders-h"></i> Settings</a></li> -->
+                      <li><a href="#"><i class="fas fa-sign-out-alt"></i> Signout</a></li>
+                  </ul>
+                </div>
+
+              </li>
+          </ul>
+        </div>
+    </div>
+</div>
 
 <script>
 	document.querySelector(".right ul li").addEventListener("click", function(){
 		  this.classList.toggle("active");
 	});
-</script>
+</script>--}}
 
 <style>
 
@@ -746,7 +860,7 @@ body{
   background: #000;
 }
 
-.wrapper{ 
+.wrapper{
   position: absolute;
   top: 35%;
   left: 50%;
@@ -1368,8 +1482,8 @@ body{
 									<p> <strong>Cryptocurrencies have become established investment commodities among major financial institutions, and have even been adopted by countries such as South Korea,Japan, united-states and Others. However, as with any investment there are benefits linked to market movements!
                                     </strong>
 									</p>
-									<p class="N wow slideInUp">Now you can start Investing Bitcoin, Ethereum and many cryptocurrencies fast, easily and safely from where ever you are. With great margin trading leverage and short sell options available with quick deposit &amp; withdrawal capability, you can start trading with us in seconds.</p> 
-									<!-- <a href="#contact-us" class="site-button-secondry text-uppercase">Contact us</a> -->
+									<p class="N wow slideInUp">Now you can start Investing Bitcoin, Ethereum and many cryptocurrencies fast, easily and safely from where ever you are. With great margin trading leverage and short sell options available with quick deposit &amp; withdrawal capability, you can start trading with us in seconds.</p> <a href="#" class="site-button text-uppercase m-r15">Read More</a>
+									<a href="#contact-us" class="site-button-secondry text-uppercase">Contact us</a>
 								</div>
 							</div>
 						</div>
@@ -1609,21 +1723,17 @@ body{
                                     <!-- <span class="logo-about-text" style="font-size: 28px;">Crypto&nbsp;&nbsp;&nbsp;bolt</span> -->
 </a></strong>
 								<!-- <h6 class="text-uppercase text-primary display-block title-second">Our co-investment platform allows everyday investors to invest alongside institutional and professional investors. </h6> -->
-								<p class="text-white wow fadeInUp" style="margin: 15px;"> CRYPTOBOLT ©    is a professional Investment services company with high support team that emphasis on building up and creating a fast-growing Digital wealth. We make Growth Capital which is registered in Hong Kong ( We have agent around the countries for assistance ), it authorized and regulated in the South Korea, Japan etc .</p>
+								<p class="text-white wow fadeInUp" style="margin: 15px;">Cryptobolt is a professional investment service company with high support team who emphasis on building up and creating a fast-growing digital asset. Our company focus on great income opportunities. Which is why we only concentrate on sectors where our team have considerable experience and success.</p>
 								<br>
 								<br>
-								<p class="text-white wow fadeInUp" style="margin: 15px;">We offer various insured services involved in the Blockchain with our prime interest in Financial and Investment planning. Benefits of bitcoin investment, more and more people are ready to invest in bitcoin. This is a very beneficial aspect of bitcoin for bitcoin investors.<br><br> CRYPTOBOLT © has been operating in South Korea, and Japan locally since 2009, until it was launched globally in 2011, making our investment program available for investors all over the world. In the epoch of development of electronic payment processors, we certainly can't remain aloof. With the advent of Bitcoins we are one of the first to appreciate the potential of cutting-edge digital currency and thoroughly examined all aspects of its mining. This prompted us to launch a data center that would generate cryptocoins.
+								<p class="text-white wow fadeInUp" style="margin: 15px;">We offer various insured services involved in the Blockchain with our prime interest in Financial and Investment planning. Benefits of bitcoin investment, more and more people are ready to invest in bitcoin. This is a very beneficial aspect of bitcoin for bitcoin investors. As the demand and value of bitcoin increases with more people than ever using bitcoin as the primary currency, the price of bitcoin will eventually increase. With the passage of every single day.
 								</p>
-								<br>
-								<!-- <ul class="list-check-circle primary wow fadeInUp">
-									
+								<ul class="list-check-circle primary wow fadeInUp">
+									<!-- <li>Governments support bitcoin . </li> -->
 									<li>Bitcoin is one the backbone of almost all other cryptocurrencies.</li>
 									<li>Bitcoin will ultimately become the world’s most powerful currency.</li>
 									<li>Bitcoin will increase the profits of manifolds for all the bitcoin investors.</li>
-								</ul> -->
-<p class="text-white wow fadeInUp" style="margin: 15px;">CRYPTOBOLT © is existing and the most important, is profitable!
-Our purpose is to help more and more people experience financial well-being. Together with our clients, we’re contributing to a more equitable and resilient world – today and for generations to come.</p>
-
+								</ul>
 							</div>
 						</div>
 						<div class="col-xs-12 col-sm-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
@@ -1631,7 +1741,7 @@ Our purpose is to help more and more people experience financial well-being. Tog
 								<div class="feature-card-icon pt-10">	<i class="icon-lock"></i>
 								</div>
 								<div class="feature-card-content">
-									<!-- <h6 class="text-uppercase text-primary display-block title-second">Our co-investment platform allows everyday investors to invest alongside institutional and professional investors. </h6> -->
+									<h6 class="text-uppercase text-primary display-block title-second">Our co-investment platform allows everyday investors to invest alongside institutional and professional investors. </h6>
 									<!-- <p class="feature-card-desc"> -->
 									<!-- <p class="zeta color--foxtrot" style="color: #fff;">Cryptobolt secure & private is a branding name of Investment Growth Capital which is registered in Germany &nbsp;(Company No. 08155332),&nbsp;it authorised and regulated in the United State,United kingdom etc.</p> -->
 									<!-- <br>
@@ -1647,84 +1757,9 @@ Our purpose is to help more and more people experience financial well-being. Tog
 								</div>
 							</div>
 						</div>
-
-
-					
-<section id="prices" class="section-full pricing  p-t80 p-b80 bg-gray">
-				<div class="container">
-					<div class="row clearfix">
-						
-					</div>
-					<!-- .row end -->
-					<div class="row">
-						<!-- Pricing Packge #1
-						============================================= -->
-						<div class="col-xs-12 col-sm-12 col-md-4 price-table wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
-							<div class="pricing-panel">
-								<!--  Pricing heading  -->
-								<div class="pricing--heading text--center step-number-block">
-									<div class="pricing--icon">
-										<img src="images/testimonials/1.jpg" alt="" width="333" style="border-radius:5px;">
-										<div class="pricing--footer" style="position: relative;bottom: 50px; color: #000!important;">SūN CHENGUANG<br><p>Financial Analyst</p></div>
-										
-									</div>
-								</div>
-								<!--  Pricing heading  -->
-								
-								<!--  Pricing Footer  -->
-							</div>
-						</div>
-						<!-- .pricing-table End -->
-						<!-- Pricing Packge #2
-			============================================= -->
-						<div class="col-xs-12 col-sm-12 col-md-4 price-table pricing-active wow fadeInUp  animated animated" data-wow-delay="200ms" style="visibility: visible; animation-delay: 200ms; animation-name: fadeInUp;">
-							<div class="pricing-panel">
-								<!--  Pricing heading  -->
-								<div class="pricing--heading text--center step-number-block">
-									<div class="pricing--icon">
-										<img src="images/testimonials/2.jpg" alt="" width="333" style="border-radius:5px;">
-										<div class="pricing--footer" style="position: relative;bottom: 35px; color: #000!important;">LIU HONG (CEO)</div>
-									</div>
-									
-								</div>
-								<!--  Pricing heading  -->
-								
-								<!--  Pricing Footer  -->
-							</div>
-						</div>
-						<!-- .pricing-table End -->
-						<!-- Pricing Packge #1
-			============================================= -->
-						<div class="col-xs-12 col-sm-12 col-md-4 price-table wow fadeInUp  animated animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
-							<div class="pricing-panel">
-								<!--  Pricing heading  -->
-								<div class="pricing--heading text--center step-number-block">
-									<div class="pricing--icon">
-										<img src="images/testimonials/3.jpg " alt="" width="333" style="border-radius:5px;">
-										<div class="pricing--footer" style="position: relative;bottom: 50px; color: #000!important;">WANG BEOKUI<br><p>Financial Manager</p></div>
-										
-									</div>
-									
-								</div>
-								
-							</div>
-						</div>
-						<!-- .pricing-table End -->
-					</div>
-					<!-- .row end -->
-				</div>
-				<!-- .container end -->
-			</section>
-
-
-
-
 					</div>
 				</div>
 			</div>
-
-
-
 			<!-- SECTION CONTENT  END -->
 			<!-- OUR TEAM MEMBER SECTION START -->
 			<!-- OUR TEAM MEMBER SECTION END -->
@@ -2092,7 +2127,44 @@ ction-head text-center">	<span class="wt-title-subline font-16 text-gray-dark m-
 							</div>
 						</div>
 						<!-- NEWSLETTER -->
-						
+						<div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="3s">
+							<div class="widget widget_newsletter">
+								<h4 class="widget-title text-white">Newsletter</h4>
+								<div class="newsletter-bx">
+									<form role="search" method="post">
+										<div class="input-group">
+											<input name="news-letter" class="form-control" placeholder="ENTER YOUR EMAIL" type="text"> <span class="input-group-btn">
+                                            <button type="submit" class="site-button"><i class="fa fa-paper-plane-o"></i></button>
+                                        </span>
+										</div>
+									</form>
+								</div>
+							</div>
+							<!-- SOCIAL LINKS -->
+							<div class="widget widget_social_inks">
+								<h4 class="widget-title text-white">Social Links</h4>
+								<ul class="social-icons social-square social-darkest">
+									<li>
+										<a href="#" class="fa fa-facebook"></a>
+									</li>
+									<li>
+										<a href="#" class="fa fa-twitter"></a>
+									</li>
+									<li>
+										<a href="#" class="fa fa-linkedin"></a>
+									</li>
+									<li>
+										<a href="#" class="fa fa-rss"></a>
+									</li>
+									<li>
+										<a href="#" class="fa fa-youtube"></a>
+									</li>
+									<li>
+										<a href="https://instagram.com" class="fa fa-instagram"></a>
+									</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 					<!-- <div class="row" id="contact-us">
                     <div class="col-md-3 col-sm-6  p-tb20">
