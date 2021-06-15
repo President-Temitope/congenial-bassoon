@@ -742,11 +742,8 @@
 					<div class="container">
 						<div class="logo-header mostion">
 							<a href="/" class="MyLink">
-<<<<<<< HEAD
 								<img class="logo-dark" src="{{asset('img/logo1.png')}}" style="" alt="{{config('app.name')}}" width="120" height="50">
-=======
-								<img class="logo-dark" src="{{asset('img/logo1.png')}}" style="" alt="{{config('app.name')}}" width="15" height="20">
->>>>>>> 67f5007da666bc26e9b02a63125b00d9c0d871d7
+								<!-- <img class="logo-dark" src="{{asset('img/logo1.png')}}" style="" alt="{{config('app.name')}}" width="15" height="20"> -->
 							</a>
 						</div>
 						<!-- NAV Toggle Button -->
