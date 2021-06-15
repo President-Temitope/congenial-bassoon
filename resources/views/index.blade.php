@@ -141,7 +141,7 @@
 	    }
 
 	    .bg-gray {
-	        background-color: #000 !important;
+	        background-color: transparent !important;
 	    }
 
 	    .bg-white {
@@ -412,7 +412,7 @@
 	    /*------------------------------------*\
 	        #PRICING-SECTION
 	    \*------------------------------------*/
-	    .pricing-panel {
+	    /* .pricing-panel {
 	        position: relative;
 	        text-align: center;
 	    }
@@ -500,7 +500,7 @@
 	        margin-top: -240px;
 	        position: relative;
 	        z-index: 2;
-	    }
+	    } */
 
 
 
@@ -1761,9 +1761,89 @@ CRYPTOBOLT © has been operating in South Korea, and Japan locally since 2009, u
 								</div>
 							</div>
 						</div>
+
 					</div>
+
+
+
+<section id="" class="section-full  p-t80 p-b80 bg-gray">
+				<div class="container">
+					<!-- .row end -->
+					<div class="row">
+						<!-- Pricing Packge #1
+						============================================= -->
+						<div class="col-xs-12 col-sm-12 col-md-4 price-table wow fadeInUp" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
+							<div class="pricing-panel">
+								<!--  Pricing heading  -->
+								<div class="pricing--heading text--center step-number-block">
+									
+										<img src="./images/testimonials/3.jpg" alt="" width="350" height="500" style="
+    border-radius: 4px;
+">
+									
+		<!--  Pricing heading  -->
+								<div class="pricing--footer" style="text-align: center;position: relative;bottom: 35px;
+
+">From $100 to $1,000</div>
+								</div>
+								
+								<!--  Pricing Footer  -->
+							</div>
+						</div>
+						<!-- .pricing-table End -->
+						<!-- Pricing Packge #2
+			============================================= -->
+						<div class="col-xs-12 col-sm-12 col-md-4 price-table pricing-active wow fadeInUp    animated animated" data-wow-delay="200ms" style="visibility: visible; animation-delay: 200ms; animation-name: fadeInUp;">
+							<div class="pricing-panel">
+								<!--  Pricing heading  -->
+								<div class="pricing--heading text--center step-number-block">
+									
+										<img src="images/testimonials/2.jpg" alt="" width="350" height="500" style="
+    border-radius: 4px;
+">
+									
+									
+									<!--  Pricing heading  -->
+								<div class="pricing--footer" style="text-align: center;position: relative;bottom: 35px;">From $100 to $1,000</div>
+								</div>
+								
+								<!--  Pricing Footer  -->
+							</div>
+						</div>
+						<!-- .pricing-table End -->
+						<!-- Pricing Packge #1
+			============================================= -->
+						<div class="col-xs-12 col-sm-12 col-md-4 price-table wow fadeInUp    animated animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+							<div class="pricing-panel">
+								<!--  Pricing heading  -->
+								<div class="pricing--heading text--center step-number-block">
+									
+										<img src="./images/testimonials/1.jpg" alt="" width="350" height="500" style="
+    border-radius: 4px;
+">
+						
+			<!--  Pricing heading  -->
+								<div class="pricing--footer" style="text-align: center;position: relative;bottom: 35px;
+
+">From $100 to $1,000</div>
+									
+								</div>
+							
+								<!--  Pricing Footer  -->
+							</div>
+						</div>
+						<!-- .pricing-table End -->
+					</div>
+					<!-- .row end -->
+				</div>
+				<!-- .container end -->
+			</section>
 				</div>
 			</div>
+
+
+
+
 			<!-- SECTION CONTENT  END -->
 			<!-- OUR TEAM MEMBER SECTION START -->
 			<!-- OUR TEAM MEMBER SECTION END -->
@@ -2132,18 +2212,7 @@ ction-head text-center">	<span class="wt-title-subline font-16 text-gray-dark m-
 						</div>
 						<!-- NEWSLETTER -->
 						<div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="3s">
-							<div class="widget widget_newsletter">
-								<h4 class="widget-title text-white">Newsletter</h4>
-								<div class="newsletter-bx">
-									<form role="search" method="post">
-										<div class="input-group">
-											<input name="news-letter" class="form-control" placeholder="ENTER YOUR EMAIL" type="text"> <span class="input-group-btn">
-                                            <button type="submit" class="site-button"><i class="fa fa-paper-plane-o"></i></button>
-                                        </span>
-										</div>
-									</form>
-								</div>
-							</div>
+							
 							<!-- SOCIAL LINKS -->
 							<div class="widget widget_social_inks">
 								<h4 class="widget-title text-white">Social Links</h4>
