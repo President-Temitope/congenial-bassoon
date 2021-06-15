@@ -1479,8 +1479,9 @@ body{
 									<p> <strong>Cryptocurrencies have become established investment commodities among major financial institutions, and have even been adopted by countries such as South Korea,Japan, united-states and Others. However, as with any investment there are benefits linked to market movements!
                                     </strong>
 									</p>
-									<p class="N wow slideInUp">Now you can start Investing Bitcoin, Ethereum and many cryptocurrencies fast, easily and safely from where ever you are. With great margin trading leverage and short sell options available with quick deposit &amp; withdrawal capability, you can start trading with us in seconds.</p> <a href="#" class="site-button text-uppercase m-r15">Read More</a>
-									<a href="#contact-us" class="site-button-secondry text-uppercase">Contact us</a>
+									<p class="N wow slideInUp">Now you can start Investing Bitcoin, Ethereum and many cryptocurrencies fast, easily and safely from where ever you are. With great margin trading leverage and short sell options available with quick deposit &amp; withdrawal capability, you can start trading with us in seconds.</p> 
+									<!-- <a href="#" class="site-button text-uppercase m-r15">Read More</a> -->
+									<!-- <a href="#contact-us" class="site-button-secondry text-uppercase">Contact us</a> -->
 								</div>
 							</div>
 						</div>
@@ -1720,10 +1721,16 @@ body{
                                     <!-- <span class="logo-about-text" style="font-size: 28px;">Crypto&nbsp;&nbsp;&nbsp;bolt</span> -->
 </a></strong>
 								<!-- <h6 class="text-uppercase text-primary display-block title-second">Our co-investment platform allows everyday investors to invest alongside institutional and professional investors. </h6> -->
-								<p class="text-white wow fadeInUp" style="margin: 15px;">Cryptobolt is a professional investment service company with high support team who emphasis on building up and creating a fast-growing digital asset. Our company focus on great income opportunities. Which is why we only concentrate on sectors where our team have considerable experience and success.</p>
+								<p class="text-white wow fadeInUp" style="margin: 15px;">
+
+CRYPTOBOLT © is a cryptocurrency mining and trading company founded by A Group of Young People which consists of Professional Specialists , Expert Market strategist, Analysts in cryptocurrency. Our company focus on great income opportunities. We Work With You To Address Your Most Critical Business Priorities, Which is why we only concentrate on sectors where our team have considerable experience and success.</p>
 								<br>
-								<br>
-								<p class="text-white wow fadeInUp" style="margin: 15px;">We offer various insured services involved in the Blockchain with our prime interest in Financial and Investment planning. Benefits of bitcoin investment, more and more people are ready to invest in bitcoin. This is a very beneficial aspect of bitcoin for bitcoin investors. As the demand and value of bitcoin increases with more people than ever using bitcoin as the primary currency, the price of bitcoin will eventually increase. With the passage of every single day.
+								<p class="text-white wow fadeInUp" style="margin: 15px;">
+
+
+CRYPTOBOLT © is a professional Investment services company with high support team that emphasis on building up and creating a fast-growing Digital wealth. We make Growth Capital which is registered in Hong Kong ( We have agent around the countries to assist), it authorized and regulated in the South Korea, Japan etc .
+is a cryptocurrency mining and Investment company founded by A Group of Young People which consists of Professional Specialists ,Analysts in cryptocurrency.<br><br>
+CRYPTOBOLT © has been operating in South Korea, and Japan locally since 2009, until it was launched globally in 2011, making our investment program available for investors all over the world. In the epoch of development of electronic payment processors, we certainly can't remain aloof. With the advent of Bitcoins we are one of the first to appreciate the potential of cutting-edge digital currency and thoroughly examined all aspects of its mining. This prompted us to launch a data center that would generate cryptocoins.
 								</p>
 								<ul class="list-check-circle primary wow fadeInUp">
 									<!-- <li>Governments support bitcoin . </li> -->
@@ -1738,7 +1745,7 @@ body{
 								<div class="feature-card-icon pt-10">	<i class="icon-lock"></i>
 								</div>
 								<div class="feature-card-content">
-									<h6 class="text-uppercase text-primary display-block title-second">Our co-investment platform allows everyday investors to invest alongside institutional and professional investors. </h6>
+									<!-- <h6 class="text-uppercase text-primary display-block title-second">Our co-investment platform allows everyday investors to invest alongside institutional and professional investors. </h6> -->
 									<!-- <p class="feature-card-desc"> -->
 									<!-- <p class="zeta color--foxtrot" style="color: #fff;">Cryptobolt secure & private is a branding name of Investment Growth Capital which is registered in Germany &nbsp;(Company No. 08155332),&nbsp;it authorised and regulated in the United State,United kingdom etc.</p> -->
 									<!-- <br>
