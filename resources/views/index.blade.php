@@ -1780,14 +1780,14 @@ CRYPTOBOLT © has been operating in South Korea, and Japan locally since 2009, u
 								<!--  Pricing heading  -->
 								<div class="pricing--heading text--center step-number-block">
 									
-										<img src="./images/testimonials/3.jpg" alt="" width="350" height="500" style="
+										<img src="./images/testimonials/3.jpg" alt="" width="320" height="450" style="
     border-radius: 4px;
 ">
 									
 		<!--  Pricing heading  -->
 								<div class="pricing--footer" style="text-align: center;position: relative;bottom: 35px;
 
-">From $100 to $1,000</div>
+">WANG BAOKUI<BR>Financial Manager</div>
 								</div>
 								
 								<!--  Pricing Footer  -->
@@ -1801,13 +1801,13 @@ CRYPTOBOLT © has been operating in South Korea, and Japan locally since 2009, u
 								<!--  Pricing heading  -->
 								<div class="pricing--heading text--center step-number-block">
 									
-										<img src="images/testimonials/2.jpg" alt="" width="350" height="500" style="
+										<img src="images/testimonials/2.jpg" alt="" width="320" height="450" style="
     border-radius: 4px;
 ">
 									
 									
 									<!--  Pricing heading  -->
-								<div class="pricing--footer" style="text-align: center;position: relative;bottom: 35px;">From $100 to $1,000</div>
+								<div class="pricing--footer" style="text-align: center;position: relative;bottom: 35px;">LIU HONG (CEO) <br>Founder of the Company</div>
 								</div>
 								
 								<!--  Pricing Footer  -->
@@ -1821,7 +1821,7 @@ CRYPTOBOLT © has been operating in South Korea, and Japan locally since 2009, u
 								<!--  Pricing heading  -->
 								<div class="pricing--heading text--center step-number-block">
 									
-										<img src="./images/testimonials/1.jpg" alt="" width="350" height="500" style="
+										<img src="./images/testimonials/1.jpg" alt="" width="320" height="450" style="
     border-radius: 4px;
 ">
 						
