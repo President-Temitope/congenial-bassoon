@@ -1785,7 +1785,7 @@ CRYPTOBOLT © has been operating in South Korea, and Japan locally since 2009, u
 ">
 									
 		<!--  Pricing heading  -->
-								<div class="pricing--footer" style="text-align: center;position: relative;bottom: 35px;
+								<div class="pricing--footer" style="text-align: center;position: relative;bottom: 50px;color:black;
 
 ">WANG BAOKUI<BR>Financial Manager</div>
 								</div>
@@ -1807,7 +1807,7 @@ CRYPTOBOLT © has been operating in South Korea, and Japan locally since 2009, u
 									
 									
 									<!--  Pricing heading  -->
-								<div class="pricing--footer" style="text-align: center;position: relative;bottom: 35px;">LIU HONG (CEO) <br>Founder of the Company</div>
+								<div class="pricing--footer" style="text-align: center;position: relative;bottom: 35px; color: black;">LIU HONG (CEO)</div>
 								</div>
 								
 								<!--  Pricing Footer  -->
@@ -1826,9 +1826,9 @@ CRYPTOBOLT © has been operating in South Korea, and Japan locally since 2009, u
 ">
 						
 			<!--  Pricing heading  -->
-								<div class="pricing--footer" style="text-align: center;position: relative;bottom: 35px;
+								<div class="pricing--footer" style="text-align: center;position: relative;bottom: 55px; color: black;
 
-">From $100 to $1,000</div>
+">Sūn  CHENGUANG<br>Financial Analyst</div>
 									
 								</div>
 							
@@ -2217,7 +2217,7 @@ ction-head text-center">	<span class="wt-title-subline font-16 text-gray-dark m-
 						<div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="3s">
 							
 							<!-- SOCIAL LINKS -->
-							<div class="widget widget_social_inks">
+							<!-- <div class="widget widget_social_inks">
 								<h4 class="widget-title text-white">Social Links</h4>
 								<ul class="social-icons social-square social-darkest">
 									<li>
@@ -2239,7 +2239,7 @@ ction-head text-center">	<span class="wt-title-subline font-16 text-gray-dark m-
 										<a href="https://instagram.com" class="fa fa-instagram"></a>
 									</li>
 								</ul>
-							</div>
+							</div> -->
 						</div>
 					</div>
 					<!-- <div class="row" id="contact-us">
