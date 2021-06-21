@@ -742,10 +742,10 @@
 					<div class="container">
 						<div class="logo-header mostion">
 							<a href="/" class="MyLink">
-								<img class="logo-dark" src="{{asset('img/logo1.png')}}" style="
-    position: relative;
-    top: 8px!important;
+								<img class="logo-dark" src="{{asset('img/logo1.png')}}" style="position: relative;top: 8px!important;
 " alt="{{config('app.name')}}" width="120" height="50">
+   
+
 								<!-- <img class="logo-dark" src="{{asset('img/logo1.png')}}" style="" alt="{{config('app.name')}}" width="15" height="20"> -->
 							</a>
 						</div>
