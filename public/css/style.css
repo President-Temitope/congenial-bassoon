@@ -5703,7 +5703,7 @@ input[type=radio]:checked + label:before {
 
 /*18.1 loading - 1*/
 
-/* .loading-area{
+ .loading-area{
 	width:100%;
 	height:100%;
 	position:fixed;
@@ -7906,7 +7906,7 @@ top: -16px !important;
 .logo-dark {
 
 	position: relative;
-    top: 10px!important;
+    top: 0px!important;
     left: -2%!important;
 
 }

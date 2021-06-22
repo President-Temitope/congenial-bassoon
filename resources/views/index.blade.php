@@ -2450,18 +2450,21 @@ ction-head text-center">	<span class="wt-title-subline font-16 text-gray-dark m-
 	</div>
 	<!--  -->
 	<!-- LOADING AREA START ===== -->
-	<!-- <div class="loading-area">
+	<div class="loading-area">
 		<div class="loading-box"></div>
 		<div class="loading-pic">
 			<div class="cssload-container">
-				<div class="cssload-dot bg-primary"><i class="fa fa-bitcoin" style="color: #000; font-size: 30px;"></i>
+				<div class="cssload-dot bg-primary">
+<!-- <i class="fa fa-bitcoin" style="color: #000; font-size: 30px;"></i> -->
+<img class="logo-dark" src="{{asset('img/bolt.png')}}" style="
+" alt="" width="50" height="50">
 				</div>
 				<div class="step" id="cssload-s1"></div>
 				<div class="step" id="cssload-s2"></div>
 				<div class="step" id="cssload-s3"></div>
 			</div>
 		</div>
-	</div> -->
+	</div> 
 	<!-- LOADING AREA  END ====== -->
 	<!-- JAVASCRIPT  FILES ========================================= -->
 	<script src="js/jquery-1.12.4.min.js"></script>
