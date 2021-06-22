@@ -10,7 +10,7 @@
 	<meta name="robots" content="" />
 	<meta name="description" content="" />
 	<!-- FAVICONS ICON -->
-	<link rel="icon" href="{{asset('img/logo1.png')}}" type="image/x-icon" />
+	<link rel="icon" href="{{asset('img/icon.png')}}" type="image/x-icon" />
 	<link rel="shortcut icon" type="image/x-icon" href="./" />
 	<!-- PAGE TITLE HERE -->
 	<title>CRYPTOBOLT | Online</title>
@@ -2185,7 +2185,7 @@ ction-head text-center">	<span class="wt-title-subline font-16 text-gray-dark m-
 							<div class="widget widget_about">
 								<h4 class="widget-title text-white">About Company</h4>
 								<div class="logo-footer clearfix p-b15">
-									<p class="zeta color--foxtrot" style="color: #fff; font-weight: 100!important">CRYPTO BOLT Branding is a professional investment services company with high support team that emphasis on building up and creating a fast-growing digital asset. We make Growth Capital which is registered in Hong Kong &nbsp;(caller assistance in usa No. +1 (310) 421‑1657),&nbsp;it authorised and regulated in the South Korea,Japan etc.</p>
+									<p class="zeta color--foxtrot" style="color: #fff; font-weight: 100!important">CRYPTO BOLT © is a professional investment services company with high support team that emphasis on building up and creating a fast-growing digital Wealth. We make Growth Capital which is registered in Hong Kong &nbsp;(caller assistance in usa No. +1 (310) 421‑1657),&nbsp;it authorised and regulated in the South Korea,Japan etc.</p>
 								</div>
 								<!-- <p>Thewebmax ipsum dolor sit amet, consectetuer adipiscing elit,
                                   sed diam nonummy nibh euismod tincidunt ut laoreet dolore agna aliquam erat .
