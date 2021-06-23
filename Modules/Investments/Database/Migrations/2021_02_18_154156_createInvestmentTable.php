@@ -14,7 +14,7 @@ class CreateInvestmentTable extends Migration
     public function up()
     {
         //
-        Schema::create('investments', function (Blueprint $table){
+        Schema::create('investments', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->string('desc');
@@ -23,7 +23,7 @@ class CreateInvestmentTable extends Migration
             $table->float('min_amount');
             $table->float('max_amount');
             $table->float('total_return');
-            $table->boolean('status')->default(true);
+            $table->enum('status', ['Yes', 'No'])->default('Yes');
             $table->timestamps();
         });
     }

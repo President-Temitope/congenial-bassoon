@@ -3,7 +3,6 @@
 namespace Modules\Investments\Http\Controllers;
 
 use Carbon\Carbon;
-use Carbon\Traits\Date;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
@@ -27,11 +26,11 @@ class InvestmentsController extends Controller
      * Display a listing of the resource.
      * @return Renderable
      */
-//    public function index()
-//    {
-//        $investments = $this->investment->queryWithStatus();
-//        return view('investments::index')->with('investments',$investments);
-//    }
+    public function index()
+    {
+        $investments = $this->investment->queryWithStatus();
+        return view('investments::index')->with('investments',$investments);
+    }
 
     /**
      * Store a newly created resource in storage.

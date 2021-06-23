@@ -19,8 +19,9 @@ class SiteController extends Controller
      */
     public function index()
     {
-        $investments = $this->investment->queryWithStatus();
-        return view('index')->with('investments',$investments);
+        /*$investments = $this->investment->queryWithStatus();
+        return view('index')->with('investments',$investments);*/
+        return view('index');
     }
 
     public function about(){

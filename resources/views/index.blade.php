@@ -697,12 +697,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="clearfix">
-							<!-- <div class="wt-topbar-left">
-                               <ul class="list-unstyled e-p-bx pull-left">
-                                <li><i class="fa fa-envelope"></i>mail@bitinvest.com</li>
-                                <li><i class="fa fa-phone"></i>(654) 321-7654</li>
-                            </ul>
-                        </div> -->
+
 							<div class="wt-topbar-right">
 								<div class=" language-select pull-right">
 									<div class="dropdown">
@@ -744,7 +739,7 @@
 							<a href="/" class="MyLink">
 								<img class="logo-dark" src="{{asset('img/logo1.png')}}" style="position: relative;top: 8px!important;
 " alt="{{config('app.name')}}" width="120" height="50">
-   
+
 
 								<!-- <img class="logo-dark" src="{{asset('img/logo1.png')}}" style="" alt="{{config('app.name')}}" width="15" height="20"> -->
 							</a>
@@ -1482,7 +1477,7 @@ body{
 									<p> <strong>Cryptocurrencies have become established investment commodities among major financial institutions, and have even been adopted by countries such as South Korea,Japan, united-states and Others. However, as with any investment there are benefits linked to market movements!
                                     </strong>
 									</p>
-									<p class="N wow slideInUp">Now you can start Investing Bitcoin, Ethereum and many cryptocurrencies fast, easily and safely from where ever you are. With great margin trading leverage and short sell options available with quick deposit &amp; withdrawal capability, you can start trading with us in seconds.</p> 
+									<p class="N wow slideInUp">Now you can start Investing Bitcoin, Ethereum and many cryptocurrencies fast, easily and safely from where ever you are. With great margin trading leverage and short sell options available with quick deposit &amp; withdrawal capability, you can start trading with us in seconds.</p>
 									<!-- <a href="#" class="site-button text-uppercase m-r15">Read More</a> -->
 									<!-- <a href="#contact-us" class="site-button-secondry text-uppercase">Contact us</a> -->
 								</div>
@@ -1779,17 +1774,17 @@ CRYPTOBOLT © has been operating in South Korea, and Japan locally since 2009, u
 							<div class="pricing-panel">
 								<!--  Pricing heading  -->
 								<div class="pricing--heading text--center step-number-block">
-									
+
 										<img src="./images/testimonials/3.jpg" alt="" width="320" height="450" style="
     border-radius: 4px;
 ">
-									
+
 		<!--  Pricing heading  -->
 								<div class="pricing--footer" style="text-align: center;position: relative;bottom: 50px;color:black;
 
 ">WANG BAOKUI<BR>Financial Manager</div>
 								</div>
-								
+
 								<!--  Pricing Footer  -->
 							</div>
 						</div>
@@ -1800,16 +1795,16 @@ CRYPTOBOLT © has been operating in South Korea, and Japan locally since 2009, u
 							<div class="pricing-panel">
 								<!--  Pricing heading  -->
 								<div class="pricing--heading text--center step-number-block">
-									
+
 										<img src="images/testimonials/2.jpg" alt="" width="320" height="450" style="
     border-radius: 4px;
 ">
-									
-									
+
+
 									<!--  Pricing heading  -->
 								<div class="pricing--footer" style="text-align: center;position: relative;bottom: 35px; color: black;">LIU HONG (CEO)</div>
 								</div>
-								
+
 								<!--  Pricing Footer  -->
 							</div>
 						</div>
@@ -1820,18 +1815,18 @@ CRYPTOBOLT © has been operating in South Korea, and Japan locally since 2009, u
 							<div class="pricing-panel">
 								<!--  Pricing heading  -->
 								<div class="pricing--heading text--center step-number-block">
-									
+
 										<img src="./images/testimonials/1.jpg" alt="" width="320" height="450" style="
     border-radius: 4px;
 ">
-						
+
 			<!--  Pricing heading  -->
 								<div class="pricing--footer" style="text-align: center;position: relative;bottom: 55px; color: black;
 
 ">Sūn  CHENGUANG<br>Financial Analyst</div>
-									
+
 								</div>
-							
+
 								<!--  Pricing Footer  -->
 							</div>
 						</div>
@@ -2215,7 +2210,7 @@ ction-head text-center">	<span class="wt-title-subline font-16 text-gray-dark m-
 						</div>
 						<!-- NEWSLETTER -->
 						<div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="3s">
-							
+
 							<!-- SOCIAL LINKS -->
 							<!-- <div class="widget widget_social_inks">
 								<h4 class="widget-title text-white">Social Links</h4>
@@ -2464,7 +2459,7 @@ ction-head text-center">	<span class="wt-title-subline font-16 text-gray-dark m-
 				<div class="step" id="cssload-s3"></div> -->
 			</div>
 		</div>
-	</div> 
+	</div>
 	<!-- LOADING AREA  END ====== -->
 	<!-- JAVASCRIPT  FILES ========================================= -->
 	<script src="js/jquery-1.12.4.min.js"></script>
