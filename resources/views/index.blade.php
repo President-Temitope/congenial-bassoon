@@ -2492,15 +2492,15 @@ ction-head text-center">	<span class="wt-title-subline font-16 text-gray-dark m-
 	<!-- MASONRY  -->
 	<script src="js/owl.carousel.min.js"></script>
 	<!-- OWL  SLIDER  -->
-	<!-- <script src="js/stellar.min.js"></script> -->
+	<script src="js/stellar.min.js"></script>
 	<!-- PARALLAX BG IMAGE   -->
-	<!-- <script src="js/scrolla.min.js"></script> -->
+	<script src="js/scrolla.min.js"></script>
 	<!-- ON SCROLL CONTENT ANIMTE   -->
-	<!-- <script src="js/custom.js"></script> -->
+	<script src="js/custom.js"></script>
 	<!-- CUSTOM FUCTIONS  -->
 	<script src="js/shortcode.js"></script>
 	<!-- SHORTCODE FUCTIONS  -->
-	<!-- <script src="js/switcher.js"></script> -->
+	<script src="js/switcher.js"></script>
 	<!-- SWITCHER FUCTIONS  -->
 	<script src="js/jquery.bgscroll.js"></script>
 	<!-- BACKGROUND SCROLL -->
