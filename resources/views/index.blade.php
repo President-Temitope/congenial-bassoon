@@ -1721,13 +1721,13 @@ body{
 								<!-- <h6 class="text-uppercase text-primary display-block title-second">Our co-investment platform allows everyday investors to invest alongside institutional and professional investors. </h6> -->
 								<p class="text-white wow fadeInUp" style="margin: 15px;">
 
-CRYPTOBOLT © is a cryptocurrency mining and trading company founded by A Group of Young People which consists of Professional Specialists , Expert Market strategist, Analysts in cryptocurrency. Our company focus on great income opportunities. We Work With You To Address Your Most Critical Business Priorities, Which is why we only concentrate on sectors where our team have considerable experience and success.</p>
+CRYPTOBOLT © is a cryptocurrency mining and trading company founded by A Group of Professional Specialists , Expert Market strategist, Analysts in cryptocurrency. Our company focus on great income opportunities. We Work With You To Address Your Most Critical Business Priorities, Which is why we only concentrate on sectors where our team have considerable experience and success.</p>
 								<br>
 								<p class="text-white wow fadeInUp" style="margin: 15px;">
 
 
-CRYPTOBOLT © is a professional Investment services company with high support team that emphasis on building up and creating a fast-growing Digital wealth. We make Growth Capital which is registered in Hong Kong ( We have agent around the countries to assist), it authorized and regulated in the South Korea, Japan etc .
-is a cryptocurrency mining and Investment company founded by A Group of Young People which consists of Professional Specialists ,Analysts in cryptocurrency.<br><br>
+CRYPTOBOLT © is a professional Investment services company with high support team that emphasis on building up and creating a fast-growing Digital wealth. We make Growth Capital which is registered in Hong Kong ( We have agent around the countries to assist), it authorized and regulated in the South Korea, Japan etc
+.<br><br>
 CRYPTOBOLT © has been operating in South Korea, and Japan locally since 2009, until it was launched globally in 2011, making our investment program available for investors all over the world. In the epoch of development of electronic payment processors, we certainly can't remain aloof. With the advent of Bitcoins we are one of the first to appreciate the potential of cutting-edge digital currency and thoroughly examined all aspects of its mining. This prompted us to launch a data center that would generate cryptocoins.
 								</p>
 								<ul class="list-check-circle primary wow fadeInUp">
