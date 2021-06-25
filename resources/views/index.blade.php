@@ -1778,7 +1778,10 @@ CRYPTOBOLT © has been operating in South Korea, and Japan locally since 2009, u
 								<!--  Pricing heading  -->
 								<div class="pricing--heading text--center step-number-block">
 									<!-- <div class="pricing--icon"> -->
-										<img src="./images/testimonials/3.jpg" alt="Bitcoin Icon" width="300" heigh="300">
+										<img src="./images/testimonials/3.jpg" alt="Bitcoin Icon" width="300" heigh="300" style="
+    position: relative;
+    right: 8px;
+">
 									<!-- </div> -->
 								</div>
 								<!--  Pricing heading  -->
@@ -1800,7 +1803,10 @@ CRYPTOBOLT © has been operating in South Korea, and Japan locally since 2009, u
 								<!--  Pricing heading  -->
 								<div class="pricing--heading text--center step-number-block">
 									<!-- <div class="pricing--icon"> -->
-										<img src="images/testimonials/2.jpg" alt="Bitcoin Icon" width="300" height="400">
+										<img src="images/testimonials/2.jpg" alt="Bitcoin Icon" width="300" height="400" style="
+    position: relative;
+    right: 8px;
+">
 									<!-- </div> -->
 									
 									
@@ -1824,7 +1830,10 @@ CRYPTOBOLT © has been operating in South Korea, and Japan locally since 2009, u
 								<!--  Pricing heading  -->
 								<div class="pricing--heading text--center step-number-block">
 									<!-- <div class="pricing--icon"> -->
-										<img src="./images/testimonials/1.jpg" alt="Bitcoin Icon" width="300" height="400">
+										<img src="./images/testimonials/1.jpg" alt="Bitcoin Icon" width="300" height="400" style="
+    position: relative;
+    right: 8px;
+">
 									<!-- </div> -->
 									
 								</div>
