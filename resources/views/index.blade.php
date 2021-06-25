@@ -412,7 +412,7 @@
 	    /*------------------------------------*\
 	        #PRICING-SECTION
 	    \*------------------------------------*/
-	    /* .pricing-panel {
+	     .pricing-panel {
 	        position: relative;
 	        text-align: center;
 	    }
@@ -421,7 +421,7 @@
 	        box-shadow: 0 10px 20px rgba(224, 224, 224, 0.4);
 	        border-radius: 2px;
 	        background-color: #ffffff;
-	        padding: 50px 64px;
+	        padding: 50px 0px;
 	        margin-bottom: 30px;
 	    }
 
@@ -469,11 +469,11 @@
 	    }
 
 	    .pricing-active .pricing-panel .pricing--heading {
-	        background-image: -moz-linear-gradient(180deg, #f8a137 0%, #fbac47 64%, #feb756 100%);
-	        background-image: -webkit-linear-gradient(180deg, #f8a137 0%, #fbac47 64%, #feb756 100%);
-	        background-image: -ms-linear-gradient(180deg, #f8a137 0%, #fbac47 64%, #feb756 100%);
-	        background-image:linear-gradient(180deg, #3758f8 0%, #1e5ae0 64%, #feb756 100%);
-	        padding: 70px 64px;
+	        /* background-image: -moz-linear-gradient(180deg, #f8a137 0%, #fbac47 64%, #feb756 100%); */
+	        /* background-image: -webkit-linear-gradient(180deg, #f8a137 0%, #fbac47 64%, #feb756 100%); */
+	        /* background-image: -ms-linear-gradient(180deg, #f8a137 0%, #fbac47 64%, #feb756 100%); */
+	        /* background-image: tran; */
+	        padding: 70px 0px;
 	        margin-top: -20px;
 	    }
 
@@ -500,7 +500,7 @@
 	        margin-top: -240px;
 	        position: relative;
 	        z-index: 2;
-	    } */
+	    } 
 
 
 
@@ -1763,9 +1763,12 @@ CRYPTOBOLT © has been operating in South Korea, and Japan locally since 2009, u
 					</div>
 
 
-
-<section id="" class="section-full  p-t80 p-b80 bg-gray">
+<section id="prices" class="section-full pricing  p-t80 p-b80 bg-gray" style="background-image: url(&quot;assets/images/background/;);">
 				<div class="container">
+					<div class="row clearfix">
+						
+						<!-- .col-md-8 end -->
+					</div>
 					<!-- .row end -->
 					<div class="row">
 						<!-- Pricing Packge #1
@@ -1774,59 +1777,65 @@ CRYPTOBOLT © has been operating in South Korea, and Japan locally since 2009, u
 							<div class="pricing-panel">
 								<!--  Pricing heading  -->
 								<div class="pricing--heading text--center step-number-block">
-
-										<img src="./images/testimonials/3.jpg" alt="" width="320" height="450" style="
-    border-radius: 4px;
-">
-
-		<!--  Pricing heading  -->
-								<div class="pricing--footer" style="text-align: center;position: relative;bottom: 50px;color:black;
-
-">WANG BAOKUI<BR>Financial Manager</div>
+									<!-- <div class="pricing--icon"> -->
+										<img src="./images/testimonials/3.jpg" alt="Bitcoin Icon" width="300" heigh="300">
+									<!-- </div> -->
 								</div>
-
+								<!--  Pricing heading  -->
+								<div class="" style="
+    position: relative;
+    bottom: 80px;
+    color: #000;
+    font-family: monospace;
+    font-size: larger;
+">WANG BAOKUI<br>Financial Manager</div>
 								<!--  Pricing Footer  -->
 							</div>
 						</div>
 						<!-- .pricing-table End -->
 						<!-- Pricing Packge #2
 			============================================= -->
-						<div class="col-xs-12 col-sm-12 col-md-4 price-table pricing-active wow fadeInUp    animated animated" data-wow-delay="200ms" style="visibility: visible; animation-delay: 200ms; animation-name: fadeInUp;">
+						<div class=" col-xs-12 col-sm-12 col-md-4 price-table pricing-active wow fadeInUp animated animated" data-wow-delay="200ms" style="visibility: hidden; animation-delay: 200ms; animation-name: none;">
 							<div class="pricing-panel">
 								<!--  Pricing heading  -->
 								<div class="pricing--heading text--center step-number-block">
-
-										<img src="images/testimonials/2.jpg" alt="" width="320" height="450" style="
-    border-radius: 4px;
-">
-
-
-									<!--  Pricing heading  -->
-								<div class="pricing--footer" style="text-align: center;position: relative;bottom: 35px; color: black;">LIU HONG (CEO)</div>
+									<!-- <div class="pricing--icon"> -->
+										<img src="images/testimonials/2.jpg" alt="Bitcoin Icon" width="300" height="400">
+									<!-- </div> -->
+									
+									
 								</div>
-
+								<!--  Pricing heading  -->
+								<div class="" style="
+    position: relative;
+    bottom: 80px;
+    color: #000;
+    font-family: monospace;
+    font-size: larger;
+">LIU HONG (CEO)</div>
 								<!--  Pricing Footer  -->
 							</div>
 						</div>
 						<!-- .pricing-table End -->
 						<!-- Pricing Packge #1
 			============================================= -->
-						<div class="col-xs-12 col-sm-12 col-md-4 price-table wow fadeInUp    animated animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+						<div class=" col-xs-12 col-sm-12 col-md-4 price-table wow fadeInUp animated animated" data-wow-delay="300ms" style="visibility: hidden; animation-delay: 300ms; animation-name: none;">
 							<div class="pricing-panel">
 								<!--  Pricing heading  -->
 								<div class="pricing--heading text--center step-number-block">
-
-										<img src="./images/testimonials/1.jpg" alt="" width="320" height="450" style="
-    border-radius: 4px;
-">
-
-			<!--  Pricing heading  -->
-								<div class="pricing--footer" style="text-align: center;position: relative;bottom: 55px; color: black;
-
-">Sūn  CHENGUANG<br>Financial Analyst</div>
-
+									<!-- <div class="pricing--icon"> -->
+										<img src="./images/testimonials/1.jpg" alt="Bitcoin Icon" width="300" height="400">
+									<!-- </div> -->
+									
 								</div>
-
+								<!--  Pricing heading  -->
+							<div class="" style="
+    position: relative;
+    bottom: 80px;
+    color: #000;
+    font-family: monospace;
+    font-size: larger;
+">Sūn  CHENGUANG<br>Financial Analyst</div>
 								<!--  Pricing Footer  -->
 							</div>
 						</div>
@@ -1836,6 +1845,7 @@ CRYPTOBOLT © has been operating in South Korea, and Japan locally since 2009, u
 				</div>
 				<!-- .container end -->
 			</section>
+
 				</div>
 			</div>
 
