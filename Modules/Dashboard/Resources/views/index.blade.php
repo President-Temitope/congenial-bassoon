@@ -949,9 +949,6 @@
 
 
 
-<script src="../assets/js/bundle0875.html"></script>
-<script src="./assets/js/demo-settings0875.js"></script>
-<script src="./assets/js/charts/chart-invest0875.js"></script>
 <script>
     /* When the user clicks on the button,
     toggle between hiding and showing the dropdown content */
@@ -973,7 +970,6 @@
         }
     }
 </script>
-<!-- Mirrored from dashlite.net/demo6/invest/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 11 May 2021 04:42:56 GMT -->
 </body>
 <!-- ===== IONICONS ===== -->
 <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
