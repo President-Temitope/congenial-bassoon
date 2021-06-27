@@ -14,3 +14,8 @@
 Route::prefix('dashboard')->group(function() {
     Route::get('/', 'DashboardController@index')->name('dashboard');
 });
+/*Route::prefix('dashboard')->group(function() {
+    Route::get('/', function (){
+        return 'test completed';
+    })->name('dashboard');
+});*/

@@ -465,7 +465,7 @@
 
 <body class="nk-body npc-invest bg-lighter ">
 <div class="nk-app-root">
-    @include('Dashboard::layouts.master')
+    @include('dashboard::layouts.master')
                         <div class="nk-block-head">
                             <div class="nk-block-between-md g-3">
                                 <div class="nk-block-head-content">
