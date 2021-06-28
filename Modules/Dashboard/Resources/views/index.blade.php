@@ -873,7 +873,6 @@
 <div id="my-modal" class="modal">
     <div class="modal-content">
         <div class="modal-header"><span class="close">×</span>
-
         </div>
         <div class="modal-body">
             <p style="text-align: center;color: #000;position: relative;bottom: 45px;font-weight: 700;">MAKE A
@@ -882,7 +881,7 @@
                 <div class="form-label-group">
                     <label class="form-label">Enter Your Amount</label>
                     <div class="form-note pt-2">Note: Minimum invest 100 USD and upto 2,000 USD</div>
-                    <div class="dropdown"><a href="#" class="link py-1" data-toggle="dropdown">Change Currency</a>
+                    <div class="dropdown">
                         <div class="dropdown-menu dropdown-menu-xxs dropdown-menu-right">
                             <ul class="link-list-plain sm text-center">
                                 <li><a href="#">USD</a>
@@ -920,8 +919,9 @@
             </div>
 <div style="text-align: center; position: relative;bottom: 30px;">
   <!-- HTML5 Input Form Elements -->
-                <input id="fileupload" class="" type="file" name="fileupload"><br><br>
-                <button id="upload-button" class="" style=" " onclick="uploadFile()">Deposit</button>
+                <input id="fileupload" class="" type="file" name="fileupload" style="background-color:#000;"><br><br>
+                <button id="upload-button" class="" style="border: 0;padding: 12 30;color: #fff;background: black;" onclick="uploadFile()">Deposit</button>
+
                 <div class="form-note pt-2" style="text-align: center;">Note: Send a copy (screenshot) of your transaction
             Details to our mail and wait for confirmation.
                  </div>
