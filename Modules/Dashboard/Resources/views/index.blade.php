@@ -475,8 +475,7 @@
                                         <div>
                                             <h2 class="nk-block-title fw-normal">{{Auth::user()->fullName()}}</h2>
                                         </div>
-                                        <div><a href="./schemes.html" class="btn btn-white btn-light">My Plans <em
-                                                    class="icon ni ni-arrow-long-right ml-2"></em></a>
+                                        <div>
                                         </div>
 
                                         <div class="col-md-12 col-lg-4 media-deposit-withdraw">
