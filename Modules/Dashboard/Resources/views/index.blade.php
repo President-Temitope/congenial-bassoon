@@ -910,7 +910,7 @@
             <div class="main" style="position: relative;left: 5px; text-align: center; bottom: 50px;">
                 <p id="show"></p>
                 <input type="text" id="text" value="1GJhFHfspSupQz5sEbKY1Fet8QAwTLQDhx" readonly>
-                <i class="material-icons clipB" onclick="copy()" id="copy">content_copy</i>
+                <!-- <i class="material-icons clipB" onclick="copy()" id="copy">content_copy</i> -->
             </div>
             <div id="qr-code" class="mb-25 ">
                 <img
@@ -918,20 +918,15 @@
                     width="150" height="150">
                 <!-- <div class="arrow_chev_right" style="position: relative;float: right;right: 24%;top: 44px;">	<i class="fa fa-chevron-right" aria-hidden="true" style="color: #000;"></i> -->
             </div>
-            <div style="
-    text-align: center;
-">
-                <button id="modal-btn" class="button btn btn-white btn-light" data-target="#myModal" data-toggle="modal"
-                        data-backdrop="static" data-keyboard="false" style="
-    text-align: center; position: relative; bottom: 30px;
-    ">Deposit
-                </button>
-            </div>
-        </div>
-        <div class="form-note pt-2" style="text-align: center;">Note: Send a copy (screenshot) of your transaction
+<div style="text-align: center; position: relative;bottom: 30px;">
+  <!-- HTML5 Input Form Elements -->
+                <input id="fileupload" class="" type="file" name="fileupload"><br><br>
+                <button id="upload-button" class="" style=" " onclick="uploadFile()">Deposit</button>
+                <div class="form-note pt-2" style="text-align: center;">Note: Send a copy (screenshot) of your transaction
             Details to our mail and wait for confirmation.
-        </div>
-
+                 </div>
+            </div>
+    
 
     </div>
     <!--
@@ -1052,11 +1047,12 @@
 
     .modal-content {
 
-        margin: 7% auto;
+        margin: 5% auto;
         width: 50%;
         box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
         animation-name: modalopen;
         animation-duration: var(--modal-duration);
+        height: 300px;
     }
 
     .modal-header h2,
@@ -1163,6 +1159,23 @@
         document.getElementById("show").innerHTML = "Copy : " + '"' + input.value + '"';
     }
 </script>
+
+
+
+  <!-- Ajax JavaScript File Upload Logic -->
+  <script>
+  async function uploadFile() {
+  let formData = new FormData(); 
+  formData.append("file", fileupload.files[0]);
+  await fetch('/upload.php', {
+    method: "POST", 
+    body: formData
+  }); 
+  alert('The file has been uploaded successfully.');
+  }
+
+
+  </script>
 </html>
 
 </html>

@@ -1344,6 +1344,7 @@ body{
 				</div>
 			</div>
 			<!-- SLIDER END -->
+
 			<!-- MARQUEE SCROLL -->
 			<div class="bg-black marquee marquee-custom">
 				<div class="TickerNews" id="T1">
@@ -1385,26 +1386,6 @@ body{
 										<img src="images/coin-icon/Ethereum.png" alt=""><span>ETH: </span><span>€ 709.94</span><span class="text-gray p-lr5">0.26 %</span>
 									</a>
 								</div>
-								<!-- <div class="ti_news">
-									<a href="#">
-										<img src="images/coin-icon/monero.png" alt=""><span>XMR: </span><span>Ƀ 0.0276</span><span class="text-green p-lr5">1.25 %</span>
-									</a>
-								</div>
-								<div class="ti_news">
-									<a href="#">
-										<img src="images/coin-icon/monero.png" alt=""><span>XMR: </span><span>$ 295.33</span><span class="text-light-blue p-lr5">0.89 %</span>
-									</a>
-								</div>
-								<div class="ti_news">
-									<a href="#">
-										<img src="images/coin-icon/monero.png" alt=""><span>XMR: </span><span>¥ 1,883.14</span><span class="text-green p-lr5">0.25 %</span>
-									</a>
-								</div>
-								<div class="ti_news">
-									<a href="#">
-										<img src="images/coin-icon/monero.png" alt=""><span>XMR: </span><span>€ 240.56</span><span class="text-red p-lr5">-0.40 %</span>
-									</a>
-								</div> -->
 								<div class="ti_news">
 									<a href="#">
 										<img src="images/coin-icon/litecoin.png" alt=""><span>LTC: </span><span>Ƀ 0.01956</span><span class="text-danger p-lr5">-0.20 %</span>
@@ -1425,26 +1406,7 @@ body{
 										<img src="images/coin-icon/litecoin.png" alt=""><span>LTC: </span><span>€ 169.91</span><span class="text-yellow p-lr5">-1.29 %</span>
 									</a>
 								</div>
-								<!-- <div class="ti_news">
-									<a href="#">
-										<img src="images/coin-icon/DigitalCash.png" alt=""><span>Ƀ 0.05590</span><span class="text-white p-lr5">0.26 %</span>
-									</a>
-								</div> -->
-								<!-- <div class="ti_news">
-									<a href="#">
-										<img src="images/coin-icon/DigitalCash.png" alt=""><span>DASH: </span><span>$ 594.64</span><span class="text-green p-lr5">0.37 %</span>
-									</a>
-								</div>
-								<div class="ti_news">
-									<a href="#">
-										<img src="images/coin-icon/DigitalCash.png" alt=""><span>DASH: </span><span>¥ 3,801.65</span><span class="text-red p-lr5">0.99 %</span>
-									</a>
-								</div>
-								<div class="ti_news">
-									<a href="#">
-										<img src="images/coin-icon/DigitalCash.png" alt=""><span>DASH: </span><span>€ 486.29</span><span class="text-yellow p-lr5">-10.18 %</span>
-									</a>
-								</div> -->
+								
 							</div>
 						</div>
 					</div>
@@ -1743,11 +1705,6 @@ CRYPTOBOLT © has been operating in South Korea, and Japan locally since 2009, u
 								<div class="feature-card-icon pt-10">	<i class="icon-lock"></i>
 								</div>
 								<div class="feature-card-content">
-									<!-- <h6 class="text-uppercase text-primary display-block title-second">Our co-investment platform allows everyday investors to invest alongside institutional and professional investors. </h6> -->
-									<!-- <p class="feature-card-desc"> -->
-									<!-- <p class="zeta color--foxtrot" style="color: #fff;">Cryptobolt secure & private is a branding name of Investment Growth Capital which is registered in Germany &nbsp;(Company No. 08155332),&nbsp;it authorised and regulated in the United State,United kingdom etc.</p> -->
-									<!-- <br>
-                                <br> -->
 									<ul class="list-check-circle primary wow fadeInUp">
 										<p class="text-white">Main features :</p>
 										<li class="text-white">High growth opportunities</li>
@@ -2572,10 +2529,13 @@ ction-head text-center">	<span class="wt-title-subline font-16 text-gray-dark m-
 	<div style="float: left; margin-right: 1000px;">
 		<script src="//code.jivosite.com/widget/XGnbXiV0lS" async></script>
 	</div>
+
+
+
 </body>
 
 
-
+<!-- <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script> -->
 <script src="plugins/revolution/revolution/js/wow.min.js"></script>
 <script src="plugins/revolution/revolution/js/main.js"></script>
 <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
