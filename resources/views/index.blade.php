@@ -2152,11 +2152,6 @@ ction-head text-center">	<span class="wt-title-subline font-16 text-gray-dark m-
 								<div class="logo-footer clearfix p-b15">
 									<p class="zeta color--foxtrot" style="color: #fff; font-weight: 100!important">CRYPTO BOLT © is a professional investment services company with high support team that emphasis on building up and creating a fast-growing digital Wealth. We are mainly registered in Hong Kong &nbsp;( caller assistance in usa No. +1 (310) 421‑1657),&nbsp;it authorised and regulated in the South Korea,Japan etc.</p>
 								</div>
-								<!-- <p>Thewebmax ipsum dolor sit amet, consectetuer adipiscing elit,
-                                  sed diam nonummy nibh euismod tincidunt ut laoreet dolore agna aliquam erat .
-                                  wisi enim ad minim veniam, quis tation. sit amet, consec tetuer.
-                                  ipsum dolor sit amet, consectetuer adipiscing.ipsum dolor sit .
-                            </p>   -->
 							</div>
 						</div>
 						<!-- RESENT POST -->
@@ -2168,9 +2163,10 @@ ction-head text-center">	<span class="wt-title-subline font-16 text-gray-dark m-
 									<li><a href="#about-us">About</a>
 									</li>
 									</li>
-									<li><a href="#">Privacy Policy</a>
+									<!-- <li><button id="modal-btn" class="button" data-target="#myModal" data-toggle="modal" data-backdrop="static" data-keyboard="false" style="background:transparent;border:none;">Privacy Policy</button> -->
 									</li>
-									<li><a href="javascript:void(0);">Terms  &amp; Condition</a>
+									<li><button id="modal-btn" class="button" data-target="#myModal" data-toggle="modal" data-backdrop="static" data-keyboard="false" style="background:transparent;border:none;">Terms  &amp; Condition</button>
+				<!-- <li><a href="javascript:void(0);">Terms  &amp; Condition</a> -->
 									</li>
 									</li>
 									<li><a href="#">Contact Us</a>
@@ -2181,75 +2177,40 @@ ction-head text-center">	<span class="wt-title-subline font-16 text-gray-dark m-
 						<!-- NEWSLETTER -->
 						<div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="3s">
 
-							<!-- SOCIAL LINKS -->
-							<!-- <div class="widget widget_social_inks">
-								<h4 class="widget-title text-white">Social Links</h4>
-								<ul class="social-icons social-square social-darkest">
-									<li>
-										<a href="#" class="fa fa-facebook"></a>
-									</li>
-									<li>
-										<a href="#" class="fa fa-twitter"></a>
-									</li>
-									<li>
-										<a href="#" class="fa fa-linkedin"></a>
-									</li>
-									<li>
-										<a href="#" class="fa fa-rss"></a>
-									</li>
-									<li>
-										<a href="#" class="fa fa-youtube"></a>
-									</li>
-									<li>
-										<a href="https://instagram.com" class="fa fa-instagram"></a>
-									</li>
-								</ul>
-							</div> -->
+							<div class="elementor-column-wrap  elementor-element-populated">
+					<div class="elementor-widget-wrap">
+				<div class="elementor-element elementor-element-4a6c414 elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="4a6c414" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Risk Warning</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-db58fad elementor-widget__width-auto elementor-view-default elementor-widget elementor-widget-icon" data-id="db58fad" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<i aria-hidden="true" class="fas fa-exclamation-triangle"></i>			</div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-f9fd469 elementor-widget elementor-widget-text-editor" data-id="f9fd469" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-text-editor elementor-clearfix"><p style="
+    width: 332px;
+">Dealing with financial instruments involves significant risk and can result in the loss of your capital when you do not adhere to the instructions provided by your trader. You should not spend more than you can afford to lose and should ensure that you fully understand the risks involved. Using leveraged products may not be suitable for everyone. Before you use these products, please take into consideration your level of experience, financial objectives and seek independent financial advice if necessary. It is the responsibility of the Client to ascertain whether he/she is permitted to use the services of the CRYPTO BOLT © brand based on the legal requirements in his/her country of residence. Click here to read CRYPTO BOLT©’s <a style="font-weight: 800;" href="privacy-policy/index.html">PRIVACY POLICY</a> </p></div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-1e0d4b9 elementor-widget elementor-widget-divider" data-id="1e0d4b9" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+						</div>
+			</div>
 						</div>
 					</div>
-					<!-- <div class="row" id="contact-us">
-                    <div class="col-md-3 col-sm-6  p-tb20">
-                        <div class="wt-icon-box-wraper left  bdr-1 bdr-gray-dark p-tb15 p-lr10 clearfix">
-                            <div class="icon-md text-primary"> <span class="iconmoon-travel"></span>
-                            </div>
-                            <div class="icon-content text-white">
-                                <h5 class="wt-tilte text-uppercase m-b0">Address</h5>
-                                <p>No.123 Chalingt Gates, Supper market New York</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6  p-tb20 ">
-                        <div class="wt-icon-box-wraper left  bdr-1 bdr-gray-dark p-tb15 p-lr10 clearfix ">
-                            <div class="icon-md text-primary"> <span class="iconmoon-smartphone-1"></span>
-                            </div>
-                            <div class="icon-content text-white">
-                                <h5 class="wt-tilte text-uppercase m-b0">Phone</h5>
-                                <p class="m-b0">+41 555 888 9585</p>
-                                <p>+41 555 888 9585</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6  p-tb20">
-                        <div class="wt-icon-box-wraper left  bdr-1 bdr-gray-dark p-tb15 p-lr10 clearfix">
-                            <div class="icon-md text-primary"> <span class="iconmoon-fax"></span>
-                            </div>
-                            <div class="icon-content text-white">
-                                <h5 class="wt-tilte text-uppercase m-b0">Fax</h5>
-                                <p class="m-b0">FAX: (123) 123-4567</p>
-                                <p>FAX: (123) 123-4567</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-sm-6 p-tb20">
-                        <div class="wt-icon-box-wraper left  bdr-1 bdr-gray-dark p-tb15 p-lr10 clearfix">
-                            <div class="icon-md text-primary"> <span class="iconmoon-email"></span>
-                            </div>
-                            <div class="icon-content text-white">
-                                <h5 class="wt-tilte text-uppercase m-b0">Email</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div> --></div>
+			</div>
 			</div>
 			<!-- FOOTER COPYRIGHT -->
 			<div class="footer-bottom  overlay-wraper">
@@ -2263,16 +2224,16 @@ ction-head text-center">	<span class="wt-title-subline font-16 text-gray-dark m-
                         <span class="copyrights-text">All investing involves risk.</span>
                     </div> -->
 						<!-- <p style="align-items: center;">All investing involves risk</p> -->
-						<div class="wt-footer-bot-right">
+						<!-- <div class="wt-footer-bot-right">
 							<ul class="copyrights-nav pull-right">
 								<li><a href="javascript:void(0);">Terms  & Condition</a>
 								</li>
-								<li><a href="javascript:void(0);">Privacy Policy</a>
+								<li><button id="modal-btn" class="button" data-target="#myModal" data-toggle="modal" data-backdrop="static" data-keyboard="false">Privacy Policy</button>
 								</li>
 								<li><a href="contact-1.html">Contact Us</a>
 								</li>
 							</ul>
-						</div>
+						</div> -->
 					</div>
 				</div>
 			</div>

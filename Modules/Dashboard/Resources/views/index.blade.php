@@ -880,22 +880,6 @@
                 <div class="form-label-group">
                     <label class="form-label">Enter Your Amount</label>
                     <div class="form-note pt-2">Note: Minimum invest 100 USD and upto 2,000 USD</div>
-                    <div class="dropdown">
-                        <div class="dropdown-menu dropdown-menu-xxs dropdown-menu-right">
-                            <ul class="link-list-plain sm text-center">
-                                <li><a href="#">USD</a>
-                                </li>
-                                <li><a href="#">EUR</a>
-                                </li>
-                                <li><a href="#">CAD</a>
-                                </li>
-                                <li><a href="#">BTC</a>
-                                </li>
-                                <li><a href="#">ETH</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
                 <div class="form-control-group">
                     <div class="form-info">USD</div>
