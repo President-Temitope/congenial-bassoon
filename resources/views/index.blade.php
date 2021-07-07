@@ -1297,13 +1297,7 @@ body{
                                     color:#fff;
                                     border-width:0px;"> <span style="font-family: 'Poppins', sans-serif;">Just start investing with us and enjoy our best Interest While we do The rest for you.</span>
 										</div>
-										<!-- LAYER NR. 6 [ for see all service botton ] -->
-										<!-- <div class="tp-caption tp-resizeme" id="slide-102-layer-6" data-x="['left','left','left','left']" data-hoffset="['30','30','30','100']" data-y="['top','top','top','top']" data-voffset="['530','530','530','600']" data-lineheight="['none','none','none','none']" data-width="['300','300','300','300']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
-                                    {"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":2000,"ease":"Power4.easeOut"},
-                                    {"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
-                                    ]' data-textAlign="['left','left','left','left']" data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" style="z-index:13; text-transform:uppercase;"> <a href="javascript:;" class="site-button slider-btn-left" style="pointer-events: none;">Login</a>
-                                    </div> -->
-										<!-- LAYER NR. 7 [ for more detail botton ] -->
+											<!-- LAYER NR. 7 [ for more detail botton ] -->
 										<div class="tp-caption tp-resizeme" id="slide-102-layer-7" data-x="['left','left','left','left']" data-hoffset="['220','220','220','320']" data-y="['top','top','top','top']" data-voffset="['530','530','530','600']" data-lineheight="['none','none','none','none']" data-width="['300','300','300','300']" data-height="['none','none','none','none']" data-whitespace="['normal','normal','normal','normal']" data-type="text" data-responsive_offset="on" data-frames='[
                                     {"from":"y:100px(R);opacity:0;","speed":2000,"to":"o:1;","delay":2000,"ease":"Power4.easeOut"},
                                     {"delay":"wait","speed":1000,"to":"y:-50px;opacity:0;","ease":"Power2.easeInOut"}
