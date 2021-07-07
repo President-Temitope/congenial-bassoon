@@ -2165,11 +2165,12 @@ ction-head text-center">	<span class="wt-title-subline font-16 text-gray-dark m-
 							<div class="widget widget_services">
 								<!-- <h4 class="widget-title text-white">Useful links</h4> -->
 								<ul>
-									<li><a href="#About">About</a>
+									<li><a href="#about-us">About</a>
 									</li>
-									<li><a href="#">Sign in</a>
 									</li>
 									<li><a href="#">Privacy Policy</a>
+									</li>
+									<li><a href="javascript:void(0);">Terms  &amp; Condition</a>
 									</li>
 									</li>
 									<li><a href="#">Contact Us</a>
