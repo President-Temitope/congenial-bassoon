@@ -2163,15 +2163,14 @@ ction-head text-center">	<span class="wt-title-subline font-16 text-gray-dark m-
 						<!-- USEFUL LINKS -->
 						<div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="2s">
 							<div class="widget widget_services">
-								<h4 class="widget-title text-white">Useful links</h4>
+								<!-- <h4 class="widget-title text-white">Useful links</h4> -->
 								<ul>
-									<li><a href="#">About</a>
+									<li><a href="#About">About</a>
 									</li>
-									<li><a href="#">FAQ</a>
+									<li><a href="#">Sign in</a>
 									</li>
-									<li><a href="#">Our Team</a>
+									<li><a href="#">Privacy Policy</a>
 									</li>
-									<li><a href="#">Services</a>
 									</li>
 									<li><a href="#">Contact Us</a>
 									</li>
