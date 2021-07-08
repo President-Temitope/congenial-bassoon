@@ -2234,7 +2234,8 @@ ction-head text-center">	<span class="wt-title-subline font-16 text-gray-dark m-
 			<div class="footer-bottom  overlay-wraper">
 				<div class="overlay-main"></div>
 				<div class="constrot-strip"></div>
-				<div class="container p-t30">
+				<div class="container p-t30" style="position: relative;bottom: 20px;
+">
 					<div class="row">
 						<div class="wt-footer-bot-left"> <span class="copyrights-text">© 2021 Your Company. All Rights Reserved.</span>
 						</div>
