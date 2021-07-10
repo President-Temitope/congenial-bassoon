@@ -36,8 +36,8 @@
     <!-- Page Title #1
 ============================================= -->
     <section id="page-title" class="page-title bg-overlay bg-overlay-dark bg-section"
-             style="background-image: url{{asset('img/logo3.png')}}">
-<!-- {{asset('css/skin/skin-1.css')}} -->
+             style="background-image: url('./img/logo3.png;');">
+<!-- {{('css/skin/skin-1.css')}} -->
 
         <div class="container">
             <div class="row">
