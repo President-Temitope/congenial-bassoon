@@ -551,7 +551,7 @@
 </script>
 <body class="nk-body npc-invest bg-lighter ">
 <div class="nk-app-root">
-   @include('Dashboard::layouts.master')
+   @include('dashboard::layouts.master')
                         <div class="nk-block-head text-center">
                             <div class="nk-block-head-content">
                                 <div class="nk-block-head-sub"><span style="font-size: initial;">Choose an Option</span>
@@ -569,8 +569,6 @@
                         <style>
                             .item {
                                 width: 100%;
-
-
                             }
 
                         </style>

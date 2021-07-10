@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description"
           content="">
-    <link rel="shortcut icon" href="../images/favicon.png">
+    <link rel="shortcut icon" href="{{asset('img/2.png')}}">
     <title>DashBoard | {{config('app.name')}}</title>
     <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
 </head>
@@ -925,7 +925,7 @@
             Details to our mail and wait for confirmation.
                  </div>
             </div>
-    
+
 
     </div>
     <!--
@@ -1164,12 +1164,12 @@
   <!-- Ajax JavaScript File Upload Logic -->
   <script>
   async function uploadFile() {
-  let formData = new FormData(); 
+  let formData = new FormData();
   formData.append("file", fileupload.files[0]);
   await fetch('/upload.php', {
-    method: "POST", 
+    method: "POST",
     body: formData
-  }); 
+  });
   alert('The file has been uploaded successfully.');
   }
 

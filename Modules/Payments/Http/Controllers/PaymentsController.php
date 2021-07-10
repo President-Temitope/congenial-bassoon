@@ -5,17 +5,26 @@ namespace Modules\Payments\Http\Controllers;
 use Illuminate\Contracts\Support\Renderable;
 
 use Illuminate\Routing\Controller;
+use Modules\Core\Interfaces\CoreRepositoryInterface;
 use Modules\Payments\Entities\Payment;
+
 
 class PaymentsController extends Controller
 {
+    protected $model, $core;
+    public function __construct(CoreRepositoryInterface $core,Payment $payment)
+    {
+     $this->model = $payment;
+     $this->core = $core;
+    }
+
     /**
      * Display a listing of the resource.
      * @return Renderable
      */
     public function index()
     {
-       $payments = Payment::all();
+       $payments = $this->core->all($this->model);
         return view('payments::index')->with('payments',$payments);
     }
 
