@@ -4,7 +4,7 @@
 <table style="box-sizing:border-box;width:100%;border-spacing:0;border-collapse:separate!important" width="100%"> 
 <tbody> 
 <tr> 
-<td style="box-sizing:border-box;padding:0;font-family:'Open Sans','Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif;font-size:16px;vertical-align:top;text-align:left" valign="top" align="left"><a href="http://links.twilio.com/Mjk0LVRLQi0zMDAAAAF-Lk55SzLmhKGS6lriqkAxiPdALchgxVePDyghb7MFJHAYY5U-Q28uQS_qXN8UFtFwAmFb1ys=" style="box-sizing:border-box;color:#348eda;font-weight:400;text-decoration:none" target="_blank" data-saferedirecturl="https://www.google.com/url?q=http://links.twilio.com/Mjk0LVRLQi0zMDAAAAF-Lk55SzLmhKGS6lriqkAxiPdALchgxVePDyghb7MFJHAYY5U-Q28uQS_qXN8UFtFwAmFb1ys%3D&amp;source=gmail&amp;ust=1625989035290000&amp;usg=AFQjCNEOszifgHFxlOKSBE4hjFg7N_Z9og"><img src="./Asset 4300x.png" height="42" alt="SendGrid" style="max-width:100%;border-style:none" class="CToWUd"></a></td> 
+<td style="box-sizing:border-box;padding:0;font-family:'Open Sans','Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif;font-size:16px;vertical-align:top;text-align:left" valign="top" align="left"><a href="http://links.twilio.com/Mjk0LVRLQi0zMDAAAAF-Lk55SzLmhKGS6lriqkAxiPdALchgxVePDyghb7MFJHAYY5U-Q28uQS_qXN8UFtFwAmFb1ys=" style="box-sizing:border-box;color:#348eda;font-weight:400;text-decoration:none" target="_blank" data-saferedirecturl="https://www.google.com/url?q=http://links.twilio.com/Mjk0LVRLQi0zMDAAAAF-Lk55SzLmhKGS6lriqkAxiPdALchgxVePDyghb7MFJHAYY5U-Q28uQS_qXN8UFtFwAmFb1ys%3D&amp;source=gmail&amp;ust=1625989035290000&amp;usg=AFQjCNEOszifgHFxlOKSBE4hjFg7N_Z9og"><img src="{{asset('img/logo2.png')}}" height="42" alt="SendGrid" style="max-width:100%;border-style:none" class="CToWUd"></a></td> 
 </tr> 
 </tbody> 
 </table> 

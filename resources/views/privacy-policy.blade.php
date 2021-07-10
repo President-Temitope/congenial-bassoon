@@ -11,6 +11,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="">
     <link rel="shortcut icon" href="{{asset('img/2.png')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('css/css/style.css')}}">
+<link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}">
+
     <!-- Fonts
     ============================================= -->
     <link
@@ -33,7 +36,8 @@
     <!-- Page Title #1
 ============================================= -->
     <section id="page-title" class="page-title bg-overlay bg-overlay-dark bg-section"
-             style="background-image: url(./images/page-titles/13.jpg);">
+             style="background-image: url{{asset('img/logo3.png')}}">
+<!-- {{asset('css/skin/skin-1.css')}} -->
 
         <div class="container">
             <div class="row">
