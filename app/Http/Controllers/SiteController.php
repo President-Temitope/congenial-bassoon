@@ -31,5 +31,9 @@ class SiteController extends Controller
         return view('contact');
     }
 
+    public function privacyAndPolicy(){
+        return view('privacy-policy');
+    }
+
 
 }
