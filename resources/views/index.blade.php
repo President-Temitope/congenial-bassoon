@@ -2228,7 +2228,7 @@ ction-head text-center"><span class="wt-title-subline font-16 text-gray-dark m-b
                             <div class="testimonial-5 wow fadeInDown">
                                 <div class="testimonial-pic-block radius-bx">
                                     <div class="testimonial-pic radius">
-                                        <img src="images/testimonials/pic3.jpeg" width="132" height="132" alt="">
+                                        <img src="images/testimonials/download.jpg" width="132" height="133" alt="">
                                     </div>
                                 </div>
                                 <div class="testimonial-text clearfix">
