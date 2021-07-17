@@ -2252,7 +2252,7 @@ ction-head text-center"><span class="wt-title-subline font-16 text-gray-dark m-b
                             <div class="testimonial-5">
                                 <div class="testimonial-pic-block radius-bx">
                                     <div class="testimonial-pic radius">
-                                        <img src="images/testimonials/pic2.jpeg" width="132" height="132" alt="">
+                                        <img src="images/testimonials/siss.jpg" width="132" height="132" alt="">
                                     </div>
                                 </div>
                                 <div class="testimonial-text clearfix">
