@@ -23,5 +23,5 @@ Route::get('/privacy','SiteController@privacyAndPolicy');
 
 //Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();
+Auth::routes(['verify' => true]);
 

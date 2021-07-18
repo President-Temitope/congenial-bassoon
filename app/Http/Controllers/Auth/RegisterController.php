@@ -59,8 +59,8 @@ class RegisterController extends Controller
             'lastname' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
-            'cryptocurrency' => ['required','string'],
-            'wallet_address' => ['required','string','min:26','max:35']
+            'cryptocurrency' => ['string'],
+            'wallet_address' => ['string','min:26','max:35']
         ]);
     }
 
