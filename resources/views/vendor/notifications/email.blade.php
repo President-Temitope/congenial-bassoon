@@ -37,7 +37,8 @@
                                     <p style="margin:0;margin-bottom:30px;color:#294661;font-family:'Open Sans','Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif;font-size:16px;font-weight:300">
                                         Thanks for choosing&nbsp;Cryptobolt platform as your personal investment
                                         service!&nbsp;
-                                        <!-- <a href="https://sendgrid.com/email-template-download/?post=48575" title="Click this link" style="color:#348eda;font-weight:400;text-decoration:none" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://sendgrid.com/email-template-download/?post%3D48575&amp;source=gmail&amp;ust=1625989035291000&amp;usg=AFQjCNFyecrcs9a6P_kNDXax8tyTdV8Njg">Click this link</a> --><br><br>
+                                        <!-- <a href="https://sendgrid.com/email-template-download/?post=48575" title="Click this link" style="color:#348eda;font-weight:400;text-decoration:none" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://sendgrid.com/email-template-download/?post%3D48575&amp;source=gmail&amp;ust=1625989035291000&amp;usg=AFQjCNFyecrcs9a6P_kNDXax8tyTdV8Njg">Click this link</a> -->
+                                        <br><br>
                                         Please verify your email address to get access to all our live investment
                                         opportunities, as well as be able to start raising investment..
                                         <!--  to access the HTML code and copy it into  --><a
