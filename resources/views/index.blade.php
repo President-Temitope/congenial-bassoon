@@ -2494,470 +2494,492 @@ ction-head text-center"><span class="wt-title-subline font-16 text-gray-dark m-b
                                                 of the CRYPTO BOLT © brand based on the legal requirements in his/her
                                                 country of residence. Click here to read CRYPTO BOLT©’s <a
                                                     style="font-weight: 800;" href="/privacy">PRIVACY POLICY</a>
-												</p>
-											</div>
-										</div>
-									</div>
-									<div class="elementor-element elementor-element-1e0d4b9 elementor-widget elementor-widget-divider" data-id="1e0d4b9" data-element_type="widget" data-widget_type="divider.default">
-										<div class="elementor-widget-container">
-											<div class="elementor-divider">	<span class="elementor-divider-separator">
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="elementor-element elementor-element-1e0d4b9 elementor-widget elementor-widget-divider"
+                                    data-id="1e0d4b9" data-element_type="widget" data-widget_type="divider.default">
+                                    <div class="elementor-widget-container">
+                                        <div class="elementor-divider">	<span class="elementor-divider-separator">
 						</span>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="mcwp-crypto" id="mcwp-322">
-				<div class="mcwp-ticker mcwp-footer" data-speed="100" style="opacity: 1;">
-					<div class="cc-ticker cc-white-color">
-						<ul class="cc-stats" style="width: 2056px; animation-duration: 20.56s;">
-							<li class="cc-coin">
-								<div>
-									<img src="images/coin-icon/bitcoin.png" alt="bitcoin"><b>Bitcoin <span>(BTC)</span> <span>$ 34,126.00</span></b>
-								</div>
-							</li>
-							<li class="cc-coin">
-								<div>
-									<img src="images/coin-icon/ethereum.png" alt="ethereum"><b>Ethereum <span>(ETH)</span> <span>$ 1,972.61</span></b>
-								</div>
-							</li>
-							<li class="cc-coin">
-								<div>
-									<img src="images/coin-icon/Tether-logo.png" alt="tether"><b>Tether <span>(USDT)</span> <span>$ 1.00</span></b>
-								</div>
-							</li>
-							<li class="cc-coin">
-								<div>
-									<img src="images/coin-icon/binance-coin-logo.png" alt="binance-coin"><b>Binance Coin <span>(BNB)</span> <span>$ 305.58</span></b>
-								</div>
-							</li>
-							<li class="cc-coin">
-								<div>
-									<img src="images/coin-icon/cardano.png" alt="cardano"><b>Cardano <span>(ADA)</span> <span>$ 1.35</span></b>
-								</div>
-							</li>
-							<li class="cc-coin">
-								<div>
-									<img src="images/coin-icon/dogecoin.png" alt="dogecoin"><b>Dogecoin <span>(DOGE)</span> <span>$ 0.238921</span></b>
-								</div>
-							</li>
-							<li class="cc-coin">
-								<div>
-									<img src="images/coin-icon/xrp-symbol-white-128.png" alt="xrp"><b>XRP <span>(XRP)</span> <span>$ 0.652769</span></b>
-								</div>
-							</li>
-							<li class="cc-coin">
-								<div>
-									<img src="images/coin-icon/USD_Coin_icon.png" alt="usd-coin"><b>USD Coin <span>(USDC)</span> <span>$ 1.00</span></b>
-								</div>
-							</li>
-							<li class="cc-coin">
-								<div>
-									<img src="images/coin-icon/aJGBjJFU_400x400 (1).jpg" alt="polkadot"><b>Polkadot <span>(DOT)</span> <span>$ 16.09</span></b>
-								</div>
-							</li>
-							<li class="cc-coin">
-								<div>
-									<img src="images/coin-icon/BUSD.png" alt="binance-usd"><b>Binance USD <span>(BUSD)</span> <span>$ 1.00</span></b>
-								</div>
-							</li>
-							<div class="cc-dup">
-								<li class="cc-coin">
-									<div>
-										<img src="images/coin-icon/bitcoin.png" alt="bitcoin"><b>Bitcoin <span>(BTC)</span> <span>$ 34,126.00</span></b>
-									</div>
-								</li>
-								<li class="cc-coin">
-									<div>
-										<img src="images/coin-icon/ethereum.png" alt="ethereum"><b>Ethereum <span>(ETH)</span> <span>$ 1,972.61</span></b>
-									</div>
-								</li>
-								<li class="cc-coin">
-									<div>
-										<img src="images/coin-icon/Tether-logo.png" alt="tether"><b>Tether <span>(USDT)</span> <span>$ 1.00</span></b>
-									</div>
-								</li>
-								<li class="cc-coin">
-									<div>
-										<img src="images/coin-icon/binance-coin-logo.png" alt="binance-coin"><b>Binance Coin <span>(BNB)</span> <span>$ 305.58</span></b>
-									</div>
-								</li>
-								<li class="cc-coin">
-									<div>
-										<img src="images/coin-icon/cardano.png" alt="cardano"><b>Cardano <span>(ADA)</span> <span>$ 1.35</span></b>
-									</div>
-								</li>
-								<li class="cc-coin">
-									<div>
-										<img src="images/coin-icon/dogecoin.png" alt="dogecoin"><b>Dogecoin <span>(DOGE)</span> <span>$ 0.238921</span></b>
-									</div>
-								</li>
-								<li class="cc-coin">
-									<div>
-										<img src="images/coin-icon/xrp-symbol-white-128.png" alt="xrp"><b>XRP <span>(XRP)</span> <span>$ 0.652769</span></b>
-									</div>
-								</li>
-								<li class="cc-coin">
-									<div>
-										<img src="images/coin-icon/USD_Coin_icon.png" alt="usd-coin"><b>USD Coin <span>(USDC)</span> <span>$ 1.00</span></b>
-									</div>
-								</li>
-								<li class="cc-coin">
-									<div>
-										<img src="images/coin-icon/aJGBjJFU_400x400.jpg" alt="polkadot"><b>Polkadot <span>(DOT)</span> <span>$ 16.09</span></b>
-									</div>
-								</li>
-								<li class="cc-coin">
-									<div>
-										<img src="images/coin-icon/BUSD.png" alt="binance-usd"><b>Binance USD <span>(BUSD)</span> <span>$ 1.00</span></b>
-									</div>
-								</li>
-							</div>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<style>
-			</style>
-			<!-- FOOTER COPYRIGHT -->
-			<div class="footer-bottom  overlay-wraper">
-				<div class="overlay-main"></div>
-				<div class="constrot-strip"></div>
-				<div class="container p-t30" style="position: relative;bottom: 20px;
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mcwp-crypto" id="mcwp-322">
+            <div class="mcwp-ticker mcwp-footer" data-speed="100" style="opacity: 1;">
+                <div class="cc-ticker cc-white-color">
+                    <ul class="cc-stats" style="width: 2056px; animation-duration: 20.56s;">
+                        <li class="cc-coin">
+                            <div>
+                                <img src="images/coin-icon/bitcoin.png" alt="bitcoin"><b>Bitcoin <span>(BTC)</span>
+                                    <span>$ 34,126.00</span></b>
+                            </div>
+                        </li>
+                        <li class="cc-coin">
+                            <div>
+                                <img src="images/coin-icon/ethereum.png" alt="ethereum"><b>Ethereum <span>(ETH)</span>
+                                    <span>$ 1,972.61</span></b>
+                            </div>
+                        </li>
+                        <li class="cc-coin">
+                            <div>
+                                <img src="images/coin-icon/Tether-logo.png" alt="tether"><b>Tether <span>(USDT)</span>
+                                    <span>$ 1.00</span></b>
+                            </div>
+                        </li>
+                        <li class="cc-coin">
+                            <div>
+                                <img src="images/coin-icon/binance-coin-logo.png" alt="binance-coin"><b>Binance Coin
+                                    <span>(BNB)</span> <span>$ 305.58</span></b>
+                            </div>
+                        </li>
+                        <li class="cc-coin">
+                            <div>
+                                <img src="images/coin-icon/cardano.png" alt="cardano"><b>Cardano <span>(ADA)</span>
+                                    <span>$ 1.35</span></b>
+                            </div>
+                        </li>
+                        <li class="cc-coin">
+                            <div>
+                                <img src="images/coin-icon/dogecoin.png" alt="dogecoin"><b>Dogecoin <span>(DOGE)</span>
+                                    <span>$ 0.238921</span></b>
+                            </div>
+                        </li>
+                        <li class="cc-coin">
+                            <div>
+                                <img src="images/coin-icon/xrp-symbol-white-128.png" alt="xrp"><b>XRP <span>(XRP)</span>
+                                    <span>$ 0.652769</span></b>
+                            </div>
+                        </li>
+                        <li class="cc-coin">
+                            <div>
+                                <img src="images/coin-icon/USD_Coin_icon.png" alt="usd-coin"><b>USD Coin
+                                    <span>(USDC)</span> <span>$ 1.00</span></b>
+                            </div>
+                        </li>
+                        <li class="cc-coin">
+                            <div>
+                                <img src="images/coin-icon/aJGBjJFU_400x400 (1).jpg" alt="polkadot"><b>Polkadot <span>(DOT)</span>
+                                    <span>$ 16.09</span></b>
+                            </div>
+                        </li>
+                        <li class="cc-coin">
+                            <div>
+                                <img src="images/coin-icon/BUSD.png" alt="binance-usd"><b>Binance USD
+                                    <span>(BUSD)</span> <span>$ 1.00</span></b>
+                            </div>
+                        </li>
+                        <div class="cc-dup">
+                            <li class="cc-coin">
+                                <div>
+                                    <img src="images/coin-icon/bitcoin.png" alt="bitcoin"><b>Bitcoin <span>(BTC)</span>
+                                        <span>$ 34,126.00</span></b>
+                                </div>
+                            </li>
+                            <li class="cc-coin">
+                                <div>
+                                    <img src="images/coin-icon/ethereum.png" alt="ethereum"><b>Ethereum
+                                        <span>(ETH)</span> <span>$ 1,972.61</span></b>
+                                </div>
+                            </li>
+                            <li class="cc-coin">
+                                <div>
+                                    <img src="images/coin-icon/Tether-logo.png" alt="tether"><b>Tether
+                                        <span>(USDT)</span> <span>$ 1.00</span></b>
+                                </div>
+                            </li>
+                            <li class="cc-coin">
+                                <div>
+                                    <img src="images/coin-icon/binance-coin-logo.png" alt="binance-coin"><b>Binance Coin
+                                        <span>(BNB)</span> <span>$ 305.58</span></b>
+                                </div>
+                            </li>
+                            <li class="cc-coin">
+                                <div>
+                                    <img src="images/coin-icon/cardano.png" alt="cardano"><b>Cardano <span>(ADA)</span>
+                                        <span>$ 1.35</span></b>
+                                </div>
+                            </li>
+                            <li class="cc-coin">
+                                <div>
+                                    <img src="images/coin-icon/dogecoin.png" alt="dogecoin"><b>Dogecoin
+                                        <span>(DOGE)</span> <span>$ 0.238921</span></b>
+                                </div>
+                            </li>
+                            <li class="cc-coin">
+                                <div>
+                                    <img src="images/coin-icon/xrp-symbol-white-128.png" alt="xrp"><b>XRP
+                                        <span>(XRP)</span> <span>$ 0.652769</span></b>
+                                </div>
+                            </li>
+                            <li class="cc-coin">
+                                <div>
+                                    <img src="images/coin-icon/USD_Coin_icon.png" alt="usd-coin"><b>USD Coin <span>(USDC)</span>
+                                        <span>$ 1.00</span></b>
+                                </div>
+                            </li>
+                            <li class="cc-coin">
+                                <div>
+                                    <img src="images/coin-icon/aJGBjJFU_400x400.jpg" alt="polkadot"><b>Polkadot <span>(DOT)</span>
+                                        <span>$ 16.09</span></b>
+                                </div>
+                            </li>
+                            <li class="cc-coin">
+                                <div>
+                                    <img src="images/coin-icon/BUSD.png" alt="binance-usd"><b>Binance USD
+                                        <span>(BUSD)</span> <span>$ 1.00</span></b>
+                                </div>
+                            </li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <style>
+        </style>
+        <!-- FOOTER COPYRIGHT -->
+        <div class="footer-bottom  overlay-wraper">
+            <div class="overlay-main"></div>
+            <div class="constrot-strip"></div>
+            <div class="container p-t30" style="position: relative;bottom: 20px;
 ">
-					<div class="row">
-						<div class="wt-footer-bot-left"> <span class="copyrights-text">© 2021 Your Company. All Rights Reserved.</span>
-						</div>
-						<!-- <div class="center" style="padding: 20px;">
-                        <span class="copyrights-text">All investing involves risk.</span>
-                    </div> -->
-						<!-- <p style="align-items: center;">All investing involves risk</p> -->
-						<!-- <div class="wt-footer-bot-right">
-							<ul class="copyrights-nav pull-right">
-								<li><a href="javascript:void(0);">Terms  & Condition</a>
-								</li>
-								<li><button id="modal-btn" class="button" data-target="#myModal" data-toggle="modal" data-backdrop="static" data-keyboard="false">Privacy Policy</button>
-								</li>
-								<li><a href="contact-1.html">Contact Us</a>
-								</li>
-							</ul>
-						</div> --></div>
-				</div>
-			</div>
-		</footer>
-		<!-- FOOTER END -->
-		<!-- BUTTON TOP START -->
-		<button class="scroltop"><span class=" iconmoon-house relative" id="btn-vibrate"></span>
-		</button>
-		<!-- MODAL  LOGIN -->
-		<div id="Login-form" class="modal fade " role="dialog">
-			<div class="modal-dialog modal-sm">
-				<!-- Modal content-->
-				<div class="modal-content">
-					<div class="modal-header bg-primary">
-						<button type="button" class="close" data-dismiss="modal">&times;</button>
-						<h4 class="modal-title text-white">Login Your Account</h4>
-					</div>
-					<div class="modal-body p-a30">
-						<form id="log-form" method="POST" action="{{ route('login') }}">
-                                            @csrf
-                                            <div class="form-group">
-                                                <div class="input-group"><span class="input-group-addon"><i
-                                                            class="fa fa-user cus-icon"></i></span>
-                                                    <input id="email" placeholder="Email" type="email"
-                                                           class="form-control @error('email') is-invalid @enderror"
-                                                           name="email" value="{{ old('email') }}" required
-                                                           autocomplete="email" autofocus>@error('email') <span
-                                                        class="invalid-feedback" role="alert">
+                <div class="row">
+                    <div class="wt-footer-bot-left"><span class="copyrights-text">© 2021 Your Company. All Rights Reserved.</span>
+                    </div>
+                    <!-- <div class="center" style="padding: 20px;">
+                    <span class="copyrights-text">All investing involves risk.</span>
+                </div> -->
+                    <!-- <p style="align-items: center;">All investing involves risk</p> -->
+                    <!-- <div class="wt-footer-bot-right">
+                        <ul class="copyrights-nav pull-right">
+                            <li><a href="javascript:void(0);">Terms  & Condition</a>
+                            </li>
+                            <li><button id="modal-btn" class="button" data-target="#myModal" data-toggle="modal" data-backdrop="static" data-keyboard="false">Privacy Policy</button>
+                            </li>
+                            <li><a href="contact-1.html">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div> --></div>
+            </div>
+        </div>
+    </footer>
+    <!-- FOOTER END -->
+    <!-- BUTTON TOP START -->
+    <button class="scroltop"><span class=" iconmoon-house relative" id="btn-vibrate"></span>
+    </button>
+    <!-- MODAL  LOGIN -->
+    <div id="Login-form" class="modal fade " role="dialog">
+        <div class="modal-dialog modal-sm">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header bg-primary">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title text-white">Login Your Account</h4>
+                </div>
+                <div class="modal-body p-a30">
+                    <form id="log-form" method="POST" action="{{ route('login') }}">
+                        @csrf
+                        <div class="form-group">
+                            <div class="input-group"><span class="input-group-addon"><i
+                                        class="fa fa-user cus-icon"></i></span>
+                                <input id="email" placeholder="Email" type="email"
+                                       class="form-control @error('email') is-invalid @enderror"
+                                       name="email" value="{{ old('email') }}" required
+                                       autocomplete="email" autofocus>@error('email') <span
+                                    class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
-                                                    @enderror</div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div class="input-group"><span class="input-group-addon"><i
-                                                            class="fa fa-eye cus-icon"></i></span>
-                                                    <input id="password" placeholder="Password" type="password"
-                                                           class="form-control @error('password') is-invalid @enderror"
-                                                           name="password" required
-                                                           autocomplete="current-password">@error('password') <span
-                                                        class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                                    @enderror</div>
-                                            </div>
-                                            <button type="submit"
-                                                    class="site-button-secondry text-uppercase btn-block m-b10">Submit
-                                            </button>
-                                            <span class="font-12">Don't have an account? <a href="javascript:;"
-                                                                                            class="text-primary">Register Here</a></span>
-                                            </form>
-                                        </div>
-                                        <div class="modal-footer text-center">
-                                            <div class="text-center">
-                                                <!-- <a href="/" class="MyLink">
-                                                <img class="logo-modal" src="./images/logo/ClipartKey_78890.png" alt="" width="15" height="20"><span class="h2 mb-0" style="
-                        font-size: 31px;
-                        FONT-FAMILY: Calibri,sans-serif,serif,EmojiFont;
-                        font-weight: bold;
-                        color: #FF9800;
-                        position: relative;
-                        top: -22px;
-                        left: -13px;
-                    ">Crypto&nbsp;&nbsp;&nbsp;bolt</span>
-                                            </a> -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- MODAL  REGISTER -->
-                            <div id="Register-form" class="modal fade " role="dialog">
-                                <div class="modal-dialog modal-sm">
-                                    <!-- Modal content-->
-                                    <div class="modal-content">
-                                        <div class="modal-header bg-primary">
-                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h4 class="modal-title text-white">Register here</h4>
-                                        </div>
-                                        <div class="modal-body p-a30">
-                                            <form id="reg-form" method="POST" action="{{route('register')}}">@csrf
-                                                <div class="form-group">
-                                                    <div class="input-group"><span class="input-group-addon"><i
-                                                                class="fa fa-user cus-icon"
-                                                                style="font-size: 15px;!important"></i></span>
-                                                        <input id="firstname" type="text" placeholder="Firstname"
-                                                               class="form-control @error('firstname') is-invalid @enderror"
-                                                               name="firstname" value="{{ old('firstname') }}" required
-                                                               autocomplete="firstname" autofocus>@error('firstname')
-                                                        <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                                        @enderror</div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <div class="input-group"><span class="input-group-addon"><i
-                                                                class="fa fa-user cus-icon"
-                                                                style="font-size: 15px;!important"></i></span>
-                                                        <input id="lastname" type="text" placeholder="Lastname"
-                                                               class="form-control @error('lastname') is-invalid @enderror"
-                                                               name="lastname" value="{{ old('lastname') }}" required
-                                                               autocomplete="lastname" autofocus>@error('firstname')
-                                                        <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                                        @enderror</div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <div class="input-group"><span class="input-group-addon"><i
-                                                                class="fa fa-envelope cus-icon"
-                                                                style="font-size: 15px;!important"></i></span>
-                                                        <input id="email" placeholder="Email" type="email"
-                                                               class="form-control @error('email') is-invalid @enderror"
-                                                               name="email" value="{{ old('email') }}" required
-                                                               autocomplete="email" autofocus>@error('email') <span
-                                                            class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                                        @enderror</div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <div class="input-group"><span class="input-group-addon"><i
-                                                                class="fa fa-key cus-icon" style="font-size: 15px;"></i></span>
-                                                        <input id="password" placeholder="Password" type="password"
-                                                               class="form-control @error('password') is-invalid @enderror"
-                                                               name="password" required
-                                                               autocomplete="current-password">@error('password') <span
-                                                            class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                                        @enderror</div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <div class="input-group"><span class="input-group-addon"><i
-                                                                class="fa fa-key cus-icon" style="font-size: 15px;"></i></span>
-                                                        <input id="confirm-password" placeholder="Confirm Password"
-                                                               type="password"
-                                                               class="form-control @error('password-confirm') is-invalid @enderror"
-                                                               name="password_confirmation" required
-                                                               autocomplete="current-password">@error('password-confirm')
-                                                        <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                                        @enderror</div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <div class="input-group"><span class="input-group-addon"><i
-                                                                class="fa fa-btc cus-icon" style="font-size: 15px;"></i></span>
-                                                        <select id="cryptocurrency"
-                                                                class="form-control @error('cryptocurrency') is-invalid @enderror"
-                                                                name="cryptocurrency">
-                                                            <option value="btc" selected>Bitcoin</option>
-                                                            <option value="ltc">Litecoin</option>
-                                                            <option value="eth">Ethereum</option>
-                                                        </select>@error('cryptocurrency') <span class="invalid-feedback"
-                                                                                                role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                                        @enderror</div>
-                                                </div>
-                                                <div class="form-group">
-                                                    <div class="input-group"><span class="input-group-addon"><i
-                                                                class="fa fa-wallet cus-icon"
-                                                                style="font-size: 15px;"></i></span>
-                                                        <input id="wallet_address" placeholder="Wallet address"
-                                                               type="text"
-                                                               class="form-control @error('wallet_address') is-invalid @enderror"
-                                                               name="wallet_address"
-                                                               autocomplete="wallet_address">@error('wallet_address')
-                                                        <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                                        @enderror</div>
-                                                </div>
-                                                <button type="submit"
-                                                        class="site-button-secondry text-uppercase btn-block m-b10">
-                                                    Submit
-                                                </button>
-                                                <span class="font-12">Already Have an Account? <a href="javascript:;"
-                                                                                                  class="text-primary">Login</a></span>
-                                            </form>
-                                        </div>
-                                        <div class="modal-footer text-center">
-                                            <div class="text-center">
-                                                <!-- <a href="/" class="MyLink">
-                                                <img class="logo-modal" src="./images/logo/ClipartKey_78890.png" alt="" width="15" height="20"><span class="h2 mb-0" style="
-                        font-size: 31px;
-                        FONT-FAMILY: Calibri,sans-serif,serif,EmojiFont;
-                        font-weight: bold;
-                        color: #FF9800;
-                        position: relative;
-                        top: -22px;
-                        left: -13px;
-                    ">Crypto&nbsp;&nbsp;&nbsp;bolt</span>
-                                            </a> -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                                @enderror</div>
                         </div>
-                        <!--  -->
-                        <!-- LOADING AREA START ===== -->
-                        <div class="loading-area">
-                            <div class="loading-box"></div>
-                            <div class="loading-pic">
-                                <div class="cssload-container">
-                                    <div class="cssload-dot bg-primary" style="background-color: transparent;">
-                                        <!-- <i class="fa fa-bitcoin" style="color: #000; font-size: 30px;"></i> -->
-                                        <img class="logo-dark" src="{{asset('img/logo1.png')}}" style="
+                        <div class="form-group">
+                            <div class="input-group"><span class="input-group-addon"><i
+                                        class="fa fa-eye cus-icon"></i></span>
+                                <input id="password" placeholder="Password" type="password"
+                                       class="form-control @error('password') is-invalid @enderror"
+                                       name="password" required
+                                       autocomplete="current-password">@error('password') <span
+                                    class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror</div>
+                        </div>
+                        <button type="submit"
+                                class="site-button-secondry text-uppercase btn-block m-b10">Submit
+                        </button>
+                        <span class="font-12">Don't have an account? <a href="javascript:;"
+                                                                        class="text-primary">Register Here</a></span>
+                    </form>
+                </div>
+                <div class="modal-footer text-center">
+                    <div class="text-center">
+                        <!-- <a href="/" class="MyLink">
+                        <img class="logo-modal" src="./images/logo/ClipartKey_78890.png" alt="" width="15" height="20"><span class="h2 mb-0" style="
+font-size: 31px;
+FONT-FAMILY: Calibri,sans-serif,serif,EmojiFont;
+font-weight: bold;
+color: #FF9800;
+position: relative;
+top: -22px;
+left: -13px;
+">Crypto&nbsp;&nbsp;&nbsp;bolt</span>
+                    </a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL  REGISTER -->
+    <div id="Register-form" class="modal fade " role="dialog">
+        <div class="modal-dialog modal-sm">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header bg-primary">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title text-white">Register here</h4>
+                </div>
+                <div class="modal-body p-a30">
+                    <form id="reg-form" method="POST" action="{{route('register')}}">@csrf
+                        <div class="form-group">
+                            <div class="input-group"><span class="input-group-addon"><i
+                                        class="fa fa-user cus-icon"
+                                        style="font-size: 15px;!important"></i></span>
+                                <input id="firstname" type="text" placeholder="Firstname"
+                                       class="form-control @error('firstname') is-invalid @enderror"
+                                       name="firstname" value="{{ old('firstname') }}" required
+                                       autocomplete="firstname" autofocus>@error('firstname')
+                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror</div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group"><span class="input-group-addon"><i
+                                        class="fa fa-user cus-icon"
+                                        style="font-size: 15px;!important"></i></span>
+                                <input id="lastname" type="text" placeholder="Lastname"
+                                       class="form-control @error('lastname') is-invalid @enderror"
+                                       name="lastname" value="{{ old('lastname') }}" required
+                                       autocomplete="lastname" autofocus>@error('firstname')
+                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror</div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group"><span class="input-group-addon"><i
+                                        class="fa fa-envelope cus-icon"
+                                        style="font-size: 15px;!important"></i></span>
+                                <input id="email" placeholder="Email" type="email"
+                                       class="form-control @error('email') is-invalid @enderror"
+                                       name="email" value="{{ old('email') }}" required
+                                       autocomplete="email" autofocus>@error('email') <span
+                                    class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror</div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group"><span class="input-group-addon"><i
+                                        class="fa fa-key cus-icon" style="font-size: 15px;"></i></span>
+                                <input id="password" placeholder="Password" type="password"
+                                       class="form-control @error('password') is-invalid @enderror"
+                                       name="password" required
+                                       autocomplete="current-password">@error('password') <span
+                                    class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror</div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group"><span class="input-group-addon"><i
+                                        class="fa fa-key cus-icon" style="font-size: 15px;"></i></span>
+                                <input id="confirm-password" placeholder="Confirm Password"
+                                       type="password"
+                                       class="form-control @error('password-confirm') is-invalid @enderror"
+                                       name="password_confirmation" required
+                                       autocomplete="current-password">@error('password-confirm')
+                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror</div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group"><span class="input-group-addon"><i
+                                        class="fa fa-btc cus-icon" style="font-size: 15px;"></i></span>
+                                <select id="cryptocurrency"
+                                        class="form-control @error('cryptocurrency') is-invalid @enderror"
+                                        name="cryptocurrency">
+                                    <option value="btc" selected>Bitcoin</option>
+                                    <option value="ltc">Litecoin</option>
+                                    <option value="eth">Ethereum</option>
+                                </select>@error('cryptocurrency') <span class="invalid-feedback"
+                                                                        role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror</div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-group"><span class="input-group-addon"><i
+                                        class="fa fa-wallet cus-icon"
+                                        style="font-size: 15px;"></i></span>
+                                <input id="wallet_address" placeholder="Wallet address"
+                                       type="text"
+                                       class="form-control @error('wallet_address') is-invalid @enderror"
+                                       name="wallet_address"
+                                       autocomplete="wallet_address">@error('wallet_address')
+                                <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror</div>
+                        </div>
+                        <button type="submit"
+                                class="site-button-secondry text-uppercase btn-block m-b10">
+                            Submit
+                        </button>
+                        <span class="font-12">Already Have an Account? <a href="javascript:;"
+                                                                          class="text-primary">Login</a></span>
+                    </form>
+                </div>
+                <div class="modal-footer text-center">
+                    <div class="text-center">
+                        <!-- <a href="/" class="MyLink">
+                        <img class="logo-modal" src="./images/logo/ClipartKey_78890.png" alt="" width="15" height="20"><span class="h2 mb-0" style="
+font-size: 31px;
+FONT-FAMILY: Calibri,sans-serif,serif,EmojiFont;
+font-weight: bold;
+color: #FF9800;
+position: relative;
+top: -22px;
+left: -13px;
+">Crypto&nbsp;&nbsp;&nbsp;bolt</span>
+                    </a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--  -->
+<!-- LOADING AREA START ===== -->
+<div class="loading-area">
+    <div class="loading-box"></div>
+    <div class="loading-pic">
+        <div class="cssload-container">
+            <div class="cssload-dot bg-primary" style="background-color: transparent;">
+                <!-- <i class="fa fa-bitcoin" style="color: #000; font-size: 30px;"></i> -->
+                <img class="logo-dark" src="{{asset('img/logo1.png')}}" style="
 " alt="" width="120" height="50">
-                                    </div>
-                                    <!-- <div class="step" id="cssload-s1"></div>
-                                    <div class="step" id="cssload-s2"></div>
-                                    <div class="step" id="cssload-s3"></div> --></div>
-                            </div>
-                        </div>
-                        <!-- LOADING AREA  END ====== -->
-                        <!-- JAVASCRIPT  FILES ========================================= -->
-                        <script src="js/jquery-1.12.4.min.js"></script>
-                        <!-- JQUERY.MIN JS -->
-                        <script src="js/bootstrap.min.js"></script>
-                        <!-- BOOTSTRAP.MIN JS -->
-                        <script src="js/bootstrap-select.min.js"></script>
-                        <!-- FORM JS -->
-                        <script src="js/jquery.bootstrap-touchspin.min.js"></script>
-                        <!-- FORM JS -->
-                        <script src="js/magnific-popup.min.js"></script>
-                        <!-- MAGNIFIC-POPUP JS -->
-                        <script src="js/waypoints.min.js"></script>
-                        <!-- WAYPOINTS JS -->
-                        <script src="js/counterup.min.js"></script>
-                        <!-- COUNTERUP JS -->
-                        <script src="js/waypoints-sticky.min.js"></script>
-                        <!-- COUNTERUP JS -->
-                        <script src="js/isotope.pkgd.min.js"></script>
-                        <!-- MASONRY  -->
-                        <script src="js/owl.carousel.min.js"></script>
-                        <!-- OWL  SLIDER  -->
-                        <script src="js/stellar.min.js"></script>
-                        <!-- PARALLAX BG IMAGE   -->
-                        <script src="js/scrolla.min.js"></script>
-                        <!-- ON SCROLL CONTENT ANIMTE   -->
-                        <script src="js/custom.js"></script>
-                        <!-- CUSTOM FUCTIONS  -->
-                        <script src="js/shortcode.js"></script>
-                        <!-- SHORTCODE FUCTIONS  -->
-                        <script src="js/switcher.js"></script>
-                        <!-- SWITCHER FUCTIONS  -->
-                        <script src="js/jquery.bgscroll.js"></script>
-                        <!-- BACKGROUND SCROLL -->
-                        <script src="js/tickerNews.min.js"></script>
-                        <!-- TICKERNEWS-->
-                        <!-- TICKERNEWS FUNCTiON -->
-                        <script type="text/javascript">
-                            jQuery(function () {
-                                var timer = !1;
-                                _Ticker = jQuery("#T1").newsTicker();
-                                _Ticker.on("mouseenter", function () {
-                                    var __self = this;
-                                    timer = setTimeout(function () {
-                                        __self.pauseTicker();
-                                    }, 200);
-                                });
-                                _Ticker.on("mouseleave", function () {
-                                    clearTimeout(timer);
-                                    if (!timer) return !1;
-                                    this.startTicker();
-                                });
-                            });
-                        </script>
-                        <!-- REVOLUTION JS FILES -->
-                        <script src="plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
-                        <script src="plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
-                        <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
-                        <script src="plugins/revolution/revolution/js/extensions/revolution-plugin.js"></script>
-                        <!-- ------------------------ -->
-                        <script src="js/rev-script-1.js"></script>
-                        <script>
-                            $(document).ready(function () {
-                                // Add smooth scrolling to all links
-                                $("a").on('click', function (event) {
+            </div>
+            <!-- <div class="step" id="cssload-s1"></div>
+            <div class="step" id="cssload-s2"></div>
+            <div class="step" id="cssload-s3"></div> --></div>
+    </div>
+</div>
+<!-- LOADING AREA  END ====== -->
+<!-- JAVASCRIPT  FILES ========================================= -->
+<script src="js/jquery-1.12.4.min.js"></script>
+<!-- JQUERY.MIN JS -->
+<script src="js/bootstrap.min.js"></script>
+<!-- BOOTSTRAP.MIN JS -->
+<script src="js/bootstrap-select.min.js"></script>
+<!-- FORM JS -->
+<script src="js/jquery.bootstrap-touchspin.min.js"></script>
+<!-- FORM JS -->
+<script src="js/magnific-popup.min.js"></script>
+<!-- MAGNIFIC-POPUP JS -->
+<script src="js/waypoints.min.js"></script>
+<!-- WAYPOINTS JS -->
+<script src="js/counterup.min.js"></script>
+<!-- COUNTERUP JS -->
+<script src="js/waypoints-sticky.min.js"></script>
+<!-- COUNTERUP JS -->
+<script src="js/isotope.pkgd.min.js"></script>
+<!-- MASONRY  -->
+<script src="js/owl.carousel.min.js"></script>
+<!-- OWL  SLIDER  -->
+<script src="js/stellar.min.js"></script>
+<!-- PARALLAX BG IMAGE   -->
+<script src="js/scrolla.min.js"></script>
+<!-- ON SCROLL CONTENT ANIMTE   -->
+<script src="js/custom.js"></script>
+<!-- CUSTOM FUCTIONS  -->
+<script src="js/shortcode.js"></script>
+<!-- SHORTCODE FUCTIONS  -->
+<script src="js/switcher.js"></script>
+<!-- SWITCHER FUCTIONS  -->
+<script src="js/jquery.bgscroll.js"></script>
+<!-- BACKGROUND SCROLL -->
+<script src="js/tickerNews.min.js"></script>
+<!-- TICKERNEWS-->
+<!-- TICKERNEWS FUNCTiON -->
+<script type="text/javascript">
+    jQuery(function () {
+        var timer = !1;
+        _Ticker = jQuery("#T1").newsTicker();
+        _Ticker.on("mouseenter", function () {
+            var __self = this;
+            timer = setTimeout(function () {
+                __self.pauseTicker();
+            }, 200);
+        });
+        _Ticker.on("mouseleave", function () {
+            clearTimeout(timer);
+            if (!timer) return !1;
+            this.startTicker();
+        });
+    });
+</script>
+<!-- REVOLUTION JS FILES -->
+<script src="plugins/revolution/revolution/js/jquery.themepunch.tools.min.js"></script>
+<script src="plugins/revolution/revolution/js/jquery.themepunch.revolution.min.js"></script>
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+<script src="plugins/revolution/revolution/js/extensions/revolution-plugin.js"></script>
+<!-- ------------------------ -->
+<script src="js/rev-script-1.js"></script>
+<script>
+    $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on('click', function (event) {
 
-                                    // Make sure this.hash has a value before overriding default behavior
-                                    if (this.hash !== "") {
-                                        // Prevent default anchor click behavior
-                                        event.preventDefault();
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
 
-                                        // Store hash
-                                        var hash = this.hash;
+                // Store hash
+                var hash = this.hash;
 
-                                        // Using jQuery's animate() method to add smooth page scroll
-                                        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-                                        $('html, body').animate({
-                                            scrollTop: $(hash).offset().top
-                                        }, 400, function () {
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 400, function () {
 
-                                            // Add hash (#) to URL when done scrolling (default click behavior)
-                                            window.location.hash = hash;
-                                        });
-                                    } // End if
-                                });
-                            });
-                        </script>
-                        <div style="float: left; margin-right: 1000px;">
-                            <script src="//code.jivosite.com/widget/XGnbXiV0lS" async></script>
-                        </div>
-                        <script>
-                            function copy_to_clipBoard() {
-                                var copyText = document.getElementById("mref-link-buddypress-profile");
-                                copyText.select();
-                                document.execCommand("copy");
-                            }
-                        </script>
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+    });
+</script>
+<div style="float: left; margin-right: 1000px;">
+    <script src="//code.jivosite.com/widget/XGnbXiV0lS" async></script>
+</div>
+<script>
+    function copy_to_clipBoard() {
+        var copyText = document.getElementById("mref-link-buddypress-profile");
+        copyText.select();
+        document.execCommand("copy");
+    }
+</script>
 </body>
 <!-- <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script> -->
 <script src="plugins/revolution/revolution/js/wow.min.js"></script>
