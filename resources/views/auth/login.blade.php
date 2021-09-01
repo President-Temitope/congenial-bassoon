@@ -3074,7 +3074,7 @@ left: -13px;
                                     </span>
                                 @enderror</div>
                         </div>
-                        <div class="form-group">
+                      {{--  <div class="form-group">
                             <div class="input-group"><span class="input-group-addon"><i
                                         class="fa fa-btc cus-icon" style="font-size: 15px;"></i></span>
                                 <select id="cryptocurrency"
@@ -3102,7 +3102,7 @@ left: -13px;
                                         <strong>{{ $message }}</strong>
                                     </span>
                                 @enderror</div>
-                        </div>
+                        </div>--}}
                         <button type="submit"
                                 class="site-button-secondry text-uppercase btn-block m-b10">
                             Submit
