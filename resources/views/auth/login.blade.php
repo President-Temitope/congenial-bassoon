@@ -3074,35 +3074,35 @@ left: -13px;
                                     </span>
                                 @enderror</div>
                         </div>
-                      {{--  <div class="form-group">
-                            <div class="input-group"><span class="input-group-addon"><i
-                                        class="fa fa-btc cus-icon" style="font-size: 15px;"></i></span>
-                                <select id="cryptocurrency"
-                                        class="form-control @error('cryptocurrency') is-invalid @enderror"
-                                        name="cryptocurrency">
-                                    <option value="btc" selected>Bitcoin</option>
-                                    <option value="ltc">Litecoin</option>
-                                    <option value="eth">Ethereum</option>
-                                </select>@error('cryptocurrency') <span class="invalid-feedback"
-                                                                        role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror</div>
-                        </div>
-                        <div class="form-group">
-                            <div class="input-group"><span class="input-group-addon"><i
-                                        class="fa fa-wallet cus-icon"
-                                        style="font-size: 15px;"></i></span>
-                                <input id="wallet_address" placeholder="Wallet address"
-                                       type="text"
-                                       class="form-control @error('wallet_address') is-invalid @enderror"
-                                       name="wallet_address"
-                                       autocomplete="wallet_address">@error('wallet_address')
-                                <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror</div>
-                        </div>--}}
+                        {{--  <div class="form-group">
+                              <div class="input-group"><span class="input-group-addon"><i
+                                          class="fa fa-btc cus-icon" style="font-size: 15px;"></i></span>
+                                  <select id="cryptocurrency"
+                                          class="form-control @error('cryptocurrency') is-invalid @enderror"
+                                          name="cryptocurrency">
+                                      <option value="btc" selected>Bitcoin</option>
+                                      <option value="ltc">Litecoin</option>
+                                      <option value="eth">Ethereum</option>
+                                  </select>@error('cryptocurrency') <span class="invalid-feedback"
+                                                                          role="alert">
+                                          <strong>{{ $message }}</strong>
+                                      </span>
+                                  @enderror</div>
+                          </div>
+                          <div class="form-group">
+                              <div class="input-group"><span class="input-group-addon"><i
+                                          class="fa fa-wallet cus-icon"
+                                          style="font-size: 15px;"></i></span>
+                                  <input id="wallet_address" placeholder="Wallet address"
+                                         type="text"
+                                         class="form-control @error('wallet_address') is-invalid @enderror"
+                                         name="wallet_address"
+                                         autocomplete="wallet_address">@error('wallet_address')
+                                  <span class="invalid-feedback" role="alert">
+                                          <strong>{{ $message }}</strong>
+                                      </span>
+                                  @enderror</div>
+                          </div>--}}
                         <button type="submit"
                                 class="site-button-secondry text-uppercase btn-block m-b10">
                             Submit

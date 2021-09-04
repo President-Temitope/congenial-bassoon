@@ -16,6 +16,6 @@ class CoreDatabaseSeeder extends Seeder
     {
         Model::unguard();
 
-         $this->call(StartupSeederTableSeeder::class);
+        $this->call(StartupSeederTableSeeder::class);
     }
 }

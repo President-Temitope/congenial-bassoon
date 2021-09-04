@@ -13,7 +13,7 @@ interface CoreRepositoryInterface
     public function delete($model, $id);
 
 
-    public function queryWithACondition($condition,$query,$model);
+    public function queryWithACondition($condition, $query, $model);
 
-    public function show($model,$id);
+    public function show($model, $id);
 }

@@ -27,16 +27,21 @@
                                 @csrf
                                 <div class="form-group">
                                     <label for="input">Title</label>
-                                    <input class="form-control" type="text" id="input" name="title" placeholder="Enter title" value="{{$investment->title}}" autocomplete="on" />
+                                    <input class="form-control" type="text" id="input" name="title"
+                                           placeholder="Enter title" value="{{$investment->title}}" autocomplete="on"/>
                                 </div>
                                 <div class="form-group">
                                     <label for="input">Proposed Amount</label>
-                                    <input class="form-control" type="number" id="input" min="1" name="proposed_amount" placeholder="Enter Proposed amount" value="{{$investment->proposed_amount}}" autocomplete="on" />
-                                    <input class="form-control" type="hidden" id="input" name="id" value="{{$investment->id}}" />
+                                    <input class="form-control" type="number" id="input" min="1" name="proposed_amount"
+                                           placeholder="Enter Proposed amount" value="{{$investment->proposed_amount}}"
+                                           autocomplete="on"/>
+                                    <input class="form-control" type="hidden" id="input" name="id"
+                                           value="{{$investment->id}}"/>
                                 </div>
                                 <div class="form-group">
                                     <label for="input">Price</label>
-                                    <input class="form-control" type="number" min="1" id="input" name="price" placeholder="Enter amount" value="{{$investment->price}}" autocomplete="on" />
+                                    <input class="form-control" type="number" min="1" id="input" name="price"
+                                           placeholder="Enter amount" value="{{$investment->price}}" autocomplete="on"/>
                                 </div>
 
                                 <div class="form-group">

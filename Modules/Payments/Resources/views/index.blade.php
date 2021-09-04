@@ -11,7 +11,7 @@
         <div class="card shadow mb-4">
             <div class="card-header py-3">
                 <h6 class="m-0 font-weight-bold text-primary">This is where you manage payment made by users</h6>
-{{--                <button class="btn btn-outline-success -align-right" {!! $addButton !!}>Add plan</button>--}}
+                {{--                <button class="btn btn-outline-success -align-right" {!! $addButton !!}>Add plan</button>--}}
             </div>
             <div class="card-body">
                 <div class="table-responsive">
@@ -52,7 +52,9 @@
                                     <td>{{$payment->updated_at->diffForHumans()}}</td>
 
                                     <td>
-                                      <span>  <a href="" class="btn btn-outline-success">Approve</a> </span><a href="" class="btn btn-outline-secondary">Edit</a> <span><a href="" class="btn btn-outline-danger ">Delete</a></span>
+                                        <span>  <a href="" class="btn btn-outline-success">Approve</a> </span><a href=""
+                                                                                                                 class="btn btn-outline-secondary">Edit</a>
+                                        <span><a href="" class="btn btn-outline-danger ">Delete</a></span>
                                     </td>
                                 </tr>
                             @endforeach

@@ -11,12 +11,12 @@
 |
 */
 
-Route::prefix('investments')->group(function() {
+Route::prefix('investments')->group(function () {
     Route::get('/', 'InvestmentsController@index');
-    Route::get('/deleteInvestment/{id}','InvestmentsController@destroy');
-    Route::post('/updateInvestment','InvestmentsController@update');
-    Route::post('/createInvestment','InvestmentsController@store');
-    Route::get('/viewAllInvestmentPlans','InvestmentsController@viewAll');
-    Route::get('/deactivatePlan/{id}','InvestmentsController@deactivatePlan');
-    Route::get('/getPlan/{id}','InvestmentsController@getPlan');
+    Route::get('/deleteInvestment/{id}', 'InvestmentsController@destroy');
+    Route::post('/updateInvestment', 'InvestmentsController@update');
+    Route::post('/createInvestment', 'InvestmentsController@store');
+    Route::get('/viewAllInvestmentPlans', 'InvestmentsController@viewAll');
+    Route::get('/deactivatePlan/{id}', 'InvestmentsController@deactivatePlan');
+    Route::get('/getPlan/{id}', 'InvestmentsController@getPlan');
 });

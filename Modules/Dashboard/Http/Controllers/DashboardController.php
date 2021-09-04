@@ -17,7 +17,7 @@ class DashboardController extends Controller
     public function __construct(InvestmentsRepository $investmentsRepository)
     {
         $this->investment = $investmentsRepository;
-        $this->middleware(['auth','verified']);
+        $this->middleware(['auth', 'verified']);
     }
 
     /**
@@ -27,7 +27,7 @@ class DashboardController extends Controller
     public function index()
     {
         $investments = $this->investment->queryWithStatus();
-        return view('dashboard::index')->with('investments',$investments);
+        return view('dashboard::index')->with('investments', $investments);
     }
 
 }

@@ -209,7 +209,8 @@
         <div class="nk-header nk-header-fluid is-theme  is-regular">
             <div class="container-xl wide-xl">
                 <div class="nk-header-wrap">
-                    <div class="nk-menu-trigger mr-sm-2 d-lg-none"><a class="nk-nav-toggle nk-quick-nav-icon" data-target="headerNav"
+                    <div class="nk-menu-trigger mr-sm-2 d-lg-none"><a class="nk-nav-toggle nk-quick-nav-icon"
+                                                                      data-target="headerNav"
                                                                       href="#"><em
                                 class="icon ni ni-menu"></em></a></div>
                     <div class="nk-header-brand"><a class="logo-link" href="/dashboard"><img alt="logo"
@@ -222,23 +223,29 @@
                         <div class="nk-header-mobile">
                             <div class="nk-header-brand"><a class="logo-link" href="/"><img
                                         alt="logo" class="logo-light logo-img"
-                                        src="{{asset('img/2.png')}}" srcset="{{asset('img/2.png')}} 2x"><img alt="logo-dark"
-                                                                                                        class="logo-dark logo-img"
-                                                                                                        src="{{asset('img/2.png')}}"
-                                                                                                        srcset="{{asset('img/2.png')}} 2x"></a></div>
-                            <div class="nk-menu-trigger mr-n2"><a class="nk-nav-toggle nk-quick-nav-icon" data-target="headerNav"
+                                        src="{{asset('img/2.png')}}" srcset="{{asset('img/2.png')}} 2x"><img
+                                        alt="logo-dark"
+                                        class="logo-dark logo-img"
+                                        src="{{asset('img/2.png')}}"
+                                        srcset="{{asset('img/2.png')}} 2x"></a></div>
+                            <div class="nk-menu-trigger mr-n2"><a class="nk-nav-toggle nk-quick-nav-icon"
+                                                                  data-target="headerNav"
                                                                   href="#"><em
                                         class="icon ni ni-arrow-left"></em></a></div>
                         </div>
                         <ul class="nk-menu nk-menu-main">
-                            <li class="nk-menu-item {{$pageName == 'Dashboard' ? 'active' : ''}}"><a class="nk-menu-link" href="/dashboard"><span
+                            <li class="nk-menu-item {{$pageName == 'Dashboard' ? 'active' : ''}}"><a
+                                    class="nk-menu-link" href="/dashboard"><span
                                         class="nk-menu-text">Overview</span></a></li>
-                            <li class="nk-menu-item {{$pageName == 'activePlans' ? 'active' : ''}}"><a class="nk-menu-link" href="/activePlans"><span
+                            <li class="nk-menu-item {{$pageName == 'activePlans' ? 'active' : ''}}"><a
+                                    class="nk-menu-link" href="/activePlans"><span
                                         class="nk-menu-text">MY Plan</span></a></li>
-                            <li class="nk-menu-item {{$pageName == 'plans' ? 'active' : ''}}"><a class="nk-menu-link" href="/plans"><span
+                            <li class="nk-menu-item {{$pageName == 'plans' ? 'active' : ''}}"><a class="nk-menu-link"
+                                                                                                 href="/plans"><span
                                         class="nk-menu-text">Invest</span></a></li>
-                            <li class="nk-menu-item {{$pageName == 'pages' ? 'active' : ''}} has-sub"><a class="nk-menu-link nk-menu-toggle"
-                                                                       href="#"><span
+                            <li class="nk-menu-item {{$pageName == 'pages' ? 'active' : ''}} has-sub"><a
+                                    class="nk-menu-link nk-menu-toggle"
+                                    href="#"><span
                                         class="nk-menu-text">Pages</span></a>
                                 <ul class="nk-menu-sub">
                                     <li class="nk-menu-item"><a class="nk-menu-link" href="welcome.html"><span
@@ -263,7 +270,8 @@
                     </div>
                     <div class="nk-header-tools">
                         <ul class="nk-quick-nav">
-                            <li class="dropdown user-dropdown order-sm-first"><a class="nk-menu-link nk-menu-toggle" data-toggle="dropdown" href="#">
+                            <li class="dropdown user-dropdown order-sm-first"><a class="nk-menu-link nk-menu-toggle"
+                                                                                 data-toggle="dropdown" href="#">
                                     <div class="user-toggle">
                                         <div class="user-avatar sm"><em class="icon ni ni-user-alt"></em></div>
                                         <div class="user-info d-none d-xl-block">
@@ -271,11 +279,13 @@
                                         </div>
                                     </div>
                                 </a>
-                                <div class="dropdown-menu dropdown-menu-md dropdown-menu-right dropdown-menu-s1 is-light">
+                                <div
+                                    class="dropdown-menu dropdown-menu-md dropdown-menu-right dropdown-menu-s1 is-light">
                                     <div class="dropdown-inner user-card-wrap bg-lighter d-none d-md-block">
                                         <div class="user-card">
                                             <div class="user-avatar"><span>AB</span></div>
-                                            <div class="user-info"><span class="lead-text">{{Auth::user()->fullName()}}</span><span
+                                            <div class="user-info"><span
+                                                    class="lead-text">{{Auth::user()->fullName()}}</span><span
                                                     class="sub-text">{{Auth::user()->email}}</span></div>
                                             <div class="user-action"><a class="btn btn-icon mr-n2"
                                                                         href="user-profile-setting.html"><em
@@ -293,7 +303,8 @@
                                     <div class="dropdown-inner">
                                         <ul class="link-list">
                                             <li><a href="user-profile-regular.html"><em
-                                                        class="icon ni ni-user-alt"></em><span>View Profile</span></a></li>
+                                                        class="icon ni ni-user-alt"></em><span>View Profile</span></a>
+                                            </li>
                                             <li><a href="user-profile-setting.html"><em
                                                         class="icon ni ni-setting-alt"></em><span>Account Setting</span></a>
                                             </li>
@@ -304,14 +315,16 @@
                                     </div>
                                     <div class="dropdown-inner">
                                         <ul class="link-list">
-                                               @auth
-                                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            @auth
+                                                <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                                      style="display: none;">
                                                     @csrf
                                                 </form>
                                             @endauth
                                             <li><a href="{{ route('logout') }}"
                                                    onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();"><em class="icon ni ni-signout"></em><span>Sign out</span></a>
+                                                     document.getElementById('logout-form').submit();"><em
+                                                        class="icon ni ni-signout"></em><span>Sign out</span></a>
                                             </li>
                                         </ul>
                                     </div>

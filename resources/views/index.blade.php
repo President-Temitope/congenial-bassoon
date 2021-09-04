@@ -2652,7 +2652,8 @@ ction-head text-center"><span class="wt-title-subline font-16 text-gray-dark m-b
             <div class="container p-t30" style="position: relative;bottom: 20px;
 ">
                 <div class="row">
-                    <div class="wt-footer-bot-left"><span class="copyrights-text">© @php echo date('Y'); @endphp {{config('app.name')}}. All Rights Reserved.</span>
+                    <div class="wt-footer-bot-left"><span
+                            class="copyrights-text">© @php echo date('Y'); @endphp {{config('app.name')}}. All Rights Reserved.</span>
                     </div>
                     <!-- <div class="center" style="padding: 20px;">
                     <span class="copyrights-text">All investing involves risk.</span>

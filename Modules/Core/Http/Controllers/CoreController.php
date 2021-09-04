@@ -18,12 +18,12 @@ class CoreController extends Controller
      */
     public function addSettings(Request $request)
     {
-        $validator = Validator::make($request->all(),[
-            'bitcoinWalletAddress' => ['required','string','min:26','max:35'],
-            'litecoinWalletAddress' => ['required','string','min:26','max:35'],
-            'ethereumWalletAddress' => ['required','string','min:26','max:35']
+        $validator = Validator::make($request->all(), [
+            'bitcoinWalletAddress' => ['required', 'string', 'min:26', 'max:35'],
+            'litecoinWalletAddress' => ['required', 'string', 'min:26', 'max:35'],
+            'ethereumWalletAddress' => ['required', 'string', 'min:26', 'max:35']
         ]);
-        if ($validator->failed()){
+        if ($validator->failed()) {
             return redirect()->back()->withErrors($validator);
         }
         if (DB::table('settings')->where('id', 1)->exists()) {
@@ -33,12 +33,12 @@ class CoreController extends Controller
             ->insert(
                 [
                     'id' => 1,
-                    'bitcoinWalletAddress'=> $request->bitcoinWalletAddress,
-                    'litecoinWalletAddress'=> $request->litecoinWalletAddress,
-                    'ethereumWalletAddress'=> $request->ethereumWalletAddress,
-                    ]
+                    'bitcoinWalletAddress' => $request->bitcoinWalletAddress,
+                    'litecoinWalletAddress' => $request->litecoinWalletAddress,
+                    'ethereumWalletAddress' => $request->ethereumWalletAddress,
+                ]
             );
-        return redirect()->back()->with('success','Wallet addresses added successfully');
+        return redirect()->back()->with('success', 'Wallet addresses added successfully');
 
     }
 }

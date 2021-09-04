@@ -21,7 +21,7 @@ class User extends Authenticatable implements MustVerifyEmail
      * @var array
      */
     protected $fillable = [
-        'firstname', 'email', 'password','wallet_address','cryptocurrency','lastname'
+        'firstname', 'email', 'password', 'wallet_address', 'cryptocurrency', 'lastname'
     ];
 
     /**
@@ -42,12 +42,8 @@ class User extends Authenticatable implements MustVerifyEmail
         'email_verified_at' => 'datetime',
     ];
 
-    public function fullName(){
-        return $this->firstname .' '. $this->lastname;
-    }
-
-
-    public function payments(){
+    public function payments()
+    {
         return $this->hasMany(Payment::class);
 
     }
@@ -55,5 +51,10 @@ class User extends Authenticatable implements MustVerifyEmail
     public function sendEmailVerificationNotification()
     {
         $this->notify(new \App\Notifications\userVerify($this->fullName()));  //pass the currently logged in user to the notification class
+    }
+
+    public function fullName()
+    {
+        return $this->firstname . ' ' . $this->lastname;
     }
 }

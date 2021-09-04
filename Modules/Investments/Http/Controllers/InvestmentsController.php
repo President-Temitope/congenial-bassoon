@@ -22,6 +22,7 @@ class InvestmentsController extends Controller
         $this->investment = $investmentsRepository;
         $this->middleware('auth');
     }
+
     /**
      * Display a listing of the resource.
      * @return Renderable
@@ -29,7 +30,7 @@ class InvestmentsController extends Controller
     public function index()
     {
         $investments = $this->investment->queryWithStatus();
-        return view('investments::index')->with('investments',$investments);
+        return view('investments::index')->with('investments', $investments);
     }
 
     /**
@@ -40,18 +41,18 @@ class InvestmentsController extends Controller
      */
     public function store(Request $request)
     {
-       $validator = Validator::make($request->all(),[
-            'name' => ['required','string'],
-            'description' => ['required','string'],
-            'priceRangeOne' => ['required','numeric'],
-            'priceRangeTwo' => ['required','numeric'],
-            'percentage' => ['required','numeric']
+        $validator = Validator::make($request->all(), [
+            'name' => ['required', 'string'],
+            'description' => ['required', 'string'],
+            'priceRangeOne' => ['required', 'numeric'],
+            'priceRangeTwo' => ['required', 'numeric'],
+            'percentage' => ['required', 'numeric']
         ]);
-        if ($validator->failed()){
+        if ($validator->failed()) {
             return redirect()->back()->withErrors($validator);
         }
         $this->investment->create($validator->validated());
-        return redirect()->back()->with('success','Investment plan added successfully');
+        return redirect()->back()->with('success', 'Investment plan added successfully');
     }
 
 
@@ -64,19 +65,19 @@ class InvestmentsController extends Controller
      */
     public function update(Request $request)
     {
-      $validator =   Validator::make($request->all(),[
-          'name' => ['required','string'],
-          'description' => ['required','string'],
-          'priceRangeOne' => ['required','numeric'],
-          'priceRangeTwo' => ['required','numeric'],
-          'percentage' => ['required','numeric']
+        $validator = Validator::make($request->all(), [
+            'name' => ['required', 'string'],
+            'description' => ['required', 'string'],
+            'priceRangeOne' => ['required', 'numeric'],
+            'priceRangeTwo' => ['required', 'numeric'],
+            'percentage' => ['required', 'numeric']
         ]);
-        if ($validator->failed()){
+        if ($validator->failed()) {
             return redirect()->back()->withErrors($validator);
         }
         $id = $request['id'];
-        $this->investment->edit($id,$validator->validated());
-        return redirect()->back()->with('success','Investment plan updated successfully');
+        $this->investment->edit($id, $validator->validated());
+        return redirect()->back()->with('success', 'Investment plan updated successfully');
     }
 
     /**
@@ -87,17 +88,19 @@ class InvestmentsController extends Controller
     public function destroy($id)
     {
         $this->investment->delete($id);
-        return redirect()->back()->with('success','Investment plan deleted successfully');
+        return redirect()->back()->with('success', 'Investment plan deleted successfully');
     }
 
-    public function viewAll(){
-       $investments =  $this->investment->all();
-       return view('investments::viewAll')->with('investments',$investments);
+    public function viewAll()
+    {
+        $investments = $this->investment->all();
+        return view('investments::viewAll')->with('investments', $investments);
     }
 
-    public function deactivatePlan($id){
-        $this->investment->edit($id,['status'=> 0]);
-        return redirect()->back()->with('success','Investment plan updated successfully');
+    public function deactivatePlan($id)
+    {
+        $this->investment->edit($id, ['status' => 0]);
+        return redirect()->back()->with('success', 'Investment plan updated successfully');
     }
 
     /**
@@ -109,13 +112,13 @@ class InvestmentsController extends Controller
         DB::table('payments')
             ->insert(
                 [
-                  'user_id' => auth()->id(),
-                  'investment_id' => $id,
+                    'user_id' => auth()->id(),
+                    'investment_id' => $id,
                     'created_at' => Carbon::now(),
                     'updated_at' => Carbon::now(),
                 ]
             );
-        return redirect()->back()->with('success','Offer made successfully, await confirmation');
+        return redirect()->back()->with('success', 'Offer made successfully, await confirmation');
 
     }
 

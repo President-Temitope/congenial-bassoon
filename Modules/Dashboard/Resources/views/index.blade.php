@@ -1352,13 +1352,17 @@
                                     Active
                                 </div>
                                 <ul class="nk-iv-wg2-list">
-                                    <li><span class="item-label"><a href="#">Silver</a> <small>- 4.76% for 21 Days</small></span><span
+                                    <li><span class="item-label"><a
+                                                href="#">Silver</a> <small>- 4.76% for 21 Days</small></span><span
                                             class="item-value">2,500.00</span></li>
-                                    <li><span class="item-label"><a href="#">Silver</a> <small>- 4.76% for 21 Days</small></span><span
+                                    <li><span class="item-label"><a
+                                                href="#">Silver</a> <small>- 4.76% for 21 Days</small></span><span
                                             class="item-value">2,000.00</span></li>
-                                    <li><span class="item-label"><a href="#">Dimond</a> <small>- 14.29% for 14 Days</small></span><span
+                                    <li><span class="item-label"><a
+                                                href="#">Dimond</a> <small>- 14.29% for 14 Days</small></span><span
                                             class="item-value">8,000.00</span></li>
-                                    <li><span class="item-label"><a href="#">Starter</a> <small>- 1.67% for 30 Days</small></span><span
+                                    <li><span class="item-label"><a
+                                                href="#">Starter</a> <small>- 1.67% for 30 Days</small></span><span
                                             class="item-value">335.00</span></li>
                                 </ul>
                             </div>

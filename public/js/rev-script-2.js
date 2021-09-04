@@ -3,7 +3,7 @@
 var tpj = jQuery;
 
 var revapi1014;
-tpj(document).ready(function() {
+tpj(document).ready(function () {
     if (tpj("#rev_slider_1014_1").revolution == undefined) {
         revslider_showDoubleJqueryError("#rev_slider_1014_1");
     } else {

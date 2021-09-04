@@ -35,7 +35,7 @@
                                     <p style="margin:0;margin-bottom:30px;color:#294661;font-family:'Open Sans','Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif;font-size:16px;font-weight:300">
                                         Thanks for choosing&nbsp;Cryptobolt platform as your personal investment
                                         service!&nbsp;
-                                        <!-- <a href="https://{{config('app.name')}}.com/email-template-download/?post=48575" title="Click this link" style="color:#348eda;font-weight:400;text-decoration:none" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://{{config('app.name')}}.com/email-template-download/?post%3D48575&amp;source=gmail&amp;ust=1625989035291000&amp;usg=AFQjCNFyecrcs9a6P_kNDXax8tyTdV8Njg">Click this link</a> -->
+                                    <!-- <a href="https://{{config('app.name')}}.com/email-template-download/?post=48575" title="Click this link" style="color:#348eda;font-weight:400;text-decoration:none" target="_blank" data-saferedirecturl="https://www.google.com/url?q=https://{{config('app.name')}}.com/email-template-download/?post%3D48575&amp;source=gmail&amp;ust=1625989035291000&amp;usg=AFQjCNFyecrcs9a6P_kNDXax8tyTdV8Njg">Click this link</a> -->
                                         <br><br>
                                         Please verify your email address to get access to all our live investment
                                         opportunities, as well as be able to start raising investment..
@@ -70,7 +70,7 @@
                                                             <div>
                                                                 <a href="{{$actionUrl}}"
                                                                    style="box-sizing:border-box;border-color:#348eda;font-weight:400;text-decoration:none;display:inline-block;margin:0;padding:12px 45px;color:#ffffff;border:solid 1px #348eda;border-radius:2px;font-size:14px;text-transform:capitalize;background-color:#000"
-                                                                   >Verify Email Now</a>
+                                                                >Verify Email Now</a>
                                                             </div>
                                                         </div>
                                                     </td>
@@ -108,14 +108,15 @@
                     valign="top" align="center"><a
                         href="https://cryptobolt.net/"
                         style="box-sizing:border-box;color:#348eda;font-weight:400;text-decoration:none;font-size:12px"
-                        >
+                    >
                         <img
                             src="{{asset('img/logo2.png')}}" height="36" alt="{{config('app.name')}}"
                             style="max-width:100%;border-style:none;font-size:12px" class="CToWUd"></a>
                     <p style="color:#294661;font-family:'Open Sans','Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif;font-size:12px;font-weight:400;margin-bottom:5px;margin:10px 0 20px">
                         Send with Confidence</p>
                     <p style="margin:0;color:#294661;font-family:'Open Sans','Helvetica Neue','Helvetica',Helvetica,Arial,sans-serif;font-weight:300;font-size:12px;margin-bottom:5px">
-                        © @php echo date('Y'); @endphp {{config('app.name')}}. 1801 California St. Suite 500, Denver, CO 80202 USA</p>
+                        © @php echo date('Y'); @endphp {{config('app.name')}}. 1801 California St. Suite 500, Denver, CO
+                        80202 USA</p>
                 </td>
             </tr>
             </tbody>

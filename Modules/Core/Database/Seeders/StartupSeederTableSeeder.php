@@ -133,7 +133,7 @@ class StartupSeederTableSeeder extends Seeder
                 'max_amount' => '100',
                 'total_return' => '255'
 
-            ],[
+            ], [
                 'name' => 'Testing 2',
                 'desc' => 'Testing 102',
                 'daily_interest' => '1',
@@ -142,7 +142,7 @@ class StartupSeederTableSeeder extends Seeder
                 'max_amount' => '100',
                 'total_return' => '255'
 
-            ],[
+            ], [
                 'name' => 'Testing 3',
                 'desc' => 'Testing 103',
                 'daily_interest' => '1',

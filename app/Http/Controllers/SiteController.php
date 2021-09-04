@@ -8,7 +8,8 @@ use Modules\Investments\Repositories\InvestmentsRepository;
 
 class SiteController extends Controller
 {
-    protected $investment ='';
+    protected $investment = '';
+
     public function __construct(InvestmentsRepository $investmentsRepository)
     {
         $this->investment = $investmentsRepository;
@@ -24,14 +25,18 @@ class SiteController extends Controller
         return view('index');
     }
 
-    public function about(){
+    public function about()
+    {
         return view('about');
     }
-    public function contact(){
+
+    public function contact()
+    {
         return view('contact');
     }
 
-    public function privacyAndPolicy(){
+    public function privacyAndPolicy()
+    {
         return view('privacy-policy');
     }
 

@@ -1,10 +1,9 @@
-function httpGet(theUrl)
-{
+function httpGet(theUrl) {
     var xmlHttp = null;
 
     xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", theUrl, false );
-    xmlHttp.send( null );
+    xmlHttp.open("GET", theUrl, false);
+    xmlHttp.send(null);
     return xmlHttp.responseText;
 }
 
@@ -63,10 +62,10 @@ switch (crypt_calc_font_size) {
 
 crypt_calc_style = 'background: ' + crypt_calc_background_color +
     '; border: ' + crypt_calc_border_width + 'px solid ' + crypt_calc_border_color + ';' +
-    'font-family: ' + crypt_calc_font_family +'; font-size: ' + crypt_calc_font_size +
+    'font-family: ' + crypt_calc_font_family + '; font-size: ' + crypt_calc_font_size +
     '; color: ' + crypt_calc_font_color + ';';
 
-crypt_calc_font_style = 'font-family: ' + crypt_calc_font_family +'; font-size: ' + crypt_calc_font_size + '; height: auto;';
+crypt_calc_font_style = 'font-family: ' + crypt_calc_font_family + '; font-size: ' + crypt_calc_font_size + '; height: auto;';
 
 if (crypt_calc_border_corners == "square") {
     crypt_calc_style += "-webkit-border-radius: 0 !important; -moz-border-radius: 0 !important; border-radius: 0 !important;";
@@ -141,10 +140,10 @@ document.getElementById('cur-2').onchange = function () {
 }
 
 document.getElementById('amount-1').onkeyup = function () {
-        if (crypt_calc_price12 != 0)
-            document.getElementById('amount-2').value = document.getElementById('amount-1').value * crypt_calc_price12;
-        else
-            document.getElementById('amount-2').value = "No price available";
+    if (crypt_calc_price12 != 0)
+        document.getElementById('amount-2').value = document.getElementById('amount-1').value * crypt_calc_price12;
+    else
+        document.getElementById('amount-2').value = "No price available";
 }
 
 document.getElementById('amount-2').onkeyup = function () {

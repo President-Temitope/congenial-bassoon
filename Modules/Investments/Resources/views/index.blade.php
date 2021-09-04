@@ -551,125 +551,126 @@
 </script>
 <body class="nk-body npc-invest bg-lighter ">
 <div class="nk-app-root">
-   @include('dashboard::layouts.master')
-                        <div class="nk-block-head text-center">
-                            <div class="nk-block-head-content">
-                                <div class="nk-block-head-sub"><span style="font-size: initial;">Choose an Option</span>
-                                </div>
-                                <div class="nk-block-head-content">
-                                    <h2 class="nk-block-title fw-normal">Investment Plan</h2>
-                                    <div class="nk-block-des">
-                                        <p style="font-size:initial;">Choose your investment plan and start earning.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+    @include('dashboard::layouts.master')
+    <div class="nk-block-head text-center">
+        <div class="nk-block-head-content">
+            <div class="nk-block-head-sub"><span style="font-size: initial;">Choose an Option</span>
+            </div>
+            <div class="nk-block-head-content">
+                <h2 class="nk-block-title fw-normal">Investment Plan</h2>
+                <div class="nk-block-des">
+                    <p style="font-size:initial;">Choose your investment plan and start earning.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-                        <style>
-                            .item {
-                                width: 100%;
-                            }
+    <style>
+        .item {
+            width: 100%;
+        }
 
-                        </style>
+    </style>
 
 
-                        <div class="container">
-                            <div class="row">
-                                <div class="MultiCarousel carousel-container" data-items="1,3,5,6" data-slide="1"
-                                     id="MultiCarousel1" data-interval="1000">
-                                    <div class="MultiCarousel-inner"
-                                         style="transform: translateX(0px); width: 10880px;">
+    <div class="container">
+        <div class="row">
+            <div class="MultiCarousel carousel-container" data-items="1,3,5,6" data-slide="1"
+                 id="MultiCarousel1" data-interval="1000">
+                <div class="MultiCarousel-inner"
+                     style="transform: translateX(0px); width: 10880px;">
 
-                                        @if(count($investments) > 0)
-                                            @foreach($investments as $investment)
-                                        <div class="item" style="width: 680px;">
-                                            <div class="plan-item-card pad15">
-                                                <div class="plan-item-head">
-                                                    <div class="plan-item-heading">
-                                                        <h4 class="plan-item-title card-title title">{{$investment->name}}</h4>
-                                                        <p class="sub-text">{{$investment->desc}}</p>
-                                                    </div>
-                                                    <div class="plan-item-summary card-text">
-                                                        <div class="row">
-                                                            <div class="col-6"><span class="lead-text">{{$investment->daily_interest}}%</span><span
-                                                                    class="sub-text">Daily Interest</span>
-                                                            </div>
-                                                            <div class="col-6"><span class="lead-text">{{$investment->term_days}}</span><span
-                                                                    class="sub-text">Term Days</span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                    @if(count($investments) > 0)
+                        @foreach($investments as $investment)
+                            <div class="item" style="width: 680px;">
+                                <div class="plan-item-card pad15">
+                                    <div class="plan-item-head">
+                                        <div class="plan-item-heading">
+                                            <h4 class="plan-item-title card-title title">{{$investment->name}}</h4>
+                                            <p class="sub-text">{{$investment->desc}}</p>
+                                        </div>
+                                        <div class="plan-item-summary card-text">
+                                            <div class="row">
+                                                <div class="col-6"><span class="lead-text">{{$investment->daily_interest}}%</span><span
+                                                        class="sub-text">Daily Interest</span>
                                                 </div>
-                                                <div class="plan-item-body">
-                                                    <div class="plan-item-desc card-text">
-                                                        <ul class="plan-item-desc-list">
-                                                            <li><span class="desc-label">Min Deposit</span> - <span
-                                                                    class="desc-data">${{$investment->min_amount}}</span>
-                                                            </li>
-                                                            <li><span class="desc-label">Max Deposit</span> - <span
-                                                                    class="desc-data">${{$investment->max_amount}}</span>
-                                                            </li>
-                                                            <li><span class="desc-label">Deposit Return</span> - <span
-                                                                    class="desc-data">{{$investment->deposit_return}}</span>
-                                                            </li>
-                                                            <li><span class="desc-label">Total Return</span> - <span
-                                                                    class="desc-data">{{$investment->total_return}}%</span>
-                                                            </li>
-                                                        </ul>
-                                                        <div class="plan-item-action">
-                                                            <label for="plan-iv-1" class="plan-label"><span
-                                                                    class="plan-label-base">Choose this plan</span><span
-                                                                    class="plan-label-selected">Plan Selected</span>
-                                                            </label>
-                                                        </div>
-                                                    </div>
+                                                <div class="col-6"><span
+                                                        class="lead-text">{{$investment->term_days}}</span><span
+                                                        class="sub-text">Term Days</span>
                                                 </div>
                                             </div>
                                         </div>
-                                            @endforeach
-                                        @endif
-
-
                                     </div>
-                                    <button class="btn btn-primary leftLst over">&lt;</button>
-                                    <button class="btn btn-primary rightLst">&gt;</button>
+                                    <div class="plan-item-body">
+                                        <div class="plan-item-desc card-text">
+                                            <ul class="plan-item-desc-list">
+                                                <li><span class="desc-label">Min Deposit</span> - <span
+                                                        class="desc-data">${{$investment->min_amount}}</span>
+                                                </li>
+                                                <li><span class="desc-label">Max Deposit</span> - <span
+                                                        class="desc-data">${{$investment->max_amount}}</span>
+                                                </li>
+                                                <li><span class="desc-label">Deposit Return</span> - <span
+                                                        class="desc-data">{{$investment->deposit_return}}</span>
+                                                </li>
+                                                <li><span class="desc-label">Total Return</span> - <span
+                                                        class="desc-data">{{$investment->total_return}}%</span>
+                                                </li>
+                                            </ul>
+                                            <div class="plan-item-action">
+                                                <label for="plan-iv-1" class="plan-label"><span
+                                                        class="plan-label-base">Choose this plan</span><span
+                                                        class="plan-label-selected">Plan Selected</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                        @endforeach
+                    @endif
 
 
-                        </div>
-
-
-                    </div>
                 </div>
+                <button class="btn btn-primary leftLst over">&lt;</button>
+                <button class="btn btn-primary rightLst">&gt;</button>
             </div>
         </div>
 
 
-        <div class="plan-iv-actions text-center" style="margin-bottom: 20px;">
-            <div class="white_btn"><a href="./invest-form.html"><span>Continue to Invest</span> <em
-                        class="icon ni ni-arrow-right"></em></a></div>
-        </div>
-        <!-- <div class="nk-footer nk-footer-fluid bg-lighter">
-            <div class="container-xl wide-lg">
-                <div class="nk-footer-wrap">
-                    <div class="nk-footer-copyright">© 2020 DashLite. Template by <a href="#">Softnio</a>
-                    </div>
-                    <div class="nk-footer-links">
-                        <ul class="nav nav-sm">
-                            <li class="nav-item"><a class="nav-link" href="#">Terms</a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="#">Privacy</a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="#">Help</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div> -->
     </div>
+
+
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="plan-iv-actions text-center" style="margin-bottom: 20px;">
+    <div class="white_btn"><a href="./invest-form.html"><span>Continue to Invest</span> <em
+                class="icon ni ni-arrow-right"></em></a></div>
+</div>
+<!-- <div class="nk-footer nk-footer-fluid bg-lighter">
+    <div class="container-xl wide-lg">
+        <div class="nk-footer-wrap">
+            <div class="nk-footer-copyright">© 2020 DashLite. Template by <a href="#">Softnio</a>
+            </div>
+            <div class="nk-footer-links">
+                <ul class="nav nav-sm">
+                    <li class="nav-item"><a class="nav-link" href="#">Terms</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Privacy</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Help</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div> -->
+</div>
 </div>
 
 

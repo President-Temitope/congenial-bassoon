@@ -16,7 +16,7 @@ class UsersController extends Controller
     public function index()
     {
         $users = User::simplePaginate(20);
-        return view('users::index')->with('users',$users);
+        return view('users::index')->with('users', $users);
     }
 
     /**
@@ -46,7 +46,7 @@ class UsersController extends Controller
     public function show($id)
     {
         $user = User::find($id);
-        return view('users::show')->with('user',$user);
+        return view('users::show')->with('user', $user);
     }
 
     /**

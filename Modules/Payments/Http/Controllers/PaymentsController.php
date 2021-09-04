@@ -12,10 +12,11 @@ use Modules\Payments\Entities\Payment;
 class PaymentsController extends Controller
 {
     protected $model, $core;
-    public function __construct(CoreRepositoryInterface $core,Payment $payment)
+
+    public function __construct(CoreRepositoryInterface $core, Payment $payment)
     {
-     $this->model = $payment;
-     $this->core = $core;
+        $this->model = $payment;
+        $this->core = $core;
     }
 
     /**
@@ -24,8 +25,8 @@ class PaymentsController extends Controller
      */
     public function index()
     {
-       $payments = $this->core->all($this->model);
-        return view('payments::index')->with('payments',$payments);
+        $payments = $this->core->all($this->model);
+        return view('payments::index')->with('payments', $payments);
     }
 
     /**
@@ -40,7 +41,6 @@ class PaymentsController extends Controller
 
     /**
      * Transaction history.
-
      * @return Renderable
      */
     public function transactionHistory()

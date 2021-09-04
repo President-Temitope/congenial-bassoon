@@ -1,5 +1,7 @@
 <?php
+
 namespace Modules\Investments\Repositories;
+
 use Modules\Core\Repositories\CoreRepository;
 use Modules\Investments\Entities\Investment;
 use Modules\Investments\Interfaces\InvestmentsRepositoryInterface;

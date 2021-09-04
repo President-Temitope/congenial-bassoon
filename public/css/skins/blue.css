@@ -6,7 +6,7 @@ a:hover,
 a:active,
 a:focus,
 .title-head span,
-body.light .navbar-nav>li .dropdown-menu a:hover,
+body.light .navbar-nav > li .dropdown-menu a:hover,
 body.light .latest-post .post-title a:hover,
 .site-navigation ul.nav.nav-tabs li.active a:hover, .site-navigation ul.nav.nav-tabs li.active a,
 ul.navbar-nav > li:hover > a,
@@ -19,13 +19,13 @@ body.light .navbar-nav .fa-search:active,
 body.light .navbar-nav .fa-search:focus,
 ul.navbar-nav > li.active > a,
 .about-content ul.nav.nav-tabs li.active a,
-.dropdown-menu>.active>a, 
-.dropdown-menu>.active>a:hover, 
-.dropdown-menu>.active>a:focus, 
-.dropdown-menu>.active>.dropdown-menu>.active>a,
-.dropdown-menu li a:hover, 
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus,
+.dropdown-menu > .active > .dropdown-menu > .active > a,
+.dropdown-menu li a:hover,
 .dropdown-menu li a:focus,
-body.light .dropdown-menu>.active>a, 
+body.light .dropdown-menu > .active > a,
 .slider-text .slide-title span,
 #main-slide .carousel-control i,
 .feature .feature-icon,
@@ -39,7 +39,7 @@ blockquote footer span,
 .latest-post .post-title a:hover,
 .footer .top-footer h4,
 .footer .bottom-footer p span,
-.breadcrumb>li a:hover,
+.breadcrumb > li a:hover,
 .user-auth > div:nth-child(2) .form-container .form-group a:hover,
 .sidebar ul.nav-tabs li a:hover,
 body.light.blog .sidebar ul.nav-tabs li a:hover,
@@ -57,10 +57,10 @@ h4.panel-title a,
 .facts .facts-content .heading-facts h2 span,
 .btn-primary.btn-pricing,
 .shop-cart .table .icon-delete-product:hover,
-.shop-cart .table .icon-delete-product:focus, 
+.shop-cart .table .icon-delete-product:focus,
 .shop-cart .table .icon-delete-product:active,
 body.light .shop-cart .table .icon-delete-product:hover,
-body.light .shop-cart .table .icon-delete-product:focus, 
+body.light .shop-cart .table .icon-delete-product:focus,
 body.light .shop-cart .table .icon-delete-product:active
 .shop-cart .btn.btn-primary.btn-coupon:hover,
 .shop-cart .btn.btn-primary.btn-coupon:focus,
@@ -70,7 +70,7 @@ body.light .shop-cart .table .icon-delete-product:active
 .shop-cart .btn.btn-update-cart:active,
 .shop-cart .btn.btn-coupon:hover,
 .payment .tooltip-text {
-  color: #0095eb;
+    color: #0095eb;
 }
 
 .btn-primary,
@@ -84,17 +84,17 @@ ul.user li.sign-in a:hover,
 .bitcoin-calculator .form-input.select-currency,
 .bitcoin-calculator .form-info,
 .team-member:hover .team-member-caption,
-.select-primary~.select2 .select2-selection__rendered,
-.select-primary~.select2 .select2-selection__rendered,.select-primary~.select2 .select2-selection__rendered:active,
-.select-primary~.select2 .select2-selection__rendered:focus,
-.select-primary~.select2 .select2-selection__rendered:hover,
+.select-primary ~ .select2 .select2-selection__rendered,
+.select-primary ~ .select2 .select2-selection__rendered, .select-primary ~ .select2 .select2-selection__rendered:active,
+.select-primary ~ .select2 .select2-selection__rendered:focus,
+.select-primary ~ .select2 .select2-selection__rendered:hover,
 .select-primary-dropdown,
 #carousel-testimonials .carousel-indicators li.active,
 .widget-tags ul > li a:hover,
 body.blog .pagination li.active a,
 .facts,
 .call-action-all .action-btn .btn-primary {
-  background: #0095eb;
+    background: #0095eb;
 }
 
 ul.user li.sign-in a:hover,
@@ -109,140 +109,142 @@ ul.user li.sign-in a,
 .shop-cart .btn.btn-primary.btn-coupon:active,
 .shop-cart .btn.btn-update-cart:hover,
 .shop-cart .btn.btn-update-cart:focus,
-.shop-cart .btn.btn-update-cart:active{
-  border: 1px solid #0095eb ;
+.shop-cart .btn.btn-update-cart:active {
+    border: 1px solid #0095eb;
 }
 
 .bitcoin-calculator span.select2,
 .select2-container--default .select2-selection--single {
-  border-bottom: 1px solid #0095eb;
+    border-bottom: 1px solid #0095eb;
 }
 
 body.light ul.user li.sign-in a:hover, .slider.btn-primary:hover {
-  border: 1px solid #0095eb;
+    border: 1px solid #0095eb;
 }
 
 .team-member-caption {
-  border-top: 3px solid #0095eb;
+    border-top: 3px solid #0095eb;
 }
 
 .button-video:after {
-  border-color: transparent transparent transparent #0095eb;
+    border-color: transparent transparent transparent #0095eb;
 }
 
 .btcwdgt-chart .btcwdgt-header h2 {
-  background-color: #0095eb !important;
+    background-color: #0095eb !important;
 }
 
 .path {
-  stroke: #0095eb;
+    stroke: #0095eb;
 }
 
 @-webkit-keyframes dash {
-  0% {
-    stroke-dashoffset: 2000;
-    opacity: 0;
-    stroke: #0095eb;
-  }
+    0% {
+        stroke-dashoffset: 2000;
+        opacity: 0;
+        stroke: #0095eb;
+    }
 
-  15% {
-    opacity: 1;
-    stroke: #0095eb;
-  }
+    15% {
+        opacity: 1;
+        stroke: #0095eb;
+    }
 
-  70% {
-    opacity: 1;
-    stroke: #0095eb;
-  }
+    70% {
+        opacity: 1;
+        stroke: #0095eb;
+    }
 
-  100% {
-    stroke-dashoffset: 0;
-    opacity: 0;
-    stroke: #0095eb;
-  }
+    100% {
+        stroke-dashoffset: 0;
+        opacity: 0;
+        stroke: #0095eb;
+    }
 }
 
 @keyframes dash {
-  0% {
-    stroke-dashoffset: 2000;
-    opacity: 0;
-    stroke: #0095eb;
-  }
+    0% {
+        stroke-dashoffset: 2000;
+        opacity: 0;
+        stroke: #0095eb;
+    }
 
-  15% {
-    opacity: 1;
-    stroke: #0095eb;
-  }
+    15% {
+        opacity: 1;
+        stroke: #0095eb;
+    }
 
-  70% {
-    opacity: 1;
-    stroke: #0095eb;
-  }
+    70% {
+        opacity: 1;
+        stroke: #0095eb;
+    }
 
-  100% {
-    stroke-dashoffset: 0;
-    opacity: 0;
-    stroke: #0095eb;
-  }
+    100% {
+        stroke-dashoffset: 0;
+        opacity: 0;
+        stroke: #0095eb;
+    }
 }
 
 .btcwdgt.btcwdgt-s-price .btcwdgt-body ul li {
-  color: #0095eb !important;
+    color: #0095eb !important;
 }
 
 .btcwdgt.btcwdgt-chart .btcwdgt-header h2,
 .btcwdgt.btcwdgt-chart .btcwdgt-header .stats {
-  background-color: #0095eb !important;
+    background-color: #0095eb !important;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: rgba(0, 149, 235,.9) !important;
-  outline: none !important;
+    background: rgba(0, 149, 235, .9) !important;
+    outline: none !important;
 }
 
 .slider.btn-primary:focus,
 .slider.btn-primary:active,
 ul.user li.sign-in a.btn-primary:focus,
 ul.user li.sign-in a.btn-primary:active {
-  border: 1px solid #0095eb !important;
+    border: 1px solid #0095eb !important;
 }
 
-@media (max-width : 767px) {
- 
-  ul.navbar-nav > li.active, ul.navbar-nav > li:not(.search):hover {
-    background: transparent;
-  }
+@media (max-width: 767px) {
 
-  .site-navigation.fixed ul.navbar-nav {
-    border: 0;
-  }
+    ul.navbar-nav > li.active, ul.navbar-nav > li:not(.search):hover {
+        background: transparent;
+    }
 
-  .site-navigation {
-    border-bottom: 1px solid #333;
-  }
+    .site-navigation.fixed ul.navbar-nav {
+        border: 0;
+    }
 
-  body.light .navbar-collapse ul.navbar-nav > li.active > a, .navbar-collapse ul.navbar-nav > li.active > a {
-    color: #0095eb;
-  }
+    .site-navigation {
+        border-bottom: 1px solid #333;
+    }
+
+    body.light .navbar-collapse ul.navbar-nav > li.active > a, .navbar-collapse ul.navbar-nav > li.active > a {
+        color: #0095eb;
+    }
 }
 
-@media (max-width : 570px) {
- 
-  .about-content ul.nav.nav-tabs li.active a {
-    color: #fff;
-  }
+@media (max-width: 570px) {
 
-  ul.nav.nav-tabs li.active a:hover, ul.nav.nav-tabs li.active a {
-    background: #0095eb;
-  }
+    .about-content ul.nav.nav-tabs li.active a {
+        color: #fff;
+    }
 
-  ul.nav.nav-tabs li.active {
-    border-bottom: 1px solid #0095eb;
-  }
-  .facts {
-	  background:#222;
-  }
-  body.light .facts {
-	  background:#e7e7e7;
-  }
+    ul.nav.nav-tabs li.active a:hover, ul.nav.nav-tabs li.active a {
+        background: #0095eb;
+    }
+
+    ul.nav.nav-tabs li.active {
+        border-bottom: 1px solid #0095eb;
+    }
+
+    .facts {
+        background: #222;
+    }
+
+    body.light .facts {
+        background: #e7e7e7;
+    }
 }

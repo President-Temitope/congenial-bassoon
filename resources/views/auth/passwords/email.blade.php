@@ -51,9 +51,9 @@
 <html lang="en">
 <head>
 
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <title>Reset Password - {{config('app.name')}}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="{{asset('images/Asset 16@4x.png')}}">
@@ -80,7 +80,8 @@
 <!-- SVG Preloader Starts -->
 <div id="preloader">
     <div id="preloader-content">
-        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="150px" height="150px" viewBox="100 100 400 400" xml:space="preserve">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             x="0px" y="0px" width="150px" height="150px" viewBox="100 100 400 400" xml:space="preserve">
                 <filter id="dropshadow" height="130%">
                     <feGaussianBlur in="SourceAlpha" stdDeviation="5"/>
                     <feOffset dx="0" dy="0" result="offsetblur"/>
@@ -131,7 +132,8 @@
                     <div class="item active item-1">
                         <div>
                             <blockquote>
-                                <p>This is a realistic program for anyone looking for site to invest. Paid to me regularly, keep up good work!</p>
+                                <p>This is a realistic program for anyone looking for site to invest. Paid to me
+                                    regularly, keep up good work!</p>
                                 <footer><span>Lucy Smith</span>, England</footer>
                             </blockquote>
                         </div>
@@ -141,7 +143,8 @@
                     <div class="item item-2">
                         <div>
                             <blockquote>
-                                <p>Bitcoin doubled in 7 days. You should not expect anything more. Excellent customer service!</p>
+                                <p>Bitcoin doubled in 7 days. You should not expect anything more. Excellent customer
+                                    service!</p>
                                 <footer><span>Slim Hamdi</span>, Tunisia</footer>
                             </blockquote>
                         </div>
@@ -151,7 +154,8 @@
                     <div class="item item-3">
                         <div>
                             <blockquote>
-                                <p>My family and me want to thank you for helping us find a great opportunity to make money online. Very happy with how things are going!</p>
+                                <p>My family and me want to thank you for helping us find a great opportunity to make
+                                    money online. Very happy with how things are going!</p>
                                 <footer><span>Dalel Boubaker</span>, Russia</footer>
                             </blockquote>
                         </div>
@@ -189,17 +193,19 @@
                         {{ __('Before proceeding, please check your email for a verification link.') }}
                         {{ __('If you did not receive the email') }},
                         <form method="POST" action="{{ route('password.email') }}">
-                            @csrf
-                            <!-- Input Field Starts -->
-                                <div class="form-group">
-                                    <input id="email" placeholder="Email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
+                        @csrf
+                        <!-- Input Field Starts -->
+                            <div class="form-group">
+                                <input id="email" placeholder="Email" type="email"
+                                       class="form-control @error('email') is-invalid @enderror" name="email"
+                                       value="{{ old('email') }}" required autocomplete="email" autofocus>
 
-                                    @error('email')
-                                    <span class="invalid-feedback" role="alert">
+                                @error('email')
+                                <span class="invalid-feedback" role="alert">
                                         <strong>{{ $message }}</strong>
                                     </span>
-                                    @enderror</div>
-                                <!-- Input Field Ends -->
+                                @enderror</div>
+                            <!-- Input Field Ends -->
                             <button type="submit" class="btn btn-primary">
                                 {{ __('Send Password Reset Link') }}
                             </button>

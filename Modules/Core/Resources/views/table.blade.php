@@ -45,7 +45,10 @@
                                 @endforeach
 
                                 <td>
-                                    <a href="" class="btn btn-outline-secondary" {!! $editButton ?? ''!!}"#{{Str::slug($data->title)}}">Edit</a> <span><a href="{{$deleteButton}}{{$data->id}}" class="btn btn-outline-danger ">Delete</a></span>
+                                    <a href="" class="btn btn-outline-secondary" {!! $editButton ?? ''!!}
+                                    "#{{Str::slug($data->title)}}">Edit</a> <span><a
+                                            href="{{$deleteButton}}{{$data->id}}"
+                                            class="btn btn-outline-danger ">Delete</a></span>
                                 </td>
                             </tr>
                         @endforeach

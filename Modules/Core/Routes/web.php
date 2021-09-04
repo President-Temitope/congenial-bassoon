@@ -11,7 +11,7 @@
 |
 */
 
-Route::prefix('core')->group(function() {
+Route::prefix('core')->group(function () {
     Route::get('/', 'CoreController@index');
     Route::post('/addSettings', 'CoreController@addSettings');
 });
