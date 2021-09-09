@@ -99,7 +99,7 @@ class InvestmentsController extends Controller
 
     public function deactivatePlan($id)
     {
-        $this->investment->edit($id, ['status' => 0]);
+        $this->investment->edit($id, ['status' => 'No']);
         return redirect()->back()->with('success', 'Investment plan updated successfully');
     }
 

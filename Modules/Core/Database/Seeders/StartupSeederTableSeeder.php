@@ -3,6 +3,7 @@
 namespace Modules\Core\Database\Seeders;
 
 use App\User;
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
@@ -96,7 +97,8 @@ class StartupSeederTableSeeder extends Seeder
             'lastname' => 'User',
             'cryptocurrency' => 'btc',
             'wallet_address' => 'qwerty123654mnbvcxzaqsdrlkjhgfrt',
-            'password' => Hash::make('password')
+            'password' => Hash::make('password'),
+            'email_verified_at' => Carbon::now()
         ]);
         $user->assignRole($role2);
 
@@ -106,7 +108,8 @@ class StartupSeederTableSeeder extends Seeder
             'cryptocurrency' => 'btc',
             'wallet_address' => 'qwerty123654mnbvcxzaqsdrlkjhgfrt',
             'email' => 'admin@example.com',
-            'password' => Hash::make('password')
+            'password' => Hash::make('password'),
+            'email_verified_at' => Carbon::now()
         ]);
         $user->assignRole($role1);
 
@@ -116,7 +119,8 @@ class StartupSeederTableSeeder extends Seeder
             'cryptocurrency' => 'btc',
             'wallet_address' => 'qwerty123654mnbvcxzaqsdrlkjhgfrt',
             'email' => 'superadmin@example.com',
-            'password' => Hash::make('password')
+            'password' => Hash::make('password'),
+            'email_verified_at' => Carbon::now()
         ]);
         $user->assignRole($role3);
 

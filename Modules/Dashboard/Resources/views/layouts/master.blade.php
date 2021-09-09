@@ -200,8 +200,8 @@
           name="description">
     <link href="{{asset('img/2.png')}}" rel="shortcut icon">
     <title>{{config('app.name')}} | {{$pageName}}</title>
-    <link href="{{asset('assets/css/dashlite4250.css')}}" rel="stylesheet">
-    <link href="{{asset('assets/css/theme4250.css')}}" id="skin-default" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('assets/css/dashlite.css?ver=2.7.0')}}">
+    <link id="skin-default" rel="stylesheet" href="{{asset('assets/css/theme.css?ver=2.7.0')}}">
 </head>
 <body class="nk-body npc-invest bg-lighter ">
 <div class="nk-app-root">
@@ -213,10 +213,10 @@
                                                                       data-target="headerNav"
                                                                       href="#"><em
                                 class="icon ni ni-menu"></em></a></div>
-                    <div class="nk-header-brand"><a class="logo-link" href="/dashboard"><img alt="logo"
-                                                                                             class="logo-light logo-img"
-                                                                                             src="{{asset('img/2.png')}}"
-                                                                                             srcset="{{asset('img/2.png')}} 2x"><img
+                    <div class="nk-header-brand"><a class="logo-link" href="/"><img alt="logo"
+                                                                                    class="logo-light logo-img"
+                                                                                    src="{{asset('img/2.png')}}"
+                                                                                    srcset="{{asset('img/2.png')}} 2x"><img
                                 alt="logo-dark" class="logo-dark logo-img"
                                 src="{{asset('img/2.png')}}" srcset="{{asset('img/2.png')}} 2x"></a></div>
                     <div class="nk-header-menu" data-content="headerNav">
@@ -240,12 +240,14 @@
                             <li class="nk-menu-item {{$pageName == 'activePlans' ? 'active' : ''}}"><a
                                     class="nk-menu-link" href="/activePlans"><span
                                         class="nk-menu-text">MY Plan</span></a></li>
-                            <li class="nk-menu-item {{$pageName == 'plans' ? 'active' : ''}}"><a class="nk-menu-link"
-                                                                                                 href="/plans"><span
+                            <li class="nk-menu-item {{$pageName == 'Investments' ? 'active' : ''}}"><a
+                                    class="nk-menu-link"
+                                    href="/investments"><span
                                         class="nk-menu-text">Invest</span></a></li>
-                            <li class="nk-menu-item {{$pageName == 'pages' ? 'active' : ''}} has-sub"><a
+                            {{--<li class="nk-menu-item {{$pageName == 'plans' ? 'active' : ''}} has-sub"><a
                                     class="nk-menu-link nk-menu-toggle"
-                                    href="#"><span
+                                    href="#">
+                                    <span
                                         class="nk-menu-text">Pages</span></a>
                                 <ul class="nk-menu-sub">
                                     <li class="nk-menu-item"><a class="nk-menu-link" href="welcome.html"><span
@@ -265,7 +267,7 @@
                                                 class="nk-menu-text">All Components <em
                                                     class="icon ni ni-external"></em></span></a></li>
                                 </ul>
-                            </li>
+                            </li>--}}
                         </ul>
                     </div>
                     <div class="nk-header-tools">
@@ -283,12 +285,14 @@
                                     class="dropdown-menu dropdown-menu-md dropdown-menu-right dropdown-menu-s1 is-light">
                                     <div class="dropdown-inner user-card-wrap bg-lighter d-none d-md-block">
                                         <div class="user-card">
-                                            <div class="user-avatar"><span>AB</span></div>
+                                            <div class="user-avatar"><span>@if(config('app_env') == 'production') <img
+                                                        src="{{Avatar::create(Auth::user()->fullName())->toBase64() }}"/> @else
+                                                        AB @endif</span></div>
                                             <div class="user-info"><span
                                                     class="lead-text">{{Auth::user()->fullName()}}</span><span
                                                     class="sub-text">{{Auth::user()->email}}</span></div>
                                             <div class="user-action"><a class="btn btn-icon mr-n2"
-                                                                        href="user-profile-setting.html"><em
+                                                                        href="/profile/setting"><em
                                                         class="icon ni ni-setting"></em></a></div>
                                         </div>
                                     </div>
@@ -302,14 +306,15 @@
                                                 class="icon ni ni-wallet-out"></em></a></div>
                                     <div class="dropdown-inner">
                                         <ul class="link-list">
-                                            <li><a href="user-profile-regular.html"><em
+                                            <li><a href="/profile"><em
                                                         class="icon ni ni-user-alt"></em><span>View Profile</span></a>
                                             </li>
-                                            <li><a href="user-profile-setting.html"><em
-                                                        class="icon ni ni-setting-alt"></em><span>Account Setting</span></a>
+                                            <li><a class="dark-switch" href="#"><em class="icon ni ni-moon"></em><span>Dark Mode</span></a>
                                             </li>
-                                            <li><a href="user-profile-activity.html"><em
-                                                        class="icon ni ni-activity-alt"></em><span>Login Activity</span></a>
+
+
+                                            <li><a href="/profile/setting"><em
+                                                        class="icon ni ni-setting-alt"></em><span>Account Setting</span></a>
                                             </li>
                                         </ul>
                                     </div>
@@ -361,6 +366,7 @@
         </div>
     </div>
 </div>
-<script src="{{asset('assets/js/scripts4250.js')}}"></script>
+<script src="{{asset('assets/js/bundle.js?ver=2.7.0')}}"></script>
+<script src="{{asset('assets/js/scripts.js?ver=2.7.0')}}"></script>
 </body>
 </html>

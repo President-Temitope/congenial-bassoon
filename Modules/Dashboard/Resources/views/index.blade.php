@@ -1334,9 +1334,7 @@
                             <div class="nk-iv-wg2-cta"><a class="btn btn-primary btn-lg btn-block"
                                                           href="#">Invest
                                     & Earn</a>
-                                <div class="cta-extra">Earn up to 25$ <a class="link link-dark"
-                                                                         href="#">Refer
-                                        friend!</a></div>
+
                             </div>
                         </div>
                     </div>
@@ -1369,8 +1367,6 @@
                             <div class="nk-iv-wg2-cta"><a class="btn btn-light btn-lg btn-block"
                                                           href="#">See
                                     all Investment</a>
-                                <div class="cta-extra">Check out <a class="link link-dark" href="#">Analytic
-                                        Report</a></div>
                             </div>
                         </div>
                     </div>
@@ -1378,7 +1374,7 @@
             </div>
         </div>
     </div>
-    <div class="nk-block">
+    {{--<div class="nk-block">
         <div class="card card-bordered">
             <div class="nk-refwg">
                 <div class="nk-refwg-invite card-inner">
@@ -1434,5 +1430,5 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div>--}}
 @endsection
