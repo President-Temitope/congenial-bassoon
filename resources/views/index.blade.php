@@ -2715,22 +2715,26 @@ ction-head text-center"><span class="wt-title-subline font-16 text-gray-dark m-b
                 </div>
                 <div class="modal-footer text-center">
                     <div class="text-center">
-                        <!-- <a href="/" class="MyLink">
-                        <img class="logo-modal" src="./images/logo/ClipartKey_78890.png" alt="" width="15" height="20"><span class="h2 mb-0" style="
-font-size: 31px;
-FONT-FAMILY: Calibri,sans-serif,serif,EmojiFont;
-font-weight: bold;
-color: #FF9800;
-position: relative;
-top: -22px;
-left: -13px;
-">Crypto&nbsp;&nbsp;&nbsp;bolt</span>
-                    </a> -->
+                        
                     </div>
                 </div>
             </div>
         </div>
     </div>
+<!-- ============ POP MODAL ============ -->
+
+    <div class="login-popup popup-contain">
+  	    <div class="box popup-modal">
+  	 	 <div class="form">
+  	 	 	<div class="close close-btn">&times;</div>
+  	 	 	<form>
+
+  	 	 	</form>
+  	 	 </div>
+  	 </div>
+  </div>
+<!-- ====================================== -->
+
     <!-- MODAL  REGISTER -->
     <div id="Register-form" class="modal fade " role="dialog">
         <div class="modal-dialog modal-sm">
@@ -2981,6 +2985,42 @@ left: -13px;
 $(".loader").delay(1000).fadeOut("slow");
 $("#overlayer").delay(1000).fadeOut("slow");	
 });
+</script>
+
+
+
+<script>
+    	const loginPopup = document.querySelector(".login-popup");
+  const close = document.querySelector(".close-btn");
+
+
+  window.addEventListener("load",function(){
+ 
+   showPopup();
+   // setTimeout(function(){
+   //   loginPopup.classList.add("show");
+   // },5000)
+
+  })
+
+  function showPopup(){
+        const timeLimit = 5 // seconds;
+        let i=0;
+        const timer = setInterval(function(){
+         i++;
+         if(i == timeLimit){
+          clearInterval(timer);
+          loginPopup.classList.add("show");
+         } 
+         console.log(i)
+        },400);
+  }
+
+
+  close.addEventListener("click",function(){
+    loginPopup.classList.remove("show");
+  })
+
 </script>
 </body>
 <!-- <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script> -->

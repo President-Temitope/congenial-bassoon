@@ -994,6 +994,7 @@ TABLE OF CONTENTS
 
     ul {
         list-style: disc;
+        color: cornsilk;
     }
 
     ol {
@@ -11722,7 +11723,9 @@ TABLE OF CONTENTS
     .elementor-widget-heading .elementor-heading-title {
         padding: 0;
         margin: 0;
-        line-height: 1
+        line-height: 1;
+        color:aliceblue!important;
+        
     }
 
     .elementor-widget-heading .elementor-heading-title > a {
