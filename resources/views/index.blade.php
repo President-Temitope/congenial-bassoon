@@ -493,12 +493,6 @@
     /*------------------------------------*\
         #BLOG-SECTION / CUSTOM CHANGES
     \*------------------------------------*/
-    .logo-dark {
-
-        position: relative;
-        left: 20%;
-        top: 0px;
-    }
 
     .marquee {
 
@@ -723,7 +717,7 @@
                 <div class="container">
                     <div class="logo-header mostion">
                         <a href="/" class="MyLink">
-                            <img class="logo-dark" src="{{asset('img/logo1.png')}}" style="position: relative;top: 8px!important;
+                            <img class="logo-dark" src="{{asset('img/logo1.png')}}" style="margin: 20px 15px 4px 15px";
 " alt="{{config('app.name')}}" width="120" height="50">
                         <!-- <img class="logo-dark" src="{{asset('img/logo1.png')}}" style="" alt="{{config('app.name')}}" width="15" height="20"> -->
                         </a>
@@ -753,8 +747,8 @@
                         </form>
                     </div>
                     <!-- MAIN Vav -->
-                    <div class="header-nav navbar-collapse collapse ">
-                        <ul class=" nav navbar-nav">
+                    <div class="header-nav navbar-collapse collapse">
+                        <ul class=" nav navbar-nav" style="text-align: left;">
                             <li class="active has-child"><a href="/">Home</a>
                                 <div class=" glyphicon glyphicon-plus submenu-toogle"></div>
                             </li>{{--@auth
@@ -1814,7 +1808,7 @@
             <div class="container">
                 <!-- TITLE START-->
                 <div class="section-head text-center"><span class="wt-title-subline font-16 text-gray-dark m-b15">Three steps bitcoin</span>
-                    <h2 class="text-uppercase wow slideInUp">How It Work</h2>
+                    <h2 class="text-uppercase wow slideInUp">How It Works</h2>
                     <div class="wt-separator-outer">
                         <div class="wt-separator bg-primary"></div>
                     </div>
@@ -1913,7 +1907,7 @@
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="wt-box graph-part-right text-white wow fadeInUp"><strong
+                        <div class="wt-box graph-part-right text-white wow fadeInUp" style="text-align: left;"><strong
                                 class="text-uppercase title-first"><a class="header-logo">
                                     <!-- <img class="logo-about" src="./images/logo/ClipartKey_78890.png" style="" alt="" width="15" height="20"> -->
                                     <!-- <span class="logo-about-text" style="font-size: 28px;">Crypto&nbsp;&nbsp;&nbsp;bolt</span> -->
@@ -1952,7 +1946,7 @@
                             <div class="feature-card-icon pt-10"><i class="icon-lock"></i>
                             </div>
                             <div class="feature-card-content">
-                                <ul class="list-check-circle primary wow fadeInUp">
+                                <ul class="list-check-circle primary wow fadeInUp" style="text-align: left;">
                                     <p class="text-white">Main features :</p>
                                     <li class="text-white">High growth opportunities</li>
                                     <li class="text-white">Impact driven investments.</li>
@@ -2236,13 +2230,13 @@ ction-head text-center"><span class="wt-title-subline font-16 text-gray-dark m-b
                                             class="fa fa-quote-left text-primary"></span>
                                         <p>An easy and affordable way to dive into investing.</p>
                                     </div>
-                                    <div class="testimonial-detail clearfix"><strong class="testimonial-name">Eva
-                                            Brentford
+                                    <div class="testimonial-detail clearfix"><strong class="testimonial-name">Jacob Maathews
+
                                             <span class="testimonial-position text-primary p-t10"><span
                                                     class="fa fa-instagram"
                                                     style=" position: relative; right: 4px; top: 1px;"></span><a
                                                     href="https://www.instagram.com/" style="text-transform: initial;font: icon;
-">@evabrentford</a>
+">@jacob_m202</a>
 
                                     </div>
                                 </div>
@@ -2424,7 +2418,7 @@ ction-head text-center"><span class="wt-title-subline font-16 text-gray-dark m-b
                         <div class="widget widget_about">
                             <h4 class="widget-title text-white">About Company</h4>
                             <div class="logo-footer clearfix p-b15">
-                                <p class="zeta color--foxtrot" style="color: #fff; font-weight: 100!important">CRYPTO
+                                <p class="zeta color--foxtrot" style="color: #fff; font-weight: 100!important;text-align: left;">CRYPTO
                                     BOLT © is a professional investment services company with high support team that
                                     emphasis on building up and creating a fast-growing digital Wealth. We are mainly
                                     registered in Hong Kong &nbsp;( caller assistance in usa No. +1 (310) 421‑1657),&nbsp;it
@@ -2482,7 +2476,7 @@ ction-head text-center"><span class="wt-title-subline font-16 text-gray-dark m-b
                                     <div class="elementor-widget-container">
                                         <div class="elementor-text-editor elementor-clearfix">
                                             <p style="
-    width: 332px;
+    width: 332px; text-align: left;
 ">Dealing with financial instruments involves significant risk and can result in the loss of your capital when you do
                                                 not adhere to the instructions provided by your trader. You should not
                                                 spend more than you can afford to lose and should ensure that you fully
@@ -2851,17 +2845,6 @@ left: -13px;
                 </div>
                 <div class="modal-footer text-center">
                     <div class="text-center">
-                        <!-- <a href="/" class="MyLink">
-                        <img class="logo-modal" src="./images/logo/ClipartKey_78890.png" alt="" width="15" height="20"><span class="h2 mb-0" style="
-font-size: 31px;
-FONT-FAMILY: Calibri,sans-serif,serif,EmojiFont;
-font-weight: bold;
-color: #FF9800;
-position: relative;
-top: -22px;
-left: -13px;
-">Crypto&nbsp;&nbsp;&nbsp;bolt</span>
-                    </a> -->
                     </div>
                 </div>
             </div>
@@ -2870,20 +2853,26 @@ left: -13px;
 </div>
 <!--  -->
 <!-- LOADING AREA START ===== -->
-<div class="loading-area">
-    <div class="loading-box"></div>
-    <div class="loading-pic">
-        <div class="cssload-container">
-            <div class="cssload-dot bg-primary" style="background-color: transparent;">
-                <!-- <i class="fa fa-bitcoin" style="color: #000; font-size: 30px;"></i> -->
-                <img class="logo-dark" src="{{asset('img/logo1.png')}}" style="
-" alt="" width="120" height="50">
-            </div>
-            <!-- <div class="step" id="cssload-s1"></div>
-            <div class="step" id="cssload-s2"></div>
-            <div class="step" id="cssload-s3"></div> --></div>
+  
+
+<div id="overlayer"></div>
+  <div class="loader">
+  <svg version="1.1" id="L7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+        <path fill="#ff7c0c" d="M31.6,3.5C5.9,13.6-6.6,42.7,3.5,68.4c10.1,25.7,39.2,38.3,64.9,28.1l-3.1-7.9c-21.3,8.4-45.4-2-53.8-23.3
+         c-8.4-21.3,2-45.4,23.3-53.8L31.6,3.5z">
+             <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="2s" from="0 50 50" to="360 50 50" repeatCount="indefinite"></animateTransform>
+         </path>
+        <path fill="#ff7c0c" d="M42.3,39.6c5.7-4.3,13.9-3.1,18.1,2.7c4.3,5.7,3.1,13.9-2.7,18.1l4.1,5.5c8.8-6.5,10.6-19,4.1-27.7
+         c-6.5-8.8-19-10.6-27.7-4.1L42.3,39.6z">
+             <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="1s" from="0 50 50" to="-360 50 50" repeatCount="indefinite"></animateTransform>
+         </path>
+        <path fill="#ff7c0c" d="M82,35.7C74.1,18,53.4,10.1,35.7,18S10.1,46.6,18,64.3l7.6-3.4c-6-13.5,0-29.3,13.5-35.3s29.3,0,35.3,13.5
+         L82,35.7z">
+             <animateTransform attributeName="transform" attributeType="XML" type="rotate" dur="2s" from="0 50 50" to="360 50 50" repeatCount="indefinite"></animateTransform>
+         </path>
+       </svg>
     </div>
-</div>
+  </div>
 <!-- LOADING AREA  END ====== -->
 <!-- JAVASCRIPT  FILES ========================================= -->
 <script src="js/jquery-1.12.4.min.js"></script>
@@ -2980,6 +2969,18 @@ left: -13px;
         copyText.select();
         document.execCommand("copy");
     }
+</script>
+
+
+<script>
+    jQuery(document).ready(function($) {
+
+"use strict";
+
+
+$(".loader").delay(1000).fadeOut("slow");
+$("#overlayer").delay(1000).fadeOut("slow");	
+});
 </script>
 </body>
 <!-- <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script> -->
