@@ -7288,13 +7288,16 @@ a:focus.video-play-btn {
 -------------------------------------*/
 
 
-/* .popup-modal {
 
+
+
+/* .privaypocy {
+
+    margin: 12px 2px 13px 2px;
     position: relative;
-    top: 86%;
+    left: 30%;
+
 } */
-
-
 .login-popup{
 	position: fixed;
 	left: 0;
@@ -7322,6 +7325,7 @@ a:focus.video-play-btn {
 	flex-wrap: wrap;
 	opacity: 0;
 	margin-left: 50px;
+    border-radius: 3px;
 	transition: all 1s ease;
 
 }
@@ -10811,6 +10815,14 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 
 /* ========== mobile view ========= */
 @media only screen and (max-width: 480px) {
+
+    .login-popup .box {
+
+        top: 90%;
+        max-width: 100%;
+    }
+
+
     .logo-header {
         width: 100px;
     }

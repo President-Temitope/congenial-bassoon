@@ -1631,7 +1631,7 @@
                             </div>
                         </div>
                         <div class="section-content  wow slideInUp" data-wow-duration="1s" data-wow-delay="0s">
-                            <div class="wt-box">
+                            <div class="wt-box" align="left">
                                 <p><strong>Cryptocurrencies have become established investment commodities among major
                                         financial institutions, and have even been adopted by countries such as South
                                         Korea,Japan, united-states and Others. However, as with any investment there are
@@ -2725,14 +2725,16 @@ ction-head text-center"><span class="wt-title-subline font-16 text-gray-dark m-b
 
     <div class="login-popup popup-contain">
   	    <div class="box popup-modal">
-  	 	 <div class="form">
   	 	 	<div class="close close-btn">&times;</div>
-  	 	 	<form>
-
-  	 	 	</form>
-  	 	 </div>
-  	 </div>
-  </div>
+                <div class="learnmore" style="margin: auto;">Learn more about our</div> 
+                    <!-- <div class="btn btn-dark pr" style="background-color: #feac16; float:right;">
+                        <a style="color: #fff;font-weight:800" href="https://forbescapitalpartners.org/privacy-policy/">PRIVACY POLICY</a>
+                    </div> -->
+                   <div class="policy" style="margin: 10px;"><a style="color: none;font-weight:800" href="/privacy">PRIVACY POLICY</a></div>
+                </div>
+  	 	    </div>
+  	    </div>
+    </div>
 <!-- ====================================== -->
 
     <!-- MODAL  REGISTER -->
@@ -3013,7 +3015,7 @@ $("#overlayer").delay(1000).fadeOut("slow");
           loginPopup.classList.add("show");
          } 
          console.log(i)
-        },400);
+        },1000);
   }
 
 

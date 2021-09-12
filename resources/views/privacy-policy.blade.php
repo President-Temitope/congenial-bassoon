@@ -521,13 +521,13 @@
                                             personal information we hold about you, you may contact our Privacy Officer
                                             as follows:<br>
                                             <b>By Email:</b><a href=""> </a><br>
-                                            <b>Number:</b> +1 7155074670<br>
-                                            <b>By Mail:</b></p>
+                                            <!-- <b>Number:</b> +1 7155074670<br> -->
+                                            <!-- <b>By Mail:</b></p>
                                         <p>Attn: Privacy Officer<br>
                                             240 Montgomery Street<br>
                                             Suite 650<br>
                                             San Francisco, CA<br>
-                                            United States.</p>
+                                            United States.</p> -->
                                         <p>For the purposes of the GDPR, our Privacy Officer is also our Data Protection
                                             Officer (DPO).</p>
                                         <p>While we endeavour to resolve complaints quickly and informally, if you wish
@@ -2417,6 +2417,7 @@ TABLE OF CONTENTS
 
     h2, body.woocommerce.single-product .product_title {
         font-size: 24px;
+        color: aliceblue!important;
     }
 
     h3 {
