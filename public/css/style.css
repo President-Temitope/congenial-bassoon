@@ -7315,7 +7315,7 @@ a:focus.video-play-btn {
 	opacity: 1;
 }
 .login-popup .box{
-	background-color:#fff;
+	background-color: honeydew;
 	width: 750px;
 	position: absolute;
 	left: 50%;
@@ -10818,7 +10818,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 
     .login-popup .box {
 
-        top: 90%;
+        top: 60%;
         max-width: 100%;
     }
 
