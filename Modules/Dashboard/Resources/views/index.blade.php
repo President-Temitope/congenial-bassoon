@@ -1174,7 +1174,7 @@
                 <div class="nk-block-head-sub"><span>Welcome!</span></div>
                 <div class="align-center flex-wrap pb-2 gx-4 gy-3">
                     <div><h2 class="nk-block-title fw-normal">{{Auth::user()->fullName()}}</h2></div>
-                    <div><a class="btn btn-white btn-light" href="/activePlans">My Plans <em
+                    <div><a class="btn btn-white btn-light" href="/investments/myPlans">My Plans <em
                                 class="icon ni ni-arrow-long-right ml-2"></em></a></div>
                 </div>
                 <div class="nk-block-des"><p>At a glance summary of your investment account. Have
@@ -1365,7 +1365,7 @@
                                 </ul>
                             </div>
                             <div class="nk-iv-wg2-cta"><a class="btn btn-light btn-lg btn-block"
-                                                          href="#">See
+                                                          href="/investments/myPlans">See
                                     all Investment</a>
                             </div>
                         </div>

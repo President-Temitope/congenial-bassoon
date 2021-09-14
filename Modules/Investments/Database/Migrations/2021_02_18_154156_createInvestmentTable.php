@@ -16,7 +16,7 @@ class CreateInvestmentTable extends Migration
         //
         Schema::create('investments', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('name')->unique();
             $table->string('desc');
             $table->float('daily_interest');
             $table->integer('term_days');

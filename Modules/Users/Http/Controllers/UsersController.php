@@ -2,40 +2,30 @@
 
 namespace Modules\Users\Http\Controllers;
 
-use App\User;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\Auth;
+use Modules\Users\Interfaces\UsersRepositoryInterface;
 
 class UsersController extends Controller
 {
+    protected $user = '';
+
+    public function __construct(UsersRepositoryInterface $user)
+    {
+        $this->user = $user;
+        $this->middleware('auth');
+    }
+
     /**
      * Display a listing of the resource.
      * @return Renderable
      */
     public function index()
     {
-        $users = User::simplePaginate(20);
+        $users = $this->user->all();
         return view('users::index')->with('users', $users);
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     * @return Renderable
-     */
-    public function create()
-    {
-        return view('users::create');
-    }
-
-    /**
-     * Store a newly created resource in storage.
-     * @param Request $request
-     * @return Renderable
-     */
-    public function store(Request $request)
-    {
-        //
     }
 
     /**
@@ -43,21 +33,14 @@ class UsersController extends Controller
      * @param int $id
      * @return Renderable
      */
-    public function show($id)
+    public function profile()
     {
-        $user = User::find($id);
-        return view('users::show')->with('user', $user);
+        $id = Auth::id();
+        $user = $this->user->show($id);
+       // dd($user);
+        return view('users::profile')->with('user', $user);
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     * @param int $id
-     * @return Renderable
-     */
-    public function edit($id)
-    {
-        return view('users::edit');
-    }
 
     /**
      * Update the specified resource in storage.

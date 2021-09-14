@@ -14,7 +14,7 @@ class AddPOPFieldToPaymentsTable extends Migration
     public function up()
     {
         Schema::table('payments', function (Blueprint $table) {
-            $table->string('proof_of_payment');
+            $table->string('proof_of_payment')->nullable()->default(null);
         });
     }
 

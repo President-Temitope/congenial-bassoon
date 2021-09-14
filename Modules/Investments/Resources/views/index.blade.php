@@ -12,7 +12,7 @@
         </div>
     </div><!-- nk-block -->
     <div class="nk-block">
-        <form action="html/invest/invest-form.html" class="plan-iv">
+{{--        <form action="html/invest/invest-form.html" class="plan-iv">--}}
             <div class="plan-iv-list nk-slider nk-slider-s2">
                 <ul class="plan-list slider-init" data-slick='{"slidesToShow": 3, "slidesToScroll": 1, "infinite":false, "responsive":[
 						{"breakpoint": 992,"settings":{"slidesToShow": 2}},
@@ -56,10 +56,10 @@
                                                         class="desc-data">{{$investment->total_return}}%</span></li>
                                             </ul>
                                             <div class="plan-item-action">
-                                                <label for="plan-iv-1" class="plan-label">
-                                                    <span class="plan-label-base">Choose this plan</span>
-                                                    <span class="plan-label-selected">Plan Selected</span>
-                                                </label>
+                                                {{--<button class="btn btn-primary btn-lg" href="/investments/viewPlan/{{$investment->id}}"><span>Choose this plan</span> <em
+                                                        class="icon ni ni-arrow-right"></em></button>--}}
+                                                <a class="btn btn-primary btn-lg" href="/investments/viewPlan/{{$investment->id}}"><span>Choose this plan</span> <em
+                                                        class="icon ni ni-arrow-right"></em></a>
                                             </div>
                                         </div>
                                     </div>
@@ -70,11 +70,11 @@
 
                 </ul><!-- .plan-list -->
             </div>
-            <div class="plan-iv-actions text-center">
+           {{-- <div class="plan-iv-actions text-center">
                 <button class="btn btn-primary btn-lg"><span>Continue to Invest</span> <em
                         class="icon ni ni-arrow-right"></em></button>
-            </div>
-        </form>
+            </div>--}}
+{{--        </form>--}}
     </div><!-- nk-block -->
     <!-- content @e -->
 

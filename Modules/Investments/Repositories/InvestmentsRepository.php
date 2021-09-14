@@ -48,4 +48,8 @@ class InvestmentsRepository implements InvestmentsRepositoryInterface
 
     }
 
+    public function show($id){
+        return $this->core->show($this->model,$id);
+    }
+
 }

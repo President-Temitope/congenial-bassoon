@@ -238,7 +238,7 @@
                                     class="nk-menu-link" href="/dashboard"><span
                                         class="nk-menu-text">Overview</span></a></li>
                             <li class="nk-menu-item {{$pageName == 'activePlans' ? 'active' : ''}}"><a
-                                    class="nk-menu-link" href="/activePlans"><span
+                                    class="nk-menu-link" href="/investments/myPlans"><span
                                         class="nk-menu-text">MY Plan</span></a></li>
                             <li class="nk-menu-item {{$pageName == 'Investments' ? 'active' : ''}}"><a
                                     class="nk-menu-link"
@@ -292,7 +292,7 @@
                                                     class="lead-text">{{Auth::user()->fullName()}}</span><span
                                                     class="sub-text">{{Auth::user()->email}}</span></div>
                                             <div class="user-action"><a class="btn btn-icon mr-n2"
-                                                                        href="/profile/setting"><em
+                                                                        href="/users/profile/settings"><em
                                                         class="icon ni ni-setting"></em></a></div>
                                         </div>
                                     </div>
@@ -306,7 +306,7 @@
                                                 class="icon ni ni-wallet-out"></em></a></div>
                                     <div class="dropdown-inner">
                                         <ul class="link-list">
-                                            <li><a href="/profile"><em
+                                            <li><a href="/users/profile"><em
                                                         class="icon ni ni-user-alt"></em><span>View Profile</span></a>
                                             </li>
                                             <li><a class="dark-switch" href="#"><em class="icon ni ni-moon"></em><span>Dark Mode</span></a>

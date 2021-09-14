@@ -122,4 +122,19 @@ class InvestmentsController extends Controller
 
     }
 
+    public function myPlans(){
+        $user_id = \Auth::id();
+        $myActivePlans = DB::table('payments')->where('user_id',$user_id)->where('status', '', 'Approved')->where('approved_at','>',Carbon::now())->get('investment_id');
+        $myEndedPlans = DB::table('payments')->where('user_id',$user_id)->where('status', '', 'Approved')->where('approved_at','<',Carbon::now())->get('investment_id');
+        $myInactivePlans = DB::table('payments')->where('user_id',$user_id)->where('status', '', 'Pending')->get('investment_id');
+        return view('investment::myPlans')->with('myActivePlans',$myActivePlans)->with('myEndedPlans',$myEndedPlans)->with('myInactivePlans',$myInactivePlans);
+//        return view('investments::myPlans');
+    }
+
+    public function viewPlan($id){
+        $investment = $this->investment->show($id);
+        return view('investments::viewPlan')->with('investment',$investment);
+
+    }
+
 }

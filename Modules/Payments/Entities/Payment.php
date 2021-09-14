@@ -19,7 +19,7 @@ class Payment extends Model
           return \Modules\Payments\Database\factories\PaymentFactory::new();
       }*/
 
-    public function user()
+    /*public function user()
     {
         return $this->belongsTo(User::class, 'user_id');
     }
@@ -27,5 +27,5 @@ class Payment extends Model
     public function investment()
     {
         return $this->belongsTo(Investment::class, 'investment_id');
-    }
+    }*/
 }

@@ -48,6 +48,6 @@ class CoreRepository implements CoreRepositoryInterface
     public function show($model, $id)
     {
         // TODO: Implement show() method.
-        return $model::where('id', $id)->get();
+        return $model::where('id', $id)->first();
     }
 }

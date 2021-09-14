@@ -5,7 +5,8 @@
     class="${e.classNames.namespace} ${e.mode?""+e.classNames[e.mode+"Mode"]:""} ${t.className}"\n                    ${e.readonly?"readonly":""}\n                    ${e.required?"required":""}\n                    tabIndex="-1">\n
 <span
     ${e.readonly&&"mix"==e.mode?"":"contenteditable"} data-placeholder="${e.placeholder||"&#8203;"}" aria-placeholder="${e.placeholder||""}"\n                class="${e.classNames.input}"\n                role="textbox"\n                aria-autocomplete="both"\n                aria-multiline="${"mix"==e.mode}"></span>\n        </tags>`,tag(t){return`
-<tag \n \n \n \n class="${this.settings.classNames.tag} ${t.class?t.class:" contenteditable='false' spellcheck='false' tabIndex="-1"
+<tag \n \n \n \n class="${this.settings.classNames.tag} ${t.class?t.class:" contenteditable='false' spellcheck='false'
+     tabIndex="-1"
      title="${t.title||t.value}""}"\n                    ${this.getAttributes(t)}>\n
 <x aria-label='remove tag' class="${this.settings.classNames.tagX}" role='button' title=''></x>\n
 <div>\n <span class="${this.settings.classNames.tagText}">${t[this.settings.tagTextProp]||t.value}</span>\n
