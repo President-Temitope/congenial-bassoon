@@ -6,6 +6,9 @@ Version: 1.0
 ==========================
 */
 
+
+
+
 /*---FONTS---*/
 @import url('https://fonts.googleapis.com/css?family=Lato');
 
@@ -19,6 +22,12 @@ Version: 1.0
     font-weight: normal;
     font-style: normal;
 }
+
+
+
+
+
+
 
 [data-icon]:before {
     font-family: "massive-crypto" !important;
@@ -16367,3 +16376,5 @@ ol.commentlist li::after {
 .rev-hide-timer .tp-bannertimer {
     display: none;
 }
+
+

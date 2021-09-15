@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--  -->
     <meta name="description"
           content="">
     <link rel="shortcut icon" href="{{asset('img/2.png')}}">
@@ -14,6 +15,10 @@
 
 
 <style>
+
+
+
+
     @media only screen and (max-width: 767px) {
 
         .dropdown-content {

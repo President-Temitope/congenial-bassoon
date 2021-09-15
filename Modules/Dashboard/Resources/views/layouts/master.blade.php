@@ -201,7 +201,145 @@
     <link href="{{asset('img/2.png')}}" rel="shortcut icon">
     <title>{{config('app.name')}} | {{$pageName}}</title>
     <link rel="stylesheet" href="{{asset('assets/css/dashlite.css?ver=2.7.0')}}">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link id="skin-default" rel="stylesheet" href="{{asset('assets/css/theme.css?ver=2.7.0')}}">
+    <style>
+/* ========== mobile view ========= */
+@media only screen and (max-width: 480px) {
+
+
+        .notify-sub-text {
+
+            font-size: 12px!important;
+            position: relative!important;
+        }
+
+
+    .main-field {
+        position: absolute!important;
+        top: 38%!important;
+        left: 43%!important;
+    }
+
+    .Pop-prove {
+
+        width: 100%!important;
+        position: relative;
+        top: 2px;
+        left: -4px!important;
+        padding: 3px;
+    }
+
+    .successfully-notify {
+
+        margin-bottom: 5.5rem!important;
+    }
+
+
+    .modal-length {
+
+        width: 100%!important;
+    
+    }
+
+    
+    .qr-address {
+
+        position: absolute!important;
+        top: 45%!important;
+        left: 30%!important;
+
+    }
+
+    
+        input {
+
+        font-size: 11px;
+        color: #000!important;
+
+    }
+
+}
+
+
+
+.successfully-notify {
+
+margin-bottom: 6.5rem!important;
+}
+
+.border-control-form {
+
+    border: 1px solid #0f4ffd!important;
+
+}
+
+
+
+
+.proveofpayment>input {
+
+    width: 70%!important;
+    position: relative;
+    top: 280px;
+    padding: 3px;
+
+}
+
+.action-modal {
+
+    margin-top: 18.5rem!important;
+}
+
+.QRCODE {
+
+    position: absolute!important;
+    top: 45%;
+    left: 38%;
+}
+
+.main{
+        position: absolute;
+        top: 38%;
+        left: 46%;
+        transform: translate(-50%,-50%);
+        width: 250px;
+        height: 40px;
+      }
+      input{
+        border: 2px solid #8aa4ff;
+        border-radius: 5px;
+        width: 120%;
+        height: 100%;
+        font-size: 12px;
+        padding: 0 40px 0 10px;
+        outline: none;
+        color: #000;
+        box-shadow: 0 0 10px -4px #fff;
+        letter-spacing: 1px;
+      }
+      i:active{
+        color: #c2c2c2;
+      }
+      i{
+        position: absolute;
+        top: 10px;
+        right: -46px;
+        color:#0f0e0e;
+        cursor: pointer;
+        font-size: 40px;
+        transform: scale(1.1);
+      }
+      p{
+        color:#fff;
+        font-size: 18px;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        letter-spacing: 1px;
+      }
+    </style>
 </head>
 <body class="nk-body npc-invest bg-lighter ">
 <div class="nk-app-root">
@@ -368,5 +506,13 @@
 </div>
 <script src="{{asset('assets/js/bundle.js?ver=2.7.0')}}"></script>
 <script src="{{asset('assets/js/scripts.js?ver=2.7.0')}}"></script>
+<script>
+         function copy(){
+        var input= document.getElementById('text');
+        input.select();
+        document.execCommand("copy");
+        document.getElementById("show").innerHTML="Copy : "+'"'+input.value+'"';
+      }
+</script>
 </body>
 </html>

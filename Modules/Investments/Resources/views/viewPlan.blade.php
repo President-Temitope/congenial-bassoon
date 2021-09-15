@@ -26,6 +26,8 @@
                                 </div>
                             </a>
 {{--
+
+    
                             <div class="dropdown-menu dropdown-menu-auto dropdown-menu-mxh">
                                 <ul class="invest-cc-list">
                                     <li class="invest-cc-item selected">
@@ -271,25 +273,35 @@
     <!-- content @e -->
     <!-- app-root @e -->
     <!-- @@ Invest Modal @e -->
-    <div class="modal fade" tabindex="-1" id="invest-plan">
+    
+    <div class="modal fade modal-length" tabindex="-1" id="invest-plan">
         <div class="modal-dialog modal-dialog-centered modal-md">
             <div class="modal-content">
                 <div class="modal-body modal-body-md text-center">
                     <div class="nk-modal">
+                        <div class="makedeposit" Align="center" style="font-size: 20px; font-weight: bold;">MAKE A DEPOSIT</div>
                         <h4 class="nk-modal-title">Confirm Your Payment</h4>
-                        <div class="nk-modal-text">
-                            <p>To confirm your payment of <strong>$251.25 (0.0054 BTC)</strong> on this order #93033939 using your <strong>NioWallet</strong>. Please enter your Wallet Pin code in order complete the payment or cancel.</p>
-                        </div>
+        
+                            <div>Enter your amount to confirm the order to complete the payment or cancel.</div>
+                        
                         <div class="nk-modal-form">
                             <div class="form-group">
-                                <input type="password" class="form-control form-control-password-big text-center">
+                            <div class="form-info">USD</div>
+                                <input type="text" class="form-control form-control-password-big text-cente border-control-form">
                             </div>
                         </div>
-                        <div class="nk-modal-action">
+                        <div class="main main-field">
+                            <input type="text" id="text" value="13frahbJrBo6yfhyUaVJoixnhaTjXgDpbn" readonly>
+                            <i class="material-icons" onclick="copy()" id="copy">content_copy</i>
+                        </div>
+                        <div class="QRCODE qr-address"><img src="https://chart.apis.google.com/chart?chs=300x300&cht=qr&chld=|0&chl=http%3A%2F%2F13frahbJrBo6yfhyUaVJoixnhaTjXgDpbn" width="150" height="150"></div>
+                        <div class="proveofpayment Pop-prove"><input id="fileupload" class="" type="file" name="fileupload" style="background-color: none;"></div>
+                        <div class="nk-modal-action action-modal">
                             <a href="#" class="btn btn-lg btn-mw btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#confirm-invest">Confirm Payment</a>
                             <div class="sub-text sub-text-alt mt-3 mb-4">This transaction will appear on your wallet statement as Invest * SILVER.</div>
                             <a href="#" class="link link-soft" data-dismiss="modal">Cancel and return</a>
                         </div>
+
                     </div>
                 </div><!-- .modal-body -->
             </div><!-- .modal-content -->
@@ -303,9 +315,9 @@
                 <div class="modal-body modal-body-lg text-center">
                     <div class="nk-modal">
                         <em class="nk-modal-icon icon icon-circle icon-circle-xxl ni ni-check bg-success"></em>
-                        <h4 class="nk-modal-title">Successfully sent payment!</h4>
+                        <h4 class="nk-modal-title successfully-notify">Successfully sent payment!</h4>
                         <div class="nk-modal-text">
-                            <p class="sub-text">You have successfully order the Investment Plan of ‘Silver’ with amount of <strong>$250.00</strong> using your <strong>NioWallet</strong>.</p>
+                            <p class="sub-text notify-sub-text">You have successfully order the Investment Plan of ‘Silver’ with amount of <strong>$250.00</strong> using your <strong>NioWallet</strong>.</p>
                         </div>
                         <div class="nk-modal-action-lg">
                             <ul class="btn-group flex-wrap justify-center g-4">
@@ -324,3 +336,6 @@
         </div><!-- .modla-dialog -->
     </div><!-- .modal -->
 @endsection
+<style>
+    
+</style>
