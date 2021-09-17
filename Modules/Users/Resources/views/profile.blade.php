@@ -52,7 +52,7 @@
                 <div class="data-item" data-toggle="modal" data-target="#profile-edit">
                     <div class="data-col">
                         <span class="data-label">Date of Birth</span>
-                        <span class="data-value">{!! $user->date_of_birth->toFormattedDateString() !!}</span>
+                        <span class="data-value">@if($user->date_of_birth!=null){!! $user->date_of_birth->toFormattedDateString() !!}@endif</span>
                     </div>
                     <div class="data-col data-col-end"><span class="data-more"><em class="icon ni ni-forward-ios"></em></span></div>
                 </div>

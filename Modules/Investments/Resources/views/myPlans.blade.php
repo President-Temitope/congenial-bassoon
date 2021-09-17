@@ -1,4 +1,4 @@
-@extends('dashboard::layouts.master',[$pageName = 'myPlans'])
+@extends('dashboard::layouts.master',[$pageName = 'activePlans'])
 @section('content')
     @if(count($myActivePlans) > 0 || count($myEndedPlans) > 0  || count($myInactivePlans) > 0 )
 <div class="nk-block-head">
@@ -8,7 +8,7 @@
             <div class="nk-block-head-content">
                 <h2 class="nk-block-title fw-normal">Invested Schemes</h2>
                 <div class="nk-block-des">
-                    <p>Here is your current balance and your active investement plans.</p>
+                    <p>Here is your current balance and your active investment plans.</p>
                 </div>
             </div><!-- .nk-block-head-content -->
             <div class="nk-block-head-content">

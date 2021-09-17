@@ -239,10 +239,10 @@
     .modal-length {
 
         width: 100%!important;
-    
+
     }
 
-    
+
     .qr-address {
 
         position: absolute!important;
@@ -251,7 +251,7 @@
 
     }
 
-    
+
         input {
 
         font-size: 11px;
@@ -377,7 +377,7 @@ margin-bottom: 6.5rem!important;
                                         class="nk-menu-text">Overview</span></a></li>
                             <li class="nk-menu-item {{$pageName == 'activePlans' ? 'active' : ''}}"><a
                                     class="nk-menu-link" href="/investments/myPlans"><span
-                                        class="nk-menu-text">MY Plan</span></a></li>
+                                        class="nk-menu-text">My Plan</span></a></li>
                             <li class="nk-menu-item {{$pageName == 'Investments' ? 'active' : ''}}"><a
                                     class="nk-menu-link"
                                     href="/investments"><span

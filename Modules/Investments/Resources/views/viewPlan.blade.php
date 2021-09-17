@@ -27,7 +27,7 @@
                             </a>
 {{--
 
-    
+
                             <div class="dropdown-menu dropdown-menu-auto dropdown-menu-mxh">
                                 <ul class="invest-cc-list">
                                     <li class="invest-cc-item selected">
@@ -273,7 +273,7 @@
     <!-- content @e -->
     <!-- app-root @e -->
     <!-- @@ Invest Modal @e -->
-    
+
     <div class="modal fade modal-length" tabindex="-1" id="invest-plan">
         <div class="modal-dialog modal-dialog-centered modal-md">
             <div class="modal-content">
@@ -281,9 +281,9 @@
                     <div class="nk-modal">
                         <div class="makedeposit" Align="center" style="font-size: 20px; font-weight: bold;">MAKE A DEPOSIT</div>
                         <h4 class="nk-modal-title">Confirm Your Payment</h4>
-        
+
                             <div>Enter your amount to confirm the order to complete the payment or cancel.</div>
-                        
+
                         <div class="nk-modal-form">
                             <div class="form-group">
                             <div class="form-info">USD</div>
@@ -336,6 +336,3 @@
         </div><!-- .modla-dialog -->
     </div><!-- .modal -->
 @endsection
-<style>
-    
-</style>
