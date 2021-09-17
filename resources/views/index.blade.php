@@ -1975,12 +1975,20 @@
                                     <div class="pricing--heading text--center step-number-block">
                                         <!-- <div class="pricing--icon"> -->
                                         <img src="./images/testimonials/3.jpg" alt="Bitcoin Icon" width="300"
-                                             heigh="300" style="position: relative;  right: 8px;">
-    
+                                             heigh="300" style="
+    position: relative;
+    right: 8px;
+">
                                         <!-- </div> -->
                                     </div>
                                     <!--  Pricing heading  -->
-                        <div class="" style="position: relative; bottom: 80px;color: #000; font-family: monospace;  font-size: larger; ">WANG BAOKUI
+                                    <div class="" style="
+    position: relative;
+    bottom: 80px;
+    color: #000;
+    font-family: monospace;
+    font-size: larger;
+">WANG BAOKUI
                                         <br>Financial Manager
                                     </div>
                                     <!--  Pricing Footer  -->
@@ -1998,14 +2006,20 @@
                                     <div class="pricing--heading text--center step-number-block">
                                         <!-- <div class="pricing--icon"> -->
                                         <img src="images/testimonials/2.jpg" alt="Bitcoin Icon" width="300" height="400"
-                                             style="position: relative; right: 8px;">
-   
-   
-
+                                             style="
+    position: relative;
+    right: 8px;
+">
                                         <!-- </div> -->
                                     </div>
                                     <!--  Pricing heading  -->
-                            <div class="" style="position: relative; bottom: 80px; color: #000; font-family: monospace;   font-size: larger;">LIU HONG (CEO)
+                                    <div class="" style="
+    position: relative;
+    bottom: 80px;
+    color: #000;
+    font-family: monospace;
+    font-size: larger;
+">LIU HONG (CEO)
                                     </div>
                                     <!--  Pricing Footer  -->
                                 </div>
@@ -2021,14 +2035,20 @@
                                     <div class="pricing--heading text--center step-number-block">
                                         <!-- <div class="pricing--icon"> -->
                                         <img src="./images/testimonials/1.jpg" alt="Bitcoin Icon" width="300"
-                                             height="400" style="position: relative;  right: 8px;">
- 
-  
-
+                                             height="400" style="
+    position: relative;
+    right: 8px;
+">
                                         <!-- </div> -->
                                     </div>
                                     <!--  Pricing heading  -->
-                            <div class="" style=" position: relative; bottom: 80px;color: #000; font-family: monospace;   font-size: larger;">Sūn CHENGUANG
+                                    <div class="" style="
+    position: relative;
+    bottom: 80px;
+    color: #000;
+    font-family: monospace;
+    font-size: larger;
+">Sūn CHENGUANG
                                         <br>Financial Analyst
                                     </div>
                                     <!--  Pricing Footer  -->
@@ -2075,7 +2095,10 @@
 									<div class="pricing--desc">{!! $investment->description !!}</div>	<a class="btn btn--secondary btn--bordered btn--rounded" href="#">Invest Now</a>
 								</div>
 								<!--  Pricing heading  -->
-						<div class="pricing--footer" style="position: relative;  bottom: 22px;">From ${{$investment->priceRangeOne}} to ${{$investment->priceRangeTwo}}</div>
+								<div class="pricing--footer" style="
+    position: relative;
+    bottom: 22px;
+">From ${{$investment->priceRangeOne}} to ${{$investment->priceRangeTwo}}</div>
 								<!--  Pricing Footer  -->
 							</div>
 						</div>--}}{{--
@@ -2131,18 +2154,18 @@
         <!-- CONTACT US SECTION END  -->
         <!-- CONTACT US OFFER SECTION END  -->
         <!-- SECTION CONTENT START -->
-        <div class="section-full p-t80 p-b50 bg-center bg-full-height bg-no-repeat" style="background-color: black;">
+        <div class="section-full p-t80 p-b50 bg-center bg-full-height bg-no-repeat" style="
+    background-color: black;
+">
             <div class="container">
                 <!-- TITLE START -->
-                 <div class="section-head text-center"><span class="wt-title-subline font-16 text-gray-dark m-b15 wow fadeInUp">Our Clients</span>
+                <div class="se
+ction-head text-center"><span class="wt-title-subline font-16 text-gray-dark m-b15 wow fadeInUp">Our Clients</span>
                     <h2 class="text-uppercase wow fadeInUp">Our Client Say</h2>
                     <div class="wt-separator-outer">
                         <div class="wt-separator bg-primary"></div>
                     </div>
                 </div>
-
-
-
                 <!-- TITLE END -->
                 <!-- TESTIMONIAL 4 START ON BACKGROUND -->
                 <div class="section-content">
@@ -2246,89 +2269,10 @@
                 </div>
             </div>
         </div>
-
-       
-<style>
-    /* ===============================================
-    1.ttm-row
-------------------------*/
-
-.ttm-row{ padding: 90px 0;}
-.ttm-row.broken-section,
-.ttm-row.testimonial-section,
-.ttm-row.about2-section,
-.ttm-row.row-top-section{ padding: 0 0; }
-.ttm-row.project-style2-section,
-.ttm-row.single-project-section{padding-bottom: 60px;}
-.ttm-row.pricing-plan-section,
-.ttm-row.team-member-section,
-.ttm-row.faq-section,
-.ttm-row.about-blog-section{padding-bottom: 70px;}
-.ttm-row.blog-grid-section,
-.ttm-row.blog-left-img-section,
-.ttm-row.services2-section {padding-bottom: 80px;}
-.ttm-row.services-section{padding-bottom: 130px;}
-.ttm-row.row-title-section{padding-top: 100px;padding-bottom: 110px;}
-.ttm-row.blog-text-section{padding-top: 207px;padding-bottom: 180px;}
-.ttm-row.blog-section,
-.ttm-row.client-section,
-.ttm-row.blog2-section,
-.ttm-row.about-blog-section,
-.ttm-row.contact-form-section{padding-top: 0;}
-.ttm-row.strategy-section,
-.ttm-row.chart-section,
-.ttm-row.blog-section,
-.ttm-row.about-blog2-section,
-.ttm-row.map-section{padding-bottom: 0;}
-.ttm-row.blog-section,
-.ttm-row.about-blog-section{margin-top: -180px;}
-.ttm-row.client-section{padding-bottom: 37px;}
-.ttm-row.about-section,
-.ttm-row.process-section{padding-bottom: 100px;}
-.ttm-row.strategy-section{padding-top: 140px;}
-.ttm-row.team-work-section{padding-bottom: 60px;}
-.ttm-row.blog-text2-section{padding-top: 250px;padding-bottom: 250px;}
-.ttm-row.row-title2-section{padding-bottom: 200px;}
-.ttm-row.row-title2-section,
-.ttm-row.tab-section{padding-top: 150px;}
-.ttm-row.about-top-section{padding-top: 110px;}
-.ttm-row.about-services-section{padding-bottom: 50px;}
-.ttm-row.row-title3-section{padding-top: 157px;padding-bottom: 117px;}
-
-
-
-.ttm_single_image-wrapper.with-border{border: 1px solid #e8ecef; background-color: aliceblue;}
-.ttm_single_image-wrapper.w100 img{width: 100%;}
-.ttm_single_image-wrapper.with-top-border img{border-top: 12px solid;}
-.ttm_single_image-wrapper.with-border15 img{border: 15px solid;}
-/* ===============================================
-    Spacing
-------------------------*/
-
-</style>
-
-        <section class="ttm-row about-section clearfix" style="background-color: #000;">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 col-sm-12">
-                    <div class="ml_30 res-991-ml-0 res-991-mt-30 position-relative">
-                        <!-- ttm_single_image-wrapper -->
-                        <div class="ttm_single_image-wrapper w100 p-12 with-border">
-            <img class="img-fluid" src="images/partner.png" title="partners" alt="partners">
-        </div>          <!-- ttm_single_image-wrapper end -->
-                        <!--featured-icon-box-->
-
-                        <!-- featured-icon-box end-->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
         <!-- SECTION CONTENT END -->
         <!-- OUR CLIENT SLIDER START -->
         <div class="section-full overlay-wraper bg-cover bg-repeat-x bg-primary"
-             style="background-image:url(images/background/bg-7.png); background-color: #ffc107;">
+             style="background-image:url(images/background/bg-7.png)">
             <div class="container">
                 <!-- IMAGE CAROUSEL START -->
                 <div class="section-content">
@@ -2470,7 +2414,7 @@
             <div class="container">
                 <div class="row">
                     <!-- ABOUT COMPANY -->
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="1s">
                         <div class="widget widget_about">
                             <h4 class="widget-title text-white">About Company</h4>
                             <div class="logo-footer clearfix p-b15">
@@ -2484,7 +2428,7 @@
                     </div>
                     <!-- RESENT POST -->
                     <!-- USEFUL LINKS -->
-                    <div class="col-md-3 col-sm-6">
+                    <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="2s">
                         <div class="widget widget_services">
                             <!-- <h4 class="widget-title text-white">Useful links</h4> -->
                             <ul>
@@ -2505,7 +2449,7 @@
                         </div>
                     </div>
                     <!-- NEWSLETTER -->
-                    <div class="col-md-3 col-sm-6" data-wow-duration="1s" data-wow-delay="1s">
+                    <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="3s">
                         <div class="elementor-column-wrap  elementor-element-populated">
                             <div class="elementor-widget-wrap">
                                 <div
@@ -2531,9 +2475,9 @@
                                     data-id="f9fd469" data-element_type="widget" data-widget_type="text-editor.default">
                                     <div class="elementor-widget-container">
                                         <div class="elementor-text-editor elementor-clearfix">
-                                        <p style="width: 332px; text-align: left;">
-    
-                                            Dealing with financial instruments involves significant risk and can result in the loss of your capital when you do
+                                            <p style="
+    width: 332px; text-align: left;
+">Dealing with financial instruments involves significant risk and can result in the loss of your capital when you do
                                                 not adhere to the instructions provided by your trader. You should not
                                                 spend more than you can afford to lose and should ensure that you fully
                                                 understand the risks involved. Using leveraged products may not be
@@ -2782,7 +2726,7 @@
     <div class="login-popup popup-contain">
   	    <div class="box popup-modal">
   	 	 	<div class="close close-btn">&times;</div>
-                <div class="learnmore" style="margin: auto; color: #fff">Learn more about our</div> 
+                <div class="learnmore" style="margin: auto;">Learn more about our</div> 
                     <!-- <div class="btn btn-dark pr" style="background-color: #feac16; float:right;">
                         <a style="color: #fff;font-weight:800" href="https://forbescapitalpartners.org/privacy-policy/">PRIVACY POLICY</a>
                     </div> -->
