@@ -2328,7 +2328,7 @@
         <!-- SECTION CONTENT END -->
         <!-- OUR CLIENT SLIDER START -->
         <div class="section-full overlay-wraper bg-cover bg-repeat-x bg-primary"
-             style="background-image:url(images/background/bg-7.png); background-color: #ffc107;">
+             style="background-image:url(images/background/bg-7.png); background-color: #552402;">
             <div class="container">
                 <!-- IMAGE CAROUSEL START -->
                 <div class="section-content">
