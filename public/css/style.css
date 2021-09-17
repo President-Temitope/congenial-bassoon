@@ -10826,13 +10826,6 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 /* ========== mobile view ========= */
 @media only screen and (max-width: 480px) {
 
-
-    .testimonial-5 .testimonial-paragraph p,
-.testimonial-grid-5 .testimonial-paragraph p {
-    padding: 5px 0px;
-    text-align: center;
-}
-
     .login-popup .box {
 
         top: 60%;
