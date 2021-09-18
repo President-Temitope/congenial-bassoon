@@ -497,9 +497,9 @@
                                                     class="icon ni ni-arrow-long-right ml-2"></em></a></div>
                                         </div>
                                     </div>
-                                    <div class="nk-block-des">
-                                        <p>At a glance summary of your investment account. Have fun!</p>
-                                    </div>
+                                    <!-- <div class="nk-block-des">
+                                        <p style="font-size: 14px!important;color: #2c3782!important;margin: 28px 8px 9px!important;font-weight: 800!important;width: 100%!important;">At a glance summary of your investment account. Havefun!</p>
+                                    </div> -->
                                 </div>
 
                                 <style>
