@@ -342,6 +342,8 @@ margin-bottom: 6.5rem!important;
     </style>
 </head>
 <body class="nk-body npc-invest bg-lighter ">
+
+
 <div class="nk-app-root">
     <div class="nk-wrap ">
         <div class="nk-header nk-header-fluid is-theme  is-regular">
