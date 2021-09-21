@@ -14,6 +14,16 @@
 </head>
 
 
+<!-- ====== pop alert withdraw ==== -->
+
+
+
+
+
+
+
+
+
 <style>
 
 
@@ -497,9 +507,9 @@
                                                     class="icon ni ni-arrow-long-right ml-2"></em></a></div>
                                         </div>
                                     </div>
-                                    <div class="nk-block-des">
-                                        <p>At a glance summary of your investment account. Have fun!</p>
-                                    </div>
+                                    <!-- <div class="nk-block-des">
+                                        <p style="font-size: 14px!important;color: #2c3782!important;margin: 28px 8px 9px!important;font-weight: 800!important;width: 100%!important;">At a glance summary of your investment account. Havefun!</p>
+                                    </div> -->
                                 </div>
 
                                 <style>
@@ -510,6 +520,10 @@
                                     }
 
                                 </style>
+
+
+
+
 
 
                                 <div class="active_plan nk-block">
@@ -875,6 +889,12 @@
 </div>
 
 
+
+
+
+
+
+
 <div id="my-modal" class="modal">
     <div class="modal-content">
         <div class="modal-header"><span class="close">×</span>
@@ -932,6 +952,11 @@
 </div>
 
 
+<script>
+    
+</script>
+
+
 
 <script>
     /* When the user clicks on the button,
@@ -955,6 +980,12 @@
     }
 </script>
 </body>
+
+
+
+
+
+
 <!-- ===== IONICONS ===== -->
 <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
 
@@ -988,6 +1019,8 @@
 
     navLink.forEach(n => n.addEventListener('click', linkAction));
 </script>
+
+
 
 <style>
 
@@ -1179,12 +1212,26 @@
                 <div class="nk-block-head-sub"><span>Welcome!</span></div>
                 <div class="align-center flex-wrap pb-2 gx-4 gy-3">
                     <div><h2 class="nk-block-title fw-normal">{{Auth::user()->fullName()}}</h2></div>
-                    <div><a class="btn btn-white btn-light" href="/investments/myPlans">My Plans <em
+                    <div><a class="btn btn-white btn-light" href="/investments/myPlans" style=" border: ridge;">My Plans <em
                                 class="icon ni ni-arrow-long-right ml-2"></em></a></div>
                 </div>
                 <div class="nk-block-des"><p>At a glance summary of your investment account. Have
                         fun!</p></div>
             </div>
+
+
+
+
+
+
+            <div><a class="btn btn-white btn-light ttu" href="#" style="padding: 12px 32px; width: none!important;background-color: black;color: #fff;" data-toggle="modal" data-target="#invest-plan">Make Deposit </a>
+                <a class="btn btn-white btn-light "  id="fade_in" href="#" style="float: right; margin: 6px 13px;background-color: dodgerblue;color: #000;">Withdraw                     
+                <!-- <div id="button"><button>Show toast</button></div> -->
+               </a>
+            </div>
+            <div>
+        </div>
+            
             <div class="nk-block-head-content d-none d-md-block">
                 <div class="nk-slider nk-slider-s1">
                     <div class="slider-init"
@@ -1228,10 +1275,30 @@
             </div>
         </div>
     </div>
+
+
+    <style>
+        #fading_div {
+
+            /* display: block;
+            justify-content: start;
+            width: 580px;
+            height: 80px; */
+            background: transparent;
+            border-radius: 10px;
+            box-shadow: rgb(0 0 0 / 20%) 1px 7px 14px -5px;
+            overflow: hidden;
+            animation: 0.5s ease-out 0s 1 normal forwards running slide-in;
+            /* opacity: 1; */
+            
+        }
+    </style>
     <div class="nk-block">
         <div class="nk-news card card-bordered">
+
+        <div id="fading_div" style="display:none;">Please contact agent for support of withdrawer <span id="fade_out" class="close" style="cursor: pointer;">&#x00D7</span></div></div>
             <div class="card-inner">
-                <div class="nk-news-list"><a class="nk-news-item" href="/plans">
+                <div class="nk-news-list"><a class="nk-news-item" href="/investments">
                         <div class="nk-news-icon"><em class="icon ni ni-card-view"></em></div>
                         <div class="nk-news-text"><p>Still want to invest? <span>Let's go</span>
                             </p> <em class="icon ni ni-external"></em></div>
@@ -1239,6 +1306,56 @@
             </div>
         </div>
     </div>
+
+
+
+    
+
+<script>
+
+    // global varibles
+var done = true,
+    fading_div = document.getElementById('fading_div'),
+    fade_in_button = document.getElementById('fade_in'),
+    fade_out_button = document.getElementById('fade_out');
+
+function function_opacity(opacity_value, fade_in_or_fade_out) { // fade_in_or_out - 0 = fade in, 1 = fade out
+    fading_div.style.opacity = opacity_value / 100;
+    fading_div.style.filter = 'alpha(opacity=' + opacity_value + ')';
+    if (fade_in_or_fade_out == 'in' && opacity_value == 1) {
+        fading_div.style.display = 'block';
+    }
+    if (fade_in_or_fade_out == 'in' && opacity_value == 100) {
+        done = true;
+    }
+    if (fade_in_or_fade_out == 'out' && opacity_value == 1) {
+        fading_div.style.display = 'none';
+        done = true;
+    }
+}
+
+// fade in button
+fade_in_button.onclick = function () {
+    if (done && fading_div.style.opacity !== '1') {
+        done = false;
+        for (var i = 1; i <= 100; i++) {
+            setTimeout("function_opacity(" + i + ",'in')", i * 5);
+        }
+    }
+};
+
+// fade out button
+fade_out_button.onclick = function () {
+    if (done && fading_div.style.opacity !== '0') {
+        done = false;
+        for (var i = 100; i >= 1; i--) {
+            setTimeout("function_opacity(" + i + ",'out')", (i - 100) * -1 * 5);
+        }
+    }
+};
+alert (test);
+</script>
+    
     <div class="nk-block">
         <div class="row gy-gs">
             <div class="col-md-6 col-lg-4">
@@ -1287,6 +1404,75 @@
             </div>
         </div>
     </div>
+
+
+
+    
+    <div class="modal fade modal-length" tabindex="-1" id="invest-plan">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
+                <div class="modal-body modal-body-md text-center">
+                    <div class="nk-modal">
+                        <div class="makedeposit" Align="center" style="font-size: 20px; font-weight: bold;">MAKE A DEPOSIT</div>
+                        <h4 class="nk-modal-title">Confirm Your Payment</h4>
+        
+                            <div>Enter your amount to confirm the order to complete the payment or cancel.</div>
+                        
+                        <div class="nk-modal-form">
+                            <div class="form-group">
+                            <div class="form-info">USD</div>
+                                <input type="text" class="form-control form-control-password-big text-cente border-control-form">
+                            </div>
+                        </div>
+                        <div class="main main-field">
+                            <input type="text" id="text" value="13frahbJrBo6yfhyUaVJoixnhaTjXgDpbn" readonly>
+                            <i class="material-icons" onclick="copy()" id="copy">content_copy</i>
+                        </div>
+                        <div class="QRCODE qr-address"><img src="https://chart.apis.google.com/chart?chs=300x300&cht=qr&chld=|0&chl=http%3A%2F%2F13frahbJrBo6yfhyUaVJoixnhaTjXgDpbn" width="150" height="150"></div>
+                        <div class="proveofpayment Pop-prove"><input id="fileupload" class="" type="file" name="fileupload" style="background-color: none;"></div>
+                        <div class="nk-modal-action action-modal">
+                            <a href="#" class="btn btn-lg btn-mw btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#confirm-invest">Confirm Payment</a>
+                            <div class="sub-text sub-text-alt mt-3 mb-4">This transaction will appear on your wallet statement as Invest * SILVER.</div>
+                            <a href="#" class="link link-soft" data-dismiss="modal">Cancel and return</a>
+                        </div>
+
+                    </div>
+                </div><!-- .modal-body -->
+            </div><!-- .modal-content -->
+        </div><!-- .modla-dialog -->
+    </div><!-- .modal -->
+    <!-- @@ Confirm Invest Modal @e -->
+    <div class="modal fade" tabindex="-1" id="confirm-invest">
+        <div class="modal-dialog modal-dialog-centered modal-md">
+            <div class="modal-content">
+                <a href="#" class="close" data-dismiss="modal"><em class="icon ni ni-cross-sm"></em></a>
+                <div class="modal-body modal-body-lg text-center">
+                    <div class="nk-modal">
+                        <em class="nk-modal-icon icon icon-circle icon-circle-xxl ni ni-check bg-success"></em>
+                        <h4 class="nk-modal-title successfully-notify">Successfully sent payment!</h4>
+                        <div class="nk-modal-text">
+                            <p class="sub-text notify-sub-text">You have successfully order the Investment Plan of ‘Silver’ with amount of <strong>$250.00</strong> using your <strong>NioWallet</strong>.</p>
+                        </div>
+                        <div class="nk-modal-action-lg">
+                            <ul class="btn-group flex-wrap justify-center g-4">
+                                <li><a href="/investments" class="btn btn-lg btn-mw btn-primary">More Invest</a></li>
+                                <li><a href="html/invest/scheme-details.html" class="btn btn-lg btn-mw btn-dim btn-primary"><em class="icon ni ni-reports"></em><span>See the plan</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!-- .modal-body -->
+                <div class="modal-footer bg-lighter">
+                    <div class="text-center w-100">
+{{--                        <p>Earn upto $25 for each friend your refer! <a href="#">Invite friends</a></p>--}}
+                    </div>
+                </div>
+            </div><!-- .modal-content -->
+        </div><!-- .modla-dialog -->
+    </div><!-- .modal -->
+
+
+
+
     <div class="nk-block">
         <div class="row gy-gs">
             <div class="col-md-6 col-lg-4">

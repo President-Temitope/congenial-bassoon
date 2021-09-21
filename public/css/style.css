@@ -7328,7 +7328,7 @@ a:focus.video-play-btn {
 	width: 750px;
 	position: absolute;
 	left: 50%;
-	top:86%;
+	top: 50%;
 	transform:translate(-50%,-50%);
 	display: flex;
 	flex-wrap: wrap;
@@ -10827,7 +10827,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 
     .login-popup .box {
 
-        top: 60%;
+        top: 40%;
         max-width: 100%;
     }
 

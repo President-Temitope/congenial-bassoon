@@ -330,7 +330,7 @@ margin-bottom: 6.5rem!important;
         font-size: 40px;
         transform: scale(1.1);
       }
-      p{
+      /* p{
         color:#fff;
         font-size: 18px;
         position: absolute;
@@ -338,10 +338,12 @@ margin-bottom: 6.5rem!important;
         left: 50%;
         transform: translate(-50%,-50%);
         letter-spacing: 1px;
-      }
+      } */
     </style>
 </head>
 <body class="nk-body npc-invest bg-lighter ">
+
+
 <div class="nk-app-root">
     <div class="nk-wrap ">
         <div class="nk-header nk-header-fluid is-theme  is-regular">
