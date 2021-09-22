@@ -44,7 +44,7 @@ class InvestmentsRepository implements InvestmentsRepositoryInterface
     public function queryWithStatus()
     {
         // TODO: Implement queryWithStatus() method.
-        return $this->core->queryWithACondition('status', 'yes', $this->model);
+        return $this->core->queryWithACondition('status', 'Yes', $this->model);
 
     }
 

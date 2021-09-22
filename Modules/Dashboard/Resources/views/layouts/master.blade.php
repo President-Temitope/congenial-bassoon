@@ -377,13 +377,17 @@ margin-bottom: 6.5rem!important;
                             <li class="nk-menu-item {{$pageName == 'Dashboard' ? 'active' : ''}}"><a
                                     class="nk-menu-link" href="/dashboard"><span
                                         class="nk-menu-text">Overview</span></a></li>
+
                             <li class="nk-menu-item {{$pageName == 'activePlans' ? 'active' : ''}}"><a
                                     class="nk-menu-link" href="/investments/myPlans"><span
                                         class="nk-menu-text">My Plan</span></a></li>
+
+
                             <li class="nk-menu-item {{$pageName == 'Investments' ? 'active' : ''}}"><a
                                     class="nk-menu-link"
                                     href="/investments"><span
                                         class="nk-menu-text">Invest</span></a></li>
+
                             {{--<li class="nk-menu-item {{$pageName == 'plans' ? 'active' : ''}} has-sub"><a
                                     class="nk-menu-link nk-menu-toggle"
                                     href="#">
@@ -432,7 +436,7 @@ margin-bottom: 6.5rem!important;
                                                     class="lead-text">{{Auth::user()->fullName()}}</span><span
                                                     class="sub-text">{{Auth::user()->email}}</span></div>
                                             <div class="user-action"><a class="btn btn-icon mr-n2"
-                                                                        href="/users/profile/settings"><em
+                                                                        href="/users/profile"><em
                                                         class="icon ni ni-setting"></em></a></div>
                                         </div>
                                     </div>
@@ -453,8 +457,8 @@ margin-bottom: 6.5rem!important;
                                             </li>
 
 
-                                            <li><a href="/profile/setting"><em
-                                                        class="icon ni ni-setting-alt"></em><span>Account Setting</span></a>
+                                            <li><a href=""><em
+                                                        class="icon ni ni-lock-alt"></em><span>Change Password</span></a>
                                             </li>
                                         </ul>
                                     </div>
@@ -506,15 +510,10 @@ margin-bottom: 6.5rem!important;
         </div>
     </div>
 </div>
+@prepend('script')
 <script src="{{asset('assets/js/bundle.js?ver=2.7.0')}}"></script>
 <script src="{{asset('assets/js/scripts.js?ver=2.7.0')}}"></script>
-<script>
-         function copy(){
-        var input= document.getElementById('text');
-        input.select();
-        document.execCommand("copy");
-        document.getElementById("show").innerHTML="Copy : "+'"'+input.value+'"';
-      }
-</script>
+@endprepend
+@stack('script')
 </body>
 </html>

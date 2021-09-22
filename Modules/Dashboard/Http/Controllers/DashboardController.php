@@ -28,9 +28,9 @@ class DashboardController extends Controller
     public function index()
     {
         $user_id = \Auth::id();
-        $investments = $this->investment->queryWithStatus();
+//        $investments = $this->investment->queryWithStatus();
         $myActivePlans = DB::table('payments')->where('user_id',$user_id)->where('status', '', 'Approved')->where('approved_at','>',Carbon::now())->get('investment_id');
-        return view('dashboard::index')->with('investments', $investments)->with('myActivePlans',$myActivePlans);
+        return view('dashboard::index')->with('myActivePlans',$myActivePlans);
     }
 
 }

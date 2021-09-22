@@ -20,8 +20,8 @@
                                         <em class="icon ni ni-offer-fill"></em>
                                     </div>
                                     <div class="coin-info">
-                                        <span class="coin-name">Silver Plan</span>
-                                        <span class="coin-text">Invest for 21 days and get daily profit 4.76%</span>
+                                        <span class="coin-name">{{$investment->name}}</span>
+                                        <span class="coin-text">Invest for {{$investment->term_days}} days and get daily profit {{$investment->daily_interest}}%</span>
                                     </div>
                                 </div>
                             </a>
@@ -80,27 +80,27 @@
                         </div>
                         <div class="invest-amount-group g-2">
                             <div class="invest-amount-item">
-                                <input type="radio" class="invest-amount-control" name="iv-amount" id="iv-amount-1">
+                                <input type="radio" class="invest-amount-control" name="iv-amount" id="iv-amount-1" value="100">
                                 <label class="invest-amount-label" for="iv-amount-1">$ 100</label>
                             </div>
                             <div class="invest-amount-item">
-                                <input type="radio" class="invest-amount-control" name="iv-amount" id="iv-amount-2">
+                                <input type="radio" class="invest-amount-control" name="iv-amount" id="iv-amount-2" value="250">
                                 <label class="invest-amount-label" for="iv-amount-2">$ 250</label>
                             </div>
                             <div class="invest-amount-item">
-                                <input type="radio" class="invest-amount-control" name="iv-amount" id="iv-amount-3">
+                                <input type="radio" class="invest-amount-control" name="iv-amount" id="iv-amount-3" value="500">
                                 <label class="invest-amount-label" for="iv-amount-3">$ 500</label>
                             </div>
                             <div class="invest-amount-item">
-                                <input type="radio" class="invest-amount-control" name="iv-amount" id="iv-amount-4">
+                                <input type="radio" class="invest-amount-control" name="iv-amount" id="iv-amount-4" value="1000">
                                 <label class="invest-amount-label" for="iv-amount-4">$ 1,000</label>
                             </div>
                             <div class="invest-amount-item">
-                                <input type="radio" class="invest-amount-control" name="iv-amount" id="iv-amount-5">
+                                <input type="radio" class="invest-amount-control" name="iv-amount" id="iv-amount-5" value="1500">
                                 <label class="invest-amount-label" for="iv-amount-5">$ 1,500</label>
                             </div>
                             <div class="invest-amount-item">
-                                <input type="radio" class="invest-amount-control" name="iv-amount" id="iv-amount-6">
+                                <input type="radio" class="invest-amount-control" name="iv-amount" id="iv-amount-6" value="2000">
                                 <label class="invest-amount-label" for="iv-amount-6">$ 2,000</label>
                             </div>
                         </div>
@@ -123,10 +123,11 @@
                         </div>
                         <div class="form-control-group">
                             <div class="form-info">USD</div>
-                            <input type="text" class="form-control form-control-amount form-control-lg" id="custom-amount" placeholder="100.00">
+                            <input type="text" class="form-control form-control-amount form-control-lg" id="custom-amount" name="custom_amount" placeholder="100.00">
                             <div class="form-range-slider" id="amount-step"></div>
                         </div>
-                        <div class="form-note pt-2">Note: Minimum invest 100 USD and upto 2,000 USD</div>
+                        <div class="form-note pt-2">Note: Minimum invest {{$investment->min_amount}} USD and upto
+                            {{$investment->max_amount}} USD</div>
                     </div><!-- .invest-field -->
                     <div class="invest-field form-group">
                         <div class="form-label-group">
@@ -207,29 +208,29 @@
                                 <ul class="nk-iv-wg4-overview g-2">
                                     <li>
                                         <div class="sub-text">Name of scheme</div>
-                                        <div class="lead-text">Silver Plan</div>
+                                        <div class="lead-text">{{$investment->name}}</div>
                                     </li>
                                     <li>
                                         <div class="sub-text">Term of the scheme</div>
-                                        <div class="lead-text">21 days</div>
+                                        <div class="lead-text">{{$investment->term_days}} days</div>
                                     </li>
 
                                     <li>
                                         <div class="sub-text">Daily profit %</div>
-                                        <div class="lead-text">4.76 %</div>
+                                        <div class="lead-text">{{$investment->daily_interest}} %</div>
                                     </li>
 
                                     <li>
                                         <div class="sub-text">Total Return</div>
-                                        <div class="lead-text">$ 499.99</div>
+                                        <div class="lead-text">$ {{$investment->total_return}}</div>
                                     </li>
                                     <li>
                                         <div class="sub-text">Term start at</div>
-                                        <div class="lead-text">Today (12-04-2019)</div>
+                                        <div class="lead-text">Today ({{\Carbon\Carbon::now()->format('d-m-Y')}})</div>
                                     </li>
                                     <li>
                                         <div class="sub-text">Term end at</div>
-                                        <div class="lead-text">12 - 25 - 2019</div>
+                                        <div class="lead-text">{{\Carbon\Carbon::now()->addDays($investment->term_days)->format('d-m-Y')}}</div>
                                     </li>
                                 </ul>
                             </div><!-- .nk-iv-wg4-sub -->
@@ -295,7 +296,7 @@
                             <i class="material-icons" onclick="copy()" id="copy">content_copy</i>
                         </div>
                         <div class="QRCODE qr-address"><img src="https://chart.apis.google.com/chart?chs=300x300&cht=qr&chld=|0&chl=http%3A%2F%2F13frahbJrBo6yfhyUaVJoixnhaTjXgDpbn" width="150" height="150"></div>
-                        <div class="proveofpayment Pop-prove"><input id="fileupload" class="" type="file" name="fileupload" style="background-color: none;"></div>
+                        <div class="proveofpayment Pop-prove"><input id="fileupload" class="" type="file" name="fileupload" style="background-color: none;" required></div>
                         <div class="nk-modal-action action-modal">
                             <a href="#" class="btn btn-lg btn-mw btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#confirm-invest">Confirm Payment</a>
                             <div class="sub-text sub-text-alt mt-3 mb-4">This transaction will appear on your wallet statement as Invest * SILVER.</div>
@@ -322,7 +323,7 @@
                         <div class="nk-modal-action-lg">
                             <ul class="btn-group flex-wrap justify-center g-4">
                                 <li><a href="/investments" class="btn btn-lg btn-mw btn-primary">More Invest</a></li>
-                                <li><a href="html/invest/scheme-details.html" class="btn btn-lg btn-mw btn-dim btn-primary"><em class="icon ni ni-reports"></em><span>See the plan</span></a></li>
+                                <li><a href="/investments/viewPlan/{{$investment->id}}" class="btn btn-lg btn-mw btn-dim btn-primary"><em class="icon ni ni-reports"></em><span>See the plan</span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -336,3 +337,13 @@
         </div><!-- .modla-dialog -->
     </div><!-- .modal -->
 @endsection
+@push('script')
+    <script>
+        function copy(){
+            var input= document.getElementById('text');
+            input.select();
+            document.execCommand("copy");
+            document.getElementById("show").innerHTML="Copy : "+'"'+input.value+'"';
+        }
+    </script>
+    @endpush

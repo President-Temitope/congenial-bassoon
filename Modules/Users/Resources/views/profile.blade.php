@@ -13,9 +13,9 @@
         <li class="nav-item">
             <a class="nav-link" href="{{route('profile')}}">Personal</a>
         </li>
-        <li class="nav-item">
+        {{--<li class="nav-item">
             <a class="nav-link" href="{{route('profile-settings')}}">Security<span class="d-none s-sm-inline"> Setting</span></a>
-        </li>
+        </li>--}}
     </ul><!-- .nav-tabs -->
     <div class="nk-block">
         <div class="nk-block-head">
@@ -89,6 +89,9 @@
                                         <label class="form-label" for="full-name">First Name</label>
                                         <input type="text" class="form-control form-control-lg" id="full-name" value="{{$user->firstname}}" placeholder="Enter First name">
                                     </div>
+                                </div>
+
+                                <div class="col-md-6">
                                     <div class="form-group">
                                         <label class="form-label" for="full-name">Last Name</label>
                                         <input type="text" class="form-control form-control-lg" id="full-name" value="{{$user->lastname}}" placeholder="Enter Last name">

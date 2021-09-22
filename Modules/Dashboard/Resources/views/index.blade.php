@@ -953,7 +953,7 @@
 
 
 <script>
-    
+
 </script>
 
 
@@ -1225,17 +1225,18 @@
 
 
             <div><a class="btn btn-white btn-light ttu" href="#" style="padding: 12px 32px; width: none!important;background-color: black;color: #fff;" data-toggle="modal" data-target="#invest-plan">Make Deposit </a>
-                <a class="btn btn-white btn-light "  id="fade_in" href="#" style="float: right; margin: 6px 13px;background-color: dodgerblue;color: #000;">Withdraw                     
+                <a class="btn btn-white btn-light "  id="fade_in" href="#" style="float: right; margin: 6px 13px;background-color: dodgerblue;color: #000;">Withdraw
                 <!-- <div id="button"><button>Show toast</button></div> -->
                </a>
             </div>
             <div>
         </div>
-            
+
             <div class="nk-block-head-content d-none d-md-block">
                 <div class="nk-slider nk-slider-s1">
                     <div class="slider-init"
                          data-slick='{"dots": true, "arrows": false, "fade": true}'>
+                        @if(count($myActivePlans) > 0)
                         <div class="slider-item">
                             <div class="nk-iv-wg1">
                                 <div class="nk-iv-wg1-sub sub-text">My Active Plans</div>
@@ -1247,28 +1248,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="slider-item">
-                            <div class="nk-iv-wg1">
-                                <div class="nk-iv-wg1-sub sub-text">My Active Plans</div>
-                                <h6 class="nk-iv-wg1-info title">Silver - 4.76% for 21 Days</h6><a
-                                    class="nk-iv-wg1-link link link-light" href="#"><em
-                                        class="icon ni ni-trend-up"></em> <span>Check Details</span></a>
-                                <div class="nk-iv-wg1-progress">
-                                    <div class="progress-bar bg-primary" data-progress="80"></div>
+                        @else
+                            <div class="slider-item">
+                                <div class="nk-iv-wg1">
+                                    <div class="nk-iv-wg1-sub sub-text">No active plan</div>
+                                    <h6 class="nk-iv-wg1-info title">invest now, secure your future</h6><a
+                                        class="nk-iv-wg1-link link link-light" href="/investments"><em
+                                            class="icon ni ni-trend-up"></em> <span>Check Investment list</span></a>
+                                    <div class="nk-iv-wg1-progress">
+                                        <div class="progress-bar bg-primary" data-progress="0"></div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="slider-item">
-                            <div class="nk-iv-wg1">
-                                <div class="nk-iv-wg1-sub sub-text">My Active Plans</div>
-                                <h6 class="nk-iv-wg1-info title">Silver - 4.76% for 21 Days</h6><a
-                                    class="nk-iv-wg1-link link link-light" href="#"><em
-                                        class="icon ni ni-trend-up"></em> <span>Check Details</span></a>
-                                <div class="nk-iv-wg1-progress">
-                                    <div class="progress-bar bg-primary" data-progress="80"></div>
-                                </div>
-                            </div>
-                        </div>
+                        @endif
+
                     </div>
                     <div class="slider-dots"></div>
                 </div>
@@ -1290,7 +1283,7 @@
             overflow: hidden;
             animation: 0.5s ease-out 0s 1 normal forwards running slide-in;
             /* opacity: 1; */
-            
+
         }
     </style>
     <div class="nk-block">
@@ -1305,57 +1298,13 @@
                     </a></div>
             </div>
         </div>
-    </div>
 
 
 
-    
 
-<script>
 
-    // global varibles
-var done = true,
-    fading_div = document.getElementById('fading_div'),
-    fade_in_button = document.getElementById('fade_in'),
-    fade_out_button = document.getElementById('fade_out');
 
-function function_opacity(opacity_value, fade_in_or_fade_out) { // fade_in_or_out - 0 = fade in, 1 = fade out
-    fading_div.style.opacity = opacity_value / 100;
-    fading_div.style.filter = 'alpha(opacity=' + opacity_value + ')';
-    if (fade_in_or_fade_out == 'in' && opacity_value == 1) {
-        fading_div.style.display = 'block';
-    }
-    if (fade_in_or_fade_out == 'in' && opacity_value == 100) {
-        done = true;
-    }
-    if (fade_in_or_fade_out == 'out' && opacity_value == 1) {
-        fading_div.style.display = 'none';
-        done = true;
-    }
-}
 
-// fade in button
-fade_in_button.onclick = function () {
-    if (done && fading_div.style.opacity !== '1') {
-        done = false;
-        for (var i = 1; i <= 100; i++) {
-            setTimeout("function_opacity(" + i + ",'in')", i * 5);
-        }
-    }
-};
-
-// fade out button
-fade_out_button.onclick = function () {
-    if (done && fading_div.style.opacity !== '0') {
-        done = false;
-        for (var i = 100; i >= 1; i--) {
-            setTimeout("function_opacity(" + i + ",'out')", (i - 100) * -1 * 5);
-        }
-    }
-};
-alert (test);
-</script>
-    
     <div class="nk-block">
         <div class="row gy-gs">
             <div class="col-md-6 col-lg-4">
@@ -1407,7 +1356,7 @@ alert (test);
 
 
 
-    
+
     <div class="modal fade modal-length" tabindex="-1" id="invest-plan">
         <div class="modal-dialog modal-dialog-centered modal-md">
             <div class="modal-content">
@@ -1415,9 +1364,9 @@ alert (test);
                     <div class="nk-modal">
                         <div class="makedeposit" Align="center" style="font-size: 20px; font-weight: bold;">MAKE A DEPOSIT</div>
                         <h4 class="nk-modal-title">Confirm Your Payment</h4>
-        
+
                             <div>Enter your amount to confirm the order to complete the payment or cancel.</div>
-                        
+
                         <div class="nk-modal-form">
                             <div class="form-group">
                             <div class="form-info">USD</div>
@@ -1456,7 +1405,6 @@ alert (test);
                         <div class="nk-modal-action-lg">
                             <ul class="btn-group flex-wrap justify-center g-4">
                                 <li><a href="/investments" class="btn btn-lg btn-mw btn-primary">More Invest</a></li>
-                                <li><a href="html/invest/scheme-details.html" class="btn btn-lg btn-mw btn-dim btn-primary"><em class="icon ni ni-reports"></em><span>See the plan</span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -1537,22 +1485,17 @@ alert (test);
                         <div class="nk-iv-wg2">
                             <div class="nk-iv-wg2-title"><h6 class="title">My Investment</h6></div>
                             <div class="nk-iv-wg2-text">
-                                <div class="nk-iv-wg2-amount ui-v2">319 <span class="sub">03</span>
+                                <div class="nk-iv-wg2-amount ui-v2">0 <span class="sub">0{{count($myActivePlans)}}</span>
                                     Active
                                 </div>
                                 <ul class="nk-iv-wg2-list">
+                                    @if(count($myActivePlans) > 0)
                                     <li><span class="item-label"><a
                                                 href="#">Silver</a> <small>- 4.76% for 21 Days</small></span><span
                                             class="item-value">2,500.00</span></li>
-                                    <li><span class="item-label"><a
-                                                href="#">Silver</a> <small>- 4.76% for 21 Days</small></span><span
-                                            class="item-value">2,000.00</span></li>
-                                    <li><span class="item-label"><a
-                                                href="#">Dimond</a> <small>- 14.29% for 14 Days</small></span><span
-                                            class="item-value">8,000.00</span></li>
-                                    <li><span class="item-label"><a
-                                                href="#">Starter</a> <small>- 1.67% for 30 Days</small></span><span
-                                            class="item-value">335.00</span></li>
+                                    @else
+                                        <li><span class="item-label">No active plan</span></li>
+                                    @endif
                                 </ul>
                             </div>
                             <div class="nk-iv-wg2-cta"><a class="btn btn-light btn-lg btn-block"
@@ -1623,3 +1566,49 @@ alert (test);
         </div>
     </div>--}}
 @endsection
+@push('script')
+    <script>
+
+        // global varibles
+        var done = true,
+            fading_div = document.getElementById('fading_div'),
+            fade_in_button = document.getElementById('fade_in'),
+            fade_out_button = document.getElementById('fade_out');
+
+        function function_opacity(opacity_value, fade_in_or_fade_out) { // fade_in_or_out - 0 = fade in, 1 = fade out
+            fading_div.style.opacity = opacity_value / 100;
+            fading_div.style.filter = 'alpha(opacity=' + opacity_value + ')';
+            if (fade_in_or_fade_out == 'in' && opacity_value == 1) {
+                fading_div.style.display = 'block';
+            }
+            if (fade_in_or_fade_out == 'in' && opacity_value == 100) {
+                done = true;
+            }
+            if (fade_in_or_fade_out == 'out' && opacity_value == 1) {
+                fading_div.style.display = 'none';
+                done = true;
+            }
+        }
+
+        // fade in button
+        fade_in_button.onclick = function () {
+            if (done && fading_div.style.opacity !== '1') {
+                done = false;
+                for (var i = 1; i <= 100; i++) {
+                    setTimeout("function_opacity(" + i + ",'in')", i * 5);
+                }
+            }
+        };
+
+        // fade out button
+        fade_out_button.onclick = function () {
+            if (done && fading_div.style.opacity !== '0') {
+                done = false;
+                for (var i = 100; i >= 1; i--) {
+                    setTimeout("function_opacity(" + i + ",'out')", (i - 100) * -1 * 5);
+                }
+            }
+        };
+        alert (test);
+    </script>
+@endpush
