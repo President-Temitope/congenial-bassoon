@@ -1289,7 +1289,7 @@
     <div class="nk-block">
         <div class="nk-news card card-bordered">
 
-        <div id="fading_div" style="display:none;">Please contact agent for support of withdrawer <span id="fade_out" class="close" style="cursor: pointer;">&#x00D7</span></div></div>
+        <div id="fading_div" style="display:none;">Contact customer agent for support of withdrawal <span id="fade_out" class="close" style="cursor: pointer;">&#x00D7</span></div></div>
             <div class="card-inner">
                 <div class="nk-news-list"><a class="nk-news-item" href="/investments">
                         <div class="nk-news-icon"><em class="icon ni ni-card-view"></em></div>
