@@ -10825,6 +10825,9 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 /* ========== mobile view ========= */
 @media only screen and (max-width: 480px) {
 
+
+
+
     .login-popup .box {
 
         top: 40%;
@@ -11672,7 +11675,7 @@ ol.comment-list li.comment .comment-respond .comment-form p {
     .header-nav .nav > li ul,
     .header-nav .nav > li .sub-menu,
     .header-nav .nav > li .mega-menu {
-        display: none;
+        /* display: none; */
         position: static;
         visibility: visible;
         width: auto;

@@ -668,6 +668,108 @@
     }
 
     /* =================== */
+
+
+
+.ttm_single_image-wrapper.with-border{border: none; background-color: #ffa500c9;border-radius: 5px;}
+.ttm_single_image-wrapper.w100 img{width: 100%;}
+.ttm_single_image-wrapper.with-top-border img{border-top: 12px solid;}
+.ttm_single_image-wrapper.with-border15 img{border: 15px solid;}
+
+
+
+/* ===============================================
+    1.ttm-row
+------------------------*/
+
+.ttm-row{ padding: 90px 0;}
+.ttm-row.broken-section,
+.ttm-row.testimonial-section,
+.ttm-row.about2-section,
+.ttm-row.row-top-section{ padding: 0 0; }
+.ttm-row.project-style2-section,
+.ttm-row.single-project-section{padding-bottom: 60px;}
+.ttm-row.pricing-plan-section,
+.ttm-row.team-member-section,
+.ttm-row.faq-section,
+.ttm-row.about-blog-section{padding-bottom: 70px;}
+.ttm-row.blog-grid-section,
+.ttm-row.blog-left-img-section,
+.ttm-row.services2-section {padding-bottom: 80px;}
+.ttm-row.services-section{padding-bottom: 130px;}
+.ttm-row.row-title-section{padding-top: 100px;padding-bottom: 110px;}
+.ttm-row.blog-text-section{padding-top: 207px;padding-bottom: 180px;}
+.ttm-row.blog-section,
+.ttm-row.client-section,
+.ttm-row.blog2-section,
+.ttm-row.about-blog-section,
+.ttm-row.contact-form-section{padding-top: 0;}
+.ttm-row.strategy-section,
+.ttm-row.chart-section,
+.ttm-row.blog-section,
+.ttm-row.about-blog2-section,
+.ttm-row.map-section{padding-bottom: 0;}
+.ttm-row.blog-section,
+.ttm-row.about-blog-section{margin-top: -180px;}
+.ttm-row.client-section{padding-bottom: 37px;}
+.ttm-row.about-section,
+.ttm-row.process-section{padding-bottom: 100px;}
+.ttm-row.strategy-section{padding-top: 140px;}
+.ttm-row.team-work-section{padding-bottom: 60px;}
+.ttm-row.blog-text2-section{padding-top: 250px;padding-bottom: 250px;}
+.ttm-row.row-title2-section{padding-bottom: 200px;}
+.ttm-row.row-title2-section,
+.ttm-row.tab-section{padding-top: 150px;}
+.ttm-row.about-top-section{padding-top: 110px;}
+.ttm-row.about-services-section{padding-bottom: 50px;}
+.ttm-row.row-title3-section{padding-top: 157px;padding-bottom: 117px;}
+
+/* ===============================================
+    2.Row-Equal-Height
+
+
+
+    	/* ttm-row */
+	body .page.ttm-sidebar-true .site-main,
+	.ttm-row { padding: 30px 0 !important; }
+	.ttm-row.broken-section,
+	.ttm-row.testimonial-section,
+	.ttm-row.contact-form-section,
+	.ttm-row.about2-section{padding: 0 0 !important;}
+	.ttm-row.services-section,
+	.ttm-row.pricing-plan-section,
+	.ttm-row.blog-section,
+	.ttm-row.team-member-section,
+	.ttm-row.project-style2-section,
+	.ttm-row.single-project-section,
+	.ttm-row.blog-grid-section,
+	.ttm-row.faq-section,
+	.ttm-row.about-blog-section{padding-bottom: 20px !important;}
+	.ttm-row.row-title-section{padding-top: 55px !important;padding-bottom: 25px !important;}
+	.ttm-row.client-section,
+	.ttm-row.about2-section,
+	.ttm-row.about3-section {padding-top: 0 !important;}
+	.ttm-row.strategy-section,
+	.ttm-row.map-section,
+	
+	.ttm-row.blog-section.home-blog-section,
+	.ttm-row.about-blog2-section{padding-bottom: 0 !important;}
+	.ttm-row.blog-text2-section{padding-top: 245px  !important;padding-bottom: 245px  !important;}
+	.ttm-row.row-title3-section{padding-top: 70px !important;}
+	.ttm-row.first-section{padding-top: 10px !important; padding-bottom: 20px !important;}
+
+	.ttm-row.blog-section,
+	.ttm-row.about-blog-section{margin-top: -80px;}
+	
+	.ttm-row.project-style2-section,
+	.ttm-row.single-project-section,
+	.ttm-row.team-member-section{padding-top: 30px!important;}
+	.ttm-row.client-section,
+	.ttm-row.team-work-section,
+	.ttm-row.services2-section{padding-bottom: 10px !important;}
+
+	.ttm-row.blog2-section{margin-top: -490px!important;}
+
 </style>
 
 <body id="bg">
@@ -2269,11 +2371,29 @@ ction-head text-center"><span class="wt-title-subline font-16 text-gray-dark m-b
                 </div>
             </div>
         </div>
+        <section class="ttm-row about-section clearfix">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-sm-12">
+                    <div class="ml_30 res-991-ml-0 res-991-mt-30 position-relative">
+                        <!-- ttm_single_image-wrapper -->
+                        <div class="ttm_single_image-wrapper w100 p-12 with-border">
+                            <img class="img-fluid" src="/images/partner.png" title="partners" alt="partners">
+                        </div><!-- ttm_single_image-wrapper end -->
+                        <!--featured-icon-box-->
+
+                        <!-- featured-icon-box end-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+        
         <!-- SECTION CONTENT END -->
         <!-- OUR CLIENT SLIDER START -->
         <div class="section-full overlay-wraper bg-cover bg-repeat-x bg-primary"
-             style="background-image:url(images/background/bg-7.png)">
-            <div class="container">
+             style="background-image:url(images/background/bg-7.png);">
+            <div class="container" >
                 <!-- IMAGE CAROUSEL START -->
                 <div class="section-content">
                     <div class="owl-carousel home-logo-carousel">
@@ -2401,9 +2521,18 @@ ction-head text-center"><span class="wt-title-subline font-16 text-gray-dark m-b
                 </div>
                 <!-- IMAGE CAROUSEL START -->
             </div>
+      
+
+            
         </div>
         <!-- OUR CLIENT SLIDER END -->
     </div>
+
+    
+
+
+
+
     <!-- CONTENT END -->
     <!-- FOOTER START -->
     <footer class="site-footer footer-dark bg-no-repeat bg-full-height bg-center "
@@ -2449,7 +2578,7 @@ ction-head text-center"><span class="wt-title-subline font-16 text-gray-dark m-b
                         </div>
                     </div>
                     <!-- NEWSLETTER -->
-                    <div class="col-md-3 col-sm-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="3s">
+                    <div class="col-md-3 col-sm-6" data-wow-duration="1s" data-wow-delay="1s">
                         <div class="elementor-column-wrap  elementor-element-populated">
                             <div class="elementor-widget-wrap">
                                 <div

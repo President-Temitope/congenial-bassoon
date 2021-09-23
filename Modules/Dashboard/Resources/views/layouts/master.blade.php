@@ -378,7 +378,7 @@ margin-bottom: 6.5rem!important;
                                     class="nk-menu-link" href="/dashboard"><span
                                         class="nk-menu-text">Overview</span></a></li>
 
-                            <li class="nk-menu-item {{$pageName == 'activePlans' ? 'active' : ''}}"><a
+                            <li class="nk-menu-item {{$pageName == 'Plans' ? 'active' : ''}}"><a
                                     class="nk-menu-link" href="/investments/myPlans"><span
                                         class="nk-menu-text">My Plan</span></a></li>
 
