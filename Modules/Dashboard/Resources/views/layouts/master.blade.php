@@ -382,6 +382,9 @@ margin-bottom: 6.5rem!important;
                                     class="nk-menu-link" href="/investments/myPlans"><span
                                         class="nk-menu-text">My Plan</span></a></li>
 
+                                        <!-- <li class="nk-menu-item"><a href="/investments/myPlans" class="nk-menu-link"><span class="nk-menu-text">MY Plan</span></a>
+										</li> -->
+
 
                             <li class="nk-menu-item {{$pageName == 'Investments' ? 'active' : ''}}"><a
                                     class="nk-menu-link"

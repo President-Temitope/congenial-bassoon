@@ -53,6 +53,9 @@
     <link rel="stylesheet" type="text/css" href="{{asset('plugins/revolution/revolution/css/settings.css')}}">
     <!-- REVOLUTION NAVIGATION STYLE -->
     <link rel="stylesheet" type="text/css" href="{{asset('plugins/revolution/revolution/css/navigation.css')}}">
+    <!-- added custom cdn font  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <!-- -------- -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <!-- GOOGLE FONTS -->
     <link
@@ -665,7 +668,147 @@
         position: relative;
         left: 163px;
 
+        
     }
+
+
+    /* ========================= CUSTOM FORM CSS */
+
+    .wrapper{
+  width: 380px;
+  padding: 40px 30px 50px 30px;
+  background: #fff;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
+}
+.wrapper header{
+  font-size: 35px;
+  font-weight: 600;
+}
+.wrapper form{
+  margin: 40px 0;
+}
+form .field{
+  width: 100%;
+  margin-bottom: 20px;
+}
+form .field.shake{
+  animation: shake 0.3s ease-in-out;
+}
+@keyframes shake {
+  0%, 100%{
+    margin-left: 0px;
+  }
+  20%, 80%{
+    margin-left: -12px;
+  }
+  40%, 60%{
+    margin-left: 12px;
+  }
+}
+form .field .input-area{
+  height: 50px;
+  width: 100%;
+  position: relative;
+}
+form input{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 0 45px;
+  font-size: 18px;
+  background: none;
+  caret-color: #5372F0;
+  border-radius: 5px;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  transition: all 0.2s ease;
+}
+form .field input:focus,
+form .field.valid input{
+  border-color: #5372F0;
+}
+form .field.shake input,
+form .field.error input{
+  border-color: #dc3545;
+}
+.field .input-area i{
+  position: absolute;
+  top: 50%;
+  font-size: 18px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+.input-area .icon{
+  left: 15px;
+  color: #bfbfbf;
+  transition: color 0.2s ease;
+}
+.input-area .error-icon{
+  right: 15px;
+  color: #dc3545;
+}
+form input:focus ~ .icon,
+form .field.valid .icon{
+  color: #5372F0;
+}
+form .field.shake input:focus ~ .icon,
+form .field.error input:focus ~ .icon{
+  color: #bfbfbf;
+}
+form input::placeholder{
+  color: #bfbfbf;
+  font-size: 17px;
+}
+form .field .error-txt{
+  color: #dc3545;
+  text-align: left;
+  margin-top: 5px;
+}
+form .field .error{
+  display: none;
+}
+form .field.shake .error,
+form .field.error .error{
+  display: block;
+}
+form .pass-txt{
+  text-align: left;
+  margin-top: -10px;
+}
+.wrapper a{
+  color: #5372F0;
+  text-decoration: none;
+}
+.wrapper a:hover{
+  text-decoration: underline;
+}
+form input[type="submit"]{
+  height: 50px;
+  margin-top: 30px;
+  color: #fff;
+  padding: 0;
+  border: none;
+  background: #5372F0;
+  cursor: pointer;
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+form input[type="submit"]:hover{
+  background: #2c52ed;
+}
+
+
+
+
+
+
+
+
+
+
+
 
     /* =================== */
 
@@ -2813,7 +2956,7 @@ ction-head text-center"><span class="wt-title-subline font-16 text-gray-dark m-b
                         @csrf
                         <div class="form-group">
                             <div class="input-group"><span class="input-group-addon"><i
-                                        class="fa fa-user cus-icon"></i></span>
+                                        class="icon fas fa-envelope"></i></span>
                                 <input id="email" placeholder="Email" type="email"
                                        class="form-control @error('email') is-invalid @enderror"
                                        name="email" value="{{ old('email') }}" required
@@ -2824,8 +2967,10 @@ ction-head text-center"><span class="wt-title-subline font-16 text-gray-dark m-b
                                 @enderror</div>
                         </div>
                         <div class="form-group">
-                            <div class="input-group"><span class="input-group-addon"><i
-                                        class="fa fa-eye cus-icon"></i></span>
+                            <div class="input-group">
+                                <span class="input-group-addon">
+                                    <i class="icon fas fa-lock"></i></span>
+                                       
                                 <input id="password" placeholder="Password" type="password"
                                        class="form-control @error('password') is-invalid @enderror"
                                        name="password" required
@@ -2835,12 +2980,69 @@ ction-head text-center"><span class="wt-title-subline font-16 text-gray-dark m-b
                                     </span>
                                 @enderror</div>
                         </div>
+                        <!-- <span class="show-hide input-group-addon">
+                                        <i class="fa fa-eye"></i>
+                                </span>    -->
+
                         <button type="submit"
                                 class="site-button-secondry text-uppercase btn-block m-b10">Submit
                         </button>
                         <span class="font-12">Don't have an account? <a href="javascript:;"
                                                                         class="text-primary">Register Here</a></span>
                     </form>
+
+
+
+<!-- ============ -->
+
+<!-- <form action="#">
+      <div class="field email">
+        <div class="input-area">
+          <input type="text" placeholder="Email Address">
+          <i class="icon fas fa-envelope"></i>
+          <i class="error error-icon fas fa-exclamation-circle"></i>
+        </div>
+        <div class="error error-txt">Email can't be blank</div>
+      </div>
+      <div class="field password">
+        <div class="input-area">
+          <input type="password" placeholder="Password">
+          <i class="icon fas fa-lock"></i>
+          <i class="error error-icon fas fa-exclamation-circle"></i>
+        </div>
+        <div class="error error-txt">Password can't be blank</div>
+      </div>
+      <div class="pass-txt"><a href="#">Forgot password?</a></div>
+      <input type="submit" value="Login">
+    </form> -->
+
+<!-- ============================ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                 </div>
                 <div class="modal-footer text-center">
                     <div class="text-center">
@@ -3153,7 +3355,25 @@ $("#overlayer").delay(1000).fadeOut("slow");
   })
 
 </script>
+
+
 </body>
+
+<!-- === show and hide pass -->
+
+<script>
+         const pass_field = document.querySelector("input");
+         const show_btn = document.querySelector("i");
+         show_btn.addEventListener("click", function(){
+           if(pass_field.type === "password"){
+             pass_field.type = "text";
+             show_btn.classList.add("hide");
+           }else{
+             pass_field.type = "password";
+             show_btn.classList.remove("hide");
+           }
+         });
+      </script>
 <!-- <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script> -->
 <script src="plugins/revolution/revolution/js/wow.min.js"></script>
 <script src="plugins/revolution/revolution/js/main.js"></script>
