@@ -10826,6 +10826,15 @@ ol.comment-list li.comment .comment-respond .comment-form p {
 @media only screen and (max-width: 480px) {
 
 
+    #log-form {
+
+        width: 296px;
+        padding: 4rem 2rem;
+        border-radius: 1rem;
+        box-shadow: 0 10px 25px rgb(92 99 105 / 20%);
+    }
+
+
 
 
     .login-popup .box {

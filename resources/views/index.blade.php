@@ -2942,17 +2942,45 @@ ction-head text-center"><span class="wt-title-subline font-16 text-gray-dark m-b
     <!-- BUTTON TOP START -->
     <button class="scroltop"><span class=" iconmoon-house relative" id="btn-vibrate"></span>
     </button>
+
+    <style>
+.login-form {
+
+    width: 106%!important;
+    padding: 4rem 2rem!important;
+    border-radius: 1rem!important;
+    box-shadow: 0 10px 25px rgb(92 99 105 / 20%)!important;
+    position: relative;
+    right: 8px;
+}
+
+    .modal-content {
+
+        width: 100%!important;
+        
+    }
+}
+@media only screen and (max-width: 480px) {
+
+    .modal-content {
+
+        width: 100%!important;
+
+    }
+
+}
+    </style>
     <!-- MODAL  LOGIN -->
-    <div id="Login-form" class="modal fade " role="dialog">
+    <div id="Login-form" class="modal fade Login-form" role="dialog">
         <div class="modal-dialog modal-sm">
             <!-- Modal content-->
-            <div class="modal-content">
+            <div class="modal-content content-modal">
                 <div class="modal-header bg-primary">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title text-white">Login Your Account</h4>
                 </div>
                 <div class="modal-body p-a30">
-                    <form id="log-form" method="POST" action="{{ route('login') }}">
+                    <form id="log-form" class="login-form" method="POST" action="{{ route('login') }}">
                         @csrf
                         <div class="form-group">
                             <div class="input-group"><span class="input-group-addon"><i
@@ -3069,7 +3097,7 @@ ction-head text-center"><span class="wt-title-subline font-16 text-gray-dark m-b
 <!-- ====================================== -->
 
     <!-- MODAL  REGISTER -->
-    <div id="Register-form" class="modal fade " role="dialog">
+    <div id="Register-form" class="modal fade Login-form" role="dialog">
         <div class="modal-dialog modal-sm">
             <!-- Modal content-->
             <div class="modal-content">
@@ -3078,7 +3106,7 @@ ction-head text-center"><span class="wt-title-subline font-16 text-gray-dark m-b
                     <h4 class="modal-title text-white">Register here</h4>
                 </div>
                 <div class="modal-body p-a30">
-                    <form id="reg-form" method="POST" action="{{route('register')}}">@csrf
+                    <form id="reg-form" method="POST" class="login-form" action="{{route('register')}}">@csrf
                         <div class="form-group">
                             <div class="input-group"><span class="input-group-addon"><i
                                         class="fa fa-user cus-icon"
