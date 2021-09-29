@@ -74,37 +74,37 @@
 --}}
                         </div><!-- .dropdown -->
                     </div><!-- .invest-field -->
-                    <div class="invest-field form-group">
+                   {{-- <div class="invest-field form-group">
                         <div class="form-label-group">
                             <label class="form-label">Choose Quick Amount to Invest</label>
                         </div>
                         <div class="invest-amount-group g-2">
                             <div class="invest-amount-item">
-                                <input type="radio" class="invest-amount-control" name="iv-amount" id="iv-amount-1" value="100">
+                                <input type="radio" class="invest-amount-control quick_amount" name="iv-amount" id="iv-amount-1" value="100">
                                 <label class="invest-amount-label" for="iv-amount-1">$ 100</label>
                             </div>
                             <div class="invest-amount-item">
-                                <input type="radio" class="invest-amount-control" name="iv-amount" id="iv-amount-2" value="250">
+                                <input type="radio" class="invest-amount-control quick_amount" name="iv-amount" id="iv-amount-2" value="250">
                                 <label class="invest-amount-label" for="iv-amount-2">$ 250</label>
                             </div>
                             <div class="invest-amount-item">
-                                <input type="radio" class="invest-amount-control" name="iv-amount" id="iv-amount-3" value="500">
+                                <input type="radio" class="invest-amount-control quick_amount" name="iv-amount" id="iv-amount-3" value="500">
                                 <label class="invest-amount-label" for="iv-amount-3">$ 500</label>
                             </div>
                             <div class="invest-amount-item">
-                                <input type="radio" class="invest-amount-control" name="iv-amount" id="iv-amount-4" value="1000">
+                                <input type="radio" class="invest-amount-control quick_amount" name="iv-amount" id="iv-amount-4" value="1000">
                                 <label class="invest-amount-label" for="iv-amount-4">$ 1,000</label>
                             </div>
                             <div class="invest-amount-item">
-                                <input type="radio" class="invest-amount-control" name="iv-amount" id="iv-amount-5" value="1500">
+                                <input type="radio" class="invest-amount-control quick_amount" name="iv-amount" id="iv-amount-5" value="1500">
                                 <label class="invest-amount-label" for="iv-amount-5">$ 1,500</label>
                             </div>
                             <div class="invest-amount-item">
-                                <input type="radio" class="invest-amount-control" name="iv-amount" id="iv-amount-6" value="2000">
+                                <input type="radio" class="invest-amount-control quick_amount" name="iv-amount" id="iv-amount-6" value="2000">
                                 <label class="invest-amount-label" for="iv-amount-6">$ 2,000</label>
                             </div>
                         </div>
-                    </div><!-- .invest-field -->
+                    </div>--}}<!-- .invest-field -->
                     <div class="invest-field form-group">
                         <div class="form-label-group">
                             <label class="form-label">Or Enter Your Amount</label>
@@ -123,9 +123,9 @@
                         </div>
                         <div class="form-control-group">
                             <div class="form-info">USD</div>
-                            <input type="text" class="form-control form-control-amount form-control-lg" id="custom-amount" name="custom_amount" placeholder="100.00">
-                            <div class="form-range-slider" id="amount-step"></div>
-                        </div>
+                            <input type="number" class="form-control form-control-amount form-control-lg" id="custom_amount" min="{{$investment->min_amount}}" max="{{$investment->max_amount}}" name="custom_amount" placeholder="100.00" onchange="changeAmount()">
+{{--                            <div class="form-range-slider" id="amount-step"></div>--}}
+                        </div>`
                         <div class="form-note pt-2">Note: Minimum invest {{$investment->min_amount}} USD and upto
                             {{$investment->max_amount}} USD</div>
                     </div><!-- .invest-field -->
@@ -246,11 +246,11 @@
                                 <ul class="nk-iv-wg4-list">
                                     <li>
                                         <div class="sub-text">Amount to invest</div>
-                                        <div class="lead-text">$ 250.00</div>
+                                        <div class="lead-text">$ <span id="amount_to_invest">0</span> </div>
                                     </li>
                                     <li>
                                         <div class="sub-text">Conversion Fee <span>(0.5%)</span></div>
-                                        <div class="lead-text">$ 1.25</div>
+                                        <div class="lead-text" >$ <span id="conversion_fee">0</span></div>
                                     </li>
                                 </ul>
                             </div><!-- .nk-iv-wg4-sub -->
@@ -258,7 +258,7 @@
                                 <ul class="nk-iv-wg4-list">
                                     <li>
                                         <div class="lead-text">Total Charge</div>
-                                        <div class="caption-text text-primary">$ 251.25</div>
+                                        <div class="caption-text text-primary">$ <span id="total_amount_to_invest">0</span></div>
                                     </li>
                                 </ul>
                             </div><!-- .nk-iv-wg4-sub -->
@@ -318,7 +318,7 @@
                         <em class="nk-modal-icon icon icon-circle icon-circle-xxl ni ni-check bg-success"></em>
                         <h4 class="nk-modal-title successfully-notify">Successfully sent payment!</h4>
                         <div class="nk-modal-text">
-                            <p class="sub-text notify-sub-text">You have successfully order the Investment Plan of ‘Silver’ with amount of <strong>$250.00</strong> using your <strong>NioWallet</strong>.</p>
+                            <p class="sub-text notify-sub-text">You have successfully order the Investment Plan of "{{$investment->name}}" with amount of <strong>$250.00</strong> using your <strong>NioWallet</strong>.</p>
                         </div>
                         <div class="nk-modal-action-lg">
                             <ul class="btn-group flex-wrap justify-center g-4">
@@ -345,5 +345,36 @@
             document.execCommand("copy");
             document.getElementById("show").innerHTML="Copy : "+'"'+input.value+'"';
         }
+
+        var conversionFeeField = document.getElementById('conversion_fee');
+        var amountToInvestField = document.getElementById('amount_to_invest').innerHTML;
+        var customAmountToInvestField = document.getElementById('custom_amount').value;
+        var totalAmountToInvestField = document.getElementById('total_amount_to_invest');
+
+        function changeAmount(){
+            amountToInvestField = customAmountToInvestField
+            totalAmountToInvestField.innerHTML = parseInt(conversionFeeField.innerHTML) + parseInt(amountToInvestField)
+            conversionFeeField.innerHTML = amountToInvestField * 0.5
+
+        }
+        totalAmountToInvestField.innerHTML = parseInt(conversionFeeField.innerHTML) + parseInt(amountToInvestField)
+
+        // var quickAmountButton = document.getElementsByClassName('quick_amount').onclick = function() {
+        //     alert(this.value)
+        //     // var radios = document.getElementsByName('contact');
+        //     // for (var radio of radios)
+        //     // {
+        //     //     if (radio.checked) {
+        //     //         alert(radio.value);
+        //     //     }
+        //     // }
+        // }
+        // document.querySelector('input[name="rate"]:checked').value;
+        console.log(conversionFeeField)
+        console.log(amountToInvestField)
+        console.log(totalAmountToInvestField)
+        //console.log(quickAmountButton)
+        console.log(customAmountToInvestField)
+
     </script>
     @endpush
