@@ -1283,6 +1283,7 @@
             overflow: hidden;
             animation: 0.5s ease-out 0s 1 normal forwards running slide-in;
             /* opacity: 1; */
+            color: #f71515!important;
 
         }
     </style>

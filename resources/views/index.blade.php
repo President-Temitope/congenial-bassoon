@@ -2944,6 +2944,47 @@ ction-head text-center"><span class="wt-title-subline font-16 text-gray-dark m-b
     </button>
 
     <style>
+
+
+
+#reg-form  [type="text"],
+#reg-form  [type="email"],
+#reg-form  [type="password"]
+{
+
+    width: 100%!important;
+    background: #f0f0f0!important;
+    border: none!important;
+    padding: 0px 30px!important;
+
+}
+
+#log-form [type="email"],
+#log-form [type="password"]
+
+{
+
+    width: 100%!important;
+    background: #f0f0f0!important;
+    border: none!important;
+    padding: 0px 30px!important;
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .login-form {
 
     width: 106%!important;
