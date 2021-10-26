@@ -1781,6 +1781,8 @@ form input[type="submit"]:hover{
             </div>
         </div>
         <!-- SLIDER END -->
+
+        
         <!-- MARQUEE SCROLL -->
         <!-- <div class="bg-black marquee marquee-custom">
             <div class="TickerNews" id="T1">
@@ -2779,134 +2781,13 @@ ction-head text-center"><span class="wt-title-subline font-16 text-gray-dark m-b
                 </div>
             </div>
         </div>
+
+
+        
+        
         <div class="mcwp-crypto" id="mcwp-322">
-            <div class="mcwp-ticker mcwp-footer" data-speed="100" style="opacity: 1;">
-                <div class="cc-ticker cc-white-color">
-                    <ul class="cc-stats" style="width: 2056px; animation-duration: 20.56s;">
-                        <li class="cc-coin">
-                            <div>
-                                <img src="images/coin-icon/bitcoin.png" alt="bitcoin"><b>Bitcoin <span>(BTC)</span>
-                                    <span>$ 34,126.00</span></b>
-                            </div>
-                        </li>
-                        <li class="cc-coin">
-                            <div>
-                                <img src="images/coin-icon/ethereum.png" alt="ethereum"><b>Ethereum <span>(ETH)</span>
-                                    <span>$ 1,972.61</span></b>
-                            </div>
-                        </li>
-                        <li class="cc-coin">
-                            <div>
-                                <img src="images/coin-icon/Tether-logo.png" alt="tether"><b>Tether <span>(USDT)</span>
-                                    <span>$ 1.00</span></b>
-                            </div>
-                        </li>
-                        <li class="cc-coin">
-                            <div>
-                                <img src="images/coin-icon/binance-coin-logo.png" alt="binance-coin"><b>Binance Coin
-                                    <span>(BNB)</span> <span>$ 305.58</span></b>
-                            </div>
-                        </li>
-                        <li class="cc-coin">
-                            <div>
-                                <img src="images/coin-icon/cardano.png" alt="cardano"><b>Cardano <span>(ADA)</span>
-                                    <span>$ 1.35</span></b>
-                            </div>
-                        </li>
-                        <li class="cc-coin">
-                            <div>
-                                <img src="images/coin-icon/dogecoin.png" alt="dogecoin"><b>Dogecoin <span>(DOGE)</span>
-                                    <span>$ 0.238921</span></b>
-                            </div>
-                        </li>
-                        <li class="cc-coin">
-                            <div>
-                                <img src="images/coin-icon/xrp-symbol-white-128.png" alt="xrp"><b>XRP <span>(XRP)</span>
-                                    <span>$ 0.652769</span></b>
-                            </div>
-                        </li>
-                        <li class="cc-coin">
-                            <div>
-                                <img src="images/coin-icon/USD_Coin_icon.png" alt="usd-coin"><b>USD Coin
-                                    <span>(USDC)</span> <span>$ 1.00</span></b>
-                            </div>
-                        </li>
-                        <li class="cc-coin">
-                            <div>
-                                <img src="images/coin-icon/aJGBjJFU_400x400 (1).jpg" alt="polkadot"><b>Polkadot <span>(DOT)</span>
-                                    <span>$ 16.09</span></b>
-                            </div>
-                        </li>
-                        <li class="cc-coin">
-                            <div>
-                                <img src="images/coin-icon/BUSD.png" alt="binance-usd"><b>Binance USD
-                                    <span>(BUSD)</span> <span>$ 1.00</span></b>
-                            </div>
-                        </li>
-                        <div class="cc-dup">
-                            <li class="cc-coin">
-                                <div>
-                                    <img src="images/coin-icon/bitcoin.png" alt="bitcoin"><b>Bitcoin <span>(BTC)</span>
-                                        <span>$ 34,126.00</span></b>
-                                </div>
-                            </li>
-                            <li class="cc-coin">
-                                <div>
-                                    <img src="images/coin-icon/ethereum.png" alt="ethereum"><b>Ethereum
-                                        <span>(ETH)</span> <span>$ 1,972.61</span></b>
-                                </div>
-                            </li>
-                            <li class="cc-coin">
-                                <div>
-                                    <img src="images/coin-icon/Tether-logo.png" alt="tether"><b>Tether
-                                        <span>(USDT)</span> <span>$ 1.00</span></b>
-                                </div>
-                            </li>
-                            <li class="cc-coin">
-                                <div>
-                                    <img src="images/coin-icon/binance-coin-logo.png" alt="binance-coin"><b>Binance Coin
-                                        <span>(BNB)</span> <span>$ 305.58</span></b>
-                                </div>
-                            </li>
-                            <li class="cc-coin">
-                                <div>
-                                    <img src="images/coin-icon/cardano.png" alt="cardano"><b>Cardano <span>(ADA)</span>
-                                        <span>$ 1.35</span></b>
-                                </div>
-                            </li>
-                            <li class="cc-coin">
-                                <div>
-                                    <img src="images/coin-icon/dogecoin.png" alt="dogecoin"><b>Dogecoin
-                                        <span>(DOGE)</span> <span>$ 0.238921</span></b>
-                                </div>
-                            </li>
-                            <li class="cc-coin">
-                                <div>
-                                    <img src="images/coin-icon/xrp-symbol-white-128.png" alt="xrp"><b>XRP
-                                        <span>(XRP)</span> <span>$ 0.652769</span></b>
-                                </div>
-                            </li>
-                            <li class="cc-coin">
-                                <div>
-                                    <img src="images/coin-icon/USD_Coin_icon.png" alt="usd-coin"><b>USD Coin <span>(USDC)</span>
-                                        <span>$ 1.00</span></b>
-                                </div>
-                            </li>
-                            <li class="cc-coin">
-                                <div>
-                                    <img src="images/coin-icon/aJGBjJFU_400x400.jpg" alt="polkadot"><b>Polkadot <span>(DOT)</span>
-                                        <span>$ 16.09</span></b>
-                                </div>
-                            </li>
-                            <li class="cc-coin">
-                                <div>
-                                    <img src="images/coin-icon/BUSD.png" alt="binance-usd"><b>Binance USD
-                                        <span>(BUSD)</span> <span>$ 1.00</span></b>
-                                </div>
-                            </li>
-                        </div>
-                    </ul>
-                </div>
+            <div class="mcwp-ticker mcwp-footer" data-speed="300" style="opacity: 1; background-color: beige;">
+                 <coingecko-coin-price-marquee-widget  coin-ids="bitcoin,ethereum,eos,ripple,litecoin" currency="usd" background-color="#0000" locale="en"></coingecko-coin-price-marquee-widget>
             </div>
         </div>
         <style>
@@ -3447,7 +3328,8 @@ $("#overlayer").delay(1000).fadeOut("slow");
 <script src="plugins/revolution/revolution/js/wow.min.js"></script>
 <script src="plugins/revolution/revolution/js/main.js"></script>
 <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
-<link rel="stylesheet" id="mcwp-crypto-css-css" href="./Privacy Policy – Forbe Capital_files/style41a5.css"
-      type="text/css" media="all">
+<script src="https://widgets.coingecko.com/coingecko-coin-price-marquee-widget.js"></script>
+<!-- <link rel="stylesheet" id="mcwp-crypto-css-css" href="./Privacy Policy – Forbe Capital_files/style41a5.css"type="text/css" media="all"> -->
+      
 
 </html>
