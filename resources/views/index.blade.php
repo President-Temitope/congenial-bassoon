@@ -141,6 +141,11 @@
         background-color: #ffffff !important;
     }
 
+     .converter-bit {
+        background-color: #000 !important;
+
+     }
+
 
     /*------------------------------------*\
         #BUTTONS
@@ -2600,7 +2605,7 @@ form input[type="submit"]:hover{
             <div class="container">
                 <div class="row">
                     <div class="col-md-6  clearfix">
-                        <div class="bit-converter p-a40 p-b15 bg-white wow fadeInUp">
+                        <div class="bit-converter p-a40 p-b15 bg-white wow fadeInUp converter-bit">
                             <div class="wt-box">
                                 <h2 class="text-uppercase m-t0 text-primary">Currency convertor</h2>
                                  <p>Make your calculation easier by using our tool.</p>
