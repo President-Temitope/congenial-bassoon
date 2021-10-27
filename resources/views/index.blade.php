@@ -2619,7 +2619,7 @@ form input[type="submit"]:hover{
 
 
                         <div class="section_title text-center mb-5">
-   <h2 class="wow slideInUp text-white" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: slideInUp;">Crypto <span class="text-primary">Market</span></h2>
+   <h2 class="wow slideInUp text-white" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: slideInUp;">Market&nbsp;<span class="text-primary">Today</span></h2>
   </div>
                 <div style="height: 413px; padding: 0px; margin: 0px; width: 100%; visibility: visible; animation-name: slideInLeft;" class="wow slideInLeft">
    <iframe src="https://widget.coinlib.io/widget?type=full_v2&amp;theme=dark&amp;cnt=6&amp;pref_coin_id=1505&amp;graph=yes" width="100%" height="409px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;"></iframe>
