@@ -913,6 +913,297 @@ form input[type="submit"]:hover{
 
 	.ttm-row.blog2-section{margin-top: -490px!important;}
 
+
+    /* ========= REASON ==== */
+
+    
+.reasons{
+  background-color: transparent;
+  padding-top:90px;
+  padding-bottom:40px;
+  text-align:center;
+  z-index:0;
+  position:relative
+}
+@media (max-width:1170px){
+  .reasons{z-index:1}
+}
+@media (max-width:991px){
+  .reasons{padding-top:67px;padding-bottom:54px}
+}
+.reasons .section-heading{
+  margin-bottom:62px;
+  position:relative
+}
+.reasons .section-heading img{
+  max-height:18px
+}
+@media (max-width:991px){
+  .reasons .section-heading{
+    margin-bottom:49px;
+    position:relative
+  }
+}
+@media (max-width:767px){
+  .reasons .section-heading{line-height:24px}
+}
+.reasons .reason{
+  background-color:#363636;
+  height:0;
+  padding-bottom:113%;
+  margin-bottom:13%;
+  position:relative;
+  width:100%;
+  box-shadow:2px 2px 0 0 #2b2b2b;
+  top:0;
+  left:0;
+  -webkit-transition:top .15s ease,left .15s ease,box-shadow .15s ease,background-color .15s ease;
+  -o-transition:top .15s ease,left .15s ease,box-shadow .15s ease,background-color .15s ease;
+  transition:top .15s ease,left .15s ease,box-shadow .15s ease,background-color .15s ease
+}
+.reasons .reason .content{
+  top:16%;
+  left:0;
+  width:100%;
+  position:absolute;
+  height:84%;
+  padding:0 13px
+}
+.reasons .reason .content .icon{
+  width:130px;
+  height:62px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:22px;
+  position:relative;
+  overflow:hidden
+}
+.reasons .reason .content .icon.yen .default img{
+  top:0;
+  left:0
+}
+.reasons .reason .content .icon.yen .hover img{
+  left:0;
+  top:-100%
+}
+.reasons .reason .content .icon.mobile .default img{
+  left:-100%;
+  top:0
+}
+.reasons .reason .content .icon.mobile .hover img{
+  left:-100%;
+  top:-100%
+}
+.reasons .reason .content .icon.two-fold .default img{
+  left:-203%;
+  top:0
+}
+.reasons .reason .content .icon.two-fold .hover img{
+  left:-203%;
+  top:-100%
+}
+.reasons .reason .content .icon.safe .default img{
+  left:-300%;
+  top:0
+}
+.reasons .reason .content .icon.safe .hover img{
+  left:-300%;
+  top:-100%
+}
+.reasons .reason .content .icon.support .default img{
+  left:-400%;
+  top:0
+}
+.reasons .reason .content .icon.support .hover img{
+  left:-400%;
+  top:-100%
+}
+.reasons .reason .content .icon.aus .default img{
+  left:-500%;
+  top:0
+}
+.reasons .reason .content .icon.aus .hover img{
+  left:-500%;
+  top:-100%
+}
+.reasons .reason .content .icon.five-k .default img{
+  left:-600%;
+  top:0
+}
+.reasons .reason .content .icon.five-k .hover img{
+  left:-600%;
+  top:-100%
+}
+.reasons .reason .content .icon.cashback-idr .default img{
+  left:-600%;
+  top:0
+}
+.reasons .reason .content .icon.cashback-idr .hover img{
+  left:-600%;
+  top:-100%
+}
+.reasons .reason .content .icon.cashback-idr .default:before,
+.reasons .reason .content .icon.cashback-idr .hover:before{
+  width:100%;
+  left:0
+}
+.reasons .reason .content .icon.expert .default img{
+  
+  left:-699%;
+  top:0
+}.reasons .reason .content .icon.expert .hover img{
+  left:-699%;
+  top:-100%
+}
+.reasons .reason .content .heading{
+  font-size:16px;
+  margin-bottom:12px;
+  line-height:24px;
+  font-weight:bold;
+  color:white;
+  letter-spacing:.01em
+}
+.reasons .reason .content p{
+  padding:0 15px;
+  font-size:16px;
+  font-weight:300;
+  line-height:24px;
+  color:#9e9e9e
+}
+.reasons .reason:hover{
+  top:-2px;
+  background-color:#3b3b3b;
+  box-shadow:5px 5px 0 0 #2b2b2b
+}
+.reasons .reason:hover .content .icon.yen .shine{
+  -webkit-animation-duration:2.45s;
+  animation-duration:2.45s
+}
+.reasons .reason:hover .content .icon.two-fold .shine{
+  -webkit-animation-duration:2.15s;
+  animation-duration:2.15s
+}
+.reasons .reason:hover .content .icon.safe .shine{
+  -webkit-animation-duration:2.75s;
+  animation-duration:2.75s
+}
+.reasons .reason:hover .content .icon.support .shine{
+  -webkit-animation-duration:2.35s;
+  animation-duration:2.35s
+}
+.reasons .reason:hover .content .icon.aus .shine{
+  -webkit-animation-duration:2.35s;
+  animation-duration:2.35s
+}
+.reasons .reason:hover .content .icon.five-k .shine{
+  -webkit-animation-duration:2.25s;
+  animation-duration:2.25s
+}
+.reasons .reason:hover .content .icon.expert .shine{
+  -webkit-animation-duration:2.35s;
+  animation-duration:2.35s
+}
+@media (max-width:1199px){
+  .reasons .reason{
+    height:auto;
+    padding:0;
+    margin-bottom:30px
+  }
+  .reasons .reason .content{
+    padding:30px;
+    padding-left:132px;
+    position:relative;
+    height:192px;
+    padding-right:15px;
+    text-align:left
+  }
+  .reasons .reason .content .icon{
+    position:absolute;
+    left:16px;
+    width:97px;
+    height:46px;
+    top:30px
+  }
+  .reasons .reason .content p{
+    max-width:19em;
+    padding:0
+  }
+}
+@media (max-width:880px){
+  .reasons .reason{
+    max-width:563px;
+    margin-right:auto;
+    margin-left:auto;
+    margin-bottom:15px
+  }
+  .reasons .reason .content{
+    height:auto;
+    padding-left:132px;
+    padding-right:30px
+  }
+  .reasons .reason .content p{
+    max-width:29em
+  }
+}
+@media (max-width:767px){
+  .reasons .reason{max-width:400px}
+}
+@media (max-width:880px){
+  .reasons .reason-wrapper{width:100%}
+}
+@media (max-width:420px){
+  .reasons{
+    padding-top:62px;
+    padding-bottom:50px
+  }
+  .reasons .section-heading{margin-bottom:40px}
+  .reasons h2.heading{margin-bottom:38px}
+  .reasons h2.heading .word{
+    width:100%;
+    white-space:normal
+  }
+  .reasons h2.heading .word .g-text{height:30px}
+  .reasons h2.heading .hand-drawn-arrow{
+    margin-left:-102px;
+    margin-top:-39px;
+    width:25px
+  }
+  .reasons h2.heading .hand-written-text{
+    margin-left:-66px;
+    margin-top:-60px;
+    width:138px
+  }
+  .reasons h2.heading .hand-written-text .g-text{
+    max-width:100%;
+    height:auto
+  }
+  .reasons .reason .content{
+    text-align:center;
+    padding-left:30px
+  }
+  .reasons .reason .content .icon{
+    width:130px;
+    height:62px;
+    margin-bottom:0;
+    position:relative;
+    left:auto;
+    top:auto;
+    display:inline-block
+  }
+  .reasons .reason .content p{
+    max-width:19em;
+    padding:0;
+    margin-bottom:0;
+    margin-left:auto;
+    margin-right:auto
+  }
+}
+.ja .reasons .reason .content .heading{font-size:14px}
+.ja .reasons .reason .content p{
+  font-size:14px;
+  padding:0
+}
+
 </style>
 
 <body id="bg">
@@ -2132,6 +2423,174 @@ form input[type="submit"]:hover{
         </div>
         <!-- HOW IT WORK  SECTION END -->
         <!-- SECTION CONTENT START -->
+
+
+
+<!-- ====== REASON =====/ -->
+<div class="reasons">
+        <div class="container">
+            <h2 class="text-light mb-5 wow slideInLeft" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: slideInLeft;">WHY <span class="text-primary">INVEST</span> WITH US?</h2>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 reason-wrapper">
+                    <div class="reason shine-icon-container wow slideInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: slideInUp;">
+                        <div class="content">
+                            <div class="icon shine-icon yen">
+                                <div class="default">
+                                    <img data-src="" src="">
+                                </div>
+                                <div class="hover">
+                                    <div class="shine"></div>
+                                    <img data-src="" src="">
+                                </div>
+                            </div>
+                            <h3 class="heading">Quick funds access</h3>
+                            <p>Withdraw funds quickly and easily using a range of methods, without any hidden terms.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 reason-wrapper">
+                    <div class="reason shine-icon-container wow slideInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: slideInUp;">
+                        <div class="content">
+                            <div class="icon shine-icon mobile">
+                                <div class="default">
+                                    <img data-src="" src="">
+                                </div>
+                                <div class="hover">
+                                    <div class="shine"></div>
+                                    <img data-src="" src="">
+                                </div>
+                            </div>
+                            <h3 class="heading">Trade on the go</h3>
+                            <p>Invest your way with cryptobolt's web app for mobile and desktop, or with our Android app.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 reason-wrapper">
+                    <div class="reason shine-icon-container wow slideInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: slideInUp;">
+                        <div class="content">
+                            <div class="icon shine-icon two-fold">
+                                <div class="default">
+                                    <img data-src="" src="">
+                                </div>
+                                <div class="hover">
+                                    <div class="shine"></div>
+                                    <img data-src="" src="">
+                                </div>
+                            </div>
+                            <h3 class="heading">Industry-best payouts</h3>
+                            <p>cryptobolt offers payouts of up to 200% on your initial investment, quickly and securely.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 reason-wrapper">
+                    <div class="reason shine-icon-container wow slideInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: slideInUp;">
+                        <div class="content">
+                            <div class="icon shine-icon safe">
+                                <div class="default">
+                                    <img data-src="" src="">
+                                </div>
+                                <div class="hover">
+                                    <div class="shine"></div>
+                                    <img data-src="" src="">
+                                </div>
+                            </div>
+                            <h3 class="heading">Segregated funds</h3>
+                            <p>We do not use your deposits or your unrealised profits to hedge in the underlying market.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 reason-wrapper">
+                    <div class="reason shine-icon-container wow slideInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: slideInUp;">
+                        <div class="content">
+                            <div class="icon shine-icon support">
+                                <div class="default">
+                                    <img data-src="" src="">
+                                </div>
+                                <div class="hover">
+                                    <div class="shine"></div>
+                                    <img data-src="" src="">
+                                </div>
+                            </div>
+                            <h3 class="heading">Amazing support</h3>
+                            <p>Our highly skilled and dedicated support team are here to help whenever you need it.</p></div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 reason-wrapper">
+                    <div class="reason shine-icon-container wow slideInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: slideInUp;">
+                        <div class="content">
+                            <div class="icon shine-icon  aus">
+                                <div class="default">
+                                    <img data-src="" src="">
+                                </div>
+                                <div class="hover">
+                                    <div class="shine"></div>
+                                    <img data-src="" src="">
+                                </div>
+                            </div>
+                            <h3 class="heading">Licensed in Australia</h3>
+                            <p>cryptobolt's holds an AFS licence, issued by the Australian Securities &amp; Investments Commission.  </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 reason-wrapper">
+                    <div class="reason shine-icon-container wow slideInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: slideInUp;">
+                        <div class="content">
+                            <div class="icon shine-icon  five-k cashback-idr">
+                                <div class="default">
+                                    <img data-src="" src="">
+                                </div>
+                                <div class="hover">
+                                    <div class="shine">
+                                    </div>
+                                    <img data-src="" src="">
+                                </div>
+                            </div>
+                            <h3 class="heading">Cashback for new accounts</h3>
+                            <p>Capitalise without spending your money with a cashback of $50 for all approved accounts. </p> 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 reason-wrapper">
+                    <div class="reason shine-icon-container wow slideInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: slideInUp;">
+                        <div class="content">
+                            <div class="icon shine-icon  expert">
+                                <div class="default">
+                                    <img data-src="" src="">
+                                </div>
+                                <div class="hover">
+                                    <div class="shine">
+                                    </div>
+                                    <img data-src="" src="">
+                                </div>
+                            </div>
+                            <h3 class="heading">Options specialists</h3>
+                            <p>With many years of experience behind us, no one understands options like cryptobolt.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <div id="about-us" class="section-full  p-tb80 bg-full-height bg-repeat-x graph-slide-image"
              style="background-image:url(images/background/bg-1.jpg);">
             <h2 class="text-uppercase wow fadeInUp" style="text-align: center;">About Us</h2>
@@ -2144,7 +2603,7 @@ form input[type="submit"]:hover{
                         <div class="bit-converter p-a40 p-b15 bg-white wow fadeInUp">
                             <div class="wt-box">
                                 <h2 class="text-uppercase m-t0 text-primary">Currency convertor</h2>
-                                <!-- <p>Make your calculation easier by using our tool.</p> -->
+                                 <p>Make your calculation easier by using our tool.</p>
                             </div>
                             <div class="currency-calculator sp-one">
                                 <div class="btc-clc">
@@ -2152,6 +2611,18 @@ form input[type="submit"]:hover{
                                 </div>
                             </div>
                         </div>
+
+
+                        <div class="section_title text-center mb-5">
+   <h2 class="wow slideInUp text-white" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: slideInUp;">Crypto <span class="text-primary">Market</span></h2>
+  </div>
+                <div style="height: 413px; padding: 0px; margin: 0px; width: 100%; visibility: visible; animation-name: slideInLeft;" class="wow slideInLeft">
+   <iframe src="https://widget.coinlib.io/widget?type=full_v2&amp;theme=dark&amp;cnt=6&amp;pref_coin_id=1505&amp;graph=yes" width="100%" height="409px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0" style="border:0;margin:0;padding:0;"></iframe>
+  </div>
+
+
+
+
                     </div>
                     <div class="col-md-6">
                         <div class="wt-box graph-part-right text-white wow fadeInUp" style="text-align: left;"><strong
