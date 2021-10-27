@@ -3263,7 +3263,117 @@ ction-head text-center"><span class="wt-title-subline font-16 text-gray-dark m-b
         
         <div class="mcwp-crypto" id="mcwp-322">
             <div class="mcwp-ticker mcwp-footer" data-speed="300" style="opacity: 1; background-color: beige;">
-                 <coingecko-coin-price-marquee-widget  coin-ids="bitcoin,ethereum,eos,ripple,litecoin" currency="usd" background-color="#0000" locale="en"></coingecko-coin-price-marquee-widget>
+                 <!-- <coingecko-coin-price-marquee-widget  coin-ids="bitcoin,ethereum,eos,ripple,litecoin,binance coin,solana,Dogecoin" currency="usd" background-color="#0000" locale="en"></coingecko-coin-price-marquee-widget> -->
+                 <div class="mcwp-crypto" id="mcwp-322">
+	<div class="mcwp-ticker mcwp-footer" data-speed="100" style="opacity: 1;">
+		<div class="cc-ticker cc-white-color">
+			<ul class="cc-stats" style="width: 2024px; animation-duration: 20.24s;">
+				<li class="cc-coin">
+					<div>
+						<img src="https://assets.coingecko.com/coins/images/1/thumb/bitcoin.png" alt="bitcoin"><b>Bitcoin <span>(BTC)</span> <span>$ 59,244.00</span></b>
+					</div>
+				</li>
+				<li class="cc-coin">
+					<div>
+						<img src="https://assets.coingecko.com/coins/images/279/thumb/ethereum.png" alt="ethereum"><b>Ethereum <span>(ETH)</span> <span>$ 4,046.67</span></b>
+					</div>
+				</li>
+				<li class="cc-coin">
+					<div>
+						<img src="https://assets.coingecko.com/coins/images/825/thumb/binance-coin-logo.png" alt="binance-coin"><b>Binance Coin <span>(BNB)</span> <span>$ 457.99</span></b>
+					</div>
+				</li>
+				<li class="cc-coin">
+					<div>
+						<img src="https://assets.coingecko.com/coins/images/325/thumb/Tether-logo.png" alt="tether"><b>Tether <span>(USDT)</span> <span>$ 1.00</span></b>
+					</div>
+				</li>
+				<li class="cc-coin">
+					<div>
+						<img src="https://assets.coingecko.com/coins/images/975/thumb/cardano.png" alt="cardano"><b>Cardano <span>(ADA)</span> <span>$ 2.01</span></b>
+					</div>
+				</li>
+				<li class="cc-coin">
+					<div>
+						<img src="https://assets.coingecko.com/coins/images/4128/thumb/Solana.jpg" alt="solana"><b>Solana <span>(SOL)</span> <span>$ 194.76</span></b>
+					</div>
+				</li>
+				<li class="cc-coin">
+					<div>
+						<img src="https://assets.coingecko.com/coins/images/44/thumb/xrp-symbol-white-128.png" alt="xrp"><b>XRP <span>(XRP)</span> <span>$ 1.03</span></b>
+					</div>
+				</li>
+				<li class="cc-coin">
+					<div>
+						<img src="https://assets.coingecko.com/coins/images/12171/thumb/aJGBjJFU_400x400.jpg" alt="polkadot"><b>Polkadot <span>(DOT)</span> <span>$ 42.55</span></b>
+					</div>
+				</li>
+				<li class="cc-coin">
+					<div>
+						<img src="https://assets.coingecko.com/coins/images/6319/thumb/USD_Coin_icon.png" alt="usd-coin"><b>USD Coin <span>(USDC)</span> <span>$ 0.999644</span></b>
+					</div>
+				</li>
+				<li class="cc-coin">
+					<div>
+						<img src="https://assets.coingecko.com/coins/images/5/thumb/dogecoin.png" alt="dogecoin"><b>Dogecoin <span>(DOGE)</span> <span>$ 0.240809</span></b>
+					</div>
+				</li>
+				<div class="cc-dup">
+					<li class="cc-coin">
+						<div>
+							<img src="https://assets.coingecko.com/coins/images/1/thumb/bitcoin.png" alt="bitcoin"><b>Bitcoin <span>(BTC)</span> <span>$ 59,244.00</span></b>
+						</div>
+					</li>
+					<li class="cc-coin">
+						<div>
+							<img src="https://assets.coingecko.com/coins/images/279/thumb/ethereum.png" alt="ethereum"><b>Ethereum <span>(ETH)</span> <span>$ 4,046.67</span></b>
+						</div>
+					</li>
+					<li class="cc-coin">
+						<div>
+							<img src="https://assets.coingecko.com/coins/images/825/thumb/binance-coin-logo.png" alt="binance-coin"><b>Binance Coin <span>(BNB)</span> <span>$ 457.99</span></b>
+						</div>
+					</li>
+					<li class="cc-coin">
+						<div>
+							<img src="https://assets.coingecko.com/coins/images/325/thumb/Tether-logo.png" alt="tether"><b>Tether <span>(USDT)</span> <span>$ 1.00</span></b>
+						</div>
+					</li>
+					<li class="cc-coin">
+						<div>
+							<img src="https://assets.coingecko.com/coins/images/975/thumb/cardano.png" alt="cardano"><b>Cardano <span>(ADA)</span> <span>$ 2.01</span></b>
+						</div>
+					</li>
+					<li class="cc-coin">
+						<div>
+							<img src="https://assets.coingecko.com/coins/images/4128/thumb/Solana.jpg" alt="solana"><b>Solana <span>(SOL)</span> <span>$ 194.76</span></b>
+						</div>
+					</li>
+					<li class="cc-coin">
+						<div>
+							<img src="https://assets.coingecko.com/coins/images/44/thumb/xrp-symbol-white-128.png" alt="xrp"><b>XRP <span>(XRP)</span> <span>$ 1.03</span></b>
+						</div>
+					</li>
+					<li class="cc-coin">
+						<div>
+							<img src="https://assets.coingecko.com/coins/images/12171/thumb/aJGBjJFU_400x400.jpg" alt="polkadot"><b>Polkadot <span>(DOT)</span> <span>$ 42.55</span></b>
+						</div>
+					</li>
+					<li class="cc-coin">
+						<div>
+							<img src="https://assets.coingecko.com/coins/images/6319/thumb/USD_Coin_icon.png" alt="usd-coin"><b>USD Coin <span>(USDC)</span> <span>$ 0.999644</span></b>
+						</div>
+					</li>
+					<li class="cc-coin">
+						<div>
+							<img src="https://assets.coingecko.com/coins/images/5/thumb/dogecoin.png" alt="dogecoin"><b>Dogecoin <span>(DOGE)</span> <span>$ 0.240809</span></b>
+						</div>
+					</li>
+				</div>
+			</ul>
+		</div>
+	</div>
+</div>
             </div>
         </div>
         <style>
