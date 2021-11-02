@@ -2166,21 +2166,31 @@ form input[type="submit"]:hover{
                     <div class="col-md-6">
                         <div class="p-b20 text-left"><span
                                 class="wt-title-subline font-16 text-gray-dark m-b15  wow fadeInUp"
-                                data-wow-duration="1s" data-wow-delay="0s">What is bitcoin</span>
-                            <h2 class="text-uppercase wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">New
-                                Currency Bitcoin</h2>
+                                data-wow-duration="1s" data-wow-delay="0s">EASY TO USE PLATFORM</span>
+                            <h2 style="font-size:15px!important;" class="text-uppercase wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">The New Age of Cryptocurrency: Everything A Beginner Like You Needs to Know.</h2>
                             <div class="wt-separator-outer">
                                 <div class="wt-separator bg-primary"></div>
                             </div>
                         </div>
                         <div class="section-content  wow slideInUp" data-wow-duration="1s" data-wow-delay="0s">
                             <div class="wt-box" align="left">
+                            <p><strong>Cryptobolt strives to be worthy of our client's trust by providing them with services which are economically beneficial to them and to create awareness regarding reliable and highly profitable investment platform among our clients around the globe.!
+                                    </strong>
+                                </p>
+
+
                                 <p><strong>Cryptocurrencies have become established investment commodities among major
                                         financial institutions, and have even been adopted by countries such as South
                                         Korea,Japan, united-states and Others. However, as with any investment there are
                                         benefits linked to market movements!
                                     </strong>
                                 </p>
+
+                               
+
+
+
+
                                 <p class="N wow slideInUp">Now you can start Investing Bitcoin, Ethereum and many
                                     cryptocurrencies fast, easily and safely from where ever you are. With great margin
                                     trading leverage and short sell options available with quick deposit &amp;
@@ -2199,8 +2209,8 @@ form input[type="submit"]:hover{
             <div class="container">
                 <!-- TITLE START-->
                 <div class="section-head text-center"><span
-                        class="wt-title-subline font-16 text-gray-dark m-b15 wow slideInUp">Buy and Sell Bitcoin</span>
-                    <h2 class="text-uppercase wow slideInUp">Why Choose Bitcoin</h2>
+                        class="wt-title-subline font-16 text-gray-dark m-b15 wow slideInUp">Investment service</span>
+                    <h2 class="text-uppercase wow slideInUp">Why Choose Us</h2>
                     <div class="wt-separator-outer">
                         <div class="wt-separator bg-primary"></div>
                     </div>
