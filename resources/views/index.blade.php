@@ -2167,7 +2167,7 @@ form input[type="submit"]:hover{
                         <div class="p-b20 text-left"><span
                                 class="wt-title-subline font-16 text-gray-dark m-b15  wow fadeInUp"
                                 data-wow-duration="1s" data-wow-delay="0s">EASY TO USE PLATFORM</span>
-                            <h2 style="font-size:15px!important;" class="text-uppercase wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">The New Age of Cryptocurrency: Everything A Beginner Like You Needs to Know.</h2>
+                            <h2 style="font-size:15px!important;" class="text-uppercase wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">The New Age of Cryptocurrency : </h2>
                             <div class="wt-separator-outer">
                                 <div class="wt-separator bg-primary"></div>
                             </div>
