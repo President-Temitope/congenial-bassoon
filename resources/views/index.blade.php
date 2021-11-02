@@ -2370,7 +2370,7 @@ form input[type="submit"]:hover{
                         <!-- COLUMNS 1 -->
                         <div class="col-md-4 col-sm-4 step-number-block">
                             <div class="wt-icon-box-wraper  p-a30 center bg-white m-a5 wow fadeInUp"
-                                 data-wow-duration="2s" data-wow-delay="1s">
+                                 data-wow-duration="1s" data-wow-delay="1s">
                                 <div class="icon-lg text-primary m-b20">
                                     <a href="#" class="icon-cell">
                                         <img src="images/icon/pick-4.png" alt="">
@@ -2390,7 +2390,7 @@ form input[type="submit"]:hover{
                         <!-- COLUMNS 2 -->
                         <div class="col-md-4 col-sm-4 step-number-block">
                             <div class="wt-icon-box-wraper  p-a30 center bg-secondry m-a5 wow fadeInUp"
-                                 data-wow-duration="2s" data-wow-delay="2s">
+                                 data-wow-duration="1s" data-wow-delay="1s">
                                 <div class="icon-lg m-b20">
                                     <a href="#" class="icon-cell">
                                         <img src="images/icon/pick-28.png" alt="">
@@ -2407,7 +2407,7 @@ form input[type="submit"]:hover{
                         <!-- COLUMNS 3 -->
                         <div class="col-md-4 col-sm-4 step-number-block">
                             <div class="wt-icon-box-wraper  p-a30 center bg-white m-a5 wow fadeInUp"
-                                 data-wow-duration="2s" data-wow-delay="3s">
+                                 data-wow-duration="1s" data-wow-delay="1s">
                                 <div class="icon-lg text-primary m-b20">
                                     <a href="#" class="icon-cell">
                                         <img src="images/icon/pick-12.png" alt="">
@@ -2443,10 +2443,11 @@ form input[type="submit"]:hover{
                                 <div class="default">
                                     <img data-src="" src="">
                                 </div>
-                                <div class="hover">
-                                    <div class="shine"></div>
-                                    <img data-src="" src="">
-                                </div>
+                               
+                                    <img src="data:image/png;base64,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" width="100" height="100" style="
+    margin: -50px 12px;
+">
+                                
                             </div>
                             <h3 class="heading">Quick funds access</h3>
                             <p>Withdraw funds quickly and easily using a range of methods, without any hidden terms.</p>
@@ -2457,13 +2458,13 @@ form input[type="submit"]:hover{
                     <div class="reason shine-icon-container wow slideInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: slideInUp;">
                         <div class="content">
                             <div class="icon shine-icon mobile">
-                                <div class="default">
+                            <div class="default">
                                     <img data-src="" src="">
                                 </div>
-                                <div class="hover">
-                                    <div class="shine"></div>
-                                    <img data-src="" src="">
-                                </div>
+                               
+                                <img src="./images/logo5.png" width="65" height="65" style="
+    margin: -32px 12px;
+">                        
                             </div>
                             <h3 class="heading">Trade on the go</h3>
                             <p>Invest your way with cryptobolt's web app for mobile and desktop, or with our Android app.</p>
@@ -2474,13 +2475,7 @@ form input[type="submit"]:hover{
                     <div class="reason shine-icon-container wow slideInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: slideInUp;">
                         <div class="content">
                             <div class="icon shine-icon two-fold">
-                                <div class="default">
-                                    <img data-src="" src="">
-                                </div>
-                                <div class="hover">
-                                    <div class="shine"></div>
-                                    <img data-src="" src="">
-                                </div>
+                            <h1 style="color: #000;font-size: 45px;font-weight: 600;">200% </h1>
                             </div>
                             <h3 class="heading">Industry-best payouts</h3>
                             <p>cryptobolt offers payouts of up to 200% on your initial investment, quickly and securely.</p>
@@ -2491,13 +2486,13 @@ form input[type="submit"]:hover{
                     <div class="reason shine-icon-container wow slideInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: slideInUp;">
                         <div class="content">
                             <div class="icon shine-icon safe">
-                                <div class="default">
+                            <div class="default">
                                     <img data-src="" src="">
                                 </div>
-                                <div class="hover">
-                                    <div class="shine"></div>
-                                    <img data-src="" src="">
-                                </div>
+                               
+                                <img src="./images/funds.png" width="55" height="55" style="
+    margin: -28px 12px;
+">                        
                             </div>
                             <h3 class="heading">Segregated funds</h3>
                             <p>We do not use your deposits or your unrealised profits to hedge in the underlying market.</p>
@@ -2509,14 +2504,14 @@ form input[type="submit"]:hover{
                 <div class="col-lg-3 col-md-6 reason-wrapper">
                     <div class="reason shine-icon-container wow slideInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: slideInUp;">
                         <div class="content">
-                            <div class="icon shine-icon support">
+                        <div class="icon shine-icon yen">
                                 <div class="default">
                                     <img data-src="" src="">
                                 </div>
-                                <div class="hover">
-                                    <div class="shine"></div>
-                                    <img data-src="" src="">
-                                </div>
+                               
+                                <img src="./images/logo4.png" width="70" height="70" style="
+    margin: -32px 12px;
+">                        
                             </div>
                             <h3 class="heading">Amazing support</h3>
                             <p>Our highly skilled and dedicated support team are here to help whenever you need it.</p></div>
@@ -2526,31 +2521,24 @@ form input[type="submit"]:hover{
                     <div class="reason shine-icon-container wow slideInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: slideInUp;">
                         <div class="content">
                             <div class="icon shine-icon  aus">
-                                <div class="default">
+                            <div class="default">
                                     <img data-src="" src="">
                                 </div>
-                                <div class="hover">
-                                    <div class="shine"></div>
-                                    <img data-src="" src="">
-                                </div>
+                               
+                                <img src="./images/located.png" width="65" height="65" style="
+    margin: -32px 12px;
+">                        
                             </div>
-                            <h3 class="heading">Licensed in Australia</h3>
-                            <p>cryptobolt's holds an AFS licence, issued by the Australian Securities &amp; Investments Commission.  </p>
+                            <h3 class="heading">Licensed in Hong Kong </h3>
+                            <p>cryptobolt's holds an AFS licence, issued by the Hong Kong  Securities &amp; Investments Commission.  </p>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 reason-wrapper">
                     <div class="reason shine-icon-container wow slideInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: slideInUp;">
                         <div class="content">
-                            <div class="icon shine-icon  five-k cashback-idr">
-                                <div class="default">
-                                    <img data-src="" src="">
-                                </div>
-                                <div class="hover">
-                                    <div class="shine">
-                                    </div>
-                                    <img data-src="" src="">
-                                </div>
+                        <div class="icon shine-icon two-fold">
+                            <h1 style="color: #000;font-size: 45px;font-weight: 600;">50% </h1>
                             </div>
                             <h3 class="heading">Cashback for new accounts</h3>
                             <p>Capitalise without spending your money with a cashback of $50 for all approved accounts. </p> 
@@ -2561,14 +2549,13 @@ form input[type="submit"]:hover{
                     <div class="reason shine-icon-container wow slideInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: slideInUp;">
                         <div class="content">
                             <div class="icon shine-icon  expert">
-                                <div class="default">
+                            <div class="default">
                                     <img data-src="" src="">
                                 </div>
-                                <div class="hover">
-                                    <div class="shine">
-                                    </div>
-                                    <img data-src="" src="">
-                                </div>
+                               
+                                <img src="./images/headoption.jpg" width="65" height="65" style="
+    margin: -31px 12px;
+">                        
                             </div>
                             <h3 class="heading">Options specialists</h3>
                             <p>With many years of experience behind us, no one understands options like cryptobolt.</p>
@@ -2693,7 +2680,8 @@ form input[type="submit"]:hover{
                     ============================================= -->
                             <div class="col-xs-12 col-sm-12 col-md-4 price-table wow fadeInUp" data-wow-delay="100ms"
                                  style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
-                                <div class="pricing-panel">
+                               
+                                 <div class="pricing-panel">
                                     <!--  Pricing heading  -->
                                     <div class="pricing--heading text--center step-number-block">
                                         <!-- <div class="pricing--icon"> -->
@@ -3467,13 +3455,25 @@ ction-head text-center"><span class="wt-title-subline font-16 text-gray-dark m-b
         width: 100%!important;
         
     }
+
+
+    .tent {
+
+background-color: none!important;
+}
+
 }
 @media only screen and (max-width: 480px) {
 
     .modal-content {
 
         width: 100%!important;
+        /* background-color: none!important; */
+    }
 
+    .tent {
+
+        background-color: none!important;
     }
 
 }
@@ -3482,7 +3482,7 @@ ction-head text-center"><span class="wt-title-subline font-16 text-gray-dark m-b
     <div id="Login-form" class="modal fade Login-form" role="dialog">
         <div class="modal-dialog modal-sm">
             <!-- Modal content-->
-            <div class="modal-content content-modal">
+            <div class="modal-content tent" style="background-color: transparent!important">
                 <div class="modal-header bg-primary">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title text-white">Login Your Account</h4>
@@ -3608,7 +3608,7 @@ ction-head text-center"><span class="wt-title-subline font-16 text-gray-dark m-b
     <div id="Register-form" class="modal fade Login-form" role="dialog">
         <div class="modal-dialog modal-sm">
             <!-- Modal content-->
-            <div class="modal-content">
+            <div class="modal-content content-modal" style="background-color: transparent!important;">
                 <div class="modal-header bg-primary">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                     <h4 class="modal-title text-white">Register here</h4>
