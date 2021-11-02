@@ -3271,6 +3271,8 @@ ction-head text-center"><span class="wt-title-subline font-16 text-gray-dark m-b
 						<img src="https://assets.coingecko.com/coins/images/1/thumb/bitcoin.png" alt="bitcoin"><b>Bitcoin <span>(BTC)</span> <span>$ 59,244.00</span></b>
 					</div>
 				</li>
+                <li class="cc-coin"><div><img src="https://assets.coingecko.com/coins/images/11939/thumb/shiba.png" alt="shiba-inu"><b>Shiba Inu <span>(SHIB)</span> <span>$ 0.000069</span></b></div></li>
+
 				<li class="cc-coin">
 					<div>
 						<img src="https://assets.coingecko.com/coins/images/279/thumb/ethereum.png" alt="ethereum"><b>Ethereum <span>(ETH)</span> <span>$ 4,046.67</span></b>
