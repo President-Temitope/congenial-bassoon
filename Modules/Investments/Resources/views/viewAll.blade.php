@@ -7,6 +7,7 @@
         $fieldlists = ['id','name','desc','daily_interest','term_days','min_amount','max_amount','total_return','status'],
         $modeldata = $investments,
         $addButton = '"#addInvestment"',
+        $addButtonName = 'Add plan',
         $deleteButton = '/investments/deleteInvestment/'
     ])
         <!-- Add plan -->

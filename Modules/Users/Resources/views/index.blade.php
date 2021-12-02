@@ -1,14 +1,16 @@
-@extends('dashboard::layouts.master')
+@extends('dashboard::layouts.master',[
+    $pageName='List of users'
+])
 
 @section('content')
     @if(count($users) > 0 )
-        @include('Core::table',[
-        $title => 'Users Table',
-        $description => 'Manage all users activities',
-        $fieldlists => ['id','firstname','lastname','email','cryptocurrency','wallet','email_verified_at','created_at'],
-        $modeldata => $users,
-        $addButton = '',
-        $editButton = 'data-toggle="modal" data-target=',
+        @include('core::table',[
+        $title = 'Users Table',
+        $description = 'Manage all users activities',
+        $fieldlists = ['id','firstname','lastname','email','cryptocurrency','wallet','email_verified_at','created_at'],
+        $modeldata = $users,
+        $addButton = '"#addUser"',
+        $editQuery = 'firstname',
         $deleteButton = '/users/deleteUser/'
     ])
         <!-- Edit user -->
@@ -26,22 +28,17 @@
                             <form method="post" action="/investments/updateInvestment">
                                 @csrf
                                 <div class="form-group">
-                                    <label for="input">Title</label>
+                                    <label for="input">Name</label>
                                     <input class="form-control" type="text" id="input" name="title"
-                                           placeholder="Enter title" value="{{$investment->title}}" autocomplete="on"/>
+                                           placeholder="Enter title" value="{{$user->firstname}}" autocomplete="on"/>
                                 </div>
                                 <div class="form-group">
-                                    <label for="input">Proposed Amount</label>
-                                    <input class="form-control" type="number" id="input" min="1" name="proposed_amount"
-                                           placeholder="Enter Proposed amount" value="{{$investment->proposed_amount}}"
+                                    <label for="input">Email</label>
+                                    <input class="form-control" type="text" id="input" name="email"
+                                           placeholder="Enter Email" value="{{$user->email}}"
                                            autocomplete="on"/>
                                     <input class="form-control" type="hidden" id="input" name="id"
-                                           value="{{$investment->id}}"/>
-                                </div>
-                                <div class="form-group">
-                                    <label for="input">Price</label>
-                                    <input class="form-control" type="number" min="1" id="input" name="price"
-                                           placeholder="Enter amount" value="{{$investment->price}}" autocomplete="on"/>
+                                           value="{{$user->id}}"/>
                                 </div>
 
                                 <div class="form-group">

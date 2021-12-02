@@ -8,8 +8,8 @@
     <div class="card shadow mb-4">
         <div class="card-header py-3">
             <h6 class="m-0 font-weight-bold text-primary">{{$description}}</h6>
-            <button class="btn btn-outline-success -align-right" data-toggle="modal" data-target={!! $addButton !!}>Add
-                plan
+            <button class="btn btn-outline-success -align-right" data-toggle="modal"
+                    data-target={!! $addButton !!}>{!! $addButtonName ?? '' !!}
             </button>
         </div>
         <div class="card-body">
@@ -48,7 +48,7 @@
 
                                 <td>
                                     <a href="" class="btn btn-outline-secondary" data-toggle="modal"
-                                       data-target="#{{Str::slug($data->name)}}">Edit</a> <span><a
+                                       data-target="#{{$data->$editQuery ?? Str::slug($data->name)}}">Edit</a> <span><a
                                             href="{{$deleteButton}}{{$data->id}}"
                                             class="btn btn-outline-danger ">Delete</a></span>
                                 </td>
