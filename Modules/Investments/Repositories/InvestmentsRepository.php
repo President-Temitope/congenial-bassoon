@@ -41,15 +41,16 @@ class InvestmentsRepository implements InvestmentsRepositoryInterface
         return $this->core->update($this->model, $id, $data);
     }
 
-    public function queryWithStatus()
+    public function activePlans()
     {
         // TODO: Implement queryWithStatus() method.
         return $this->core->queryWithACondition('status', 'Yes', $this->model);
 
     }
 
-    public function show($id){
-        return $this->core->show($this->model,$id);
+    public function show($id)
+    {
+        return $this->core->show($this->model, $id);
     }
 
 }

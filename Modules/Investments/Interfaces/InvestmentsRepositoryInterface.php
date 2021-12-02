@@ -14,5 +14,5 @@ interface InvestmentsRepositoryInterface
 
     public function delete($id);
 
-    public function queryWithStatus();
+    public function activePlans();
 }

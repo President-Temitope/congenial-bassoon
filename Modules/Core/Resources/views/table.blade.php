@@ -8,7 +8,9 @@
     <div class="card shadow mb-4">
         <div class="card-header py-3">
             <h6 class="m-0 font-weight-bold text-primary">{{$description}}</h6>
-            <button class="btn btn-outline-success -align-right" {!! $addButton !!}>Add plan</button>
+            <button class="btn btn-outline-success -align-right" data-toggle="modal" data-target={!! $addButton !!}>Add
+                plan
+            </button>
         </div>
         <div class="card-body">
             <div class="table-responsive">
@@ -45,8 +47,8 @@
                                 @endforeach
 
                                 <td>
-                                    <a href="" class="btn btn-outline-secondary" {!! $editButton ?? ''!!}
-                                    "#{{Str::slug($data->title)}}">Edit</a> <span><a
+                                    <a href="" class="btn btn-outline-secondary" data-toggle="modal"
+                                       data-target="#{{Str::slug($data->name)}}">Edit</a> <span><a
                                             href="{{$deleteButton}}{{$data->id}}"
                                             class="btn btn-outline-danger ">Delete</a></span>
                                 </td>

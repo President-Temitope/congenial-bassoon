@@ -34,8 +34,8 @@ class CoreRepository implements CoreRepositoryInterface
     }
 
     /**
-     * @param $condition , holds the db field
-     * @param $query , hold the query value
+     * @param $condition
+     * @param $query
      * @param $model
      * @return mixed
      */

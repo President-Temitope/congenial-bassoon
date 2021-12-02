@@ -1,14 +1,12 @@
-@extends('dashboard::layouts.master')
-
+@extends('dashboard::layouts.master',[$pageName = 'List of investment plans'])
 @section('content')
     @if(count($investments) > 0 )
         @include('core::table',[
         $title = 'Investment Table',
         $description = 'Manage all investments activities',
-        $fieldlists = ['id','name','priceRangeOne','priceRangeTwo','percentage','description','status'],
+        $fieldlists = ['id','name','desc','daily_interest','term_days','min_amount','max_amount','total_return','status'],
         $modeldata = $investments,
-        $addButton = 'data-toggle="modal" data-target="#addInvestment"',
-        $editButton = 'data-toggle="modal" data-target=',
+        $addButton = '"#addInvestment"',
         $deleteButton = '/investments/deleteInvestment/'
     ])
         <!-- Add plan -->
@@ -25,36 +23,53 @@
                         <form method="post" action="/investments/createInvestment">
                             @csrf
                             <div class="form-group">
-                                <label for="input">name</label>
-                                <input class="form-control" type="text" id="input" name="name" placeholder="Enter title"
-                                       value="" autocomplete="on"/>
-                            </div>
-                            <div class="form-group">
-                                <label for="input">Proposed Range One</label>
-                                <input class="form-control" type="number" id="input" min="0" name="priceRangeOne"
-                                       placeholder="Enter first price range" value="" autocomplete="on"/>
-                            </div>
-                            <div class="form-group">
-                                <label for="input">Proposed Range Two</label>
-                                <input class="form-control" type="number" id="input" min="0" name="priceRangeTwo"
-                                       placeholder="Enter second price range" value="" autocomplete="on"/>
-                            </div>
-                            <div class="form-group">
-                                <label for="input">Percentage</label>
-                                <input class="form-control" type="number" id="input" min="0" max="100" name="percentage"
-                                       placeholder="Enter percentage" value="" autocomplete="on"/>
+                                <label for="input">Title</label>
+                                <input class="form-control" type="text" id="input" name="name"
+                                       placeholder="Enter title"
+                                       autocomplete="on"/>
                             </div>
                             <div class="form-group">
                                 <label for="input">Description</label>
-                                <input class="form-control" type="text" id="input" name="description"
-                                       placeholder="Enter description" value="" autocomplete="on"/>
+                                <input class="form-control" type="text" id="input" name="desc"
+                                       placeholder="Description"
+                                       autocomplete="on"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="input">Daily interest</label>
+                                <input class="form-control" type="text" min="1" id="input"
+                                       name="daily_interest"
+                                       placeholder=""/>
+                            </div>
+                            <div class="form-group">
+                                <label for="input">Term days</label>
+                                <input class="form-control" type="text" id="input" name="term_days"
+                                       placeholder="Enter term days"
+                                />
+                            </div>
+                            <div class="form-group">
+                                <label for="input">Minimum Amount</label>
+                                <input class="form-control" type="text" id="input" name="min_amount"
+                                       placeholder="Enter minimum amount"
+                                />
+                            </div>
+                            <div class="form-group">
+                                <label for="input">Maximum Amount</label>
+                                <input class="form-control" type="text" id="input" name="max_amount"
+                                       placeholder="Enter maximum amount"
+                                />
+                            </div>
+                            <div class="form-group">
+                                <label for="input">Total return</label>
+                                <input class="form-control" type="text" id="input"
+                                       name="total_return"
+                                       placeholder="Enter total return"
+                                />
                             </div>
 
                             <div class="form-group">
 
                                 <input class="form-control btn btn-outline-success" type="submit"/>
                             </div>
-
                         </form>
 
                     </div>
@@ -80,33 +95,49 @@
                             <form method="post" action="/investments/updateInvestment">
                                 @csrf
                                 <div class="form-group">
-                                    <label for="input">name</label>
-                                    <input class="form-control" type="text" id="input" name="name"
-                                           placeholder="Enter title" value="{{$investment->name}}" autocomplete="on"/>
-                                </div>
-                                <div class="form-group">
-                                    <label for="input">Proposed Range One</label>
-                                    <input class="form-control" type="number" id="input" min="0" name="priceRangeOne"
-                                           placeholder="Enter first price range" value="{{$investment->priceRangeOne}}"
+                                    <label for="input">Title</label>
+                                    <input class="form-control" type="text" id="input" name="title"
+                                           placeholder="Enter title" value="{{$investment->name}}"
                                            autocomplete="on"/>
-                                </div>
-                                <div class="form-group">
-                                    <label for="input">Proposed Range Two</label>
-                                    <input class="form-control" type="number" id="input" min="0" name="priceRangeTwo"
-                                           placeholder="Enter second price range" value="{{$investment->priceRangeTwo}}"
-                                           autocomplete="on"/>
-                                </div>
-                                <div class="form-group">
-                                    <label for="input">Percentage</label>
-                                    <input class="form-control" type="number" id="input" min="0" max="100"
-                                           name="percentage" placeholder="Enter percentage"
-                                           value="{{$investment->percentage}}" autocomplete="on"/>
                                 </div>
                                 <div class="form-group">
                                     <label for="input">Description</label>
-                                    <input class="form-control" type="text" id="input" name="description"
-                                           placeholder="Enter description" value="{{$investment->description}}"
+                                    <input class="form-control" type="text" id="input" name="desc"
+                                           placeholder="Description" value="{{$investment->desc}}"
                                            autocomplete="on"/>
+                                    <input class="form-control" type="hidden" id="input" name="id"
+                                           value="{{$investment->id}}"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="input">Daily interest</label>
+                                    <input class="form-control" type="text" min="1" id="input"
+                                           name="daily_interest"
+                                           placeholder="" value="{{$investment->daily_interest}}"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="input">Term days</label>
+                                    <input class="form-control" type="text" id="input" name="term_days"
+                                           placeholder="Enter term days"
+                                           value="{{$investment->term_days}}"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="input">Minimum Amount</label>
+                                    <input class="form-control" type="text" id="input" name="min_amount"
+                                           placeholder="Enter minimum amount"
+                                           value="{{$investment->min_amount}}"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="input">Maximum Amount</label>
+                                    <input class="form-control" type="text" id="input" name="max_amount"
+                                           placeholder="Enter maximum amount"
+                                           value="{{$investment->max_amount}}"/>
+                                </div>
+                                <div class="form-group">
+                                    <label for="input">Total return</label>
+                                    <input class="form-control" type="text" id="input"
+                                           name="total_return"
+                                           placeholder="Enter total return"
+                                           value="{{$investment->total_return}}"/>
                                 </div>
 
                                 <div class="form-group">

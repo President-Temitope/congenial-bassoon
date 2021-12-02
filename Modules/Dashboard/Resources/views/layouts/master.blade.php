@@ -190,19 +190,7 @@
                                 <li class="nk-menu-item {{$pageName == 'Plans' ? 'active' : ''}}"><a
                                         class="nk-menu-link" href="/investments/myPlans"><span
                                             class="nk-menu-text">My Plan</span></a></li>
-                            @else
-                                <li class="nk-menu-item {{$pageName == 'Plans' ? 'active' : ''}}"><a
-                                        class="nk-menu-link" href="/investments/plans"><span
-                                            class="nk-menu-text">Plans</span></a></li>
-                            @endif
 
-                            @if(Auth::user()->hasRole('user'))
-
-                                <li class="nk-menu-item {{$pageName == 'Investments' ? 'active' : ''}}"><a
-                                        class="nk-menu-link"
-                                        href="/investments"><span
-                                            class="nk-menu-text">Invest</span></a></li>
-                            @else
                                 <li class="nk-menu-item {{$pageName == 'Investments' ? 'active' : ''}}"><a
                                         class="nk-menu-link"
                                         href="/investments"><span
@@ -211,10 +199,14 @@
 
                             @if(Auth::user()->hasRole(['admin','super-admin']))
 
+                                <li class="nk-menu-item {{$pageName == 'Users' ? 'active' : ''}}"><a
+                                        class="nk-menu-link"
+                                        href="/users"><span
+                                            class="nk-menu-text">Users</span></a></li>
                                 <li class="nk-menu-item {{$pageName == 'Investments' ? 'active' : ''}}"><a
                                         class="nk-menu-link"
-                                        href="/investments"><span
-                                            class="nk-menu-text">Users</span></a></li>
+                                        href="/investments/viewAll"><span
+                                            class="nk-menu-text">Investments</span></a></li>
                             @endif
                         </ul>
                     </div>
