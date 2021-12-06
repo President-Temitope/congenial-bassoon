@@ -2407,7 +2407,7 @@ form input[type="submit"]:hover{
                     <div class="pricing--icon">
                         <img src="assets/images/icons/BitcoinIcon5.png" alt="Bitcoin Icon">
                     </div>
-                    <h4>Basic Crypto Plan</h4>
+                    <h4>BASIC PLANS</h4>
                     <p>25<span class="currency">%</span></p>
                     <div class="pricing--desc">
                     Monthly Returns that runs for 1 Month.<br>
