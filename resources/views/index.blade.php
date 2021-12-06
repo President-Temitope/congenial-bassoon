@@ -2380,16 +2380,18 @@ form input[type="submit"]:hover{
                     <div class="pricing--icon">
                         <img src="assets/images/icons/BitcoinIcon4.png" alt="Bitcoin Icon">
                     </div>
-                    <h4>Starter Crypto Plan</h4>
-                    <p>12<span class="currency">%</span></p>
+                    <h4>STARTER PLAN</h4>
+                    <p>20<span class="currency">%</span></p>
                     <div class="pricing--desc">
-                        Enjoy your investment with Bitcoin or Ethereum growing every day.
+                    Monthly Returns that runs for 1 Month.<br>
+                    24/7 Customer Support<br>
+                    Full Asset Management
                     </div>
                     <a class="btn btn--secondary btn--bordered btn--rounded" href="#">Invest Now</a>
                 </div>
                 <!--  Pricing heading  -->
                 <div class="pricing--footer">
-                    From $1000 to $10000
+                    From $999 to $9,999.
                 </div>
                 <!--  Pricing Footer  -->
             </div>
@@ -2408,13 +2410,15 @@ form input[type="submit"]:hover{
                     <h4>Basic Crypto Plan</h4>
                     <p>25<span class="currency">%</span></p>
                     <div class="pricing--desc">
-                        Enjoy your investment with Bitcoin or Ethereum growing every day.
+                    Monthly Returns that runs for 1 Month.<br>
+                    24/7 Customer Support<br>
+                    Full Asset Management.
                     </div>
                     <a class="btn btn--white btn--bordered btn--rounded" href="#">Invest Now</a>
                 </div>
                 <!--  Pricing heading  -->
                 <div class="pricing--footer">
-                    From $10000 to $20000
+                    From $34,999 to $99,999.
                 </div>
                 <!--  Pricing Footer  -->
             </div>
@@ -2430,16 +2434,18 @@ form input[type="submit"]:hover{
                     <div class="pricing--icon">
                         <img src="assets/images/icons/BitcoinIcon4.png" alt="Bitcoin Icon">
                     </div>
-                    <h4>Starter Crypto Plan</h4>
-                    <p>12<span class="currency">%</span></p>
+                    <h4>NFP PLANS</h4>
+                    <p>35<span class="currency">%</span></p>
                     <div class="pricing--desc">
-                        Enjoy your investment with Bitcoin or Ethereum growing every day.
+                    Monthly Returns that runs for 1 Month.<br>
+                    24/7 Customer Support<br>
+                    Full Asset Management..
                     </div>
                     <a class="btn btn--secondary btn--bordered btn--rounded" href="#">Invest Now</a>
                 </div>
                 <!--  Pricing heading  -->
                 <div class="pricing--footer">
-                    From $1000 to $10000
+                    From $39,999 to $499,999.
                 </div>
                 <!--  Pricing Footer  -->
             </div>
