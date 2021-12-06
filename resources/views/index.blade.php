@@ -2166,8 +2166,8 @@ form input[type="submit"]:hover{
                     <div class="col-md-6">
                         <div class="p-b20 text-left"><span
                                 class="wt-title-subline font-16 text-gray-dark m-b15  wow fadeInUp"
-                                data-wow-duration="1s" data-wow-delay="0s">EASY TO USE PLATFORM</span>
-                            <h2 style="font-size:15px!important;" class="text-uppercase wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+                                data-wow-duration="1s" data-wow-delay="0s" style="margin:13px!important">EASY TO USE PLATFORM</span>
+                            <h2 style="font-size:13px!important;" class="text-uppercase wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
 Advanced Investment Platform for modern technologies and the latest Trading algorithms to cryptocurrencies in the shortest possible time, which allows users to receive up to 5% profit per day.
 
 
