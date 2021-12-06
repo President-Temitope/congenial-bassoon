@@ -2167,7 +2167,18 @@ form input[type="submit"]:hover{
                         <div class="p-b20 text-left"><span
                                 class="wt-title-subline font-16 text-gray-dark m-b15  wow fadeInUp"
                                 data-wow-duration="1s" data-wow-delay="0s">EASY TO USE PLATFORM</span>
-                            <h2 style="font-size:15px!important;" class="text-uppercase wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">The New Age of Cryptocurrency : </h2>
+                            <h2 style="font-size:15px!important;" class="text-uppercase wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+Advanced Investment Platform for modern technologies and the latest Trading algorithms to cryptocurrencies in the shortest possible time, which allows users to receive up to 5% profit per day.
+
+
+<ul class="list-check-circle primary" style="visibility: visible; animation-name: fadeInUp;">
+                                <!-- <li>Governments support bitcoin . </li> -->
+                                <li>We executed at the best possible prices.</li>
+                                <li>We order placement is instant and accurate.</li>
+                                <li>We are timed correctly and instantly to avoid significant price changes.</li>
+                            </ul>
+
+</h2>
                             <div class="wt-separator-outer">
                                 <div class="wt-separator bg-primary"></div>
                             </div>
@@ -2383,9 +2394,10 @@ form input[type="submit"]:hover{
                     <h4>STARTER PLAN</h4>
                     <p>20<span class="currency">%</span></p>
                     <div class="pricing--desc">
-                    Monthly Returns that runs for 1 Month.<br>
+                    Monthly Returns that runs for 1 Month.<br><br>
+                    ShortTerm Return for 1 Week<br>
                     24/7 Customer Support<br>
-                    Full Asset Management
+                    Full Asset Management.
                     </div>
                     <a class="btn btn--secondary btn--bordered btn--rounded" href="#">Invest Now</a>
                 </div>
@@ -2410,7 +2422,8 @@ form input[type="submit"]:hover{
                     <h4>BASIC PLAN</h4>
                     <p>25<span class="currency">%</span></p>
                     <div class="pricing--desc">
-                    Monthly Returns that runs for 1 Month.<br>
+                    Monthly Returns that runs for 1 Month.<br><br>
+                    ShortTerm Return for 1 Week<br>
                     24/7 Customer Support<br>
                     Full Asset Management.
                     </div>
@@ -2437,7 +2450,8 @@ form input[type="submit"]:hover{
                     <h4>NFP PLANS</h4>
                     <p>35<span class="currency">%</span></p>
                     <div class="pricing--desc">
-                    Monthly Returns that runs for 1 Month.<br>
+                    Monthly Returns that runs for 1 Month.<br><br>
+                    ShortTerm Return for 1 Week<br>
                     24/7 Customer Support<br>
                     Full Asset Management.
                     </div>
@@ -2480,7 +2494,7 @@ form input[type="submit"]:hover{
     font-family: Calibri,sans-serif,serif,EmojiFont;
     font-size: 15px;
     color: #ccc;
-" class="invest&learn wow fadeInUp">Learning about bitcoin investment and making profits is very easy. Using great
+" class="invest&learn wow fadeInUp">Learning about our investment and making profits is very easy. Using great
                         platforms like Cryptobolt private &amp; Secure, it very easy for new investors to learn and
                         understand the hidden bitcoin secrets. It takes considerably less time compared to other
                         investments platforms.</p>
@@ -2778,12 +2792,12 @@ form input[type="submit"]:hover{
                                 appreciate the potential of cutting-edge digital currency and thoroughly examined all
                                 aspects of its mining. This prompted us to launch a data center that would generate
                                 cryptocoins.</p>
-                            <ul class="list-check-circle primary wow fadeInUp">
-                                <!-- <li>Governments support bitcoin . </li> -->
+                            <!-- <ul class="list-check-circle primary wow fadeInUp">
+                                
                                 <li>Bitcoin is one the backbone of almost all other cryptocurrencies.</li>
                                 <li>Bitcoin will ultimately become the world’s most powerful currency.</li>
                                 <li>Bitcoin will increase the profits of manifolds for all the bitcoin investors.</li>
-                            </ul>
+                            </ul> -->
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
