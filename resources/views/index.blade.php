@@ -2439,7 +2439,7 @@ form input[type="submit"]:hover{
                     <div class="pricing--desc">
                     Monthly Returns that runs for 1 Month.<br>
                     24/7 Customer Support<br>
-                    Full Asset Management..
+                    Full Asset Management.
                     </div>
                     <a class="btn btn--secondary btn--bordered btn--rounded" href="#">Invest Now</a>
                 </div>
