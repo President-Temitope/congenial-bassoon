@@ -2149,7 +2149,7 @@ form input[type="submit"]:hover{
         <!-- OUR VALUE SECTION START -->
         <!-- OUR VALUE SECTION  END -->
         <!-- ABOUT COMPANY SECTION START -->
-        <div id="bitcoin-price" class="section-full home-about-section p-tb80 bg-no-repeat bg-bottom-right bg-gray"
+        <div class="section-full home-about-section p-tb80 bg-no-repeat bg-bottom-right bg-gray"
              style="background-image:url(images/background/bg-coin.png);background-color: #000;">
             <div class="container">
                 <div class="row">
@@ -2166,7 +2166,7 @@ form input[type="submit"]:hover{
                     <div class="col-md-6">
                         <div class="p-b20 text-left"><span
                                 class="wt-title-subline font-16 text-gray-dark m-b15  wow fadeInUp"
-                                data-wow-duration="1s" data-wow-delay="0s" style="margin:13px!important">EASY TO USE PLATFORM</span>
+                                data-wow-duration="1s" data-wow-delay="0s" style="margin:px!important">EASY TO USE PLATFORM</span>
                             <h2 style="font-size:13px!important;" class="text-uppercase wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
 Advanced Investment Platform for modern technologies and the latest Trading algorithms to cryptocurrencies in the shortest possible time, which allows users to receive up to 5% profit per day.
 
@@ -2369,14 +2369,14 @@ Advanced Investment Platform for modern technologies and the latest Trading algo
         <!-- COMPANY DETAIL SECTION End -->
 
 
-        <section id="pricing1" class="pricing pricing-1 pb-80 bg-section" style="background-image: url(&quot;assets/images/background/9.jpg&quot;);">
+        <section id="bitcoin-price" class="pricing pricing-1 pb-80 bg-section" style="background-image: url(&quot;assets/images/background/9.jpg&quot;);">
 
 <div class="container">
     <div class="row clearfix">
         <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3">
             <div class="heading heading-1 text--center mb-70">
                 <!-- <p class="heading--subtitle">Invest Now!</p> -->
-                <h2 class="heading--title text-white">Our Pricing</h2>
+                <h2 class="heading--title text-white"  >Our Pricing</h2>
                 <!-- <p class="heading--desc text-white mb-0">Invest now with us to earn every day and forever in your wallet. We accept Investment from all over the world.</p> -->
             </div>
         </div><!-- .col-md-8 end -->
