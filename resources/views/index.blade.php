@@ -2356,88 +2356,7 @@ form input[type="submit"]:hover{
             </div>
         </div>
         <!-- COMPANY DETAIL SECTION End -->
-        <!-- HOW IT WORK SECTION START  -->
-        <div class="section-full  p-t80 p-b80 bg-gray" id="how-it-work">
-            <div class="container">
-                <!-- TITLE START-->
-                <div class="section-head text-center"><span class="wt-title-subline font-16 text-gray-dark m-b15">Three steps bitcoin</span>
-                    <h2 class="text-uppercase wow slideInUp">How It Works</h2>
-                    <div class="wt-separator-outer">
-                        <div class="wt-separator bg-primary"></div>
-                    </div>
-                    <p style="
-    font-family: Calibri,sans-serif,serif,EmojiFont;
-    font-size: 15px;
-    color: #ccc;
-" class="invest&learn wow fadeInUp">Learning about bitcoin investment and making profits is very easy. Using great
-                        platforms like Cryptobolt private &amp; Secure, it very easy for new investors to learn and
-                        understand the hidden bitcoin secrets. It takes considerably less time compared to other
-                        investments platforms.</p>
-                </div>
-                <!-- TITLE END-->
-                <div class="section-content no-col-gap">
-                    <div class="row">
-                        <!-- COLUMNS 1 -->
-                        <div class="col-md-4 col-sm-4 step-number-block">
-                            <div class="wt-icon-box-wraper  p-a30 center bg-white m-a5 wow fadeInUp"
-                                 data-wow-duration="1s" data-wow-delay="1s">
-                                <div class="icon-lg text-primary m-b20">
-                                    <a href="#" class="icon-cell">
-                                        <img src="images/icon/pick-4.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="icon-content ">
-                                    <div class="step-number">1</div>
-                                    <h4 class="wt-tilte text-uppercase font-weight-500" style="">Open an Account</h4>
-                                    <p style="color: #000;">Create CRYPTO BOLT Account for free. No credit card
-                                        information needed. Once your Registration is accepted, It's quite easy & you'll
-                                        gain access to all our live investment opportunities, as well as be able to
-                                        start raising investment.</p>
-                                    <!-- <p>Once your Registration is accepted,you will automatically become a newest member of the investment platform.</p> -->
-                                </div>
-                            </div>
-                        </div>
-                        <!-- COLUMNS 2 -->
-                        <div class="col-md-4 col-sm-4 step-number-block">
-                            <div class="wt-icon-box-wraper  p-a30 center bg-secondry m-a5 wow fadeInUp"
-                                 data-wow-duration="1s" data-wow-delay="1s">
-                                <div class="icon-lg m-b20">
-                                    <a href="#" class="icon-cell">
-                                        <img src="images/icon/pick-28.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="icon-content text-white">
-                                    <div class="step-number active">2</div>
-                                    <h4 class="wt-tilte text-uppercase font-weight-500">Make a Deposit</h4>
-                                    <p>Fund your account you need working capital to get started in a matter of seconds.
-                                        You need invest any amount you desire or more.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- COLUMNS 3 -->
-                        <div class="col-md-4 col-sm-4 step-number-block">
-                            <div class="wt-icon-box-wraper  p-a30 center bg-white m-a5 wow fadeInUp"
-                                 data-wow-duration="1s" data-wow-delay="1s">
-                                <div class="icon-lg text-primary m-b20">
-                                    <a href="#" class="icon-cell">
-                                        <img src="images/icon/pick-12.png" alt="">
-                                    </a>
-                                </div>
-                                <div class="icon-content wow wow fadeInUp">
-                                    <div class="step-number">3</div>
-                                    <h4 class="wt-tilte text-uppercase font-weight-500" style="">Invest and Earn</h4>
-                                    <p style="color: #000;">Start growing your investment beyond your expectation For
-                                        only one Click our Team of experts constantly analyzes individual projects and
-                                        save you time .</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- HOW IT WORK  SECTION END -->
-        <!-- SECTION CONTENT START -->
+
 
         <section id="pricing1" class="pricing pricing-1 pb-80 bg-section" style="background-image: url(&quot;assets/images/background/9.jpg&quot;);">
 
@@ -2445,9 +2364,9 @@ form input[type="submit"]:hover{
     <div class="row clearfix">
         <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3">
             <div class="heading heading-1 text--center mb-70">
-                <p class="heading--subtitle">Invest Now!</p>
+                <!-- <p class="heading--subtitle">Invest Now!</p> -->
                 <h2 class="heading--title text-white">Our Pricing</h2>
-                <p class="heading--desc text-white mb-0">Invest now with us to earn every day and forever in your wallet. We accept Investment from all over the world.</p>
+                <!-- <p class="heading--desc text-white mb-0">Invest now with us to earn every day and forever in your wallet. We accept Investment from all over the world.</p> -->
             </div>
         </div><!-- .col-md-8 end -->
     </div><!-- .row end -->
@@ -2531,6 +2450,101 @@ form input[type="submit"]:hover{
 </div><!-- .container end -->
 </section>
 
+
+
+
+
+
+
+
+
+
+
+
+        <!-- HOW IT WORK SECTION START  -->
+        <div class="section-full  p-t80 p-b80 bg-gray" id="how-it-work">
+            <div class="container">
+                <!-- TITLE START-->
+                <div class="section-head text-center"><span class="wt-title-subline font-16 text-gray-dark m-b15">Three steps bitcoin</span>
+                    <h2 class="text-uppercase wow slideInUp">How It Works</h2>
+                    <div class="wt-separator-outer">
+                        <div class="wt-separator bg-primary"></div>
+                    </div>
+                    <p style="
+    font-family: Calibri,sans-serif,serif,EmojiFont;
+    font-size: 15px;
+    color: #ccc;
+" class="invest&learn wow fadeInUp">Learning about bitcoin investment and making profits is very easy. Using great
+                        platforms like Cryptobolt private &amp; Secure, it very easy for new investors to learn and
+                        understand the hidden bitcoin secrets. It takes considerably less time compared to other
+                        investments platforms.</p>
+                </div>
+                <!-- TITLE END-->
+                <div class="section-content no-col-gap">
+                    <div class="row">
+                        <!-- COLUMNS 1 -->
+                        <div class="col-md-4 col-sm-4 step-number-block">
+                            <div class="wt-icon-box-wraper  p-a30 center bg-white m-a5 wow fadeInUp"
+                                 data-wow-duration="1s" data-wow-delay="1s">
+                                <div class="icon-lg text-primary m-b20">
+                                    <a href="#" class="icon-cell">
+                                        <img src="images/icon/pick-4.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="icon-content ">
+                                    <div class="step-number">1</div>
+                                    <h4 class="wt-tilte text-uppercase font-weight-500" style="">Open an Account</h4>
+                                    <p style="color: #000;">Create CRYPTO BOLT Account for free. No credit card
+                                        information needed. Once your Registration is accepted, It's quite easy & you'll
+                                        gain access to all our live investment opportunities, as well as be able to
+                                        start raising investment.</p>
+                                    <!-- <p>Once your Registration is accepted,you will automatically become a newest member of the investment platform.</p> -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- COLUMNS 2 -->
+                        <div class="col-md-4 col-sm-4 step-number-block">
+                            <div class="wt-icon-box-wraper  p-a30 center bg-secondry m-a5 wow fadeInUp"
+                                 data-wow-duration="1s" data-wow-delay="1s">
+                                <div class="icon-lg m-b20">
+                                    <a href="#" class="icon-cell">
+                                        <img src="images/icon/pick-28.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="icon-content text-white">
+                                    <div class="step-number active">2</div>
+                                    <h4 class="wt-tilte text-uppercase font-weight-500">Make a Deposit</h4>
+                                    <p>Fund your account you need working capital to get started in a matter of seconds.
+                                        You need invest any amount you desire or more.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- COLUMNS 3 -->
+                        <div class="col-md-4 col-sm-4 step-number-block">
+                            <div class="wt-icon-box-wraper  p-a30 center bg-white m-a5 wow fadeInUp"
+                                 data-wow-duration="1s" data-wow-delay="1s">
+                                <div class="icon-lg text-primary m-b20">
+                                    <a href="#" class="icon-cell">
+                                        <img src="images/icon/pick-12.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="icon-content wow wow fadeInUp">
+                                    <div class="step-number">3</div>
+                                    <h4 class="wt-tilte text-uppercase font-weight-500" style="">Invest and Earn</h4>
+                                    <p style="color: #000;">Start growing your investment beyond your expectation For
+                                        only one Click our Team of experts constantly analyzes individual projects and
+                                        save you time .</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- HOW IT WORK  SECTION END -->
+        <!-- SECTION CONTENT START -->
+
+       
 
 
 
