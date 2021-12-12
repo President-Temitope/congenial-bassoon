@@ -2389,7 +2389,7 @@ Advanced Investment Platform for modern technologies and the latest Trading algo
                 <!--  Pricing heading  -->
                 <div class="pricing--heading text--center step-number-block">
                     <div class="pricing--icon">
-                        <img src="assets/images/icons/BitcoinIcon4.png" alt="Bitcoin Icon">
+                        <img src="images/icon/pick-29.png" alt="Bitcoin Icon" height="50">
                     </div>
                     <h4>STARTER PLAN</h4>
                     <p>20<span class="currency">%</span></p>
@@ -2417,7 +2417,7 @@ Advanced Investment Platform for modern technologies and the latest Trading algo
                 <!--  Pricing heading  -->
                 <div class="pricing--heading text--center step-number-block">
                     <div class="pricing--icon">
-                        <img src="assets/images/icons/BitcoinIcon5.png" alt="Bitcoin Icon">
+                    <img src="images/icon/pick-29.png" alt="Bitcoin Icon" height="50">
                     </div>
                     <h4>BASIC PLAN</h4>
                     <p>25<span class="currency">%</span></p>
@@ -2445,7 +2445,7 @@ Advanced Investment Platform for modern technologies and the latest Trading algo
                 <!--  Pricing heading  -->
                 <div class="pricing--heading text--center step-number-block">
                     <div class="pricing--icon">
-                        <img src="assets/images/icons/BitcoinIcon4.png" alt="Bitcoin Icon">
+                    <img src="images/icon/pick-29.png" alt="Bitcoin Icon" height="50">
                     </div>
                     <h4>NFP PLANS</h4>
                     <p>35<span class="currency">%</span></p>
