@@ -2376,7 +2376,10 @@ Advanced Investment Platform for modern technologies and the latest Trading algo
         <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3">
             <div class="heading heading-1 text--center mb-70">
                 <!-- <p class="heading--subtitle">Invest Now!</p> -->
-                <h2 class="heading--title text-white"  >Our Pricing</h2>
+                <h2 class="heading--title text-white" style=" position: relative;top: -17px!important;">Our Pricing</h2>
+   
+    
+
                 <!-- <p class="heading--desc text-white mb-0">Invest now with us to earn every day and forever in your wallet. We accept Investment from all over the world.</p> -->
             </div>
         </div><!-- .col-md-8 end -->
@@ -2389,22 +2392,22 @@ Advanced Investment Platform for modern technologies and the latest Trading algo
                 <!--  Pricing heading  -->
                 <div class="pricing--heading text--center step-number-block">
                     <div class="pricing--icon">
-                        <img src="assets/images/icons/BitcoinIcon4.png" alt="Bitcoin Icon">
+                        <img src="images/icon/pick-29.png" alt="Bitcoin Icon" height="50">
                     </div>
                     <h4>STARTER PLAN</h4>
                     <p>20<span class="currency">%</span></p>
                     <div class="pricing--desc">
                     Monthly Returns that runs for 1 Month.<br><br>
-                    ShortTerm Return for 1 Week<br>
+                    
                     24/7 Customer Support<br>
                     Full Asset Management.
                     </div>
                     <a class="btn btn--secondary btn--bordered btn--rounded" href="#">Invest Now</a>
                 </div>
                 <!--  Pricing heading  -->
-                <div class="pricing--footer">
+                <!-- <div class="pricing--footer">
                     From $999 to $9,999.
-                </div>
+                </div> -->
                 <!--  Pricing Footer  -->
             </div>
         </div>
@@ -2417,22 +2420,22 @@ Advanced Investment Platform for modern technologies and the latest Trading algo
                 <!--  Pricing heading  -->
                 <div class="pricing--heading text--center step-number-block">
                     <div class="pricing--icon">
-                        <img src="assets/images/icons/BitcoinIcon5.png" alt="Bitcoin Icon">
+                    <img src="images/icon/pick-29.png" alt="Bitcoin Icon" height="50">
                     </div>
                     <h4>BASIC PLAN</h4>
                     <p>25<span class="currency">%</span></p>
                     <div class="pricing--desc">
                     Monthly Returns that runs for 1 Month.<br><br>
-                    ShortTerm Return for 1 Week<br>
+                  
                     24/7 Customer Support<br>
                     Full Asset Management.
                     </div>
                     <a class="btn btn--white btn--bordered btn--rounded" href="#">Invest Now</a>
                 </div>
                 <!--  Pricing heading  -->
-                <div class="pricing--footer">
+                <!-- <div class="pricing--footer">
                     From $34,999 to $99,999.
-                </div>
+                </div> -->
                 <!--  Pricing Footer  -->
             </div>
         </div>
@@ -2445,22 +2448,22 @@ Advanced Investment Platform for modern technologies and the latest Trading algo
                 <!--  Pricing heading  -->
                 <div class="pricing--heading text--center step-number-block">
                     <div class="pricing--icon">
-                        <img src="assets/images/icons/BitcoinIcon4.png" alt="Bitcoin Icon">
+                    <img src="images/icon/pick-29.png" alt="Bitcoin Icon" height="50">
                     </div>
                     <h4>NFP PLANS</h4>
                     <p>35<span class="currency">%</span></p>
                     <div class="pricing--desc">
                     Monthly Returns that runs for 1 Month.<br><br>
-                    ShortTerm Return for 1 Week<br>
+                  
                     24/7 Customer Support<br>
                     Full Asset Management.
                     </div>
                     <a class="btn btn--secondary btn--bordered btn--rounded" href="#">Invest Now</a>
                 </div>
                 <!--  Pricing heading  -->
-                <div class="pricing--footer">
+                <!-- <div class="pricing--footer">
                     From $39,999 to $499,999.
-                </div>
+                </div> -->
                 <!--  Pricing Footer  -->
             </div>
         </div>
