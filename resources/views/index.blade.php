@@ -2376,7 +2376,10 @@ Advanced Investment Platform for modern technologies and the latest Trading algo
         <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3">
             <div class="heading heading-1 text--center mb-70">
                 <!-- <p class="heading--subtitle">Invest Now!</p> -->
-                <h2 class="heading--title text-white"  >Our Pricing</h2>
+                <h2 class="heading--title text-white" style=" position: relative;top: -15px;">Our Pricing</h2>
+   
+    
+
                 <!-- <p class="heading--desc text-white mb-0">Invest now with us to earn every day and forever in your wallet. We accept Investment from all over the world.</p> -->
             </div>
         </div><!-- .col-md-8 end -->
