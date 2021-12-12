@@ -2149,7 +2149,7 @@ form input[type="submit"]:hover{
         <!-- OUR VALUE SECTION START -->
         <!-- OUR VALUE SECTION  END -->
         <!-- ABOUT COMPANY SECTION START -->
-        <div id="bitcoin-price" class="section-full home-about-section p-tb80 bg-no-repeat bg-bottom-right bg-gray"
+        <div class="section-full home-about-section p-tb80 bg-no-repeat bg-bottom-right bg-gray"
              style="background-image:url(images/background/bg-coin.png);background-color: #000;">
             <div class="container">
                 <div class="row">
@@ -2166,8 +2166,19 @@ form input[type="submit"]:hover{
                     <div class="col-md-6">
                         <div class="p-b20 text-left"><span
                                 class="wt-title-subline font-16 text-gray-dark m-b15  wow fadeInUp"
-                                data-wow-duration="1s" data-wow-delay="0s">EASY TO USE PLATFORM</span>
-                            <h2 style="font-size:15px!important;" class="text-uppercase wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">The New Age of Cryptocurrency : </h2>
+                                data-wow-duration="1s" data-wow-delay="0s" style="margin:px!important">EASY TO USE PLATFORM</span>
+                            <h2 style="font-size:13px!important;" class="text-uppercase wow fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+Advanced Investment Platform for modern technologies and the latest Trading algorithms to cryptocurrencies in the shortest possible time, which allows users to receive up to 5% profit per day.
+
+
+<ul class="list-check-circle primary" style="visibility: visible; animation-name: fadeInUp;">
+                                <!-- <li>Governments support bitcoin . </li> -->
+                                <li>We executed at the best possible prices.</li>
+                                <li>We order placement is instant and accurate.</li>
+                                <li>We are timed correctly and instantly to avoid significant price changes.</li>
+                            </ul>
+
+</h2>
                             <div class="wt-separator-outer">
                                 <div class="wt-separator bg-primary"></div>
                             </div>
@@ -2356,6 +2367,120 @@ form input[type="submit"]:hover{
             </div>
         </div>
         <!-- COMPANY DETAIL SECTION End -->
+
+
+        <section id="bitcoin-price" class="pricing pricing-1 pb-80 bg-section" style="background-image: url(&quot;assets/images/background/9.jpg&quot;);">
+
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3">
+            <div class="heading heading-1 text--center mb-70">
+                <!-- <p class="heading--subtitle">Invest Now!</p> -->
+                <h2 class="heading--title text-white"  >Our Pricing</h2>
+                <!-- <p class="heading--desc text-white mb-0">Invest now with us to earn every day and forever in your wallet. We accept Investment from all over the world.</p> -->
+            </div>
+        </div><!-- .col-md-8 end -->
+    </div><!-- .row end -->
+    <div class="row">
+        <!-- Pricing Packge #1
+        ============================================= -->
+        <div class=" col-xs-12 col-sm-12 col-md-4 price-table wow fadeInUp animated" data-wow-delay="100ms" style="visibility: visible; animation-delay: 100ms; animation-name: fadeInUp;">
+            <div class="pricing-panel">
+                <!--  Pricing heading  -->
+                <div class="pricing--heading text--center step-number-block">
+                    <div class="pricing--icon">
+                        <img src="assets/images/icons/BitcoinIcon4.png" alt="Bitcoin Icon">
+                    </div>
+                    <h4>STARTER PLAN</h4>
+                    <p>20<span class="currency">%</span></p>
+                    <div class="pricing--desc">
+                    Monthly Returns that runs for 1 Month.<br><br>
+                    ShortTerm Return for 1 Week<br>
+                    24/7 Customer Support<br>
+                    Full Asset Management.
+                    </div>
+                    <a class="btn btn--secondary btn--bordered btn--rounded" href="#">Invest Now</a>
+                </div>
+                <!--  Pricing heading  -->
+                <div class="pricing--footer">
+                    From $999 to $9,999.
+                </div>
+                <!--  Pricing Footer  -->
+            </div>
+        </div>
+        <!-- .pricing-table End -->
+        
+        <!-- Pricing Packge #2
+        ============================================= -->
+        <div class=" col-xs-12 col-sm-12 col-md-4 price-table pricing-active wow fadeInUp animated" data-wow-delay="200ms" style="visibility: visible; animation-delay: 200ms; animation-name: fadeInUp;">
+            <div class="pricing-panel">
+                <!--  Pricing heading  -->
+                <div class="pricing--heading text--center step-number-block">
+                    <div class="pricing--icon">
+                        <img src="assets/images/icons/BitcoinIcon5.png" alt="Bitcoin Icon">
+                    </div>
+                    <h4>BASIC PLAN</h4>
+                    <p>25<span class="currency">%</span></p>
+                    <div class="pricing--desc">
+                    Monthly Returns that runs for 1 Month.<br><br>
+                    ShortTerm Return for 1 Week<br>
+                    24/7 Customer Support<br>
+                    Full Asset Management.
+                    </div>
+                    <a class="btn btn--white btn--bordered btn--rounded" href="#">Invest Now</a>
+                </div>
+                <!--  Pricing heading  -->
+                <div class="pricing--footer">
+                    From $34,999 to $99,999.
+                </div>
+                <!--  Pricing Footer  -->
+            </div>
+        </div>
+        <!-- .pricing-table End -->
+        
+        <!-- Pricing Packge #1
+        ============================================= -->
+        <div class=" col-xs-12 col-sm-12 col-md-4 price-table wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+            <div class="pricing-panel">
+                <!--  Pricing heading  -->
+                <div class="pricing--heading text--center step-number-block">
+                    <div class="pricing--icon">
+                        <img src="assets/images/icons/BitcoinIcon4.png" alt="Bitcoin Icon">
+                    </div>
+                    <h4>NFP PLANS</h4>
+                    <p>35<span class="currency">%</span></p>
+                    <div class="pricing--desc">
+                    Monthly Returns that runs for 1 Month.<br><br>
+                    ShortTerm Return for 1 Week<br>
+                    24/7 Customer Support<br>
+                    Full Asset Management.
+                    </div>
+                    <a class="btn btn--secondary btn--bordered btn--rounded" href="#">Invest Now</a>
+                </div>
+                <!--  Pricing heading  -->
+                <div class="pricing--footer">
+                    From $39,999 to $499,999.
+                </div>
+                <!--  Pricing Footer  -->
+            </div>
+        </div>
+        <!-- .pricing-table End -->
+        
+    </div><!-- .row end -->
+</div><!-- .container end -->
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
         <!-- HOW IT WORK SECTION START  -->
         <div class="section-full  p-t80 p-b80 bg-gray" id="how-it-work">
             <div class="container">
@@ -2369,7 +2494,7 @@ form input[type="submit"]:hover{
     font-family: Calibri,sans-serif,serif,EmojiFont;
     font-size: 15px;
     color: #ccc;
-" class="invest&learn wow fadeInUp">Learning about bitcoin investment and making profits is very easy. Using great
+" class="invest&learn wow fadeInUp">Learning about our investment and making profits is very easy. Using great
                         platforms like Cryptobolt private &amp; Secure, it very easy for new investors to learn and
                         understand the hidden bitcoin secrets. It takes considerably less time compared to other
                         investments platforms.</p>
@@ -2438,6 +2563,20 @@ form input[type="submit"]:hover{
         </div>
         <!-- HOW IT WORK  SECTION END -->
         <!-- SECTION CONTENT START -->
+
+       
+
+
+
+
+
+
+
+
+
+
+
+        
 
 
 
@@ -2653,12 +2792,12 @@ form input[type="submit"]:hover{
                                 appreciate the potential of cutting-edge digital currency and thoroughly examined all
                                 aspects of its mining. This prompted us to launch a data center that would generate
                                 cryptocoins.</p>
-                            <ul class="list-check-circle primary wow fadeInUp">
-                                <!-- <li>Governments support bitcoin . </li> -->
+                            <!-- <ul class="list-check-circle primary wow fadeInUp">
+                                
                                 <li>Bitcoin is one the backbone of almost all other cryptocurrencies.</li>
                                 <li>Bitcoin will ultimately become the world’s most powerful currency.</li>
                                 <li>Bitcoin will increase the profits of manifolds for all the bitcoin investors.</li>
-                            </ul>
+                            </ul> -->
                         </div>
                     </div>
                     <div class="col-xs-12 col-sm-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
@@ -2724,7 +2863,9 @@ form input[type="submit"]:hover{
                                 style="visibility: hidden; animation-delay: 200ms; animation-name: none;">
                                 <div class="pricing-panel">
                                     <!--  Pricing heading  -->
-                                    <div class="pricing--heading text--center step-number-block">
+                                    <div class="pricing--heading text--center step-number-block" style="background-image: none;">
+
+
                                         <!-- <div class="pricing--icon"> -->
                                         <img src="images/testimonials/2.jpg" alt="Bitcoin Icon" width="300" height="400"
                                              style="
