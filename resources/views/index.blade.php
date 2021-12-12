@@ -2395,16 +2395,16 @@ Advanced Investment Platform for modern technologies and the latest Trading algo
                     <p>20<span class="currency">%</span></p>
                     <div class="pricing--desc">
                     Monthly Returns that runs for 1 Month.<br><br>
-                    ShortTerm Return for 1 Week<br>
+                    
                     24/7 Customer Support<br>
                     Full Asset Management.
                     </div>
                     <a class="btn btn--secondary btn--bordered btn--rounded" href="#">Invest Now</a>
                 </div>
                 <!--  Pricing heading  -->
-                <div class="pricing--footer">
+                <!-- <div class="pricing--footer">
                     From $999 to $9,999.
-                </div>
+                </div> -->
                 <!--  Pricing Footer  -->
             </div>
         </div>
@@ -2423,16 +2423,16 @@ Advanced Investment Platform for modern technologies and the latest Trading algo
                     <p>25<span class="currency">%</span></p>
                     <div class="pricing--desc">
                     Monthly Returns that runs for 1 Month.<br><br>
-                    ShortTerm Return for 1 Week<br>
+                  
                     24/7 Customer Support<br>
                     Full Asset Management.
                     </div>
                     <a class="btn btn--white btn--bordered btn--rounded" href="#">Invest Now</a>
                 </div>
                 <!--  Pricing heading  -->
-                <div class="pricing--footer">
+                <!-- <div class="pricing--footer">
                     From $34,999 to $99,999.
-                </div>
+                </div> -->
                 <!--  Pricing Footer  -->
             </div>
         </div>
@@ -2451,16 +2451,16 @@ Advanced Investment Platform for modern technologies and the latest Trading algo
                     <p>35<span class="currency">%</span></p>
                     <div class="pricing--desc">
                     Monthly Returns that runs for 1 Month.<br><br>
-                    ShortTerm Return for 1 Week<br>
+                  
                     24/7 Customer Support<br>
                     Full Asset Management.
                     </div>
                     <a class="btn btn--secondary btn--bordered btn--rounded" href="#">Invest Now</a>
                 </div>
                 <!--  Pricing heading  -->
-                <div class="pricing--footer">
+                <!-- <div class="pricing--footer">
                     From $39,999 to $499,999.
-                </div>
+                </div> -->
                 <!--  Pricing Footer  -->
             </div>
         </div>
