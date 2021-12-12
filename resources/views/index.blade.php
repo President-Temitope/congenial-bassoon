@@ -2376,7 +2376,7 @@ Advanced Investment Platform for modern technologies and the latest Trading algo
         <div class="col-xs-12 col-sm-12 col-md-6 col-md-offset-3">
             <div class="heading heading-1 text--center mb-70">
                 <!-- <p class="heading--subtitle">Invest Now!</p> -->
-                <h2 class="heading--title text-white" style=" position: relative;top: -15px;">Our Pricing</h2>
+                <h2 class="heading--title text-white" style=" position: relative;top: -17px!important;">Our Pricing</h2>
    
     
 
