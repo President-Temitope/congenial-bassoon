@@ -69,7 +69,7 @@
                         </p>
                         <h3 class="styled-form__subtitle"
                             style=" padding: 10px;border-radius: 2px;background-color: #ffd70069; font-family: Calibri,sans-serif,serif,EmojiFont;">
-                            We sent a verification mail to "Test@Example.com". Please activate your account with the
+                            We sent a verification mail to "{{$email}}". Please activate your account with the
                             link in your email. If you cannot find the mail, please also check the junk/spam fold!</h3>
                     </div>
                     <p class="noted"
