@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class AddPOPFieldToPaymentsTable extends Migration
 {
@@ -15,6 +15,7 @@ class AddPOPFieldToPaymentsTable extends Migration
     {
         Schema::table('payments', function (Blueprint $table) {
             $table->string('proof_of_payment')->nullable()->default(null);
+            $table->timestamps();
         });
     }
 

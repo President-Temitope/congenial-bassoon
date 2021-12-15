@@ -2,7 +2,6 @@
 
 namespace Modules\Payments\Entities;
 
-use App\User;
 use Illuminate\Database\Eloquent\Model;
 use Modules\Investments\Entities\Investment;
 
@@ -10,7 +9,7 @@ class Payment extends Model
 {
     // use HasFactory;
 
-    protected $fillable = [];
+    protected $guarded = [];
 
     protected $table = 'payments';
 
@@ -22,10 +21,10 @@ class Payment extends Model
     /*public function user()
     {
         return $this->belongsTo(User::class, 'user_id');
-    }
+    }*/
 
     public function investment()
     {
         return $this->belongsTo(Investment::class, 'investment_id');
-    }*/
+    }
 }

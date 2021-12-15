@@ -11,14 +11,16 @@ class Investment extends Model
 
     protected $guarded = [];
 
-//   public function payment(){
-//     return $this->belongsTo(Payment::class,'investment_id');
-//  }
+    public function payment()
+    {
+        return $this->hasOne(Payment::class);
+    }
 //    protected static function newFactory()
 //    {
 //        return \Modules\Investments\Database\factories\InvestmentFactory::new();
 //    }
-   /* public function investmentName(){
-        return $this->title.'('.$this->proposed_amount.')';
-    }*/
+//    public function investmentName()
+//    {
+//        return $this->title . '(' . $this->proposed_amount . ')';
+//    }
 }

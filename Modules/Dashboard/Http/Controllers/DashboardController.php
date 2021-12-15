@@ -2,12 +2,13 @@
 
 namespace Modules\Dashboard\Http\Controllers;
 
+use Auth;
 use Carbon\Carbon;
 use Illuminate\Contracts\Support\Renderable;
-use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\DB;
 use Modules\Investments\Interfaces\InvestmentsRepositoryInterface;
+
 class DashboardController extends Controller
 {
     /**
@@ -27,10 +28,9 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        $user_id = \Auth::id();
-//        $investments = $this->investment->queryWithStatus();
-        $myActivePlans = DB::table('payments')->where('user_id',$user_id)->where('status', '', 'Approved')->where('approved_at','>',Carbon::now())->get('investment_id');
-        return view('dashboard::index')->with('myActivePlans',$myActivePlans);
+        $user_id = Auth::id();
+        $myActivePlans = DB::table('payments')->where('user_id', $user_id)->where('status', '', 'Approved')->where('approved_at', '>', Carbon::now())->get('investment_id');
+        return view('dashboard::index')->with('myActivePlans', $myActivePlans);
     }
 
 }

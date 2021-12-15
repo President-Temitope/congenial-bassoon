@@ -207,6 +207,10 @@
                                         class="nk-menu-link"
                                         href="/investments/viewAll"><span
                                             class="nk-menu-text">Investments</span></a></li>
+                                <li class="nk-menu-item {{$pageName == 'Payments' ? 'active' : ''}}"><a
+                                        class="nk-menu-link"
+                                        href="/payments"><span
+                                            class="nk-menu-text">Payments</span></a></li>
                             @endif
                         </ul>
                     </div>
@@ -282,6 +286,7 @@
             <div class="container-xl wide-xl">
                 <div class="nk-content-inner">
                     <div class="nk-content-body">
+                        @include('dashboard::messages')
                         @yield('content')
 
                     </div>

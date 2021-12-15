@@ -1,4 +1,4 @@
-@extends('dashboard::layouts.master')
+@extends('dashboard::layouts.master',[$pageName = 'Payments'])
 
 @section('content')
     <!-- Begin Page Content -->
@@ -45,15 +45,16 @@
 
                             @foreach($payments as $payment)
                                 <tr>
-                                    <td>{{$payment->user->fullName()}}</td>
-                                    <td>{{$payment->investment->investmentName()}}</td>
+                                    <td>{{$payment->username}}</td>
+                                    <td>{{$payment->investment_name}}</td>
                                     <td>{{$payment->created_at->diffForHumans() ?? ''}}</td>
                                     <td>{{$payment->status}}</td>
-                                    <td>{{$payment->updated_at->diffForHumans()}}</td>
+                                    <td>{{$payment->approved_at->diffForHumans() ?? ''}}</td>
 
                                     <td>
-                                        <span>  <a href="" class="btn btn-outline-success">Approve</a> </span><a href=""
-                                                                                                                 class="btn btn-outline-secondary">Edit</a>
+                                        <span>  <a href="" class="btn btn-outline-success">View POP</a> </span>
+                                        <span>  <a href="" class="btn btn-outline-success">Approve</a> </span>
+                                        <a href="" class="btn btn-outline-secondary">Edit</a>
                                         <span><a href="" class="btn btn-outline-danger ">Delete</a></span>
                                     </td>
                                 </tr>

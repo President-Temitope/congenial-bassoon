@@ -13,4 +13,5 @@
 
 Route::prefix('payments')->group(function () {
     Route::get('/', 'PaymentsController@index');
+    Route::post('/addPayment', 'PaymentsController@addPayment');
 });

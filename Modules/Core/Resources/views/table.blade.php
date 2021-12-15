@@ -48,7 +48,7 @@
 
                                 <td>
                                     <a href="" class="btn btn-outline-secondary" data-toggle="modal"
-                                       data-target="#{{$data->$editQuery ?? Str::slug($data->name)}}">Edit</a> <span><a
+                                       data-target="#{{Str::slug($data->name)}}">Edit</a> <span><a
                                             href="{{$deleteButton}}{{$data->id}}"
                                             class="btn btn-outline-danger ">Delete</a></span>
                                 </td>

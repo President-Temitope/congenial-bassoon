@@ -9,8 +9,9 @@
             </div>
         </div>
     </div><!-- nk-block-head -->
-    <div class="nk-block invest-block">
-        <form action="#" class="invest-form">
+    <form action="/payments/addPayment" method="post" class="invest-form" enctype="multipart/form-data">
+        @csrf
+        <div class="nk-block invest-block">
             <div class="row g-gs">
                 <div class="col-lg-7">
                     <div class="invest-field form-group">
@@ -80,6 +81,8 @@
                                     <li>
                                         <div class="sub-text">Name of scheme</div>
                                         <div class="lead-text">{{$investment->name}}</div>
+                                        <input type="hidden" name="investment_name" value="{{$investment->name}}">
+                                        <input type="hidden" name="investment_id" value="{{$investment->id}}">
                                     </li>
                                     <li>
                                         <div class="sub-text">Term of the scheme</div>
@@ -132,6 +135,7 @@
                                         <div class="lead-text">Total Charge</div>
                                         <div class="caption-text text-primary">$ <span
                                                 class="total_amount_to_invest">0</span></div>
+                                        <input type="hidden" name="total_charge" id="total_charge_input">
                                     </li>
                                 </ul>
                             </div><!-- .nk-iv-wg4-sub -->
@@ -172,9 +176,8 @@
                                     <a href="#" class="btn btn-lg btn-mw btn-primary" data-dismiss="modal"
                                        data-toggle="modal"
                                        data-target="#confirm-invest">Confirm Payment</a>
-                                    <div class="sub-text sub-text-alt mt-3 mb-4">This transaction will appear on your
-                                        wallet
-                                        statement as Invest * {{$investment->title}}.
+                                    <div class="sub-text sub-text-alt mt-3 mb-4">Ensure to click on the close button to
+                                        complete your payment.
                                     </div>
                                     <a href="#" class="link link-soft" data-dismiss="modal">Cancel and return</a>
                                 </div>
@@ -184,43 +187,46 @@
                     </div><!-- .modal-content -->
                 </div><!-- .modla-dialog -->
             </div><!-- .modal -->
-        </form>
-    </div><!-- .nk-block -->
-    <!-- content @e -->
-    <!-- app-root @e -->
-    <!-- @@ Invest Modal @e -->
-    <!-- @@ Confirm Invest Modal @e -->
-    <div class="modal fade" tabindex="-1" id="confirm-invest">
-        <div class="modal-dialog modal-dialog-centered modal-md">
-            <div class="modal-content">
-                <a href="#" class="close" data-dismiss="modal"><em class="icon ni ni-cross-sm"></em></a>
-                <div class="modal-body modal-body-lg text-center">
-                    <div class="nk-modal">
-                        <em class="nk-modal-icon icon icon-circle icon-circle-xxl ni ni-check bg-success"></em>
-                        <h4 class="nk-modal-title successfully-notify">Successfully sent payment!</h4>
-                        <div class="nk-modal-text">
-                            <p class="sub-text notify-sub-text">You have successfully order the Investment Plan of
-                                <strong>"{{$investment->name}}"</strong>.
-                            </p>
+
+        </div><!-- .nk-block -->
+        <!-- content @e -->
+        <!-- app-root @e -->
+        <!-- @@ Invest Modal @e -->
+        <!-- @@ Confirm Invest Modal @e -->
+        <div class="modal fade" tabindex="-1" id="confirm-invest">
+            <div class="modal-dialog modal-dialog-centered modal-md">
+                <div class="modal-content">
+                    <a href="#" class="close" data-dismiss="modal"><em class="icon ni ni-cross-sm"></em></a>
+                    <div class="modal-body modal-body-lg text-center">
+                        <div class="nk-modal">
+                            <em class="nk-modal-icon icon icon-circle icon-circle-xxl ni ni-check bg-success"></em>
+                            <h4 class="nk-modal-title successfully-notify">Successfully sent payment!</h4>
+                            <div class="nk-modal-text">
+                                <p class="sub-text notify-sub-text">You have successfully order the Investment Plan of
+                                    <strong>"{{$investment->name}}"</strong>.
+                                </p>
+                            </div>
+                            <div class="nk-modal-action-lg">
+                                <ul class="btn-group flex-wrap justify-center g-4">
+                                    <li><a href="/investments" class="btn btn-lg btn-mw btn-primary">More Invest</a>
+                                    </li>
+                                    <li>
+                                        <button type="submit" class="btn btn-lg btn-mw btn-dim btn-primary">
+                                            <em class="icon ni ni-reports"></em><span>Close</span></button>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="nk-modal-action-lg">
-                            <ul class="btn-group flex-wrap justify-center g-4">
-                                <li><a href="/investments" class="btn btn-lg btn-mw btn-primary">More Invest</a></li>
-                                <li><a href="/investments/viewPlan/{{$investment->id}}"
-                                       class="btn btn-lg btn-mw btn-dim btn-primary"><em
-                                            class="icon ni ni-reports"></em><span>See the plan</span></a></li>
-                            </ul>
+                    </div><!-- .modal-body -->
+                    <div class="modal-footer bg-lighter">
+                        <div class="text-center w-100">
+                            {{--                        <p>Earn upto $25 for each friend your refer! <a href="#">Invite friends</a></p>--}}
                         </div>
                     </div>
-                </div><!-- .modal-body -->
-                <div class="modal-footer bg-lighter">
-                    <div class="text-center w-100">
-                        {{--                        <p>Earn upto $25 for each friend your refer! <a href="#">Invite friends</a></p>--}}
-                    </div>
-                </div>
-            </div><!-- .modal-content -->
-        </div><!-- .modla-dialog -->
-    </div><!-- .modal -->
+                </div><!-- .modal-content -->
+            </div><!-- .modla-dialog -->
+        </div><!-- .modal -->
+    </form>
 @endsection
 @push('script')
     <script>
@@ -245,6 +251,8 @@
             amountToInvestField.innerHTML = (customAmountToInvestField).toFixed(2)
             conversionFeeField.innerHTML = (conversionFee).toFixed(2)
             totalAmountToInvestField.innerHTML = (conversionFee + customAmountToInvestField).toFixed(2)
+            document.getElementById('total_charge_input').value = (conversionFee + customAmountToInvestField).toFixed(2)
+
 
         }
 
