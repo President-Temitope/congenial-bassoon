@@ -97,7 +97,7 @@
                                 @csrf
                                 <div class="form-group">
                                     <label for="input">Title</label>
-                                    <input class="form-control" type="text" id="input" name="title"
+                                    <input class="form-control" type="text" id="input" name="name"
                                            placeholder="Enter title" value="{{$investment->name}}"
                                            autocomplete="on"/>
                                 </div>
