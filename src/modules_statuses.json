@@ -1,0 +1,7 @@
+{
+    "Core": true,
+    "Investments": true,
+    "Payments": true,
+    "Users": true,
+    "Dashboard": true
+}
