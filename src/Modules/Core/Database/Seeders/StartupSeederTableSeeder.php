@@ -2,12 +2,12 @@
 
 namespace Modules\Core\Database\Seeders;
 
-use App\User;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Hash;
 use Modules\Investments\Entities\Investment;
+use Modules\Users\Entities\User;
 use Spatie\Permission\Models\Permission;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\PermissionRegistrar;

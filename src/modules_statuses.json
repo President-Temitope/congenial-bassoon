@@ -3,5 +3,6 @@
     "Investments": true,
     "Payments": true,
     "Users": true,
-    "Dashboard": true
+    "Dashboard": true,
+    "Site": true
 }

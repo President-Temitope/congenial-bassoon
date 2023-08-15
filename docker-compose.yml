@@ -10,7 +10,7 @@ services:
       dockerfile: nginx.dockerfile
     container_name: cryptobolt_nginx
     ports:
-      - "8015:80"
+      - "8004:80"
     volumes:
       - ./src:/var/www/html:delegated
     depends_on:
@@ -25,7 +25,7 @@ services:
 #    restart: unless-stopped
 #    tty: true
     ports:
-      - "33015:3306"
+      - "3005:3306"
     environment:
       MYSQL_DATABASE: cryptobolt
       MYSQL_USER: cryptobolt
@@ -44,7 +44,7 @@ services:
     volumes:
       - ./src:/var/www/html:delegated
     ports:
-      - "9015:9000"
+      - "9005:9000"
     networks:
       - laravel
 

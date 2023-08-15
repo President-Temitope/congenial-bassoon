@@ -2,9 +2,11 @@
 
 namespace Modules\Core\Providers;
 
-use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Factory;
+use Illuminate\Support\ServiceProvider;
+use Modules\Core\Interfaces\AuthRepositoryInterface;
 use Modules\Core\Interfaces\CoreRepositoryInterface;
+use Modules\Core\Repositories\AuthRepository;
 use Modules\Core\Repositories\CoreRepository;
 
 class CoreServiceProvider extends ServiceProvider
@@ -102,6 +104,8 @@ class CoreServiceProvider extends ServiceProvider
     {
         $this->app->register(RouteServiceProvider::class);
         $this->app->bind(CoreRepositoryInterface::class, CoreRepository::class);
+        $this->app->bind(AuthRepositoryInterface::class, AuthRepository::class);
+
     }
 
     /**
