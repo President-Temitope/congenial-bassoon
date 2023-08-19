@@ -1,7 +1,7 @@
 /*
-	Template Name: Bayya - Bitcoin Crypto Currency Template
+	Template Name: Bayya - plugin
 	Author: celtano
-	Description: Bayya - Bitcoin Crypto Currency Template
+	Description: Bayya - plugin
 	Version: 1.0
 */
 /*------------------------------------------------------------------
@@ -3630,15 +3630,15 @@ section.shop-checkout {
 }
 
 #carousel-testimonials .item.item-1 {
-  background-image: url('../images/backgrounds/bg-user.jpg');
+  background-image: url('../images/backgrounds/bg-user.jpg')!important;
 }
 
 #carousel-testimonials .item.item-2 {
-  background-image: url('../images/backgrounds/bg-user-2.jpg');
+  background-image: url('../itay-verchik-YmQ8TrsieE4-unsplash.jpg')!important;
 }
 
 #carousel-testimonials .item.item-3 {
-  background-image: url('../images/backgrounds/bg-user-3.jpg');
+  background-image: url('../images/backgrounds/bg-user-3.jpg')!important;
 }
 
 #carousel-testimonials .carousel-control {
@@ -8774,15 +8774,15 @@ section.shop-checkout {
 }
 
 #carousel-testimonials .item.item-1 {
-  background-image: url('/TheOKXplatinum/Register/images/backgrounds/bg-user.jpg');
+  background-image: url('../images/backgrounds/bg-user.jpg')!important;
 }
 
 #carousel-testimonials .item.item-2 {
-  background-image: url('/TheOKXplatinum/Register/itay-verchik-YmQ8TrsieE4-unsplash.jpg');
+  background-image: url('../itay-verchik-YmQ8TrsieE4-unsplash.jpg')!important;
 }
 
 #carousel-testimonials .item.item-3 {
-  background-image: url('/TheOKXplatinum/Register/images/backgrounds/bg-user-3.jpg');
+  background-image: url('../images/backgrounds/bg-user-3.jpg')!important;
 }
 
 #carousel-testimonials .carousel-control {
@@ -21139,15 +21139,15 @@ background-attachment: initial;
 }
 
 #carousel-testimonials .item.item-1 {
-background-image: url('/TheOKXplatinum/Register/images/backgrounds/bg-user.jpg');
+background-image: url('../images/backgrounds/bg-user.jpg')!important;
 }
 
 #carousel-testimonials .item.item-2 {
-background-image: url('/TheOKXplatinum/Register/itay-verchik-YmQ8TrsieE4-unsplash.jpg');
+background-image: url('../itay-verchik-YmQ8TrsieE4-unsplash.jpg')!important;
 }
 
 #carousel-testimonials .item.item-3 {
-background-image: url('/TheOKXplatinum/Register/images/backgrounds/bg-user-3.jpg');
+background-image: url('../images/backgrounds/bg-user-3.jpg')!important;
 }
 
 #carousel-testimonials .carousel-control {

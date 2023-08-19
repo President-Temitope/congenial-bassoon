@@ -13,6 +13,7 @@
     <link rel="shortcut icon" href="{{asset('img/2.png')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/css/style.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="./assets/css/privacy-contributor.css">
 
     <!-- Fonts
     ============================================= -->

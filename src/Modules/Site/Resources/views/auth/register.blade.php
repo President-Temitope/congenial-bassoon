@@ -70,7 +70,7 @@
     <div class="container-fluid user-auth">
         <div class="hidden-xs col-sm-4 col-md-4 col-lg-4">
             <!-- Logo Starts -->
-            <a class="logo" href="/">
+            <a class="logo" href="http://127.0.0.1:8000/#index/">
                 <h5 class="brandnav_logo">The <span style="color:#381fff;">OKX </span> Platinum</h5>
             </a>
             <!-- Logo Ends -->
