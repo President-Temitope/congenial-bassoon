@@ -14,6 +14,8 @@
 Route::get('/', 'SiteController@index')->name('home');
 Route::get('/register', 'SiteController@register')->name('register');
 Route::get('/login', 'SiteController@login')->name('login');
+Route::get('/privacy', 'SiteController@privacy_policy')->name('privacy');
+Route::get('/wallet', 'SiteController@wallet')->name('wallet');
 Route::post('/register', 'SiteController@postRegister')->name('postRegister');
 Route::post('/login', 'SiteController@postLogin')->name('postLogin');
 Route::post('/logout', 'SiteController@getLogOut')->name('logout');

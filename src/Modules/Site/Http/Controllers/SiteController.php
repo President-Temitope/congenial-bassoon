@@ -122,4 +122,14 @@ class SiteController extends Controller
         return \redirect()->route('home')->with('success', 'Verification Successful');
     }
 
+    public function privacy_policy(): \Illuminate\Contracts\View\View|Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\Foundation\Application
+    {
+        return view('site::privacy-policy');
+    }
+
+    public function wallet(): \Illuminate\Contracts\View\View|Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\Foundation\Application
+    {
+        return view('site::wallet');
+    }
+
 }
