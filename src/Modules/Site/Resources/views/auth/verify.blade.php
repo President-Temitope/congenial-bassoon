@@ -1,35 +1,4 @@
-{{--
-@extends('layouts.app')
-
-@section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Verify Your Email Address') }}</div>
-
-                <div class="card-body">
-                    @if (session('resent'))
-                        <div class="alert alert-success" role="alert">
-                            {{ __('A fresh verification link has been sent to your email address.') }}
-                        </div>
-                    @endif
-
-                    {{ __('Before proceeding, please check your email for a verification link.') }}
-                    {{ __('If you did not receive the email') }},
-                    <form class="d-inline" method="POST" action="{{ route('verification.resend') }}">
-                        @csrf
-                        <button type="submit" class="btn btn-link p-0 m-0 align-baseline">{{ __('click here to request another') }}</button>.
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-@endsection
---}}
-
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8"/>
@@ -51,8 +20,8 @@
                         <div class="alert alert-success" role="alert">
                             {{ __('A fresh verification link has been sent to your email address.') }}
                         </div>
-                @endif
-                <!---->
+                    @endif
+                    <!---->
                     <!---->
                     <div class="styled-form__header">
                         <h1 class="style-form_title" style="text-align: center;">Email verification</h1>
@@ -69,11 +38,11 @@
                         </p>
                         <h3 class="styled-form__subtitle"
                             style=" padding: 10px;border-radius: 2px;background-color: #ffd70069; font-family: Calibri,sans-serif,serif,EmojiFont;">
-                            We sent a verification mail to "{{auth()->user()->email}}". Please activate your account
+                            We sent a verification mail. Please activate your account
                             with the
                             link in your email. If you cannot find the mail, please also check the junk/spam fold!</h3>
                     </div>
-                    <p class="noted"
+                    {{--<p class="noted"
                        style="line-height: 25px;font-size: 14px;padding: 12px 11px 10px 5px;/* border: 2px solid #777; */margin-bottom: 12px;font-family: monospace;">
                         If you have not received a verification email or if you have mistyped your email address, you
                         can resend the verification mail. </p>
@@ -82,7 +51,7 @@
                         <button type="submit"
                                 class="btn btn-link p-0 m-0 align-baseline">{{ __('click here to request another') }}</button>
                         .
-                    </form>
+                    </form>--}}
                 </div>
             </main>
         </div>

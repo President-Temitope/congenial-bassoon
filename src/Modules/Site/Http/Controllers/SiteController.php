@@ -55,9 +55,9 @@ class SiteController extends Controller
             $user = $this->auth->register($user_data);
             $this->auth->assignRole($user, 'user');
             DB::commit();
-            $activation_code = $this->auth->createActivation($user);
+            //  $activation_code = $this->auth->createActivation($user);
 //            event(new InitiateAccountActivation($user_data['email'], $activation_code));
-            return redirect()->route('home')->with('success', 'Registration Successful');
+            return redirect()->route('success')->with('success', 'Registration Successful');
             // return redirect()->route('success')->with('success', 'Registration Successful');
         } catch (Exception $e) {
             DB::rollBack();
@@ -130,6 +130,11 @@ class SiteController extends Controller
     public function wallet(): \Illuminate\Contracts\View\View|Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\Foundation\Application
     {
         return view('site::wallet');
+    }
+
+    public function success()
+    {
+        return view('site::auth.verify');
     }
 
 }

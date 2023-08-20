@@ -367,17 +367,16 @@
                 @auth
                     <div class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Account</a>
                         <div class="dropdown-menu"><a href="{{route('dashboard')}}" class="dropdown-item">Dashboard</a>
-                        </div>
-                        <form id="logout-form" action="{{ route('logout') }}" method="POST"
-                              style="display: none;">
-                            @csrf
-                        </form>
-                        <div class="dropdown-menu"><a href="{{ route('logout') }}"
-                                                      onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();"
-                                                      class="dropdown-item">Dashboard</a>
+                            <a href="{{ route('logout') }}"
+                               onclick="event.preventDefault();
+                                                      document.getElementById('logout-form').submit();"
+                               class="dropdown-item">LogOut</a>
                         </div>
                     </div>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                          style="display: none;">
+                        @csrf
+                    </form>
                 @endauth
                 <li class="nav_reg">
                     @guest
