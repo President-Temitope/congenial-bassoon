@@ -6,7 +6,7 @@
     <meta content="{{config('app.name')}}" name="author">
     <meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
     <meta content="Bitcoins investment platform" name="description">
-    <link href="{{asset('img/2.png')}}" rel="shortcut icon">
+    <!-- <link href="{{asset('img/2.png')}}" rel="shortcut icon"> -->
     <title>{{config('app.name')}} | {{$pageName}}</title>
     <link rel="stylesheet" href="{{asset('assets/css/dashlite.css?ver=2.7.0')}}">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
