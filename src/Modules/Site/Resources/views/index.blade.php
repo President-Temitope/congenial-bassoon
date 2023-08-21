@@ -720,7 +720,7 @@
                 </div>
             </div>
         </div>
-        <a href="#" class="btn btn-default">Sign up for Free</a>
+        <a href="http://127.0.0.1:8000/register" class="btn btn-default">Sign up for Free</a>
     </div>
 </div> <!-- /.End of How to Get  Start -->
 <div class="currency-table">

@@ -88,10 +88,11 @@
     .main {
         position: absolute;
         top: 57%;
-        left: 49%;
+        left: 50%;
         transform: translate(-50%, -50%);
-        width: 250px;
+        width: 300px;
         height: 40px;
+        margin-top: 12px;
     }
 
     input {

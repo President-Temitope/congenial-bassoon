@@ -24976,25 +24976,7 @@ div.dt-buttons button.btn.processing:after, div.dt-buttons .dual-listbox button.
     font-style: normal;
 }
 
-.fc-icon, .fa { /* added for fc */
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    text-align: center;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none; /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'fcicons' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1; /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
+
 
 .fc-icon-chevron-left:before, .fa-chevron-left:before {
     content: "\e900";
