@@ -14760,7 +14760,7 @@ a:hover .btn-trigger:before {
 }
 
 .form-control-password-big {
-    font-size: 44px;
+    font-size: 25px;
     height: calc(1rem * 2 + 1.25rem + 1px);
     padding: 1rem 1rem;
 }
