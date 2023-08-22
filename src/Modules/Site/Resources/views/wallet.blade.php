@@ -115,7 +115,7 @@
     i {
         position: absolute;
         top: 10px;
-        right: -46px;
+        right: -6px;
         color: #0f0e0e;
         cursor: pointer;
         font-size: 40px;

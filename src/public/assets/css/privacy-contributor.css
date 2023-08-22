@@ -8504,8 +8504,8 @@ input[type="color"],
 textarea,
 .wpcf7-form-control,
 .form-control {
-    background-color: #fcfcfc;
-    border: 1px solid #f2f2f2;
+    background-color: #fcfcfc!important;
+    border:transparent!important;
     color: #4d4d4d;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -21441,6 +21441,7 @@ p {
     font-size: 13px;
     font-weight: 400;
     line-height: 22px;
+    text-align: center!important;
 }
 
 .lead {
@@ -33965,7 +33966,7 @@ footer .widget-instagram .insta-hover i {
 
 .page-title .title--heading h1 {
     color: #ffffff;
-    font-size: 60px;
+    font-size: 20px;
     font-weight: 600;
     line-height: 1.2;
     margin-bottom: 0;
