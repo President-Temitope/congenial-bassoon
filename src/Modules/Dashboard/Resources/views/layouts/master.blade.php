@@ -330,6 +330,18 @@ body {
 }
 </style>
 
+<style>
+    #fading_div {
+        background: transparent;
+        border-radius: 10px;
+        box-shadow: rgb(0 0 0 / 20%) 1px 7px 14px -5px;
+        overflow: hidden;
+        animation: 0.5s ease-out 0s 1 normal forwards running slide-in;
+        /* opacity: 1; */
+        color: #f71515 !important;
+    }
+</style> 
+
 <body class="nk-body npc-invest bg-lighter ">
     <div class="nk-app-root">
         <div class="nk-wrap ">

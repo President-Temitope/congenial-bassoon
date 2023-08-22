@@ -10,7 +10,7 @@
     <meta name="author" content="zytheme">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="description" content="">
-    <link rel="shortcut icon" href="{{asset('img/2.png')}}">
+    <!-- <link rel="shortcut icon" href="{{asset('img/2.png')}}"> -->
     <link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="/assets/css/privacy-contributor.css">

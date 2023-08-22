@@ -37,21 +37,7 @@
         </div> @endif
     </div>
 </div>
-<style>
-    #fading_div {
-        /* display: block;
-            justify-content: start;
-            width: 580px;
-            height: 80px; */
-        background: transparent;
-        border-radius: 10px;
-        box-shadow: rgb(0 0 0 / 20%) 1px 7px 14px -5px;
-        overflow: hidden;
-        animation: 0.5s ease-out 0s 1 normal forwards running slide-in;
-        /* opacity: 1; */
-        color: #f71515 !important;
-    }
-</style> @if(Auth::user()->hasRole('user')) <div class="nk-block">
+@if(Auth::user()->hasRole('user')) <div class="nk-block">
     <div class="nk-news card card-bordered">
         <div id="fading_div" style="display:none;">Contact customer agent for support of withdrawal <span id="fade_out" class="close" style="cursor: pointer;">&#x00D7</span></div>
     </div>
@@ -118,22 +104,14 @@
                     <div>Enter your amount to confirm the order to complete the payment or cancel.</div>
                     <div class="nk-modal-form">
                         <div class="form-group">
-                            <div class="form-info">USD</div> <input type="text" class="form-control form-control-password-big text-cente border-control-form">
+                            <div class="form-info">USD</div> <input type="number" class="form-control form-control-password-big text-cente border-control-form">
                         </div>
+                    </div> <!-- <div class="main main-field"> <input type="text" value="18v4qyBUFXAHo7v4iTHqtDLZjCEoyJB8wt" readonly> <i class="material-icons" onclick="copy()" id="copy">content_copy</i> </div> -->
+                    <div class="main main-field">
+                        <div class="copy-text"><input type="text" class="text" value="18v4qyBUFXAHo7v4iTHqtDLZjCEoyJB8wt" readonly> <button><i class="fa fa-clone"></i></button> </div>
                     </div>
-                    <!-- <div class="main main-field"> <input type="text" value="18v4qyBUFXAHo7v4iTHqtDLZjCEoyJB8wt" readonly> <i class="material-icons" onclick="copy()" id="copy">content_copy</i> </div> -->
-                    <div class="main main-field"><div class="copy-text"><input type="text" class="text" value="18v4qyBUFXAHo7v4iTHqtDLZjCEoyJB8wt" readonly>
-                    <button><i class="fa fa-clone"></i></button>
- 
-            
-            
-        </div>
-    </div>
-                    <div class="QRCODE qr-address"><img src="https://chart.apis.google.com/chart?chs=300x300&cht=qr&chld=|0&chl=http%3A%2F%2F13frahbJrBo6yfhyUaVJoixnhaTjXgDpbn" width="150" height="150"></div>
-                    <div class="proveofpayment Pop-prove">
-                         <input id="input" placeholder="Transaction Hash" class="Pop-prove" type="text" name="name" style="background-color: none;"> 
-                    </div>
-                    <div class="nk-modal-action action-modal"> <a href="#" class="btn btn-lg btn-mw btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#confirm-invest">Confirm Payment</a>
+                    <div class="QRCODE qr-address"><img src="https://chart.apis.google.com/chart?chs=300x300&cht=qr&chld=|0&chl=http%3A%2F%2F13frahbJrBo6yfhyUaVJoixnhaTjXgDpbn" width="150" height="150"></div> <!-- <div class="proveofpayment Pop-prove"> <input id="input" placeholder="Transaction Hash" class="Pop-prove" type="text" name="name" style="background-color: none;"> </div> -->
+                    <div class="nk-modal-action action-modal"> <a href="#" class="btn btn-lg btn-mw btn-primary" ng-click="openModal();" data-dismiss="modal" data-toggle="modal" data-target="#confirm-invest">Confirm Transaction</a>
                         <div class="sub-text sub-text-alt mt-3 mb-4">This transaction will appear on your wallet statement as Invest * SILVER. </div> <a href="#" class="link link-soft" data-dismiss="modal">Cancel and return</a>
                     </div>
                 </div>
@@ -146,24 +124,50 @@
     <div class="modal-dialog modal-dialog-centered modal-md">
         <div class="modal-content"> <a href="#" class="close" data-dismiss="modal"><em class="icon ni ni-cross-sm"></em></a>
             <div class="modal-body modal-body-lg text-center">
-                <div class="nk-modal"> <em class="nk-modal-icon icon icon-circle icon-circle-xxl ni ni-check bg-success"></em>
-                    <h4 class="nk-modal-title successfully-notify">Successfully sent payment!</h4>
+                <div class="nk-modal">
+                    <h4 class="nk-modal-title">Confirm Your Payment</h4>
                     <div class="nk-modal-text">
-                        <p class="sub-text notify-sub-text">You have successfully order the Investment Plan of ‘Silver’ with amount of <strong>$250.00</strong> using your <strong>NioWallet</strong>. </p>
+                        <p>To confirm your payment of <strong>$251.25 (0.0054 BTC)</strong> on this order #93033939 using your <strong>Bitcoin Wallet</strong>. Please enter your transaction Hash code in order complete the payment or cancel.</p>
                     </div>
-                    <div class="nk-modal-action-lg">
-                        <ul class="btn-group flex-wrap justify-center g-4">
-                            <li><a href="/investments" class="btn btn-lg btn-mw btn-primary">More Invest</a> </li>
-                        </ul>
+                    <div class="nk-modal-form">
+                        <div class="form-group"><input type="text" class="form-control text-center" placeholder="Transaction Hash code"></div>
+                    </div>
+                    <div class="nk-modal-action"><a class=" btn-lg btn-mw btn-primary btn-open">Confirm Payment</a>
+                        <div class="sub-text sub-text-alt mt-3 mb-4">This transaction will appear on your wallet statement as Invest * SILVER.</div><a href="#" class="link link-soft" data-bs-dismiss="modal">Cancel and return</a>
                     </div>
                 </div>
-            </div><!-- .modal-body -->
+            </div> <!-- .modal-body -->
             <div class="modal-footer bg-lighter">
                 <div class="text-center w-100"> {{-- <p>Earn upto $25 for each friend your refer! <a href="#">Invite friends</a></p>--}} </div>
             </div>
         </div><!-- .modal-content -->
     </div><!-- .modla-dialog -->
-</div><!-- .modal --> @endif <div class="nk-block">
+</div><!-- .modal -->
+<div class="modal fade" tabindex="-1" id="confirm-hash">
+    <div class="modal-dialog modal-dialog-centered modal-md">
+        <div class="modal-content"><a href="#" class="close" data-bs-dismiss="modal"><em class="icon ni ni-cross-sm"></em></a>
+            <div class="modal-body modal-body-lg text-center">
+                <div class="nk-modal"><em class="nk-modal-icon icon icon-circle icon-circle-xxl ni ni-check bg-success"></em>
+                    <h4 class="nk-modal-title">Successfully sent payment!</h4>
+                    <div class="nk-modal-text">
+                        <p class="sub-text">You have successfully order the Investment Plan of ‘Silver’ with amount of <strong>$250.00</strong> using your <strong>Bitcoin Wallet</strong>.</p>
+                    </div>
+                    <div class="nk-modal-action-lg">
+                        <ul class="btn-group flex-wrap justify-center g-4">
+                            <li><a href="/demo6/invest/invest.html" class="btn btn-lg btn-mw btn-primary">More Invest</a></li>
+                            <li><a href="/demo6/invest/scheme-details.html" class="btn btn-lg btn-mw btn-dim btn-primary"><em class="icon ni ni-reports"></em><span>See the plan</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer bg-lighter">
+                <div class="text-center w-100">
+                    <p>Earn upto $25 for each friend your refer! <a href="#">Invite friends</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> @endif <div class="nk-block">
     <div class="row gy-gs">
         <div class="col-md-6 col-lg-4">
             <div class="nk-wg-card card card-bordered h-100">
@@ -259,7 +263,7 @@
             }
         }
     };
-    alert(test);
+    $(".btn-open").click(function() {
+        $('#confirm-hash').modal('show');
+    });
 </script> @endpush
-
-<!-- ===== Copy paste Qr Code ===== -->
