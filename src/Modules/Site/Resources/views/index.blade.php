@@ -2020,6 +2020,7 @@
 <!-- <script src="./assets/vendors.min.js"></script>	 -->
 <script src="./assets/template.js"></script>
 
+@include('site::inc._messages')
 
 <!-- import -->
 

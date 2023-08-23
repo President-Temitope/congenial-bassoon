@@ -70,7 +70,7 @@
     <div class="container-fluid user-auth">
         <div class="hidden-xs col-sm-4 col-md-4 col-lg-4">
             <!-- Logo Starts -->
-            <a class="logo" href="http://127.0.0.1:8000/#index/">
+            <a class="logo" href="/">
                 <h5 class="brandnav_logo">The <span style="color:#381fff;">OKX </span> Platinum</h5>
             </a>
             <!-- Logo Ends -->
@@ -219,6 +219,7 @@
 
 </div>
 <!-- Wrapper Ends -->
+@include('site::inc._messages')
 </body>
 <script>
     const phoneInputField = document.querySelector("#phone");

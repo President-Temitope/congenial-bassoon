@@ -10,6 +10,7 @@ use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Validator;
+use Modules\Core\Events\InitiateAccountActivation;
 use Modules\Core\Interfaces\AuthRepositoryInterface;
 
 class SiteController extends Controller
@@ -30,7 +31,7 @@ class SiteController extends Controller
         return view('site::index');
     }
 
-    public function postRegister(Request $request)
+    public function postRegister(Request $request): Application|\Illuminate\Http\Response|\Illuminate\Contracts\Foundation\Application|RedirectResponse|\Illuminate\Contracts\Routing\ResponseFactory
     {
         $validator = Validator::make($request->all(), [
             'firstname' => ['required', 'string', 'min:3', 'max:30'],
@@ -41,7 +42,7 @@ class SiteController extends Controller
         ]);
 
         if ($validator->fails()) {
-            return response(['errors' => $validator->errors()->all()]);
+            return back()->with(['errors' => $validator->errors()->all()]);
         }
         DB::beginTransaction();
         try {
@@ -55,10 +56,9 @@ class SiteController extends Controller
             $user = $this->auth->register($user_data);
             $this->auth->assignRole($user, 'user');
             DB::commit();
-            //  $activation_code = $this->auth->createActivation($user);
-//            event(new InitiateAccountActivation($user_data['email'], $activation_code));
+            $activation_code = $this->auth->createActivation($user);
+            event(new InitiateAccountActivation($user_data['email'], $activation_code));
             return redirect()->route('success')->with('success', 'Registration Successful');
-            // return redirect()->route('success')->with('success', 'Registration Successful');
         } catch (Exception $e) {
             DB::rollBack();
             return \redirect()->back()->with('errors', $e);
