@@ -1845,8 +1845,8 @@
                                 src="./assets/images/front-end-img/logo-bitcoin.png" class="max-w-50" alt=""></a>
                         <!-- <a href="#" class="btn btn-dark btn-outline"><img src="../images/front-end-img/logo-ethereum.png" class="max-w-50" alt=""></a> -->
                     </div>
-                    <h4 class="text-white mb-20">Company wallet Address</h4>
-                    <p class="text-white-50 fs-18 mb-20">18v4qyBUFXAHo7v4iTHqtDLZjCEoyJB8wt6</p>
+                    <h4 class="text-white mb-20">Token Address</h4>
+                    <p class="text-white-50 fs-18 mb-20"></p>
                     <p class="text-white-50 fs-18">The following address is store token contract. It is NOT a deposit
                         address. Do NOT send tokens to it. To deposit, use the register button to make deposite
                         below. </p>
