@@ -3910,6 +3910,8 @@ table.dataTable thead .sorting_asc::after {
 }
 .about-info {
     margin: 0px 30px 30px 0;
+    position: relative;
+    bottom: 10px;
 }
 .about-info h2 {
     font-weight: 700;
