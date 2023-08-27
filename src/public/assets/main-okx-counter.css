@@ -29462,7 +29462,7 @@ time {
   height: 100vh; }
 
 .particles-js-canvas-el {
-  position: absolute;
+  /* position: absolute; */
   z-index: -9; }
 
 @media (max-width: 991px) {

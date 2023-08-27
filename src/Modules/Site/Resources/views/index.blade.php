@@ -1994,6 +1994,7 @@
 <script src="assets/js/app.js"></script>
 <script src="assets/js/custom.js"></script> <!-- custom cookie -->
 <script src="assets/js/template.js"></script>
+<script src="assets/js/vendors.min.js"></script>
 </body> <!-- contributor js  -->
 <script src="assets/js/Contribute.js"></script>
 <script src="plugins/revolution/revolution/js/wow.min.js"></script>
