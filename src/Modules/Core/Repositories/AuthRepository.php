@@ -6,6 +6,8 @@ use Carbon\Carbon;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
+use Mockery\Exception;
+use Modules\Core\Entities\Activators;
 use Modules\Core\Interfaces\AuthRepositoryInterface;
 use Modules\Users\Interfaces\UsersRepositoryInterface;
 
@@ -28,9 +30,11 @@ class AuthRepository implements AuthRepositoryInterface
         $this->activator = $activated;
         $this->password_reset = $password_reset;
     }*/
-    public function __construct(UsersRepositoryInterface $userRepository)
+    public function __construct(UsersRepositoryInterface $userRepository, Activators $activator)
     {
         $this->userRepo = $userRepository;
+        $this->activator = $activator;
+
 
     }
 
@@ -104,14 +108,13 @@ class AuthRepository implements AuthRepositoryInterface
         return Auth::check();
     }
 
-    public function removeExpired(): bool
+    public function removeExpired()
     {
-        return $expires = $this->expires();
 
-//        return $this->activator
-//            ->where('completed', false)
-//            ->where('created_at', '<', $expires)
-//            ->delete();
+        return $this->activator
+            ->where('completed', false)
+            ->where('created_at', '<', $this->expires)
+            ->delete();
     }
 
     //Remove expired generated codes
@@ -119,10 +122,10 @@ class AuthRepository implements AuthRepositoryInterface
     public function createActivation($user): string
     {
         $code = $this->generateCode();
-//        $this->activator::create([
-//            'user_id' => $user->id,
-//            'code' => $code
-//        ]);
+        $this->activator::create([
+            'user_id' => $user->id,
+            'code' => $code
+        ]);
         return $code;
     }
 
@@ -177,11 +180,11 @@ class AuthRepository implements AuthRepositoryInterface
     {
         $completed = $user->email_verified_at;
 
-        //if ($completed == null) {
+        if ($completed == null) {
 
-        // throw new NotActivatedException('Your account has not been activated yet.');
-        // }
-        //  event(new HadRegistered($user));
+            throw new Exception('Your account has not been activated yet.');
+        }
+//          event(new HadRegistered($user));
 
         return true;
     }

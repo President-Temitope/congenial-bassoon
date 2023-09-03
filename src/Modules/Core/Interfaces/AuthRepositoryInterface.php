@@ -38,7 +38,7 @@ interface AuthRepositoryInterface
      */
     public function check();
 
-    public function removeExpired(): bool;
+    public function removeExpired();
 
     public function createActivation($user): string;
 
