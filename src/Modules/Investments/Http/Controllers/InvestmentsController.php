@@ -132,7 +132,7 @@ class InvestmentsController extends Controller
     {
         $user_id = Auth::id();
         //User plans based on status
-        $myActivePlans = DB::table('payments')->where('user_id', $user_id)->where('status', 'Approved')->where('approved_at', '>', Carbon::now())->get('investment_id');
+        $myActivePlans = DB::table('payments')->where('user_id', $user_id)->where('status', 'Approved')->get('investment_id');
         $myEndedPlans = DB::table('payments')->where('user_id', $user_id)->where('status', 'Approved')->where('approved_at', '<', Carbon::now())->get('investment_id');
         $myInactivePlans = DB::table('payments')->where('user_id', $user_id)->where('status', 'Pending')->get('investment_id');
         // This get the count of each plan status
@@ -143,7 +143,7 @@ class InvestmentsController extends Controller
         $activePlans = [];
         $InactivePlans = [];
         $endedPlans = [];
-        foreach ($myActivePlans as $activePlan) {
+        /*foreach ($myActivePlans as $activePlan) {
             $activePlans[] = $this->investment->show($activePlan);
         }
         foreach ($myInactivePlans as $InactivePlan) {
@@ -156,8 +156,8 @@ class InvestmentsController extends Controller
             $activePlans,
             $endedPlans,
             $InactivePlans
-        ];
-        dd($userPlans);
+        ];*/
+        // dd($myActivePlans);
         // Passing it to view
         return view('investments::myPlans')->with('activePlansCount', $activePlansCount)->with('inactivePlansCount', $inactivePlansCount)->with('endedPlansCount', $endedPlansCount);
     }
