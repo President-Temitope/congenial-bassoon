@@ -235,5 +235,7 @@
 
 </div>
 <!-- Wrapper Ends -->
+@include('site::inc._messages')
+
 </body>
 </html>
