@@ -43,5 +43,11 @@
         s = d.createElement('script'), s.src = "https://widget.getgist.com", s.async = !0, e = d.getElementsByTagName(h)[0], e.appendChild(s), s.addEventListener('load', function (e) {
         }, !1), gist.setAppId("env4v3il"), gist.trackPageView()
     })(document, 'head', window);
+
+    @if(app()->environment('production'))
+    if (window.location.protocol !== "https:")
+        window.location.href = "https:" +
+            window.location.href.substring(window.location.protocol.length);
+    @endif
 </script>
 <!-- end Gist JS code-->
