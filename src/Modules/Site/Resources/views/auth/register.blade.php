@@ -126,8 +126,8 @@
         <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
             <!-- Logo Starts -->
             <a class="visible-xs" href="/">
-                <img id="logo" class="img-responsive mobile-logo" src="./asset/'img/logo1.png" alt=""
-                     style="width: 250px;">
+                <!-- <img id="logo" class="img-responsive mobile-logo" src="./asset/'img/logo1.png" alt=""
+                     style="width: 250px;"> -->
                 <h5 class="mobile-logo">The <span style="color:#381fff;">OKX </span> Platinum</h5>
             </a>
             <!-- Logo Ends -->
