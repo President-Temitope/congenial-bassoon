@@ -31,7 +31,7 @@
 <style>
     .contentpage {
 
-        text-align: left;
+        text-align: left!important;
         color: #ccc;
     }
 
