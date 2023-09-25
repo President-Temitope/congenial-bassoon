@@ -182,8 +182,8 @@
                                    type="tel">
                         </div> -->
 
-                        <div class=" form-group input-box">
-                            <input class="form-control input-field" name="phone_number" id="phone name" placeholder="" type="tel" required>
+                        <div class=" form-group">
+                            <input class="form-control" name="phone_number" id="phone" placeholder="" type="tel" required>
                             <label for="email">TELEPHONE</label>
                         </div>
 
