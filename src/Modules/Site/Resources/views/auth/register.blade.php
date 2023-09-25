@@ -18,6 +18,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
     <!-- ------- custom from register folder css -------- -->
     <link href="/asset/css/style.css" rel="stylesheet">
+   <!------- login animate boot plugin  -->
+   <link href="/asset/css/bootstrap-animate.min.css" rel="stylesheet">
+    <!-- ----- End animate plugin ------ -->
     <!-- Template JS Files -->
     <script src="./asset/js/modernizr.js"></script>
 
@@ -143,37 +146,59 @@
                     <form method="post" action="{{route('postRegister')}}">
                         @csrf
                         <!-- Input Field Starts -->
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                             <input class="form-control" name="firstname" id="name" placeholder="FIRSTNAME" type="text"
                                    required>
+                        </div> -->
+
+                        <div class=" input-box">
+                            <input class="form-control input-field" name="firstname" id="name" placeholder="" type="text" required>
+                            <label for="email">FIRSTNAME</label>
                         </div>
 
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                             <input class="form-control" name="lastname" id="name" placeholder="LASTNAME" type="text"
                                    required>
+                        </div> -->
+
+                        <div class=" input-box">
+                            <input class="form-control input-field" name="lastname" id="name" placeholder="" type="text" required>
+                            <label for="email">LASTNAME</label>
                         </div>
                         <!-- Input Field Ends -->
                         <!-- Input Field Starts -->
-                        <div class="form-group">
+                        <!-- <div class="form-group">
                             <input class="form-control" name="email" id="email" placeholder="EMAIL" type="email"
                                    required>
+                        </div> -->
+
+                        <div class=" input-box">
+                            <input class="form-control input-field" name="email" id="name" placeholder="" type="email" required>
+                            <label for="email">EMAIL</label>
                         </div>
                         <!-- Input Field Ends -->
-                        <div class="form-group">
-                            <input class="form-control" name="phone_number" placeholder="PHONE NUMBER" id="phone"
+                        <!-- <div class="input-box">
+                            <input class="input-field" name="phone_number" placeholder="PHONE NUMBER" id="phone"
                                    type="tel">
+                        </div> -->
+
+                        <div class=" form-group input-box">
+                            <input class="form-control input-field" name="phone_number" id="phone name" placeholder="" type="tel" required>
+                            <label for="email">TELEPHONE</label>
                         </div>
 
                         <!-- Input Field Starts -->
-                        <div class="form-group">
-                            <input class="form-control" name="password" id="password" placeholder="PASSWORD"
+                        <div class="form-group input-box">
+                            <input class="form-control input-field" name="password" id="password" placeholder=""
                                    type="password" required>
+                                   <label for="email">PASSWORD</label>
                         </div>
                         <!-- Input Field Ends -->
                         <!-- Input Field Starts -->
-                        <div class="form-group">
-                            <input class="form-control" name="password_confirmation" id="password"
-                                   placeholder="CONFIRM PASSWORD" type="password" required>
+                        <div class="form-group input-box">
+                            <input class="form-control input-field" name="password_confirmation" id="password"
+                                placeholder="" type="password" required>
+                                <label for="email">CONFRIM PASSWORD</label>
                         </div>
                         <!-- Input Field Ends -->
                         <!-- Input Field Starts -->

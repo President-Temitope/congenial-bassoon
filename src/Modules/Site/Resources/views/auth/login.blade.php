@@ -20,10 +20,11 @@
     <link rel="stylesheet" type="text/css" href="./asset/css/styleswitcher.css"/>
     <!-- ------- custom from register folder css -------- -->
     <link href="/asset/css/style.css" rel="stylesheet">
-    <!-- Template JS Files -->
-    <script src="./asset/js/modernizr.js"></script>
 
 </head>
+<style>
+    
+</style>
 <body class="auth-page">
 <!-- SVG Preloader Starts -->
 <div id="preloader">
@@ -109,6 +110,7 @@
         color: #000;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: 600;
+        margin-bottom: 33px;
     }
 
 
@@ -191,19 +193,31 @@
                         <p class="info-form">Send, receive and securely store your coins in your wallet</p>
                     </div>
                     <!-- Section Title Ends -->
+                <div class="input-box-wrapper">
                     <!-- Form Starts -->
                     <form method="POST" action="{{route('login')}}">
                         @csrf
-                        <div class="form-group">
-                            <input class="form-control" name="email" id="email" placeholder="EMAIL" type="email"
-                                   required>
+                        <div class=" input-box">
+                            <input class="form-control input-field" name="email" id="email" placeholder="" type="email" required>
+                            <label for="email">Email or phone</label>
                         </div>
                         <!-- Input Field Ends -->
                         <!-- Input Field Starts -->
-                        <div class="form-group">
-                            <input class="form-control" name="password" id="password" placeholder="PASSWORD"
-                                   type="password" required>
+                        <div class=" input-box">
+                            <input class="form-control input-field" name="password" id="password" placeholder="" type="password" required>
+                            <label for="password">Password</label>
                         </div>
+                            <!-- Forget section on recovery  -->
+                                <div class="forgot">
+                                    <section>
+                                        <input type="checkbox" id="check">
+                                        <label for="check">Remember me</label>
+                                    </section>
+                                    <section>
+                                        <a href="#" class="forgot-link">Forgot password?</a>
+                                    </section>
+                                </div>
+                                <!-- Forget section End  -->
                         <!-- Input Field Ends -->
                         <!-- Submit Form Button Starts -->
                         <div class="form-group">
@@ -213,6 +227,7 @@
                         </div>
                         <!-- Submit Form Button Ends -->
                     </form>
+                </div>
                     <!-- Form Ends -->
                 </div>
             </div>

@@ -1982,7 +1982,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="copyright"><span>Copyright © 2021. All rights reserved</span></div>
+                <div class="copyright"><span>Copyright © 2023. All rights reserved</span></div>
             </div>
         </div>
     </div> <!-- /.End of sub footer -->
