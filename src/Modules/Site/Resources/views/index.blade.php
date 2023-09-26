@@ -74,7 +74,7 @@
         }
 
     .price-box {
-        width: 98%!important;
+        /* width: 98%!important; */
         /* border: 1px solid blue; */
         padding: 5px;
         background-color: transparent;
@@ -120,6 +120,8 @@
     /* flex-wrap: wrap; */
     display: flex;
   }
+
+  
   .price-box {
     background-color: transparent;
     width: 100%;
