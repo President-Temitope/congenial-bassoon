@@ -124,7 +124,7 @@
     }
     .dropdown__content {
       grid-template-columns: repeat(4, max-content);
-      column-gap: 6rem;
+      column-gap: 3rem;
       max-width: 1120px;
       margin-inline: auto;
       text-align: center!important;
