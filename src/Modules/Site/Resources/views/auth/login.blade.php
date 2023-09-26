@@ -110,7 +110,7 @@
         color: #000;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-weight: 600;
-        margin-bottom: 33px;
+        padding-bottom: 33px;
     }
 
 
@@ -199,7 +199,7 @@
                         @csrf
                         <div class=" input-box">
                             <input class="form-control input-field" name="email" id="email" placeholder="" type="email" required>
-                            <label for="email">Email or phone</label>
+                            <label for="email">Email</label>
                         </div>
                         <!-- Input Field Ends -->
                         <!-- Input Field Starts -->

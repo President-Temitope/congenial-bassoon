@@ -54,20 +54,37 @@
 </head>
 <style>
     /* ========= FLEX NAV PRICE NAV HORIZONTAL ========= */
-    .flex-container {
-        display: flex;
-        flex-wrap: nowrap;
+
+
+        /* ======= FLEX ===== */
+        .flex-container {
+            /* display: -webkit-box;
+            display: -ms-flexbox; */
+            display: flex;
+            /* -ms-flex-pack: distribute; */
+            justify-content: space-around;
+            /* -ms-flex-wrap: wrap;
+            flex-wrap: wrap; */
+        }
+
+    .box {
+        width: 98%;
+        border: 1px solid blue;
+        padding: 5px;
         background-color: transparent;
+        margin-top: 5px;
     }
 
-    .flex-container .item {
+    
+
+    /* .flex-container .item {
         background-color: transparent;
         width: 100px;
         margin: 10px;
         text-align: center;
         line-height: none;
         font-size: 30px;
-    }
+    } */
 
     .emailcontact {
         color: #000;
@@ -77,7 +94,46 @@
         cursor: pointer;
     }
 
-    /* =============== FLEX NAV END ==================  */
+
+
+    /* =============== */
+    
+
+
+@media only screen and (min-width: 576px) {
+  .box {
+    background-color: transparent;
+    width: 100%;
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .flex-container {
+    -ms-flex-wrap: wrap;
+    /* flex-wrap: wrap; */
+    display: flex;
+  }
+  .box {
+    background-color: transparent;
+    width: 45%;
+    margin-top: 5px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .box {
+    background-color: green;
+    width: 23%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .box {
+    background-color: transparent!important;
+  }
+}
+
 </style>
 <body>
 <div id="loader-wrapper">
@@ -247,11 +303,10 @@
                 </li>
                 <!--=============== DROPDOWN 2 ===============-->
                 <li class="dropdown__item">
-                    <div class="nav__link dropdown__button"> Pricing <i
-                            class="ri-arrow-down-s-line dropdown__arrow"></i></div>
+                    <div class="nav__link dropdown__button"> Pricing <i class="ri-arrow-down-s-line dropdown__arrow"></i></div>
                     <div class="dropdown__container">
                         <div class="dropdown__content flex-container">
-                            <div class="dropdown__group item">
+                            <div class="dropdown__group item box">
                                 <div class="dropdown__icon"><img src="images/icon20.svg" alt="Icon" width="50"
                                                                  height="50"></div>
                                 <span class="dropdown__title">Starters Plan</span>
@@ -261,7 +316,7 @@
                                     <li><a href="#" class="dropdown__link">ROI: 187%</a></li>
                                 </ul>
                             </div>
-                            <div class="dropdown__group item">
+                            <div class="dropdown__group item box">
                                 <div class="dropdown__icon"><img src="images/icon21.svg" alt="Icon" width="50"
                                                                  height="50"></div>
                                 <span class="dropdown__title">Silver Plan</span>
@@ -271,7 +326,7 @@
                                     <li><a href="#" class="dropdown__link">ROI: 216%</a></li>
                                 </ul>
                             </div>
-                            <div class="dropdown__group item">
+                            <div class="dropdown__group item box">
                                 <div class="dropdown__icon"><img src="images/coin26.svg" alt="Icon" width="50"
                                                                  height="50"></div>
                                 <span class="dropdown__title">Gold Plan</span>
@@ -281,7 +336,7 @@
                                     <li><a href="#" class="dropdown__link">ROI: 245%</a></li>
                                 </ul>
                             </div>
-                            <div class="dropdown__group item">
+                            <div class="dropdown__group item box">
                                 <div class="dropdown__icon"><img src="images/icon22.svg" alt="Icon" width="50"
                                                                  height="50"></div>
                                 <span class="dropdown__title">Platinum olan</span>
@@ -291,7 +346,7 @@
                                     <li><a href="#" class="dropdown__link">ROI: 301%</a></li>
                                 </ul>
                             </div>
-                            <div class="dropdown__group item">
+                            <div class="dropdown__group item box">
                                 <div class="dropdown__icon"><img src="images/icoin23.svg" alt="Icon" width="50"
                                                                  height="50"></div>
                                 <span class="dropdown__title">NFT plan</span>
@@ -301,7 +356,7 @@
                                     <li><a href="#" class="dropdown__link">ROI: 301%</a></li>
                                 </ul>
                             </div>
-                            <div class="dropdown__group item">
+                            <div class="dropdown__group item box">
                                 <div class="dropdown__icon"><img src="images/icon09.svg" alt="Icon" width="50"
                                                                  height="50"></div>
                                 <span class="dropdown__title">NPF Plan</span>
@@ -311,7 +366,7 @@
                                     <li><a href="#" class="dropdown__link">ROI: 301%</a></li>
                                 </ul>
                             </div>
-                            <div class="dropdown__group item">
+                            <div class="dropdown__group item box">
                                 <div class="dropdown__icon"><img src="images/icon010.svg" alt="Icon" width="50"
                                                                  height="50"></div>
                                 <span class="dropdown__title">Quantum Plan</span>
@@ -321,15 +376,14 @@
                                     <li><a href="#" class="dropdown__link">ROI: 301%</a></li>
                                 </ul>
                             </div>
-                            <div class="dropdown__group item">
+                            <div class="dropdown__group item box">
                                 <div class="dropdown__icon">
                                     <div class="next"><a href="{{route('register')}}"><img
                                                 src="images/Circle_arrow.svg" alt="Icon" width="50" height="50"
                                                 class="circlepoint"></a></div>
                                 </div>
                                 <span class="dropdown__title">see more</span>
-                                <!-- <ul class="dropdown__list">
-                    </ul> -->
+                                <!-- <ul class="dropdown__list"></ul> -->
                             </div>
                         </div>
                     </div>
