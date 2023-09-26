@@ -65,6 +65,12 @@
             justify-content: space-around;
             -ms-flex-wrap: wrap;
             flex-wrap: wrap;
+            background-color: transparent;
+            width: 100px;
+            margin: 25px;
+            text-align: center;
+            line-height: none;
+            font-size: 30px;
         }
 
     .price-box {
