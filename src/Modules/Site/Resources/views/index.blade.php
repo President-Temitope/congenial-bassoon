@@ -61,10 +61,10 @@
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            /* -ms-flex-pack: distribute; */
+            -ms-flex-pack: distribute;
             justify-content: space-around;
-            /* -ms-flex-wrap: wrap;
-            flex-wrap: wrap; */
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
         }
 
     .price-box {
