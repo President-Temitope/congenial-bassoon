@@ -121,6 +121,11 @@
     display: flex;
   }
 
+  .flex-container .price-box {
+
+    text-align: center!important;
+  }
+
   
   .price-box {
     background-color: transparent;
@@ -347,7 +352,7 @@
                             <div class="dropdown__group price-box">
                                 <div class="dropdown__icon"><img src="images/icon22.svg" alt="Icon" width="50"
                                                                  height="50"></div>
-                                <span class="dropdown__title">Platinum olan</span>
+                                <span class="dropdown__title">Platinum plan</span>
                                 <ul class="dropdown__list">
                                     <li><a href="#" class="dropdown__link">$150,000</a></li>
                                     <li><a href="#" class="dropdown__link">$1,000,000</a></li>
