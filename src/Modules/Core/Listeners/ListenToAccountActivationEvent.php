@@ -29,11 +29,16 @@ class ListenToAccountActivationEvent
             'email' => $event->email,
             'code' => $event->code,
         ];
-        $email = $event->email;
-        Mail::send('core::emails.verify-email', $data, function ($message) use ($email) {
-            $message->to($email);
-            $message->subject('Email Verification');
-        });
+        $email = $data['email'];
+        try {
+            Mail::send('core::emails.verify-email', $data, function ($message) use ($email) {
+                $message->to($email);
+                $message->subject('Email Verification');
+            });
+        } catch (\Exception $exception) {
+            dd($exception);
+        }
+
 
     }
 }

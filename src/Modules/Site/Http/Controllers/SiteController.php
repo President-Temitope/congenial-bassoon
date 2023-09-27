@@ -10,7 +10,6 @@ use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Validator;
-use Modules\Core\Events\InitiateAccountActivation;
 use Modules\Core\Interfaces\AuthRepositoryInterface;
 
 class SiteController extends Controller
@@ -55,9 +54,8 @@ class SiteController extends Controller
             ];
             $user = $this->auth->register($user_data);
             $this->auth->assignRole($user, 'user');
+            $this->auth->createActivation($user);
             DB::commit();
-            $activation_code = $this->auth->createActivation($user);
-            event(new InitiateAccountActivation($user_data['email'], $activation_code));
             return redirect()->route('success')->with('success', 'Registration Successful');
         } catch (Exception $e) {
             DB::rollBack();

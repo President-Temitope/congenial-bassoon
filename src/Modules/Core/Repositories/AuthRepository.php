@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
 use Mockery\Exception;
 use Modules\Core\Entities\Activators;
+use Modules\Core\Events\InitiateAccountActivation;
 use Modules\Core\Interfaces\AuthRepositoryInterface;
 use Modules\Users\Interfaces\UsersRepositoryInterface;
 
@@ -119,14 +120,16 @@ class AuthRepository implements AuthRepositoryInterface
 
     //Remove expired generated codes
 
-    public function createActivation($user): string
+    public function createActivation($user): void
     {
         $code = $this->generateCode();
+        $email = $user->email;
         $this->activator::create([
             'user_id' => $user->id,
             'code' => $code
         ]);
-        return $code;
+        event(new InitiateAccountActivation($email, $code));
+
     }
 
 

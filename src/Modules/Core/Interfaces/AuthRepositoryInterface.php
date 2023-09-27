@@ -40,7 +40,7 @@ interface AuthRepositoryInterface
 
     public function removeExpired();
 
-    public function createActivation($user): string;
+    public function createActivation($user): void;
 
     public function generateCode(): string;
 
