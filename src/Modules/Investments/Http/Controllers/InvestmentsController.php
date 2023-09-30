@@ -159,7 +159,7 @@ class InvestmentsController extends Controller
         ];*/
         // dd($myActivePlans);
         // Passing it to view
-        return view('investments::myPlans')->with('activePlansCount', $activePlansCount)->with('inactivePlansCount', $inactivePlansCount)->with('endedPlansCount', $endedPlansCount);
+        return view('investments::myPlans')->with('myEndedPlans', $myEndedPlans)->with('myInactivePlans', $myInactivePlans)->with('myActivePlans', $myActivePlans)->with('activePlansCount', $activePlansCount)->with('inactivePlansCount', $inactivePlansCount)->with('endedPlansCount', $endedPlansCount);
     }
 
     public function viewPlan($id)

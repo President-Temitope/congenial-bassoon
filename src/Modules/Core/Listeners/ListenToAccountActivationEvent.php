@@ -2,6 +2,7 @@
 
 namespace Modules\Core\Listeners;
 
+use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Mail;
 use Modules\Core\Events\InitiateAccountActivation;
 
@@ -36,7 +37,7 @@ class ListenToAccountActivationEvent
                 $message->subject('Email Verification');
             });
         } catch (\Exception $exception) {
-            dd($exception);
+            Log::info($exception);
         }
 
 

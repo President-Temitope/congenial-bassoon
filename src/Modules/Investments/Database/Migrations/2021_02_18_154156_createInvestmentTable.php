@@ -1,8 +1,8 @@
 <?php
 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
 
 class CreateInvestmentTable extends Migration
 {
@@ -20,9 +20,9 @@ class CreateInvestmentTable extends Migration
             $table->string('desc');
             $table->float('daily_interest');
             $table->integer('term_days');
-            $table->float('min_amount');
-            $table->float('max_amount');
-            $table->float('total_return');
+            $table->string('min_amount');
+            $table->string('max_amount');
+            $table->string('total_return');
             $table->enum('status', ['Yes', 'No'])->default('Yes');
             $table->timestamps();
         });

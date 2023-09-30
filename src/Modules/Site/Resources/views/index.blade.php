@@ -56,22 +56,22 @@
     /* ========= FLEX NAV PRICE NAV HORIZONTAL ========= */
 
 
-        /* ======= FLEX ===== */
-        .flex-container .price-box {
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -ms-flex-pack: distribute;
-            justify-content: space-around;
-            -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-            background-color: transparent;
-            width: 100px;
-            margin: 25px;
-            text-align: center;
-            line-height: none;
-            font-size: 30px;
-        }
+    /* ======= FLEX ===== */
+    .flex-container .price-box {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        background-color: transparent;
+        width: 100px;
+        margin: 25px;
+        text-align: center;
+        line-height: none;
+        font-size: 30px;
+    }
 
     .price-box {
         /* width: 98%!important; */
@@ -81,7 +81,6 @@
         margin-top: 5px;
     }
 
-    
 
     /* .flex-container .item {
         background-color: transparent;
@@ -101,51 +100,49 @@
     }
 
 
-
     /* =============== */
-    
 
 
-@media only screen and (min-width: 576px) {
-  .price-box {
-    background-color: transparent;
-    width: 100%;
-    margin-top: 5px;
-  }
-}
+    @media only screen and (min-width: 576px) {
+        .price-box {
+            background-color: transparent;
+            width: 100%;
+            margin-top: 5px;
+        }
+    }
 
-@media only screen and (min-width: 768px) {
-  .flex-container {
-    -ms-flex-wrap: wrap;
-    /* flex-wrap: wrap; */
-    display: flex;
-  }
+    @media only screen and (min-width: 768px) {
+        .flex-container {
+            -ms-flex-wrap: wrap;
+            /* flex-wrap: wrap; */
+            display: flex;
+        }
 
-  .flex-container .price-box {
+        .flex-container .price-box {
 
-    text-align: center!important;
-  }
+            text-align: center !important;
+        }
 
-  
-  .price-box {
-    background-color: transparent;
-    width: 100%;
-    margin-top: 5px;
-  }
-}
 
-@media only screen and (min-width: 992px) {
-  .price-box {
-    background-color: green;
-    width: 23%;
-  }
-}
+        .price-box {
+            background-color: transparent;
+            width: 100%;
+            margin-top: 5px;
+        }
+    }
 
-@media only screen and (min-width: 1200px) {
-  .price-box {
-    background-color: transparent!important;
-  }
-}
+    @media only screen and (min-width: 992px) {
+        .price-box {
+            background-color: green;
+            width: 23%;
+        }
+    }
+
+    @media only screen and (min-width: 1200px) {
+        .price-box {
+            background-color: transparent !important;
+        }
+    }
 
 </style>
 <body>
@@ -158,7 +155,7 @@
 <header class="header">
     <nav class="nav container navbar-fixed bootsnav on no-full" id="primary_nav_wrap">
         <div class="nav__data">
-            <a class="nav__logo" href="http://127.0.0.1:8000/#index">
+            <a class="nav__logo" href="/">
                 <h5 class="brandnav_logo">The <span style="color:#381fff;">OKX </span> Platinum</h5>
             </a>
             <div class="nav__toggle" id="nav-toggle"><i class="ri-menu-line nav__toggle-menu"></i> <i
@@ -316,7 +313,8 @@
                 </li>
                 <!--=============== DROPDOWN 2 ===============-->
                 <li class="dropdown__item">
-                    <div class="nav__link dropdown__button"> Pricing <i class="ri-arrow-down-s-line dropdown__arrow"></i></div>
+                    <div class="nav__link dropdown__button"> Pricing <i
+                            class="ri-arrow-down-s-line dropdown__arrow"></i></div>
                     <div class="dropdown__container">
                         <div class="dropdown__content flex-container">
                             <div class="dropdown__group price-box">

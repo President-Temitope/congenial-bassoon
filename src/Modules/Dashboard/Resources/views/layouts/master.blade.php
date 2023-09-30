@@ -395,7 +395,7 @@
                             <li class="nk-menu-item {{$pageName == 'Dashboard' ? 'active' : ''}}"><a
                                     class="nk-menu-link" href="/dashboard"><span
                                         class="nk-menu-text">Overview</span></a></li> @if(Auth::user()->hasRole('user'))
-                                <li class="nk-menu-item {{$pageName == 'Plans' ? 'active' : ''}}"><a
+                                <li class="nk-menu-item {{$pageName == 'activePlans' ? 'active' : ''}}"><a
                                         class="nk-menu-link" href="/investments/myPlans"><span class="nk-menu-text">My Plan</span></a>
                                 </li>
                                 <li class="nk-menu-item {{$pageName == 'Investments' ? 'active' : ''}}"><a

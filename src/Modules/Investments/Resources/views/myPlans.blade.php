@@ -33,7 +33,7 @@
                                     <div class="nk-iv-wg3-group  flex-lg-nowrap gx-4">
                                         <div class="nk-iv-wg3-sub">
                                             <div class="nk-iv-wg3-amount">
-                                                <div class="number">18,752.84 <small
+                                                <div class="number">{{makeMoneyHumanReadable('0')}} <small
                                                         class="currency currency-usd">USD</small></div>
                                             </div>
                                             <div class="nk-iv-wg3-subtitle">Available Balance</div>
@@ -61,14 +61,14 @@
                                         <div class="nk-iv-wg3-sub-group gx-4">
                                             <div class="nk-iv-wg3-sub">
                                                 <div class="nk-iv-wg3-amount">
-                                                    <div class="number">5,394.62</div>
+                                                    <div class="number">{{makeMoneyHumanReadable('0')}}</div>
                                                 </div>
                                                 <div class="nk-iv-wg3-subtitle">Total Profit</div>
                                             </div>
                                             <div class="nk-iv-wg3-sub">
                                                 <span class="nk-iv-wg3-plus text-soft"><em class="icon ni ni-plus"></em></span>
                                                 <div class="nk-iv-wg3-amount">
-                                                    <div class="number-sm">1,50.05</div>
+                                                    <div class="number-sm">{{makeMoneyHumanReadable('0')}}</div>
                                                 </div>
                                                 <div class="nk-iv-wg3-subtitle">Today Profit</div>
                                             </div>
@@ -97,7 +97,8 @@
                         </div>
                         <div class="nk-iv-scheme-info">
                             <div class="nk-iv-scheme-name">Silver - Daily 4.76% for 21 Days</div>
-                            <div class="nk-iv-scheme-desc">Invested Amount - <span class="amount">$250</span></div>
+                            <div class="nk-iv-scheme-desc">Invested Amount - <span
+                                    class="amount">${{makeMoneyHumanReadable('0')}}</span></div>
                         </div>
                         <div class="nk-iv-scheme-term">
                             <div class="nk-iv-scheme-start nk-iv-scheme-order">
@@ -112,17 +113,17 @@
                         <div class="nk-iv-scheme-amount">
                             <div class="nk-iv-scheme-amount-a nk-iv-scheme-order">
                                 <span class="nk-iv-scheme-label text-soft">Total Return</span>
-                                <span class="nk-iv-scheme-value amount">$ 499.99</span>
+                                <span class="nk-iv-scheme-value amount">$ {{makeMoneyHumanReadable('0')}}</span>
                             </div>
                             <div class="nk-iv-scheme-amount-b nk-iv-scheme-order">
                                 <span class="nk-iv-scheme-label text-soft">Net Profit Earn</span>
-                                <span class="nk-iv-scheme-value amount">$ 97.95 <span
-                                        class="amount-ex">~ $152.04</span></span>
+                                <span class="nk-iv-scheme-value amount">$ {{makeMoneyHumanReadable('0')}} <span
+                                        class="amount-ex">~ ${{makeMoneyHumanReadable('0')}}</span></span>
                             </div>
                         </div>
                         <div class="nk-iv-scheme-more">
                             <a class="btn btn-icon btn-lg btn-round btn-trans"
-                               href="html/invest/scheme-details.html"><em
+                               href=""><em
                                     class="icon ni ni-forward-ios"></em></a>
                         </div>
                         <div class="nk-iv-scheme-progress">
@@ -147,7 +148,8 @@
                     </div>
                     <div class="nk-iv-scheme-info">
                         <div class="nk-iv-scheme-name">Silver - Daily 4.76% for 21 Days</div>
-                        <div class="nk-iv-scheme-desc">Invested Amount - <span class="amount">$250</span></div>
+                        <div class="nk-iv-scheme-desc">Invested Amount - <span
+                                class="amount">${{makeMoneyHumanReadable('0')}}</span></div>
                     </div>
                     <div class="nk-iv-scheme-term">
                         <div class="nk-iv-scheme-start nk-iv-scheme-order">
@@ -162,11 +164,11 @@
                     <div class="nk-iv-scheme-amount">
                         <div class="nk-iv-scheme-amount-a nk-iv-scheme-order">
                             <span class="nk-iv-scheme-label text-soft">Total Return</span>
-                            <span class="nk-iv-scheme-value amount">$ 499.99</span>
+                            <span class="nk-iv-scheme-value amount">$ {{makeMoneyHumanReadable('0')}}</span>
                         </div>
                         <div class="nk-iv-scheme-amount-b nk-iv-scheme-order">
                             <span class="nk-iv-scheme-label text-soft">Net Profit Earn</span>
-                            <span class="nk-iv-scheme-value amount">$ 97.95 <span
+                            <span class="nk-iv-scheme-value amount">$ {{makeMoneyHumanReadable('0')}} <span
                                     class="amount-ex">~ $152.04</span></span>
                         </div>
                     </div>
@@ -184,7 +186,8 @@
                     </div>
                     <div class="nk-iv-scheme-info">
                         <div class="nk-iv-scheme-name">Silver - Daily 4.76% for 21 Days</div>
-                        <div class="nk-iv-scheme-desc">Invested Amount - <span class="amount">$1,250</span></div>
+                        <div class="nk-iv-scheme-desc">Invested Amount - <span
+                                class="amount">${{makeMoneyHumanReadable('0')}}</span></div>
                     </div>
                     <div class="nk-iv-scheme-term">
                         <div class="nk-iv-scheme-start nk-iv-scheme-order">
@@ -199,16 +202,16 @@
                     <div class="nk-iv-scheme-amount">
                         <div class="nk-iv-scheme-amount-a nk-iv-scheme-order">
                             <span class="nk-iv-scheme-label text-soft">Total Return</span>
-                            <span class="nk-iv-scheme-value amount">$ 2,500</span>
+                            <span class="nk-iv-scheme-value amount">$ {{makeMoneyHumanReadable('0')}}</span>
                         </div>
                         <div class="nk-iv-scheme-amount-b nk-iv-scheme-order">
                             <span class="nk-iv-scheme-label text-soft">Net Profit Earn</span>
-                            <span class="nk-iv-scheme-value amount">$ 1145.25 <span
-                                    class="amount-ex">~ $105.75</span></span>
+                            <span class="nk-iv-scheme-value amount">$ {{makeMoneyHumanReadable('0')}} <span
+                                    class="amount-ex">~ ${{makeMoneyHumanReadable('0')}}</span></span>
                         </div>
                     </div>
                     <div class="nk-iv-scheme-more">
-                        <a class="btn btn-icon btn-lg btn-round btn-trans" href="html/invest/scheme-details.html"><em
+                        <a class="btn btn-icon btn-lg btn-round btn-trans" href=""><em
                                 class="icon ni ni-forward-ios"></em></a>
                     </div>
                     <div class="nk-iv-scheme-progress">
@@ -233,7 +236,8 @@
                     </div>
                     <div class="nk-iv-scheme-info">
                         <div class="nk-iv-scheme-name">Silver - Daily 4.76% for 21 Days</div>
-                        <div class="nk-iv-scheme-desc">Invested Amount - <span class="amount">$250</span></div>
+                        <div class="nk-iv-scheme-desc">Invested Amount - <span
+                                class="amount">${{makeMoneyHumanReadable('0')}}</span></div>
                     </div>
                     <div class="nk-iv-scheme-term">
                         <div class="nk-iv-scheme-start nk-iv-scheme-order">
@@ -248,16 +252,16 @@
                     <div class="nk-iv-scheme-amount">
                         <div class="nk-iv-scheme-amount-a nk-iv-scheme-order">
                             <span class="nk-iv-scheme-label text-soft">Total Return</span>
-                            <span class="nk-iv-scheme-value amount">$ 499.99</span>
+                            <span class="nk-iv-scheme-value amount">$ {{makeMoneyHumanReadable('0')}}</span>
                         </div>
                         <div class="nk-iv-scheme-amount-b nk-iv-scheme-order">
                             <span class="nk-iv-scheme-label text-soft">Net Profit Earn</span>
-                            <span class="nk-iv-scheme-value amount">$ 97.95 <span
-                                    class="amount-ex">~ $152.04</span></span>
+                            <span class="nk-iv-scheme-value amount">$ {{makeMoneyHumanReadable('0')}} <span
+                                    class="amount-ex">~ ${{makeMoneyHumanReadable('0')}}</span></span>
                         </div>
                     </div>
                     <div class="nk-iv-scheme-more">
-                        <a class="btn btn-icon btn-lg btn-round btn-trans" href="html/invest/scheme-details.html"><em
+                        <a class="btn btn-icon btn-lg btn-round btn-trans" href=""><em
                                 class="icon ni ni-forward-ios"></em></a>
                     </div>
                 </div><!-- .nk-iv-scheme-item -->
@@ -267,7 +271,8 @@
                     </div>
                     <div class="nk-iv-scheme-info">
                         <div class="nk-iv-scheme-name">Silver - Daily 4.76% for 21 Days</div>
-                        <div class="nk-iv-scheme-desc">Invested Amount - <span class="amount">$1,250</span></div>
+                        <div class="nk-iv-scheme-desc">Invested Amount - <span
+                                class="amount">${{makeMoneyHumanReadable('0')}}</span></div>
                     </div>
                     <div class="nk-iv-scheme-term">
                         <div class="nk-iv-scheme-start nk-iv-scheme-order">
@@ -282,12 +287,12 @@
                     <div class="nk-iv-scheme-amount">
                         <div class="nk-iv-scheme-amount-a nk-iv-scheme-order">
                             <span class="nk-iv-scheme-label text-soft">Total Return</span>
-                            <span class="nk-iv-scheme-value amount">$ 2,500</span>
+                            <span class="nk-iv-scheme-value amount">$ {{makeMoneyHumanReadable('0')}}</span>
                         </div>
                         <div class="nk-iv-scheme-amount-b nk-iv-scheme-order">
                             <span class="nk-iv-scheme-label text-soft">Net Profit Earn</span>
-                            <span class="nk-iv-scheme-value amount">$ 1145.25 <span
-                                    class="amount-ex">~ $105.75</span></span>
+                            <span class="nk-iv-scheme-value amount">$ {{makeMoneyHumanReadable('0')}} <span
+                                    class="amount-ex">~ ${{makeMoneyHumanReadable('0')}}</span></span>
                         </div>
                     </div>
                     <div class="nk-iv-scheme-more">

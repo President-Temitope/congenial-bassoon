@@ -46,14 +46,17 @@
                                     <div class="plan-item-desc card-text">
                                         <ul class="plan-item-desc-list">
                                             <li><span class="desc-label">Min Deposit</span> - <span
-                                                    class="desc-data">${{$investment->min_amount}}</span></li>
+                                                    class="desc-data">${{makeMoneyHumanReadable($investment->min_amount)}}</span>
+                                            </li>
                                             <li><span class="desc-label">Max Deposit</span> - <span
-                                                    class="desc-data">${{$investment->max_amount}}</span></li>
+                                                    class="desc-data">${{makeMoneyHumanReadable($investment->max_amount)}}</span>
+                                            </li>
                                             {{--
                                                                                     <li><span class="desc-label">Deposit Return</span> - <span class="desc-data">Yes</span></li>
                                             --}}
                                             <li><span class="desc-label">Total Return</span> - <span
-                                                    class="desc-data">{{$investment->total_return}}%</span></li>
+                                                    class="desc-data">{{makeMoneyHumanReadable($investment->total_return)}}%</span>
+                                            </li>
                                         </ul>
                                         @if(Auth::user()->hasRole('user'))
                                             <div class="plan-item-action">
