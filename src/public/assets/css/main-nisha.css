@@ -1161,6 +1161,8 @@ ol, ul {
     .container {
         width: 470px;
     }
+
+
 }
 .flag-icon {
     margin-right: 5px;
@@ -2464,6 +2466,19 @@ padding: 20px 15px;
 
 /*10. Currency Table*/
 /********************************************/
+
+.currency-tabs-mkts {
+
+    display: flex;
+    justify-content: center;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    margin-right:-15px;
+    margin-left:-15px;
+
+}
+
+/* ==== End MKT ==== */
 .currency-table {
     padding: 60px 0 90px;
 }
@@ -4154,6 +4169,8 @@ table.dataTable thead .sorting_asc::after {
         padding: 0;
         margin-bottom: 50px;
     }
+
+
 }
 @media only screen and (min-width: 1000px){
     .team__number {
@@ -4312,6 +4329,8 @@ table.dataTable thead .sorting_asc::after {
     .info-cell-value {
         font-size: 26px;
     }
+
+
 }
 /*22. Footer Widgets*/
 /********************************************/
@@ -4665,6 +4684,7 @@ table.dataTable thead .sorting_asc::after {
     .social-content .social_icon a:nth-child(4n){
         display: none;
     }
+
 }
 @media(min-width: 768px){
     .logos-wrapper{
