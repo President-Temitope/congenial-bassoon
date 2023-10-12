@@ -50,4 +50,9 @@ class CoreRepository implements CoreRepositoryInterface
         // TODO: Implement show() method.
         return $model::where('id', $id)->first();
     }
+
+    public function find($model, $condition, $query, array $columns = null)
+    {
+        return $model::where($condition, $query)->get($columns);
+    }
 }

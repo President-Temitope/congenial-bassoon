@@ -30,7 +30,7 @@ class SiteController extends Controller
         return view('site::index');
     }
 
-    public function postRegister(Request $request): Application|\Illuminate\Http\Response|\Illuminate\Contracts\Foundation\Application|RedirectResponse|\Illuminate\Contracts\Routing\ResponseFactory
+    public function postRegister(Request $request)
     {
         $validator = Validator::make($request->all(), [
             'firstname' => ['required', 'string', 'min:3', 'max:30'],
@@ -117,7 +117,7 @@ class SiteController extends Controller
         if (!$verify) {
             return \redirect()->route('home')->with('errors', 'Invalid token or token expired, Another token has been sent.');
         }
-        return \redirect()->route('home')->with('success', 'Verification Successful');
+        return \redirect()->route('login')->with('success', 'Verification Successful');
     }
 
     public function privacy_policy(): \Illuminate\Contracts\View\View|Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\Foundation\Application

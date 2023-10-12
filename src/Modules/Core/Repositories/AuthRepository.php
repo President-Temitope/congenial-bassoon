@@ -79,7 +79,6 @@ class AuthRepository implements AuthRepositoryInterface
 
         $activate = $code_model->update([
             'completed' => true,
-            'completed_at' => Carbon::now()
         ]);
 
         if (!$activate) {
@@ -88,7 +87,7 @@ class AuthRepository implements AuthRepositoryInterface
         $this->userRepo->update($get_code_model[0]['user_id'], [
             'email_verified_at' => Carbon::now()
         ]);
-        $user = $this->userRepo->find('id', $get_code_model[0]['user_id'], ['email']);
+        //$user = $this->userRepo->find('id', $get_code_model[0]['user_id'], ['email']);
 //        event(new AccountActivated($user[0]['email']));
         return true;
 
