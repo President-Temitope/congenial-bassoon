@@ -540,16 +540,16 @@
                 </li>
                 <li class="cc-coin">
                     <div><img
-                            src="https://assets.coingecko.com/coins/images/12559/thumb/Avalanche_Circle_RedWhite_Trans.png"
-                            alt="Avalanche"> <b>Avalanche <span>(AVAX)</span> <span>$ 241.43</span> </b></div>
+                            src="https://assets.coingecko.com/coins/images/25015/standard/801485424e1f49bc8d0facff9287eb9b_photo.png?1696524166"
+                            alt="Step App"> <b>FITFI<span>(FITFI)</span> <span>$0.00330960</span> </b></div>
                 </li>
                 <li class="cc-coin">
                     <div><img src="https://assets.coingecko.com/coins/images/17980/thumb/ton_symbol.png"
                               alt="toncoin (TON)"> <b>toncoin <span>(TON)</span> <span>$1.20</span> </b></div>
                 </li>
                 <li class="cc-coin">
-                    <div><img src="https://assets.coingecko.com/coins/images/6319/thumb/USD_Coin_icon.png"
-                              alt="usd-coin"> <b>USD Coin <span>(USDC)</span> <span>$ 0.999373</span> </b></div>
+                    <div><img src="https://assets.coingecko.com/coins/images/10775/standard/COMP.png?1696510737"
+                              alt="COMP"> <b>Compound<span>(COMP)</span> <span>$41.24</span> </b></div>
                 </li>
                 <li class="cc-coin">
                     <div><img src="https://assets.coingecko.com/coins/images/13442/thumb/steth_logo.png"
@@ -557,41 +557,42 @@
                     </div>
                 </li>
                 <li class="cc-coin">
-                    <div><img src="https://assets.coingecko.com/coins/images/5/thumb/dogecoin.png" alt="dogecoin"> <b>Dogecoin
-                            <span>(DOGE)</span> <span>$ 0.074104</span> </b></div>
+                    <div><img src="https://assets.coingecko.com/coins/images/1047/standard/sa9z79.png?1696502152" alt="KuCoin"> <b>KuCoin
+
+                            <span>(KCS)</span> <span>$4.41</span> </b></div>
                 </li>
                 <li class="cc-coin">
-                    <div><img src="https://assets.coingecko.com/coins/images/975/thumb/cardano.png" alt="cardano"> <b>Cardano
-                            <span>(ADA)</span> <span>$ 0.293598</span> </b></div>
+                    <div><img src="https://assets.coingecko.com/coins/images/13446/standard/5f6294c0c7a8cda55cb1c936_Flow_Wordmark.png?1696513210" alt="flow (FLOW)"> <b>flow
+                            <span>(FLOW)</span> <span>$0.419571</span> </b></div>
                 </li>
                 <li class="cc-coin">
-                    <div><img src="https://assets.coingecko.com/coins/images/4128/thumb/solana.png" alt="solana"> <b>Solana
-                            <span>(SOL)</span> <span>$ 22.65</span> </b></div>
+                    <div><img src="https://assets.coingecko.com/coins/images/8834/standard/CHZ_Token_updated.png?1696508986" alt="Chiliz"> <b>Chiliz
+                            <span>(CHZ)</span> <span>$0.055594</span> </b></div>
                 </li>
                 <div class="cc-dup">
                     <li class="cc-coin">
-                        <div><img src="https://assets.coingecko.com/coins/images/1094/thumb/tron-logo.png" alt="tron">
-                            <b>Tron <span>(TRX)</span> <span>$0.077732</span> </b></div>
+                        <div><img src="https://assets.coingecko.com/coins/images/11085/standard/Trust.png?1696511026" alt="Trust Wallet">
+                            <b>Trust Wallet <span>(TWT)</span> <span>$0.077732</span> </b></div>
                     </li>
                     <li class="cc-coin">
-                        <div><img src="https://assets.coingecko.com/coins/images/279/thumb/ethereum.png" alt="Polkadot">
-                            <b>Polkadot <span>(DOT)</span> <span>$5.02</span> </b></div>
+                        <div><img src="https://assets.coingecko.com/coins/images/4130/standard/phantasma.png?169650475" alt="Phantasma">
+                            <b>Phantasma<span>(SOUL)</span> <span>$1.11</span> </b></div>
                     </li>
                     <li class="cc-coin">
-                        <div><img src="https://assets.coingecko.com/coins/images/4713/thumb/matic-token-icon.png"
-                                  alt="Polygon"> <b>Polygon <span>(MATIC)</span> <span>$0.672586</span> </b></div>
+                        <div><img src="https://assets.coingecko.com/coins/images/12632/standard/pancakeswap-cake-logo_%281%29.png?1696512440"
+                                  alt="PancakeSwap"> <b>PancakeSwap <span>(CAKE)</span> <span>$0.672586</span> </b></div>
                     </li>
                     <li class="cc-coin">
                         <div><img src="https://assets.coingecko.com/coins/images/11939/thumb/shiba.png" alt="Shib"> <b>Shiba
-                                Inu <span>(SHIB)</span> <span>$0.00000860</span> </b></div>
+                                Inu <span>(SHIB)</span> <span>$0.00000675</span> </b></div>
                     </li>
                     <li class="cc-coin">
-                        <div><img src="https://assets.coingecko.com/coins/images/44/thumb/xrp-symbol-white-128.png"
-                                  alt="xrp"> <b>XRP <span>(XRP)</span> <span>$ 0.666114</span> </b></div>
+                        <div><img src="https://assets.coingecko.com/coins/images/12124/standard/Curve.png?169651196"
+                                  alt="CRV"> <b>Curve DAO <span>(CRV)</span> <span>$0.433904</span> </b></div>
                     </li>
                     <li class="cc-coin">
-                        <div><img src="https://assets.coingecko.com/coins/images/6319/thumb/USD_Coin_icon.png"
-                                  alt="usd-coin"> <b>USD Coin <span>(USDC)</span> <span>$ 0.999373</span> </b></div>
+                        <div><img src="https://assets.coingecko.com/coins/images/12618/standard/flamingo_finance_logo.jpg?1696512425"
+                                  alt="fLAMINGO"> <b>Flamingo Finance<span>(FLM)</span> <span>$0.066459</span> </b></div>
                     </li>
                     <li class="cc-coin">
                         <div><img src="https://assets.coingecko.com/coins/images/13442/thumb/steth_logo.png"
@@ -599,16 +600,12 @@
                             </b></div>
                     </li>
                     <li class="cc-coin">
-                        <div><img src="https://assets.coingecko.com/coins/images/5/thumb/dogecoin.png" alt="dogecoin">
-                            <b>Dogecoin <span>(DOGE)</span> <span>$ 0.074104</span> </b></div>
+                        <div><img src="https://assets.coingecko.com/coins/images/2822/standard/huobi-token-logo.png?1696503584" alt="huobi">
+                            <b>huobi (HT) <span>(HT)</span> <span>$2.273087626333716</span> </b></div>
                     </li>
                     <li class="cc-coin">
-                        <div><img src="https://assets.coingecko.com/coins/images/975/thumb/cardano.png" alt="cardano">
-                            <b>Cardano <span>(ADA)</span> <span>$ 0.293598</span> </b></div>
-                    </li>
-                    <li class="cc-coin">
-                        <div><img src="https://assets.coingecko.com/coins/images/4128/thumb/solana.png" alt="solana">
-                            <b>Solana <span>(SOL)</span> <span>$ 22.65</span> </b></div>
+                        <div><img src="https://assets.coingecko.com/coins/images/9672/standard/klaytn.png?1696509742" alt="klaytn">
+                            <b>Klaytn <span>(KLAY)</span> <span>$0.119501</span> </b></div>
                     </li>
                 </div>
             </ul>
@@ -766,7 +763,7 @@
             </div>
         </div>
         <!--<div class="crypto-strat-title"><span>How to Get Start</span></div>-->
-        <div class="start-steps wow fadeInDown" data-wow-delay="1s">>
+        <div class="start-steps wow fadeInDown" data-wow-delay="1s">
             <div class="start-step">
                 <!--<span class="start-step-number">1</span>--> <i class="step-icon flaticon-wallet"></i>
                 <div class="start-step-info">

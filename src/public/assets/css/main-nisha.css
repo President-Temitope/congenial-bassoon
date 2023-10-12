@@ -2409,6 +2409,19 @@ padding: 20px 15px;
     }
 }
 @media(min-width: 768px){
+
+
+    
+.currency-tabs-mkts {
+
+    display: flex;
+    justify-content: center;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+    margin-right:-15px;
+    margin-left:-15px;
+
+}
     .start-steps {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -2470,11 +2483,11 @@ padding: 20px 15px;
 .currency-tabs-mkts {
 
     display: flex;
-    justify-content: center;
-    -ms-flex-wrap:wrap;
+    /* justify-content: center;
+    -ms-flex-wrap:wrap; */
     flex-wrap:wrap;
-    margin-right:-15px;
-    margin-left:-15px;
+    /* margin-right:-15px;
+    margin-left:-15px; */
 
 }
 
@@ -2734,6 +2747,17 @@ table.dataTable thead .sorting_asc::after {
     .testimonial-panel {
         margin: 0;
     }
+
+    
+.currency-tabs-mkts {
+
+    display: flex;
+    -ms-flex-wrap:wrap;
+    flex-wrap:wrap;
+
+}
+
+    
 }
 /*Client Logo*/
 .client-logo {
