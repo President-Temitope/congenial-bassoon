@@ -394,7 +394,8 @@
                         <ul class="nk-menu nk-menu-main">
                             <li class="nk-menu-item {{$pageName == 'Dashboard' ? 'active' : ''}}"><a
                                     class="nk-menu-link" href="/dashboard"><span
-                                        class="nk-menu-text">Overview</span></a></li> @if(Auth::user()->hasRole('user'))
+                                        class="nk-menu-text">Overview</span></a></li>
+                            @if(Auth::user()->hasRole('user'))
                                 <li class="nk-menu-item {{$pageName == 'activePlans' ? 'active' : ''}}"><a
                                         class="nk-menu-link" href="/investments/myPlans"><span class="nk-menu-text">My Plan</span></a>
                                 </li>
@@ -445,7 +446,7 @@
                                     </div>
                                     <div class="dropdown-inner user-account-info">
                                         <h6 class="overline-title-alt">Account Balance</h6>
-                                        <div class="user-balance">1,494.23 <small
+                                        <div class="user-balance">0 <small
                                                 class="currency currency-usd">USD</small></div>
                                         <a class="link" href="#"><span>Withdraw Balance</span> <em
                                                 class="icon ni ni-wallet-out"></em></a>

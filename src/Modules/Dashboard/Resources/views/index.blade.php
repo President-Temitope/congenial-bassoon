@@ -24,37 +24,39 @@
                         <!-- <div id="button"><button>Show toast</button></div> -->
                     </a></div>
                 <div></div>
-                <div class="nk-block-head-content d-none d-md-block">
-                    <div class="nk-slider nk-slider-s1">
-                        <div class="slider-init"
-                             data-slick='{"dots": true, "arrows": false, "fade": true}'> @if(count($data) > 0)
-                                <div class="slider-item">
-                                    <div class="nk-iv-wg1">
-                                        <div class="nk-iv-wg1-sub sub-text">My Active Plans</div>
-                                        <h6 class="nk-iv-wg1-info title">Silver - 4.76% for 21 Days</h6><a
-                                            class="nk-iv-wg1-link link link-light" href="#"><em
-                                                class="icon ni ni-trend-up"></em> <span>Check Details</span></a>
-                                        <div class="nk-iv-wg1-progress">
-                                            <div class="progress-bar bg-primary" data-progress="80"></div>
+                @if(Auth::user()->hasRole('user'))
+                    <div class="nk-block-head-content d-none d-md-block">
+                        <div class="nk-slider nk-slider-s1">
+                            <div class="slider-init"
+                                 data-slick='{"dots": true, "arrows": false, "fade": true}'> @if(count($data) > 0)
+                                    <div class="slider-item">
+                                        <div class="nk-iv-wg1">
+                                            <div class="nk-iv-wg1-sub sub-text">My Active Plans</div>
+                                            <h6 class="nk-iv-wg1-info title"></h6>{{$data[0][0]->investment_name}}<a
+                                                class="nk-iv-wg1-link link link-light" href="#"><em
+                                                    class="icon ni ni-trend-up"></em> <span>Check Details</span></a>
+                                            <div class="nk-iv-wg1-progress">
+                                                <div class="progress-bar bg-primary" data-progress="80"></div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            @else
-                                <div class="slider-item">
-                                    <div class="nk-iv-wg1">
-                                        <div class="nk-iv-wg1-sub sub-text">No active plan</div>
-                                        <h6 class="nk-iv-wg1-info title">invest now, secure your future</h6><a
-                                            class="nk-iv-wg1-link link link-light" href="/investments"><em
-                                                class="icon ni ni-trend-up"></em> <span>Check Investment list</span></a>
-                                        <div class="nk-iv-wg1-progress">
-                                            <div class="progress-bar bg-primary" data-progress="0"></div>
+                                @else
+                                    <div class="slider-item">
+                                        <div class="nk-iv-wg1">
+                                            <div class="nk-iv-wg1-sub sub-text">No active plan</div>
+                                            <h6 class="nk-iv-wg1-info title">invest now, secure your future</h6><a
+                                                class="nk-iv-wg1-link link link-light" href="/investments"><em
+                                                    class="icon ni ni-trend-up"></em> <span>Check Investment list</span></a>
+                                            <div class="nk-iv-wg1-progress">
+                                                <div class="progress-bar bg-primary" data-progress="0"></div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            @endif </div>
-                        <div class="slider-dots"></div>
+                                @endif </div>
+                            <div class="slider-dots"></div>
+                        </div>
                     </div>
-                </div>
+                @endif
             @endif
         </div>
     </div>
@@ -73,61 +75,63 @@
                     </a></div>
             </div>
         </div>
-    @endif
-    <div class="nk-block">
-        <div class="row gy-gs">
-            <div class="col-md-6 col-lg-4">
-                <div class="nk-wg-card is-dark card card-bordered">
-                    <div class="card-inner">
-                        <div class="nk-iv-wg2">
-                            <div class="nk-iv-wg2-title">
-                                <h6 class="title">Available Balance <em class="icon ni ni-info"></em></h6>
-                            </div>
-                            <div class="nk-iv-wg2-text">
-                                <div
-                                    class="nk-iv-wg2-amount"> {{$data[0]['available_balance']!==null ? makeMoneyHumanReadable($data[0]['available_balance']):0}}
-                                    <span class="change up"><span class="sign"></span>3.4%</span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="nk-wg-card is-s1 card card-bordered">
-                    <div class="card-inner">
-                        <div class="nk-iv-wg2">
-                            <div class="nk-iv-wg2-title">
-                                <h6 class="title">Total Invested <em class="icon ni ni-info"></em></h6>
-                            </div>
-                            <div class="nk-iv-wg2-text">
-                                <div
-                                    class="nk-iv-wg2-amount"> {{$data[0]['available_balance']!==null ? makeMoneyHumanReadable($data[0]['available_balance']):0}}
-                                    <span class="change up"><span
-                                            class="sign"></span>2.8%</span></div>
+
+        <div class="nk-block">
+            <div class="row gy-gs">
+                <div class="col-md-6 col-lg-4">
+                    <div class="nk-wg-card is-dark card card-bordered">
+                        <div class="card-inner">
+                            <div class="nk-iv-wg2">
+                                <div class="nk-iv-wg2-title">
+                                    <h6 class="title">Available Balance <em class="icon ni ni-info"></em></h6>
+                                </div>
+                                <div class="nk-iv-wg2-text">
+                                    <div
+                                        class="nk-iv-wg2-amount"> {{$data[0][0]->available_balance!==null ? makeMoneyHumanReadable($data[0][0]->available_balance):0}}
+                                        <span class="change up"><span class="sign"></span>3.4%</span></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-12 col-lg-4">
-                <div class="nk-wg-card is-s3 card card-bordered">
-                    <div class="card-inner">
-                        <div class="nk-iv-wg2">
-                            <div class="nk-iv-wg2-title">
-                                <h6 class="title">Total Profits <em class="icon ni ni-info"></em></h6>
+                <div class="col-md-6 col-lg-4">
+                    <div class="nk-wg-card is-s1 card card-bordered">
+                        <div class="card-inner">
+                            <div class="nk-iv-wg2">
+                                <div class="nk-iv-wg2-title">
+                                    <h6 class="title">Total Invested <em class="icon ni ni-info"></em></h6>
+                                </div>
+                                <div class="nk-iv-wg2-text">
+                                    <div
+                                        class="nk-iv-wg2-amount"> {{$data[0][0]->total_invested!==null ? makeMoneyHumanReadable($data[0][0]->total_invested):0}}
+                                        <span class="change up"><span
+                                                class="sign"></span>2.8%</span></div>
+                                </div>
                             </div>
-                            <div class="nk-iv-wg2-text">
-                                <div
-                                    class="nk-iv-wg2-amount"> {{$data[0]['available_balance']!==null ? makeMoneyHumanReadable($data[0]['available_balance']):0}}
-                                    <span class="change down"><span
-                                            class="sign"></span>1.4%</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="nk-wg-card is-s3 card card-bordered">
+                        <div class="card-inner">
+                            <div class="nk-iv-wg2">
+                                <div class="nk-iv-wg2-title">
+                                    <h6 class="title">Total Profits <em class="icon ni ni-info"></em></h6>
+                                </div>
+                                <div class="nk-iv-wg2-text">
+                                    <div
+                                        class="nk-iv-wg2-amount"> {{$data[0][0]->total_profit!==null ? makeMoneyHumanReadable($data[0][0]->total_profit):0}}
+                                        <span class="change down"><span
+                                                class="sign"></span>1.4%</span></div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div> @if(Auth::user()->hasRole('user'))
+    @endif
+    @if(Auth::user()->hasRole('user'))
         <div class="modal fade modal-length" tabindex="-1" id="invest-plan">
             <div class="modal-dialog modal-dialog-centered modal-md">
                 <div class="modal-content">
@@ -218,9 +222,9 @@
                             </div>
                             <div class="nk-modal-action-lg">
                                 <ul class="btn-group flex-wrap justify-center g-4">
-                                    <li><a href="/demo6/invest/invest.html" class="btn btn-lg btn-mw btn-primary">More
+                                    <li><a href="" class="btn btn-lg btn-mw btn-primary">More
                                             Invest</a></li>
-                                    <li><a href="/demo6/invest/scheme-details.html"
+                                    <li><a href=""
                                            class="btn btn-lg btn-mw btn-dim btn-primary"><em
                                                 class="icon ni ni-reports"></em><span>See the plan</span></a></li>
                                 </ul>
@@ -235,100 +239,106 @@
                 </div>
             </div>
         </div>
-    @endif
-    <div class="nk-block">
-        <div class="row gy-gs">
-            <div class="col-md-6 col-lg-4">
-                <div class="nk-wg-card card card-bordered h-100">
-                    <div class="card-inner h-100">
-                        <div class="nk-iv-wg2">
-                            <div class="nk-iv-wg2-title">
-                                <h6 class="title">Balance in Account</h6>
-                            </div>
-                            <div class="nk-iv-wg2-text">
-                                <div
-                                    class="nk-iv-wg2-amount ui-v2">{{$data[0]['available_balance']!==null ? makeMoneyHumanReadable($data[0]['available_balance']):0}}</div>
-                                <ul class="nk-iv-wg2-list">
-                                    <li><span class="item-label">Available Funds</span><span
-                                            class="item-value">{{$data[0]['available_balance']!==null ? makeMoneyHumanReadable($data[0]['available_balance']):0}}</span>
-                                    </li>
-                                    <li><span class="item-label">Invested Funds</span><span
-                                            class="item-value">{{$data[0]['available_balance']!==null ? makeMoneyHumanReadable($data[0]['available_balance']):0}}</span>
-                                    </li>
-                                    <li class="total"><span class="item-label">Total</span><span
-                                            class="item-value">{{$data[0]['available_balance']!==null ? makeMoneyHumanReadable($data[0]['available_balance']):0}}</span>
-                                    </li>
-                                </ul>
-                            </div> @if(Auth::user()->hasRole('user'))
-                                <div class="nk-iv-wg2-cta"><a class="btn btn-primary btn-lg btn-block" href="#">Withdraw
-                                        Funds</a><a class="btn btn-trans btn-block" href="#">Deposit Funds</a></div>
-                            @endif
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="nk-wg-card card card-bordered h-100">
-                    <div class="card-inner h-100">
-                        <div class="nk-iv-wg2">
-                            <div class="nk-iv-wg2-title">
-                                <h6 class="title">This Month Profit <em class="icon ni ni-info text-primary"></em></h6>
-                            </div>
-                            <div class="nk-iv-wg2-text">
-                                <div
-                                    class="nk-iv-wg2-amount ui-v2">{{$data[0]['available_balance']!==null ? makeMoneyHumanReadable($data[0]['available_balance']):0}}
-                                    <span class="change up"><span
-                                            class="sign"></span>4.5%</span></div>
-                                <ul class="nk-iv-wg2-list">
-                                    <li><span class="item-label">Profits</span><span
-                                            class="item-value">{{$data[0]['available_balance']!==null ? makeMoneyHumanReadable($data[0]['available_balance']):0}}</span>
-                                    </li>
-                                    <li><span class="item-label">Referrals</span><span
-                                            class="item-value">{{$data[0]['available_balance']!==null ? makeMoneyHumanReadable($data[0]['available_balance']):0}}</span>
-                                    </li>
-                                    <li><span class="item-label">Rewards</span><span
-                                            class="item-value">{{$data[0]['available_balance']!==null ? makeMoneyHumanReadable($data[0]['available_balance']):0}}</span>
-                                    </li>
-                                    <li class="total"><span class="item-label">Total Profit</span><span
-                                            class="item-value">{{$data[0]['available_balance']!==null ? makeMoneyHumanReadable($data[0]['available_balance']):0}}</span>
-                                    </li>
-                                </ul>
-                            </div> @if(Auth::user()->hasRole('user'))
-                                <div class="nk-iv-wg2-cta"><a class="btn btn-primary btn-lg btn-block" href="#">Invest &
-                                        Earn</a></div>
-                            @endif
-                        </div>
-                    </div>
-                </div>
-            </div> @if(Auth::user()->hasRole('user'))
-                <div class="col-md-12 col-lg-4">
+
+        <div class="nk-block">
+            <div class="row gy-gs">
+                <div class="col-md-6 col-lg-4">
                     <div class="nk-wg-card card card-bordered h-100">
                         <div class="card-inner h-100">
                             <div class="nk-iv-wg2">
                                 <div class="nk-iv-wg2-title">
-                                    <h6 class="title">My Investment</h6>
+                                    <h6 class="title">Balance in Account</h6>
                                 </div>
                                 <div class="nk-iv-wg2-text">
-                                    <div class="nk-iv-wg2-amount ui-v2">0 <span
-                                            class="sub">0{{count($data)}}</span> Active
-                                    </div>
-                                    <ul class="nk-iv-wg2-list"> @if(count($data) > 0)
-                                            <li><span class="item-label"><a href="#">Silver</a> <small>- 4.76% for 21 Days</small></span><span
-                                                    class="item-value">{{$data[0]['available_balance']!==null ? makeMoneyHumanReadable($data[0]['available_balance']):0}}</span>
-                                            </li>
-                                        @else
-                                            <li><span class="item-label">No active plan</span></li>
-                                        @endif </ul>
+                                    <div
+                                        class="nk-iv-wg2-amount ui-v2">{{$data[0][0]->balance_in_account ? makeMoneyHumanReadable($data[0][0]->balance_in_account):0}}</div>
+                                    <ul class="nk-iv-wg2-list">
+                                        <li><span class="item-label">Available Funds</span><span
+                                                class="item-value">{{$data[0][0]->available_fund!==null ? makeMoneyHumanReadable($data[0][0]->available_fund):0}}</span>
+                                        </li>
+                                        <li><span class="item-label">Invested Funds</span><span
+                                                class="item-value">{{$data[0][0]->invested_fund!==null ? makeMoneyHumanReadable($data[0][0]->invested_fund):0}}</span>
+                                        </li>
+                                        <li class="total"><span class="item-label">Total</span><span
+                                                class="item-value">{{$data[0][0]->balance_in_account!==null ? makeMoneyHumanReadable($data[0][0]->balance_in_account):0}}</span>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <div class="nk-iv-wg2-cta"><a class="btn btn-light btn-lg btn-block"
-                                                              href="/investments/myPlans">See all Investment</a></div>
+                                <div class="nk-iv-wg2-cta"><a class="btn btn-primary btn-lg btn-block" href="#">Withdraw
+                                        Funds</a><a class="btn btn-trans btn-block" href="#">Deposit Funds</a></div>
                             </div>
                         </div>
                     </div>
                 </div>
-            @endif
+                <div class="col-md-6 col-lg-4">
+                    <div class="nk-wg-card card card-bordered h-100">
+                        <div class="card-inner h-100">
+                            <div class="nk-iv-wg2">
+                                <div class="nk-iv-wg2-title">
+                                    <h6 class="title">This Month Profit <em class="icon ni ni-info text-primary"></em>
+                                    </h6>
+                                </div>
+                                <div class="nk-iv-wg2-text">
+                                    <div
+                                        class="nk-iv-wg2-amount ui-v2">{{$data[0][0]->this_month_profit!==null ? makeMoneyHumanReadable($data[0][0]->this_month_profit):0}}
+                                        <span class="change up"><span
+                                                class="sign"></span>4.5%</span></div>
+                                    {{--
+                                                                    <ul class="nk-iv-wg2-list">
+                                                                        <li><span class="item-label">Profits</span><span
+                                                                                class="item-value">{{$data[0][0]['available_balance']!==null ? makeMoneyHumanReadable($data[0][0]['available_balance']):0}}</span>
+                                                                        </li>
+                                                                        <li><span class="item-label">Referrals</span><span
+                                                                                class="item-value">{{$data[0][0]['available_balance']!==null ? makeMoneyHumanReadable($data[0][0]['available_balance']):0}}</span>
+                                                                        </li>
+                                                                        <li><span class="item-label">Rewards</span><span
+                                                                                class="item-value">{{$data[0][0]['available_balance']!==null ? makeMoneyHumanReadable($data[0][0]['available_balance']):0}}</span>
+                                                                        </li>
+                                                                        <li class="total"><span class="item-label">Total Profit</span><span
+                                                                                class="item-value">{{$data[0][0]['available_balance']!==null ? makeMoneyHumanReadable($data[0][0]['available_balance']):0}}</span>
+                                                                        </li>
+                                                                    </ul>
+                                    --}}
+                                </div> @if(Auth::user()->hasRole('user'))
+                                    <div class="nk-iv-wg2-cta"><a class="btn btn-primary btn-lg btn-block" href="#">Invest
+                                            &
+                                            Earn</a></div>
+                                @endif
+                            </div>
+                        </div>
+                    </div>
+                </div> @if(Auth::user()->hasRole('user'))
+                    {{--
+                                    <div class="col-md-12 col-lg-4">
+                                        <div class="nk-wg-card card card-bordered h-100">
+                                            <div class="card-inner h-100">
+                                                <div class="nk-iv-wg2">
+                                                    <div class="nk-iv-wg2-title">
+                                                        <h6 class="title">My Investment</h6>
+                                                    </div>
+                                                    <div class="nk-iv-wg2-text">
+                                                        <div class="nk-iv-wg2-amount ui-v2">0 <span
+                                                                class="sub">0{{count($data)}}</span> Active
+                                                        </div>
+                                                        <ul class="nk-iv-wg2-list"> @if(count($data) > 0)
+                                                                <li><span class="item-label"><a href="#">Silver</a> <small>- 4.76% for 21 Days</small></span><span
+                                                                        class="item-value">{{$data[0][0]['available_balance']!==null ? makeMoneyHumanReadable($data[0][0]['available_balance']):0}}</span>
+                                                                </li>
+                                                            @else
+                                                                <li><span class="item-label">No active plan</span></li>
+                                                            @endif </ul>
+                                                    </div>
+                                                    <div class="nk-iv-wg2-cta"><a class="btn btn-light btn-lg btn-block"
+                                                                                  href="/investments/myPlans">See all Investment</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                    --}}
+                @endif
+            </div>
         </div>
-    </div>
+    @endif
 @endsection @push('script')
     <script>
         // global varibles

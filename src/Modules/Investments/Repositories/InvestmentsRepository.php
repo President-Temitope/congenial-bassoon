@@ -53,4 +53,9 @@ class InvestmentsRepository implements InvestmentsRepositoryInterface
         return $this->core->show($this->model, $id);
     }
 
+    public function find($condition, $query, array $columns = null)
+    {
+        return $this->core->find($this->model, $condition, $query, $columns);
+    }
+
 }

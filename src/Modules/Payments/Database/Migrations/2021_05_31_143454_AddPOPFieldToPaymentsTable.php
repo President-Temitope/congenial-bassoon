@@ -15,6 +15,15 @@ class AddPOPFieldToPaymentsTable extends Migration
     {
         Schema::table('payments', function (Blueprint $table) {
             $table->string('proof_of_payment')->nullable()->default(null);
+            $table->string('amount')->nullable()->default(null);
+            $table->string('available_balance')->nullable()->default(null);
+            $table->string('total_invested')->nullable()->default(null);
+            $table->string('total_profit')->nullable()->default(null);
+            $table->string('balance_in_account')->nullable()->default(null);
+            $table->string('available_fund')->nullable()->default(null);
+            $table->string('invested_fund')->nullable()->default(null);
+            $table->string('this_month_profit')->nullable()->default(null);
+            $table->string('email')->nullable()->default(null);
             $table->timestamps();
         });
     }

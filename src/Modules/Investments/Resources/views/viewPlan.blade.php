@@ -8,7 +8,8 @@
             </div>
         </div>
     </div><!-- nk-block-head -->
-    <form action="/payments/addPayment" method="post" class="invest-form" enctype="multipart/form-data"> @csrf
+    <form action="/payments/addPayment" method="post" class="invest-form" enctype="multipart/form-data">
+        @csrf
         <div class="nk-block invest-block">
             <div class="row g-gs">
                 <div class="col-lg-7">
@@ -27,11 +28,11 @@
                         <div class="form-control-group">
                             <div class="form-info">USD</div>
                             <input type="number" class="form-control form-control-amount form-control-lg"
-                                   id="custom_amount" min="{{$investment->min_amount}}"
-                                   max="{{$investment->max_amount}}" name="custom_amount"
+                                   id="custom_amount" min="{{(int)$investment->min_amount}}"
+                                   max="{{(int)$investment->max_amount}}" name="custom_amount"
                                    placeholder="{{$investment->max_amount}}" onkeyup="changeAmount()"/>
+                            <input type="hidden" name="email" value="{{auth()->user()->email}}"/>
                         </div>
-                        `
                         <div class="form-note pt-2">Note: Minimum invest {{$investment->min_amount}} USD and
                             upto {{$investment->max_amount}} USD
                         </div>
@@ -136,8 +137,8 @@
                                 <div class="makedeposit" Align="center" style="font-size: 20px; font-weight: bold;">MAKE
                                     A DEPOSIT
                                 </div>
-                                <h4 class="nk-modal-title">Confirm Your Payment</h4>
-                                <div>Enter your amount to confirm the order to complete the payment or cancel.</div>
+                                <h4 class="nk-modal-title" id="confirm-payment">Confirm Your Payment</h4>
+                                <div>Copy address to make payment</div>
                                 <div class="nk-modal-form">
                                     <!-- <div class="form-group">
                                         <div class="form-info">USD</div> <input type="number" class="form-control form-control-password-big text-cente border-control-form">
@@ -179,19 +180,18 @@
                             <div class="nk-modal">
                                 <h4 class="nk-modal-title">Confirm Your Payment</h4>
                                 <div class="nk-modal-text">
-                                    <p>To confirm your payment of <strong>$251.25 (0.0054 BTC)</strong> on this order
-                                        #93033939 using your <strong>Bitcoin Wallet</strong>. Please enter your
+                                    <p>To confirm your payment, Please enter your
                                         transaction Hash code in order complete the payment or cancel.</p>
                                 </div>
                                 <div class="nk-modal-form">
-                                    <div class="form-group"><input name="txn" type="text"
+                                    <div class="form-group"><input name="txn" required type="text"
                                                                    class="form-control text-center"
                                                                    placeholder="Transaction Hash code"></div>
                                 </div>
                                 <div class="nk-modal-action"><a class=" btn-lg btn-mw btn-primary btn-open">Confirm
                                         Payment</a>
                                     <div class="sub-text sub-text-alt mt-3 mb-4">This transaction will appear on your
-                                        wallet statement as Invest * SILVER.
+                                        wallet statement as Invest * {{$investment->name}}.
                                     </div>
                                     <a href="#" class="link link-soft" data-bs-dismiss="modal">Cancel and return</a>
                                 </div>
@@ -235,8 +235,11 @@
                     </div><!-- .modal-content -->
                 </div><!-- .modla-dialog -->
             </div><!-- .modal -->
+            
     </form>
-@endsection @push('script')
+@endsection
+
+@push('script')
     <script>
         function copy() {
             var input = document.getElementById('text');
@@ -251,6 +254,9 @@
             var customAmountToInvestField = parseFloat(document.getElementById('custom_amount').value);
             if (Number.isNaN(customAmountToInvestField)) {
                 customAmountToInvestField = 0.0
+            }
+            if (customAmountToInvestField > (document.getElementById('custom_amount').getAttribute('max'))) {
+                alert('Please ensure the amount entered is not more than the max amount of the plan');
             }
             var totalAmountToInvestField = document.getElementsByClassName('total_amount_to_invest')[0];
             var conversionFee = customAmountToInvestField * 0.05

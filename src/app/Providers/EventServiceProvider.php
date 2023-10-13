@@ -5,6 +5,8 @@ namespace App\Providers;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 use Modules\Core\Events\InitiateAccountActivation;
 use Modules\Core\Listeners\ListenToAccountActivationEvent;
+use Modules\Payments\Events\ApprovePayment;
+use Modules\Payments\Listeners\ListenToApprovePaymentEvent;
 
 class EventServiceProvider extends ServiceProvider
 {
@@ -17,6 +19,9 @@ class EventServiceProvider extends ServiceProvider
 
         InitiateAccountActivation::class => [
             ListenToAccountActivationEvent::class
+        ],
+        [
+            ApprovePayment::class => [ListenToApprovePaymentEvent::class]
         ]
     ];
 

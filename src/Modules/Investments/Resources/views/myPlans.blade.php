@@ -1,6 +1,6 @@
 @extends('dashboard::layouts.master',[$pageName = 'activePlans'])
 @section('content')
-    @if(count($myActivePlans) > 0 || count($myEndedPlans) > 0  || count($myInactivePlans) > 0 )
+    @if($activePlansCount + $endedPlansCount + $inactivePlansCount > 0 )
         <div class="nk-block-head">
             <div class="nk-block-head-content">
                 <div class="nk-block-head-sub"><span>My Plan</span></div>
@@ -85,42 +85,48 @@
             <div class="nk-block-head-sm">
                 <div class="nk-block-head-content">
                     <h5 class="nk-block-title">Inactive Plan <span
-                            class="count text-base">({{count($myInactivePlans)}})</span></h5>
+                            class="count text-base">({{$inactivePlansCount}})</span></h5>
                 </div>
             </div>
             <div class="nk-iv-scheme-list">
 
-                @foreach($myInactivePlans as $myInactivePlan_id)
+                @foreach($myInactivePlans as $myInactivePlan)
                     <div class="nk-iv-scheme-item">
                         <div class="nk-iv-scheme-icon is-running">
                             <em class="icon ni ni-update"></em>
                         </div>
                         <div class="nk-iv-scheme-info">
-                            <div class="nk-iv-scheme-name">Silver - Daily 4.76% for 21 Days</div>
+                            <div class="nk-iv-scheme-name">{{$myInactivePlans[0]->investment_name}}</div>
                             <div class="nk-iv-scheme-desc">Invested Amount - <span
-                                    class="amount">${{makeMoneyHumanReadable('0')}}</span></div>
-                        </div>
-                        <div class="nk-iv-scheme-term">
-                            <div class="nk-iv-scheme-start nk-iv-scheme-order">
-                                <span class="nk-iv-scheme-label text-soft">Start Date</span>
-                                <span class="nk-iv-scheme-value date">Nov 04, 2019</span>
-                            </div>
-                            <div class="nk-iv-scheme-end nk-iv-scheme-order">
-                                <span class="nk-iv-scheme-label text-soft">End Date</span>
-                                <span class="nk-iv-scheme-value date">Nov 25, 2019</span>
+                                    class="amount">${{makeMoneyHumanReadable($myInactivePlans[0]->amount)}}</span>
                             </div>
                         </div>
-                        <div class="nk-iv-scheme-amount">
-                            <div class="nk-iv-scheme-amount-a nk-iv-scheme-order">
-                                <span class="nk-iv-scheme-label text-soft">Total Return</span>
-                                <span class="nk-iv-scheme-value amount">$ {{makeMoneyHumanReadable('0')}}</span>
-                            </div>
-                            <div class="nk-iv-scheme-amount-b nk-iv-scheme-order">
-                                <span class="nk-iv-scheme-label text-soft">Net Profit Earn</span>
-                                <span class="nk-iv-scheme-value amount">$ {{makeMoneyHumanReadable('0')}} <span
-                                        class="amount-ex">~ ${{makeMoneyHumanReadable('0')}}</span></span>
-                            </div>
-                        </div>
+                        {{--
+                                                <div class="nk-iv-scheme-term">
+                                                    <div class="nk-iv-scheme-start nk-iv-scheme-order">
+                                                        <span class="nk-iv-scheme-label text-soft">Initiated</span>
+                                                        <span
+                                                            class="nk-iv-scheme-value date">{{$myInactivePlans[0]->created_at ? : ''}}</span>
+                                                    </div>
+                                                    --}}
+                        {{--<div class="nk-iv-scheme-end nk-iv-scheme-order">
+                                                        <span class="nk-iv-scheme-label text-soft">End Date</span>
+                                                        <span class="nk-iv-scheme-value date">Nov 25, 2019</span>
+                                                    </div>--}}{{--
+
+                                                </div>
+                        --}}
+                        {{-- <div class="nk-iv-scheme-amount">
+                             <div class="nk-iv-scheme-amount-a nk-iv-scheme-order">
+                                 <span class="nk-iv-scheme-label text-soft">Total Return</span>
+                                 <span class="nk-iv-scheme-value amount">$ {{makeMoneyHumanReadable('0')}}</span>
+                             </div>
+                             <div class="nk-iv-scheme-amount-b nk-iv-scheme-order">
+                                 <span class="nk-iv-scheme-label text-soft">Net Profit Earn</span>
+                                 <span class="nk-iv-scheme-value amount">$ {{makeMoneyHumanReadable('0')}} <span
+                                         class="amount-ex">~ ${{makeMoneyHumanReadable('0')}}</span></span>
+                             </div>
+                         </div>--}}
                         <div class="nk-iv-scheme-more">
                             <a class="btn btn-icon btn-lg btn-round btn-trans"
                                href=""><em
@@ -138,86 +144,50 @@
             <div class="nk-block-head-sm">
                 <div class="nk-block-head-content">
                     <h5 class="nk-block-title">Active Plan <span
-                            class="count text-base">({{count($myActivePlans)}})</span></h5>
+                            class="count text-base">({{$activePlansCount}})</span></h5>
                 </div>
             </div>
             <div class="nk-iv-scheme-list">
-                <div class="nk-iv-scheme-item">
-                    <div class="nk-iv-scheme-icon is-running">
-                        <em class="icon ni ni-update"></em>
-                    </div>
-                    <div class="nk-iv-scheme-info">
-                        <div class="nk-iv-scheme-name">Silver - Daily 4.76% for 21 Days</div>
-                        <div class="nk-iv-scheme-desc">Invested Amount - <span
-                                class="amount">${{makeMoneyHumanReadable('0')}}</span></div>
-                    </div>
-                    <div class="nk-iv-scheme-term">
-                        <div class="nk-iv-scheme-start nk-iv-scheme-order">
-                            <span class="nk-iv-scheme-label text-soft">Start Date</span>
-                            <span class="nk-iv-scheme-value date">Nov 04, 2019</span>
+                @foreach($myActivePlans as $myActivePlan)
+                    <div class="nk-iv-scheme-item">
+                        <div class="nk-iv-scheme-icon is-running">
+                            <em class="icon ni ni-update"></em>
                         </div>
-                        <div class="nk-iv-scheme-end nk-iv-scheme-order">
-                            <span class="nk-iv-scheme-label text-soft">End Date</span>
-                            <span class="nk-iv-scheme-value date">Nov 25, 2019</span>
+                        <div class="nk-iv-scheme-info">
+                            <div class="nk-iv-scheme-name">{{$myActivePlan->investment_name}}</div>
+                            <div class="nk-iv-scheme-desc">Invested Amount - <span
+                                    class="amount">${{makeMoneyHumanReadable($myActivePlan->amount)}}</span></div>
                         </div>
-                    </div>
-                    <div class="nk-iv-scheme-amount">
-                        <div class="nk-iv-scheme-amount-a nk-iv-scheme-order">
-                            <span class="nk-iv-scheme-label text-soft">Total Return</span>
-                            <span class="nk-iv-scheme-value amount">$ {{makeMoneyHumanReadable('0')}}</span>
+                        {{--<div class="nk-iv-scheme-term">
+                            <div class="nk-iv-scheme-start nk-iv-scheme-order">
+                                <span class="nk-iv-scheme-label text-soft">Start Date</span>
+                                <span class="nk-iv-scheme-value date">Nov 04, 2019</span>
+                            </div>
+                            <div class="nk-iv-scheme-end nk-iv-scheme-order">
+                                <span class="nk-iv-scheme-label text-soft">End Date</span>
+                                <span class="nk-iv-scheme-value date">Nov 25, 2019</span>
+                            </div>
                         </div>
-                        <div class="nk-iv-scheme-amount-b nk-iv-scheme-order">
-                            <span class="nk-iv-scheme-label text-soft">Net Profit Earn</span>
-                            <span class="nk-iv-scheme-value amount">$ {{makeMoneyHumanReadable('0')}} <span
-                                    class="amount-ex">~ $152.04</span></span>
+                        <div class="nk-iv-scheme-amount">
+                            <div class="nk-iv-scheme-amount-a nk-iv-scheme-order">
+                                <span class="nk-iv-scheme-label text-soft">Total Return</span>
+                                <span class="nk-iv-scheme-value amount">$ {{makeMoneyHumanReadable('0')}}</span>
+                            </div>
+                            <div class="nk-iv-scheme-amount-b nk-iv-scheme-order">
+                                <span class="nk-iv-scheme-label text-soft">Net Profit Earn</span>
+                                <span class="nk-iv-scheme-value amount">$ {{makeMoneyHumanReadable('0')}} <span
+                                        class="amount-ex">~ $152.04</span></span>
+                            </div>
+                        </div>--}}
+                        <div class="nk-iv-scheme-more">
+                            <a class="btn btn-icon btn-lg btn-round btn-trans" href=""><em
+                                    class="icon ni ni-forward-ios"></em></a>
                         </div>
-                    </div>
-                    <div class="nk-iv-scheme-more">
-                        <a class="btn btn-icon btn-lg btn-round btn-trans" href="html/invest/scheme-details.html"><em
-                                class="icon ni ni-forward-ios"></em></a>
-                    </div>
-                    <div class="nk-iv-scheme-progress">
-                        <div class="progress-bar" data-progress="25"></div>
-                    </div>
-                </div><!-- .nk-iv-scheme-item -->
-                <div class="nk-iv-scheme-item">
-                    <div class="nk-iv-scheme-icon is-running">
-                        <em class="icon ni ni-update"></em>
-                    </div>
-                    <div class="nk-iv-scheme-info">
-                        <div class="nk-iv-scheme-name">Silver - Daily 4.76% for 21 Days</div>
-                        <div class="nk-iv-scheme-desc">Invested Amount - <span
-                                class="amount">${{makeMoneyHumanReadable('0')}}</span></div>
-                    </div>
-                    <div class="nk-iv-scheme-term">
-                        <div class="nk-iv-scheme-start nk-iv-scheme-order">
-                            <span class="nk-iv-scheme-label text-soft">Start Date</span>
-                            <span class="nk-iv-scheme-value date">Oct 30, 2019</span>
-                        </div>
-                        <div class="nk-iv-scheme-end nk-iv-scheme-order">
-                            <span class="nk-iv-scheme-label text-soft">End Date</span>
-                            <span class="nk-iv-scheme-value date">Nov 19, 2019</span>
+                        <div class="nk-iv-scheme-progress">
+                            <div class="progress-bar" data-progress="25"></div>
                         </div>
                     </div>
-                    <div class="nk-iv-scheme-amount">
-                        <div class="nk-iv-scheme-amount-a nk-iv-scheme-order">
-                            <span class="nk-iv-scheme-label text-soft">Total Return</span>
-                            <span class="nk-iv-scheme-value amount">$ {{makeMoneyHumanReadable('0')}}</span>
-                        </div>
-                        <div class="nk-iv-scheme-amount-b nk-iv-scheme-order">
-                            <span class="nk-iv-scheme-label text-soft">Net Profit Earn</span>
-                            <span class="nk-iv-scheme-value amount">$ {{makeMoneyHumanReadable('0')}} <span
-                                    class="amount-ex">~ ${{makeMoneyHumanReadable('0')}}</span></span>
-                        </div>
-                    </div>
-                    <div class="nk-iv-scheme-more">
-                        <a class="btn btn-icon btn-lg btn-round btn-trans" href=""><em
-                                class="icon ni ni-forward-ios"></em></a>
-                    </div>
-                    <div class="nk-iv-scheme-progress">
-                        <div class="progress-bar" data-progress="90"></div>
-                    </div>
-                </div><!-- .nk-iv-scheme-item -->
+                @endforeach<!-- .nk-iv-scheme-item -->
             </div><!-- .nk-iv-scheme-list -->
         </div><!-- .nk-block -->
         <div class="nk-block nk-block-lg">
@@ -225,81 +195,48 @@
                 <div class="nk-block-between">
                     <div class="nk-block-head-content">
                         <h5 class="nk-block-title">Recently End <span
-                                class="count text-base">({{count($myEndedPlans)}})</span></h5>
+                                class="count text-base">({{$endedPlansCount}})</span></h5>
                     </div>
                 </div>
             </div>
             <div class="nk-iv-scheme-list">
-                <div class="nk-iv-scheme-item">
-                    <div class="nk-iv-scheme-icon is-done">
-                        <em class="icon ni ni-offer"></em>
-                    </div>
-                    <div class="nk-iv-scheme-info">
-                        <div class="nk-iv-scheme-name">Silver - Daily 4.76% for 21 Days</div>
-                        <div class="nk-iv-scheme-desc">Invested Amount - <span
-                                class="amount">${{makeMoneyHumanReadable('0')}}</span></div>
-                    </div>
-                    <div class="nk-iv-scheme-term">
-                        <div class="nk-iv-scheme-start nk-iv-scheme-order">
-                            <span class="nk-iv-scheme-label text-soft">Start Date</span>
-                            <span class="nk-iv-scheme-value date">Nov 04, 2019</span>
+                @foreach($myEndedPlans as $myEndedPlan)
+                    <div class="nk-iv-scheme-item">
+                        <div class="nk-iv-scheme-icon is-done">
+                            <em class="icon ni ni-offer"></em>
                         </div>
-                        <div class="nk-iv-scheme-end nk-iv-scheme-order">
-                            <span class="nk-iv-scheme-label text-soft">End Date</span>
-                            <span class="nk-iv-scheme-value date">Nov 25, 2019</span>
+                        <div class="nk-iv-scheme-info">
+                            <div class="nk-iv-scheme-name">{{$myEndedPlan[0]->investment_name}} </div>
+                            <div class="nk-iv-scheme-desc">Invested Amount - <span
+                                    class="amount">${{makeMoneyHumanReadable($myEndedPlan[0]->amount)}}</span></div>
                         </div>
-                    </div>
-                    <div class="nk-iv-scheme-amount">
-                        <div class="nk-iv-scheme-amount-a nk-iv-scheme-order">
-                            <span class="nk-iv-scheme-label text-soft">Total Return</span>
-                            <span class="nk-iv-scheme-value amount">$ {{makeMoneyHumanReadable('0')}}</span>
-                        </div>
-                        <div class="nk-iv-scheme-amount-b nk-iv-scheme-order">
-                            <span class="nk-iv-scheme-label text-soft">Net Profit Earn</span>
-                            <span class="nk-iv-scheme-value amount">$ {{makeMoneyHumanReadable('0')}} <span
-                                    class="amount-ex">~ ${{makeMoneyHumanReadable('0')}}</span></span>
-                        </div>
-                    </div>
-                    <div class="nk-iv-scheme-more">
-                        <a class="btn btn-icon btn-lg btn-round btn-trans" href=""><em
-                                class="icon ni ni-forward-ios"></em></a>
-                    </div>
-                </div><!-- .nk-iv-scheme-item -->
-                <div class="nk-iv-scheme-item">
-                    <div class="nk-iv-scheme-icon is-done">
-                        <em class="icon ni ni-offer"></em>
-                    </div>
-                    <div class="nk-iv-scheme-info">
-                        <div class="nk-iv-scheme-name">Silver - Daily 4.76% for 21 Days</div>
-                        <div class="nk-iv-scheme-desc">Invested Amount - <span
-                                class="amount">${{makeMoneyHumanReadable('0')}}</span></div>
-                    </div>
-                    <div class="nk-iv-scheme-term">
-                        <div class="nk-iv-scheme-start nk-iv-scheme-order">
-                            <span class="nk-iv-scheme-label text-soft">Start Date</span>
-                            <span class="nk-iv-scheme-value date">Oct 30, 2019</span>
-                        </div>
-                        <div class="nk-iv-scheme-end nk-iv-scheme-order">
-                            <span class="nk-iv-scheme-label text-soft">End Date</span>
-                            <span class="nk-iv-scheme-value date">Nov 19, 2019</span>
+                        {{-- <div class="nk-iv-scheme-term">
+                             <div class="nk-iv-scheme-start nk-iv-scheme-order">
+                                 <span class="nk-iv-scheme-label text-soft">Start Date</span>
+                                 <span class="nk-iv-scheme-value date">Nov 04, 2019</span>
+                             </div>
+                             <div class="nk-iv-scheme-end nk-iv-scheme-order">
+                                 <span class="nk-iv-scheme-label text-soft">End Date</span>
+                                 <span class="nk-iv-scheme-value date">Nov 25, 2019</span>
+                             </div>
+                         </div>
+                         <div class="nk-iv-scheme-amount">
+                             <div class="nk-iv-scheme-amount-a nk-iv-scheme-order">
+                                 <span class="nk-iv-scheme-label text-soft">Total Return</span>
+                                 <span class="nk-iv-scheme-value amount">$ {{makeMoneyHumanReadable('0')}}</span>
+                             </div>
+                             <div class="nk-iv-scheme-amount-b nk-iv-scheme-order">
+                                 <span class="nk-iv-scheme-label text-soft">Net Profit Earn</span>
+                                 <span class="nk-iv-scheme-value amount">$ {{makeMoneyHumanReadable('0')}} <span
+                                         class="amount-ex">~ ${{makeMoneyHumanReadable('0')}}</span></span>
+                             </div>
+                         </div>--}}
+                        <div class="nk-iv-scheme-more">
+                            <a class="btn btn-icon btn-lg btn-round btn-trans" href=""><em
+                                    class="icon ni ni-forward-ios"></em></a>
                         </div>
                     </div>
-                    <div class="nk-iv-scheme-amount">
-                        <div class="nk-iv-scheme-amount-a nk-iv-scheme-order">
-                            <span class="nk-iv-scheme-label text-soft">Total Return</span>
-                            <span class="nk-iv-scheme-value amount">$ {{makeMoneyHumanReadable('0')}}</span>
-                        </div>
-                        <div class="nk-iv-scheme-amount-b nk-iv-scheme-order">
-                            <span class="nk-iv-scheme-label text-soft">Net Profit Earn</span>
-                            <span class="nk-iv-scheme-value amount">$ {{makeMoneyHumanReadable('0')}} <span
-                                    class="amount-ex">~ ${{makeMoneyHumanReadable('0')}}</span></span>
-                        </div>
-                    </div>
-                    <div class="nk-iv-scheme-more">
-                        <a class="btn btn-icon btn-lg btn-round btn-trans" href="html/invest/scheme-details.html"><em
-                                class="icon ni ni-forward-ios"></em></a>
-                    </div>
-                </div><!-- .nk-iv-scheme-item -->
+                @endforeach<!-- .nk-iv-scheme-item -->
             </div><!-- .nk-iv-scheme-list -->
         </div><!-- .nk-block -->
 

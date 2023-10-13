@@ -89,7 +89,7 @@ class InvestmentsController extends Controller
     /**
      * Remove the specified resource from storage.
      * @param int $id
-     * @return Renderable
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function destroy($id)
     {
@@ -132,34 +132,39 @@ class InvestmentsController extends Controller
     {
         $user_id = Auth::id();
         //User plans based on status
-        $myActivePlans = DB::table('payments')->where('user_id', $user_id)->where('status', 'Approved')->get('investment_id');
-        $myEndedPlans = DB::table('payments')->where('user_id', $user_id)->where('status', 'Approved')->where('approved_at', '<', Carbon::now())->get('investment_id');
-        $myInactivePlans = DB::table('payments')->where('user_id', $user_id)->where('status', 'Pending')->get('investment_id');
+        $myActivePlans = DB::table('payments')->where('user_id', $user_id)->where('status', 'Approved')->get();
+        $myEndedPlans = DB::table('payments')->where('user_id', $user_id)->where('status', 'Approved')->where('approved_at', '<', Carbon::now())->get();
+        $myInactivePlans = DB::table('payments')->where('user_id', $user_id)->where('status', 'Pending')->get();
+
         // This get the count of each plan status
         $activePlansCount = count($myActivePlans);
         $endedPlansCount = count($myEndedPlans);
         $inactivePlansCount = count($myInactivePlans);
+        //dd($myActivePlans);
+        return view('investments::myPlans')->with('myEndedPlans', $myEndedPlans)
+            ->with('myInactivePlans', $myInactivePlans)
+            ->with('myActivePlans', $myActivePlans)
+            ->with('activePlansCount', $activePlansCount)
+            ->with('inactivePlansCount', $inactivePlansCount)
+            ->with('endedPlansCount', $endedPlansCount);
+
         //Getting plans data and passing it to an array
-        $activePlans = [];
+        /*$activePlans = [];
         $InactivePlans = [];
         $endedPlans = [];
-        /*foreach ($myActivePlans as $activePlan) {
-            $activePlans[] = $this->investment->show($activePlan);
+        foreach ($myActivePlans as $activePlan) {
+            $activePlans[] = $this->investment->show($activePlan[0]->investment_id);
         }
         foreach ($myInactivePlans as $InactivePlan) {
-            $InactivePlans[] = $this->investment->show($InactivePlan);
+            $InactivePlans[] = $this->investment->show($InactivePlan->investment_id);
         }
         foreach ($myEndedPlans as $endedPlan) {
-            $endedPlans[] = $this->investment->show($endedPlan);
+            $endedPlans[] = $this->investment->show($endedPlan[0]->investment_id);
         }
-        $userPlans = [
-            $activePlans,
-            $endedPlans,
-            $InactivePlans
-        ];*/
-        // dd($myActivePlans);
+        dd($InactivePlans);
         // Passing it to view
-        return view('investments::myPlans')->with('myEndedPlans', $myEndedPlans)->with('myInactivePlans', $myInactivePlans)->with('myActivePlans', $myActivePlans)->with('activePlansCount', $activePlansCount)->with('inactivePlansCount', $inactivePlansCount)->with('endedPlansCount', $endedPlansCount);
+        return view('investments::myPlans')->with('endedPlans', $endedPlans)->with('InactivePlans', $InactivePlans)->with('activePlans', $activePlans)->with('activePlansCount', $activePlansCount)->with('inactivePlansCount', $inactivePlansCount)->with('endedPlansCount', $endedPlansCount);
+    */
     }
 
     public function viewPlan($id)

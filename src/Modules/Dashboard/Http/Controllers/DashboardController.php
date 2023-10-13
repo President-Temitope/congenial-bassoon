@@ -3,7 +3,6 @@
 namespace Modules\Dashboard\Http\Controllers;
 
 use Auth;
-use Carbon\Carbon;
 use Illuminate\Contracts\Support\Renderable;
 use Illuminate\Routing\Controller;
 use Illuminate\Support\Facades\DB;
@@ -30,11 +29,10 @@ class DashboardController extends Controller
     {
         $data = [];
         $user_id = auth()->id();
-        if (auth()->user()->getRoleNames() === 'user') {
-            $data[] = DB::table('payments')->where('user_id', $user_id)->where('status', '', 'Approved')->where('approved_at', '>', Carbon::now())->get('investment_id');
+        if (auth()->user()->getRoleNames()[0] === 'user') {
+            $data[] = DB::table('payments')->where('user_id', $user_id)->where('status', 'Approved')->get();
         }
-        $data[] = ['available_balance' => null];
-
+        //   dd($data[0][0]->investment_name);
         return view('dashboard::index')->with('data', $data);
     }
 
