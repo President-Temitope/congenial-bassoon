@@ -28,11 +28,13 @@
                     <div class="nk-block-head-content d-none d-md-block">
                         <div class="nk-slider nk-slider-s1">
                             <div class="slider-init"
-                                 data-slick='{"dots": true, "arrows": false, "fade": true}'> @if(count($data) > 0)
+                                 data-slick='{"dots": true, "arrows": false, "fade": true}'>
+                                @if( isset($data[0]) && isset($data[0][0]) && count($data) > 0)
                                     <div class="slider-item">
                                         <div class="nk-iv-wg1">
                                             <div class="nk-iv-wg1-sub sub-text">My Active Plans</div>
-                                            <h6 class="nk-iv-wg1-info title"></h6>{{$data[0][0]->investment_name}}<a
+                                            <h6 class="nk-iv-wg1-info title"></h6>{{$data[0][0]->investment_name}}
+                                            <a
                                                 class="nk-iv-wg1-link link link-light" href="#"><em
                                                     class="icon ni ni-trend-up"></em> <span>Check Details</span></a>
                                             <div class="nk-iv-wg1-progress">
@@ -87,7 +89,7 @@
                                 </div>
                                 <div class="nk-iv-wg2-text">
                                     <div
-                                        class="nk-iv-wg2-amount"> {{$data[0][0]->available_balance!==null ? makeMoneyHumanReadable($data[0][0]->available_balance):0}}
+                                        class="nk-iv-wg2-amount"> {{isset($data[0]) && isset($data[0][0]) && count($data) > 0 &&$data[0][0]->available_balance!==null ? makeMoneyHumanReadable($data[0][0]->available_balance):0}}
                                         <span class="change up"><span class="sign"></span>3.4%</span></div>
                                 </div>
                             </div>
@@ -103,7 +105,7 @@
                                 </div>
                                 <div class="nk-iv-wg2-text">
                                     <div
-                                        class="nk-iv-wg2-amount"> {{$data[0][0]->total_invested!==null ? makeMoneyHumanReadable($data[0][0]->total_invested):0}}
+                                        class="nk-iv-wg2-amount"> {{isset($data[0]) && isset($data[0][0]) && count($data) > 0 &&$data[0][0]->total_invested!==null ? makeMoneyHumanReadable($data[0][0]->total_invested):0}}
                                         <span class="change up"><span
                                                 class="sign"></span>2.8%</span></div>
                                 </div>
@@ -120,7 +122,7 @@
                                 </div>
                                 <div class="nk-iv-wg2-text">
                                     <div
-                                        class="nk-iv-wg2-amount"> {{$data[0][0]->total_profit!==null ? makeMoneyHumanReadable($data[0][0]->total_profit):0}}
+                                        class="nk-iv-wg2-amount"> {{isset($data[0]) && isset($data[0][0]) && count($data) > 0 &&$data[0][0]->total_profit!==null ? makeMoneyHumanReadable($data[0][0]->total_profit):0}}
                                         <span class="change down"><span
                                                 class="sign"></span>1.4%</span></div>
                                 </div>
@@ -251,16 +253,16 @@
                                 </div>
                                 <div class="nk-iv-wg2-text">
                                     <div
-                                        class="nk-iv-wg2-amount ui-v2">{{$data[0][0]->balance_in_account ? makeMoneyHumanReadable($data[0][0]->balance_in_account):0}}</div>
+                                        class="nk-iv-wg2-amount ui-v2">{{isset($data[0]) && isset($data[0][0]) && count($data) > 0 &&$data[0][0]->balance_in_account ? makeMoneyHumanReadable($data[0][0]->balance_in_account):0}}</div>
                                     <ul class="nk-iv-wg2-list">
                                         <li><span class="item-label">Available Funds</span><span
-                                                class="item-value">{{$data[0][0]->available_fund!==null ? makeMoneyHumanReadable($data[0][0]->available_fund):0}}</span>
+                                                class="item-value">{{isset($data[0]) && isset($data[0][0]) && count($data) > 0 &&$data[0][0]->available_fund!==null ? makeMoneyHumanReadable($data[0][0]->available_fund):0}}</span>
                                         </li>
                                         <li><span class="item-label">Invested Funds</span><span
-                                                class="item-value">{{$data[0][0]->invested_fund!==null ? makeMoneyHumanReadable($data[0][0]->invested_fund):0}}</span>
+                                                class="item-value">{{isset($data[0]) && isset($data[0][0]) && count($data) > 0 &&$data[0][0]->invested_fund!==null ? makeMoneyHumanReadable($data[0][0]->invested_fund):0}}</span>
                                         </li>
                                         <li class="total"><span class="item-label">Total</span><span
-                                                class="item-value">{{$data[0][0]->balance_in_account!==null ? makeMoneyHumanReadable($data[0][0]->balance_in_account):0}}</span>
+                                                class="item-value">{{isset($data[0]) && isset($data[0][0]) && count($data) > 0 &&$data[0][0]->balance_in_account!==null ? makeMoneyHumanReadable($data[0][0]->balance_in_account):0}}</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -280,7 +282,7 @@
                                 </div>
                                 <div class="nk-iv-wg2-text">
                                     <div
-                                        class="nk-iv-wg2-amount ui-v2">{{$data[0][0]->this_month_profit!==null ? makeMoneyHumanReadable($data[0][0]->this_month_profit):0}}
+                                        class="nk-iv-wg2-amount ui-v2">{{isset($data[0]) && isset($data[0][0]) && count($data) > 0 && $data[0][0]->this_month_profit!==null ? makeMoneyHumanReadable($data[0][0]->this_month_profit):0}}
                                         <span class="change up"><span
                                                 class="sign"></span>4.5%</span></div>
                                     {{--
@@ -320,7 +322,7 @@
                                                         <div class="nk-iv-wg2-amount ui-v2">0 <span
                                                                 class="sub">0{{count($data)}}</span> Active
                                                         </div>
-                                                        <ul class="nk-iv-wg2-list"> @if(count($data) > 0)
+                                                        <ul class="nk-iv-wg2-list"> @if(isset($data[0]) && isset($data[0][0]) && count($data) > 0)
                                                                 <li><span class="item-label"><a href="#">Silver</a> <small>- 4.76% for 21 Days</small></span><span
                                                                         class="item-value">{{$data[0][0]['available_balance']!==null ? makeMoneyHumanReadable($data[0][0]['available_balance']):0}}</span>
                                                                 </li>

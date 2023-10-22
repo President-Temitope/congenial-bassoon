@@ -23,7 +23,7 @@ class AddPOPFieldToPaymentsTable extends Migration
             $table->string('available_fund')->nullable()->default(null);
             $table->string('invested_fund')->nullable()->default(null);
             $table->string('this_month_profit')->nullable()->default(null);
-            $table->string('email')->nullable()->default(null);
+            $table->string('user_email')->nullable()->default(null);
             $table->timestamps();
         });
     }

@@ -32,7 +32,6 @@ class DashboardController extends Controller
         if (auth()->user()->getRoleNames()[0] === 'user') {
             $data[] = DB::table('payments')->where('user_id', $user_id)->where('status', 'Approved')->get();
         }
-        //   dd($data[0][0]->investment_name);
         return view('dashboard::index')->with('data', $data);
     }
 
