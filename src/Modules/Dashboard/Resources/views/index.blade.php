@@ -90,7 +90,7 @@
                                 <div class="nk-iv-wg2-text">
                                     <div
                                         class="nk-iv-wg2-amount"> {{isset($data[0]) && isset($data[0][0]) && count($data) > 0 &&$data[0][0]->available_balance!==null ? makeMoneyHumanReadable($data[0][0]->available_balance):0}}
-                                        <span class="change up"><span class="sign"></span>3.4%</span></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -106,8 +106,7 @@
                                 <div class="nk-iv-wg2-text">
                                     <div
                                         class="nk-iv-wg2-amount"> {{isset($data[0]) && isset($data[0][0]) && count($data) > 0 &&$data[0][0]->total_invested!==null ? makeMoneyHumanReadable($data[0][0]->total_invested):0}}
-                                        <span class="change up"><span
-                                                class="sign"></span>2.8%</span></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -123,8 +122,7 @@
                                 <div class="nk-iv-wg2-text">
                                     <div
                                         class="nk-iv-wg2-amount"> {{isset($data[0]) && isset($data[0][0]) && count($data) > 0 &&$data[0][0]->total_profit!==null ? makeMoneyHumanReadable($data[0][0]->total_profit):0}}
-                                        <span class="change down"><span
-                                                class="sign"></span>1.4%</span></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -283,8 +281,7 @@
                                 <div class="nk-iv-wg2-text">
                                     <div
                                         class="nk-iv-wg2-amount ui-v2">{{isset($data[0]) && isset($data[0][0]) && count($data) > 0 && $data[0][0]->this_month_profit!==null ? makeMoneyHumanReadable($data[0][0]->this_month_profit):0}}
-                                        <span class="change up"><span
-                                                class="sign"></span>4.5%</span></div>
+                                    </div>
                                     {{--
                                                                     <ul class="nk-iv-wg2-list">
                                                                         <li><span class="item-label">Profits</span><span
