@@ -7,7 +7,7 @@
         @include('core::table',[
         $title = 'Users Table',
         $description = 'Manage all users activities',
-        $fieldlists = ['id','firstname','lastname','email','cryptocurrency','wallet','email_verified_at','created_at'],
+        $fieldlists = ['id','firstname','lastname','email','cryptocurrency','phone_number','email_verified_at','created_at'],
         $modeldata = $users,
         $addButton = '"#addUser"',
         $editQuery = 'firstname',

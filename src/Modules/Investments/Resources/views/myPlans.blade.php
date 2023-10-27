@@ -22,65 +22,69 @@
                 </div>
             </div>
         </div><!-- .nk-block-head -->
-        <div class="nk-block">
-            <div class="card card-bordered">
-                <div class="card-inner-group">
-                    <div class="card-inner">
-                        <div class="row gy-gs">
-                            <div class="col-lg-5">
-                                <div class="nk-iv-wg3">
-                                    <div class="nk-iv-wg3-title">Total Balance</div>
-                                    <div class="nk-iv-wg3-group  flex-lg-nowrap gx-4">
-                                        <div class="nk-iv-wg3-sub">
-                                            <div class="nk-iv-wg3-amount">
-                                                <div class="number">{{makeMoneyHumanReadable('0')}} <small
-                                                        class="currency currency-usd">USD</small></div>
-                                            </div>
-                                            <div class="nk-iv-wg3-subtitle">Available Balance</div>
-                                        </div>
-                                        {{--<div class="nk-iv-wg3-sub">
-                                            <span class="nk-iv-wg3-plus text-soft"><em
-                                                    class="icon ni ni-plus"></em></span>
-                                            <div class="nk-iv-wg3-amount">
-                                                <div class="number-sm">1,500.05</div>
-                                            </div>
-                                            <div class="nk-iv-wg3-subtitle">Locked Balance <em
-                                                    class="icon ni ni-info-fill" data-toggle="tooltip"
-                                                    data-placement="right" title="You can't use"></em></div>
-                                        </div>--}}
-                                    </div>
-                                </div>
-                            </div><!-- .col -->
-                            <div class="col-lg-7">
-                                <div class="nk-iv-wg3">
-                                    <div class="nk-iv-wg3-title">This Month <em class="icon ni ni-info-fill"
-                                                                                data-toggle="tooltip"
-                                                                                data-placement="right"
-                                                                                title="Current Month Profit"></em></div>
-                                    <div class="nk-iv-wg3-group flex-md-nowrap g-4">
-                                        <div class="nk-iv-wg3-sub-group gx-4">
-                                            <div class="nk-iv-wg3-sub">
-                                                <div class="nk-iv-wg3-amount">
-                                                    <div class="number">{{makeMoneyHumanReadable('0')}}</div>
+        {{--
+                <div class="nk-block">
+                    <div class="card card-bordered">
+                        <div class="card-inner-group">
+                            <div class="card-inner">
+                                <div class="row gy-gs">
+                                    <div class="col-lg-5">
+                                        <div class="nk-iv-wg3">
+                                            <div class="nk-iv-wg3-title">Total Balance</div>
+                                            <div class="nk-iv-wg3-group  flex-lg-nowrap gx-4">
+                                                <div class="nk-iv-wg3-sub">
+                                                    <div class="nk-iv-wg3-amount">
+                                                        <div class="number">{{makeMoneyHumanReadable('0')}} <small
+                                                                class="currency currency-usd">USD</small></div>
+                                                    </div>
+                                                    <div class="nk-iv-wg3-subtitle">Available Balance</div>
                                                 </div>
-                                                <div class="nk-iv-wg3-subtitle">Total Profit</div>
-                                            </div>
-                                            <div class="nk-iv-wg3-sub">
-                                                <span class="nk-iv-wg3-plus text-soft"><em class="icon ni ni-plus"></em></span>
-                                                <div class="nk-iv-wg3-amount">
-                                                    <div class="number-sm">{{makeMoneyHumanReadable('0')}}</div>
-                                                </div>
-                                                <div class="nk-iv-wg3-subtitle">Today Profit</div>
+                                                --}}
+        {{--<div class="nk-iv-wg3-sub">
+                                                    <span class="nk-iv-wg3-plus text-soft"><em
+                                                            class="icon ni ni-plus"></em></span>
+                                                    <div class="nk-iv-wg3-amount">
+                                                        <div class="number-sm">1,500.05</div>
+                                                    </div>
+                                                    <div class="nk-iv-wg3-subtitle">Locked Balance <em
+                                                            class="icon ni ni-info-fill" data-toggle="tooltip"
+                                                            data-placement="right" title="You can't use"></em></div>
+                                                </div>--}}{{--
+
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div><!-- .col -->
-                        </div><!-- .row -->
-                    </div><!-- .card-inner -->
-                </div><!-- .card-inner-group -->
-            </div><!-- .card -->
-        </div><!-- .nk-block -->
+                                    </div><!-- .col -->
+                                    <div class="col-lg-7">
+                                        <div class="nk-iv-wg3">
+                                            <div class="nk-iv-wg3-title">This Month <em class="icon ni ni-info-fill"
+                                                                                        data-toggle="tooltip"
+                                                                                        data-placement="right"
+                                                                                        title="Current Month Profit"></em></div>
+                                            <div class="nk-iv-wg3-group flex-md-nowrap g-4">
+                                                <div class="nk-iv-wg3-sub-group gx-4">
+                                                    <div class="nk-iv-wg3-sub">
+                                                        <div class="nk-iv-wg3-amount">
+                                                            <div class="number">{{makeMoneyHumanReadable('0')}}</div>
+                                                        </div>
+                                                        <div class="nk-iv-wg3-subtitle">Total Profit</div>
+                                                    </div>
+                                                    <div class="nk-iv-wg3-sub">
+                                                        <span class="nk-iv-wg3-plus text-soft"><em class="icon ni ni-plus"></em></span>
+                                                        <div class="nk-iv-wg3-amount">
+                                                            <div class="number-sm">{{makeMoneyHumanReadable('0')}}</div>
+                                                        </div>
+                                                        <div class="nk-iv-wg3-subtitle">Today Profit</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><!-- .col -->
+                                </div><!-- .row -->
+                            </div><!-- .card-inner -->
+                        </div><!-- .card-inner-group -->
+                    </div><!-- .card -->
+                </div><!-- .nk-block -->
+        --}}
         <div class="nk-block nk-block-lg">
             <div class="nk-block-head-sm">
                 <div class="nk-block-head-content">
@@ -96,9 +100,9 @@
                             <em class="icon ni ni-update"></em>
                         </div>
                         <div class="nk-iv-scheme-info">
-                            <div class="nk-iv-scheme-name">{{$myInactivePlans[0]->investment_name}}</div>
+                            <div class="nk-iv-scheme-name">{{$myInactivePlans->investment_name}}</div>
                             <div class="nk-iv-scheme-desc">Invested Amount - <span
-                                    class="amount">${{makeMoneyHumanReadable($myInactivePlans[0]->amount)}}</span>
+                                    class="amount">${{makeMoneyHumanReadable($myInactivePlans->amount)}}</span>
                             </div>
                         </div>
                         {{--
@@ -206,9 +210,9 @@
                             <em class="icon ni ni-offer"></em>
                         </div>
                         <div class="nk-iv-scheme-info">
-                            <div class="nk-iv-scheme-name">{{$myEndedPlan[0]->investment_name}} </div>
+                            <div class="nk-iv-scheme-name">{{$myEndedPlan->investment_name}} </div>
                             <div class="nk-iv-scheme-desc">Invested Amount - <span
-                                    class="amount">${{makeMoneyHumanReadable($myEndedPlan[0]->amount)}}</span></div>
+                                    class="amount">${{makeMoneyHumanReadable($myEndedPlan->amount)}}</span></div>
                         </div>
                         {{-- <div class="nk-iv-scheme-term">
                              <div class="nk-iv-scheme-start nk-iv-scheme-order">

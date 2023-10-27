@@ -446,7 +446,9 @@
                                     </div>
                                     <div class="dropdown-inner user-account-info">
                                         <h6 class="overline-title-alt">Account Balance</h6>
-                                        <div class="user-balance">0 <small
+                                        <div
+                                            class="user-balance">{{isset($data[0]) && isset($data[0][0]) && count($data) > 0 &&$data[0][0]->available_balance!==null ? makeMoneyHumanReadable($data[0][0]->available_balance):0}}
+                                            <small
                                                 class="currency currency-usd">USD</small></div>
                                         <a class="link" href="#"><span>Withdraw Balance</span> <em
                                                 class="icon ni ni-wallet-out"></em></a>

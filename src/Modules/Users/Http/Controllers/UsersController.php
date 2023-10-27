@@ -37,7 +37,7 @@ class UsersController extends Controller
     {
         $id = Auth::id();
         $user = $this->user->show($id);
-       // dd($user);
+        // dd($user);
         return view('users::profile')->with('user', $user);
     }
 
@@ -56,10 +56,11 @@ class UsersController extends Controller
     /**
      * Remove the specified resource from storage.
      * @param int $id
-     * @return Renderable
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function destroy($id)
     {
-        User::destroy($id);
+        $this->user->delete($id);
+        return redirect()->back();
     }
 }

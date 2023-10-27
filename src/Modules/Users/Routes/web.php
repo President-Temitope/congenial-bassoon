@@ -13,6 +13,7 @@
 
 Route::prefix('users')->group(function () {
     Route::get('/', 'UsersController@index');
-    Route::get('/profile','UsersController@profile')->name('profile');
-    Route::get('/profile/settings','UsersController@profile_settings')->name('profile-settings');
+    Route::get('/profile', 'UsersController@profile')->name('profile');
+    Route::get('/profile/settings', 'UsersController@profile_settings')->name('profile-settings');
+    Route::get('/deleteUser/{id}', 'UsersController@destroy')->name('delete-user');
 });
