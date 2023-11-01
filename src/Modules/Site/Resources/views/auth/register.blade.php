@@ -6,13 +6,11 @@
     <title>Register - {{config('app.name')}}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Favicon -->
     <!-- <link rel="shortcut icon" href="./images/favicon.png"> -->
+
     <!-- REG REGISTER VALI FORM -->
-    <!-- <link rel="stylesheet" href="asset1/css/bootstrap.min.css">
-                <link rel="stylesheet" href="asset1/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="asset1/css/themify-icons.css">
     <link rel="stylesheet" href="asset1/css/metisMenu.css">
-    <link rel="stylesheet" href="asset1/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="asset1/css/slicknav.min.css"> <!-- amchart css -->
+    <!-- amchart css -->
     <link rel="stylesheet" href="../www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" /> <!-- others css -->
     <link rel="stylesheet" href="asset1/css/typography.css">
     <link rel="stylesheet" href="asset1/css/default-css.css">
@@ -20,10 +18,9 @@
     <link rel="stylesheet" href="asset1/css/responsive.css"> <!-- modernizr css -->
     <script src="asset1/js/vendor/modernizr-2.8.3.min.js"></script>
     <script src="./cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script> <!-- END REG FORM PLUGIN  -->
+
     <!-- Template CSS Files -->
-    <link rel="stylesheet" href="./asset/font-awesome.min.css"> <!-- <link rel="stylesheet" href="./asset/css/bootstrap.min.css"> -->
-    <!-- <link rel="stylesheet" href="./asset/css/magnific-popup.css">
-    <link rel="stylesheet" href="./asset/css/select2.min.css"> -->
+    <link rel="stylesheet" href="./asset/font-awesome.min.css"> 
     <link rel="stylesheet" href="./asset/css/skins/blue.css">
     <link rel="alternate stylesheet" type="text/css" title="blue" href="./asset/css/skins/blue.css" />
     <link rel="stylesheet" type="text/css" href="./asset/css/styleswitcher.css" />
@@ -225,115 +222,41 @@
                             <p class="info-form">Open account with us for free!</p>
                         </div> <!-- Section Title Ends -->
                         <!-- Form Starts -->
-                        <form method="post" action="{{route('postRegister')}}"> @csrf
-                            <!-- Input Field Starts -->
-                            <!-- <div class="form-group">
-                            <input class="form-control" name="firstname" id="name" placeholder="FIRSTNAME" type="text"
-                                   required>
-                        </div> -->
-                            <!-- <div class=" input-box">
-                            <input class="form-control input-field" name="firstname" id="name" placeholder="" type="text" required>
-                            <label for="email">FIRSTNAME</label>
-                        </div> -->
-                            <!-- <div class="form-group">
-                            <input class="form-control" name="lastname" id="name" placeholder="LASTNAME" type="text"
-                                   required>
-                        </div> -->
-                            <!-- 
-                        <div class=" input-box">
-                            <input class="form-control input-field" name="lastname" id="name" placeholder="" type="text" required>
-                            <label for="email">LASTNAME</label>
-                        </div> -->
-                            <!-- Input Field Ends -->
-                            <!-- Input Field Starts -->
-                            <!-- <div class="form-group">
-                            <input class="form-control" name="email" id="email" placeholder="EMAIL" type="email"
-                                   required>
-                        </div> -->
-                            <!-- <div class=" input-box">
-                            <input class="form-control input-field" name="email" id="name" placeholder="" type="email" required>
-                            <label for="email">EMAIL</label>
-                        </div> -->
-                            <!-- Input Field Ends -->
-                            <!-- <div class="input-box">
-                            <input class="input-field" name="phone_number" placeholder="PHONE NUMBER" id="phone"
-                                   type="tel">
-                        </div> -->
-                            <!-- <div class=" form-group">
-                            <input class="form-control" name="phone_number" id="phone" placeholder="" type="tel" required>
-                            <label for="email">TELEPHONE</label>
-                        </div> -->
-                            <!-- Input Field Starts -->
-                            <!-- <div class="form-group input-box">
-                            <input class="form-control input-field" name="password" id="password" placeholder=""
-                                   type="password" required>
-                                   <label for="email">PASSWORD</label>
-                        </div> -->
-                            <!-- Input Field Ends -->
-                            <!-- Input Field Starts -->
-                            <!-- <div class="form-group input-box">
-                            <input class="form-control input-field" name="password_confirmation" id="password"
-                                placeholder="" type="password" required>
-                                <label for="email">CONFRIM PASSWORD</label>
-                        </div> -->
-                            <!-- Input Field Ends -->
-                            <!-- Input Field Starts -->
-                            <!-- <div class="form-group">
-                            <select class="form-control" name="coin_type" id="password">
-                                <option value="btc">Bitcoin</option>
-                                <option value="ltc">Litecoin</option>
-                                <option value="eth">Ethereum</option>
-                            </select>
-                        </div> -->
-                            <!-- Input Field Ends -->
-                            <!-- Input Field Starts -->
-                            <!-- === Wallet Field ===== -->
-                            <!-- <div class="form-group">
-                            <input class="form-control" name="wallet_address" placeholder="WALLET ADDRESS" type="text">
-                        </div> -->
-                            <!-- Input Field Ends -->
-                            <!-- Submit Form Button Starts -->
-                            <!-- <div class="form-group">
-                            <button class="btn btn-primary" type="submit">create account</button>
-                            <p class="text-center">already have an account ? <a href="{{route('login')}}">Login</a>
-                        </div> -->
+                        <form method="post" action="{{route('postRegister')}}">
+                             @csrf
                             <div class="login-form-body">
-                                <div class="form-gp"> <label for="exampleInputName1">First Name</label> <input type="text" id="exampleInputName1" name="fname" required> <input type="hidden" class="form-control" name="ref" value="2170"> <input type="hidden" class="form-control" name="sel" value="1a2f">
+                                <div class="form-gp">
+                                    <label for="exampleInputName1">First Name</label><input type="text" name="firstname" id="name" required> 
+                                    <input type="hidden" class="form-control" name="ref" value="2170"> 
+                                    <input type="hidden" class="form-control" name="sel" value="1a2f">
                                     <div class="text-danger"></div>
                                 </div>
-                                <div class="form-gp"><label for="exampleInputName1">Last Name</label> <input type="text" id="exampleInputName1" name="lname" required>
+                                <div class="form-gp"><label for="exampleInputName1">Last Name</label> <input type="text" name="lastname" id="name" required>
                                     <div class="text-danger"></div>
                                 </div>
-                                <!-- <div class="form-gp"> <label for="exampleInputName1">Username</label> <input type="text" id="exampleInputName1" name="uname" required>
-                            <div class="text-danger"></div>
-                        </div> -->
-                                <div class="form-group input-box"> <input class="input-field" name="phone_number" id="phone" placeholder="" type="tel" required> <!-- <label for="email">TELEPHONE</label> -->
+                                <div class="form-group input-box"> <input class="input-field" name="phone_number" id="phone" placeholder="" type="tel" required>
+                                 <!-- <label for="email">TELEPHONE</label> -->
                                 </div>
-                                <div class="form-gp"> <label for="exampleInputEmail1">Email address</label> <input type="email" id="exampleInputEmail1" name="email" required> <i class="ti-email"></i>
+                                <div class="form-gp"> <label for="exampleInputEmail1">Email address</label> <input type="email" name="email" name="email" required><i class="ti-email"></i>
                                     <div class="text-danger"></div>
                                 </div>
-                                <div class="form-gp"> <label for="exampleInputPassword1">Password</label> <input type="password" name="password" required class="active" id="pass1"> <i id="icon1" class="fa fa-eye-slash"></i>
-                                    <div class="text-danger"></div>
-                                    <meter max="4" id="password-strength-meter"></meter>
+                                <div class="form-gp"> <label for="exampleInputPassword1">Password</label> <input type="password" name="password" class="active" id="pass1" required=""><i id="icon1" class="fa fa-eye-slash"></i>
+                                    <div class="text-danger"></div> <meter max="4" id="password-strength-meter"></meter>
                                     <p id="password-strength-text"></p>
                                 </div>
-                                <div class="form-gp"> <label for="exampleInputPassword2">Confirm Password</label> <input type="password" class="active" id="pass2" name="cpassword" required> <i id="icon" class="fa fa-eye-slash"></i>
+                                <div class="form-gp"> <label for="exampleInputPassword2">Confirm Password</label> <input type="password" class="active" id="pass2" name="password" required> <i id="icon" class="fa fa-eye-slash"></i>
                                     <div class="text-danger"></div>
                                 </div>
-                                <!-- <div class="submit-btn-area form-group">
-                            <button id="form_submit" class="btn btn-primary" type="submit" name="submit">Submit <i class="ti-arrow-right"></i></button> 
-                        </div> -->
+           
                                 <div class="form-group"> <button id="form_submit" class="btn btn-primary" type="submit" name="submit">create account <i class="ti-arrow-right"></i></button>
                                     <p class="text-center">already &nbsp;have&nbsp; an&nbsp;account? <a href="{{route('login')}}">&nbsp;Login</a>
                                 </div>
-                                <!-- <div class="form-footer text-center mt-5">
-                            <p class="text-muted">Already have an account? <a href="login.html">Sign in</a></p>
-                        </div> -->
                             </div> <!-- Submit Form Button Ends -->
                         </form> <!-- Form Ends -->
                     </div>
                 </div> <!-- Copyright Text Starts -->
-                <p class="text-center copyright-text">Copyright&nbsp;{{date('Y')}}&nbsp;©TheOkxPlatinum </p> <!-- Copyright Text Ends -->
+                <p class="text-center copyright-text">Copyright&nbsp;{{date('Y')}}&nbsp;©TheOkxPlatinum </p> 
+                <!-- Copyright Text Ends -->
             </div>
         </div>
         <script>
