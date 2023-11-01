@@ -8,12 +8,35 @@
 
     <!-- Favicon -->
     <!-- <link rel="shortcut icon" href="./images/favicon.png"> -->
+    <!-- REG  VAL  -->
+
+    <!-- <link rel="stylesheet" href="asset1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="asset1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="asset1/css/themify-icons.css">
+    <link rel="stylesheet" href="asset1/css/metisMenu.css">
+    <link rel="stylesheet" href="asset1/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="asset1/css/slicknav.min.css">
+    <!-- amchart css -->
+    <link rel="stylesheet" href="../www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+    <!-- others css -->
+    <link rel="stylesheet" href="asset1/css/typography.css">
+    <link rel="stylesheet" href="asset1/css/default-css.css">
+    <link rel="stylesheet" href="asset1/css/styles.css">
+    <link rel="stylesheet" href="asset1/css/responsive.css">
+    <!-- modernizr css -->
+    
+    <script src="asset/js/vendor/modernizr-2.8.3.min.js"></script>
+
+    <!-- REG END -->
+
+
+
 
     <!-- Template CSS Files -->
-    <link rel="stylesheet" href="./asset/font-awesome.min.css">
-    <link rel="stylesheet" href="./asset/css/bootstrap.min.css">
+     <link rel="stylesheet" href="./asset/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="./asset/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="./asset/css/magnific-popup.css">
-    <link rel="stylesheet" href="./asset/css/select2.min.css">
+    <link rel="stylesheet" href="./asset/css/select2.min.css"> 
     <link rel="stylesheet" href="./asset/css/style.css">
     <link rel="stylesheet" href="./asset/css/skins/blue.css">
     <link rel="alternate stylesheet" type="text/css" title="blue" href="./asset/css/skins/blue.css"/>
@@ -23,6 +46,40 @@
 
 </head>
 <style>
+
+
+.SIGNUP-P {
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
+  line-height: 26px;
+  color: #6c757d !important;
+  margin-bottom: 0;
+}
+    
+.mt-5, .my-5 {
+  margin-top: 3rem !important;
+}
+
+.mb-4,
+.my-4 {
+  margin-bottom:1.5rem!important;
+}
+    .col-6 {
+  -webkit-box-flex:0;
+  -ms-flex:0 0 50%!important;
+  flex:0 0 50%!important;
+  max-width:50%!important;
+}
+
+.row2 {
+  display:-webkit-box!important;
+  display:-ms-flexbox!important;
+  display:flex!important;
+  -ms-flex-wrap:wrap!important;
+  flex-wrap:wrap!important;
+  margin-right: 0px!important;
+  margin-left: 0px!important
+}
     
 </style>
 <body class="auth-page">
@@ -197,34 +254,52 @@
                     <!-- Form Starts -->
                     <form method="POST" action="{{route('login')}}">
                         @csrf
-                        <div class=" input-box">
-                            <input class="form-control input-field" name="email" id="email" placeholder="" type="email" required>
-                            <label for="email">Email</label>
+                        <!-- ====== NEW VALIDATION FIELD ==== -->
+                        <div class="login-form-body">
+                        <div class="form-gp">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" id="exampleInputEmail1" name="email" required>
+                            <input type="hidden" class="form-control" name="sel" value="1282">
+                            <!-- <div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate="Enter username"> -->
+                            <!-- <input class="input100 first-001" type="email" id="exampleInputEmail1" name="email" required> -->
+                            <!-- <span class="focus-input100" data-placeholder="Email address"></span> -->
+
+                            <!-- <i class="ti-email"></i> -->
+                            <div class="text-danger"></div>
                         </div>
-                        <!-- Input Field Ends -->
-                        <!-- Input Field Starts -->
-                        <div class=" input-box">
-                            <input class="form-control input-field" name="password" id="password" placeholder="" type="password" required>
-                            <label for="password">Password</label>
+                        <div class="form-gp">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="active" id="pass2" name="password" required>
+                            <i id="icon" class="fa fa-eye-slash"></i>
+                            <span class="focus-input100"></span>
+                            <div class="text-danger"></div>
                         </div>
-                            <!-- Forget section on recovery  -->
-                                <div class="forgot">
-                                    <section>
-                                        <input type="checkbox" id="check">
-                                        <label for="check">Remember me</label>
-                                    </section>
-                                    <section>
-                                        <a href="#" class="forgot-link">Forgot password?</a>
-                                    </section>
+                        <div class="row2 mb-4 rmber-area">
+                            <div class="col-6">
+                                <div class="custom-control custom-checkbox mr-sm-2">
+                                    <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
+                                    <label class="custom-control-label" for="customControlAutosizing">Remember Me</label>
                                 </div>
-                                <!-- Forget section End  -->
-                        <!-- Input Field Ends -->
-                        <!-- Submit Form Button Starts -->
-                        <div class="form-group">
-                            <button class="btn btn-primary" type="submit">login</button>
-                            <p class="text-center">don't have an account ? <a href="{{route('register')}}">Register
-                                    now</a>
+                            </div>
+                             <div class="alert alert-danger" id="danger" style="margin-top: 10px; display: none;">Invalid email/password </div>
+                            <div class="col-6 text-right">
+                                <a href="forgot.html">Forgot Password?</a>
+                            </div>
                         </div>
+                        <!-- <div class="submit-btn-area">
+                            <button id="form_submit" type="submit" name="submit">Submit <i class="ti-arrow-right"></i></button>
+                        </div> -->
+
+                        <div class="form-group">
+                            <button class="btn btn-primary" type="submit">Submit <i class="ti-arrow-right"></i></button>
+                            <!-- <p class="text-center">don't have an account ? <a href="{{route('register')}}">Register
+                                    now</a> -->
+                        </div>
+                        <div class="form-footer text-center mt-5">
+                            <p class="text-muted SIGNUP-P">Don't have an account? <a href="{{route('register')}}">Sign up</a></p>
+                        </div>
+                    </div>
+                        <!-- ======== END NEW VALIDATION ===== -->
                         <!-- Submit Form Button Ends -->
                     </form>
                 </div>
@@ -241,13 +316,59 @@
     <script src="./asset/js/bootstrap.min.js"></script>
     <script src="./asset/js/select2.min.js"></script>
     <script src="./asset/js/jquery.magnific-popup.min.js"></script>
-    <!-- <script src="./asset/js/custom.js"></script> -->
+    <script src="./asset/js/custom.js"></script>
     <!-- preloader -->
     <script src="./asset/js/custom.js"></script>
 
     <!-- Live Style Switcher JS File - only demo -->
     <script src="./asset/styleswitcher.css"></script>
 
+
+
+<script type="text/javascript">
+/* <![CDATA[ */
+eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('6 7(a,b){n{4(2.9){3 c=2.9("o");c.p(b,f,f);a.q(c)}g{3 c=2.r();a.s(\'t\'+b,c)}}u(e){}}6 h(a){4(a.8)a=a.8;4(a==\'\')v;3 b=a.w(\'|\')[1];3 c;3 d=2.x(\'y\');z(3 i=0;i<d.5;i++)4(d[i].A==\'B-C-D\')c=d[i];4(2.j(\'k\')==E||2.j(\'k\').l.5==0||c.5==0||c.l.5==0){F(6(){h(a)},G)}g{c.8=b;7(c,\'m\');7(c,\'m\')}}',43,43,'||document|var|if|length|function|GTranslateFireEvent|value|createEvent||||||true|else|doGTranslate||getElementById|google_translate_element2|innerHTML|change|try|HTMLEvents|initEvent|dispatchEvent|createEventObject|fireEvent|on|catch|return|split|getElementsByTagName|select|for|className|goog|te|combo|null|setTimeout|500'.split('|'),0,{}))
+/* ]]> */
+</script>
+</div>
+    </div>
+    <!-- login area end -->
+<script>
+   var inputPass2 = document.getElementById('pass2'),
+    icon = document.getElementById('icon');
+ 
+   icon.onclick = function () {
+ 
+     if(inputPass2.className == 'active') {
+        inputPass2.setAttribute('type', 'text');
+        icon.className = 'fa fa-eye';
+       inputPass2.className = '';
+ 
+     } else {
+        inputPass2.setAttribute('type', 'password');
+        icon.className = 'fa fa-eye-slash';
+       inputPass2.className = 'active';
+    }
+ 
+   }
+   
+</script>
+
+    <!-- REG FORM JS -->
+        <!-- jquery latest version -->
+     <script src="asset1/js/vendor/jquery-2.2.4.min.js"></script>
+    <!-- bootstrap 4 js -->
+    <script src="asset1/js/popper.min.js"></script>
+    <script src="asset1/js/bootstrap.min.js"></script>
+    <script src="asset1/js/owl.carousel.min.js"></script>
+    <script src="asset1/js/metisMenu.min.js"></script>
+    <script src="asset1/js/jquery.slimscroll.min.js"></script>
+    <script src="asset1/js/jquery.slicknav.min.js"></script>
+    
+    <!-- others plugins -->
+    <script src="asset1/js/plugins.js"></script>
+    <script src="asset1/js/scripts.js"></script>
+        <!-- REG END JS -->
 </div>
 <!-- Wrapper Ends -->
 @include('site::inc._messages')
