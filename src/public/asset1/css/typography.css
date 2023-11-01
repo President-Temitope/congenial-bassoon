@@ -133,7 +133,7 @@ blockquote{
     position: relative;
     background: transparent;
 }
-blockquote:before{
+/* blockquote:before{
     content: '\f10d';
     font-family: fontawesome;
     color: #fff;
@@ -141,7 +141,7 @@ blockquote:before{
     position: absolute;
     left: 16px;
     top: 46px;
-}
+} */
 blockquote p{
     font-size: 17px;
     color: #fff;
