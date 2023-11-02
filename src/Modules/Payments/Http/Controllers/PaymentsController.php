@@ -126,4 +126,10 @@ class PaymentsController extends Controller
         $this->core->create($this->model, $data);
         return redirect('/investments/myPlans');
     }
+
+    public function destroy($id)
+    {
+        $this->core->delete($this->model, $id);
+        return redirect()->back()->with('success', 'Updated!');
+    }
 }

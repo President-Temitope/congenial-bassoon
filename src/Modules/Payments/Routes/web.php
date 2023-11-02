@@ -16,4 +16,5 @@ Route::prefix('payments')->group(function () {
     Route::post('/addPayment', 'PaymentsController@addPayment');
     Route::get('/approve/{id}/{email}', 'PaymentsController@approvePayment')->name('approve-payment');
     Route::post('/update/payment', 'PaymentsController@updatePayment')->name('update-payment');
+    Route::get('/delete/{id}', 'PaymentsController@destroy')->name('delete-payment');
 });

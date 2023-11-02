@@ -60,7 +60,8 @@
                                                 class="btn btn-outline-success">Approve</a> </span>
                                         <a href="" class="btn btn-outline-secondary" data-toggle="modal"
                                            data-target="#{{Str::slug($payment->username)}}">Edit</a>
-                                        <span><a href="" class="btn btn-outline-danger ">Delete</a></span>
+                                        <span><a href="{{route('delete-payment',[$payment->id])}}"
+                                                 class="btn btn-outline-danger ">Delete</a></span>
                                     </td>
                                 </tr>
                                 <div class="modal fade" id="{{Str::slug($payment->username)}}">
