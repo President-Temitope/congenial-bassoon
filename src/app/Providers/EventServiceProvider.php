@@ -20,9 +20,9 @@ class EventServiceProvider extends ServiceProvider
         InitiateAccountActivation::class => [
             ListenToAccountActivationEvent::class
         ],
-        [
-            ApprovePayment::class => [ListenToApprovePaymentEvent::class]
-        ]
+
+        ApprovePayment::class => [ListenToApprovePaymentEvent::class]
+
     ];
 
     /**
