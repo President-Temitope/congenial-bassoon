@@ -2337,11 +2337,11 @@ table.dataTable thead td {
 }
 
 .login-form-body {
-    padding: 50px;
+    padding: 30px;
 }
 
 .form-gp {
-    margin-bottom: 25px;
+    margin-bottom: 0px;
     position: relative;
 }
 
@@ -2355,7 +2355,7 @@ table.dataTable thead td {
 }
 
 .form-gp.focused label {
-    top: -24px;
+    top: -20px;
     color: #000000;
 }
 

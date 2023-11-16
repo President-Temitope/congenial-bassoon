@@ -22633,8 +22633,9 @@ ul.user li.sign-in a, ul.user li.sign-up a {
 }
 
 .user-auth > div:nth-child(2) .form-container form .form-group {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
+
 }
 /* Extra Small Devices, Phones */ 
 @media (max-width : 480px) {
