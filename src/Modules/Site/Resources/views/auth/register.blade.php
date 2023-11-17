@@ -2,16 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <title>Register - {{config('app.name')}}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Favicon -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Favicon -->
     <!-- <link rel="shortcut icon" href="./images/favicon.png"> -->
 
     <!-- REG REGISTER VALI FORM -->
     <link rel="stylesheet" href="asset1/css/themify-icons.css">
     <link rel="stylesheet" href="asset1/css/metisMenu.css">
     <!-- amchart css -->
-    <link rel="stylesheet" href="../www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" /> <!-- others css -->
+    <link rel="stylesheet" href="../www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all"/>
+    <!-- others css -->
     <link rel="stylesheet" href="asset1/css/typography.css">
     <link rel="stylesheet" href="asset1/css/default-css.css">
     <link rel="stylesheet" href="asset1/css/styles.css">
@@ -20,12 +21,13 @@
     <script src="./cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script> <!-- END REG FORM PLUGIN  -->
 
     <!-- Template CSS Files -->
-    <link rel="stylesheet" href="./asset/font-awesome.min.css"> 
+    <link rel="stylesheet" href="./asset/font-awesome.min.css">
     <link rel="stylesheet" href="./asset/css/skins/blue.css">
-    <link rel="alternate stylesheet" type="text/css" title="blue" href="./asset/css/skins/blue.css" />
-    <link rel="stylesheet" type="text/css" href="./asset/css/styleswitcher.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script> <!-- ------- custom from register folder css -------- -->
+    <link rel="alternate stylesheet" type="text/css" title="blue" href="./asset/css/skins/blue.css"/>
+    <link rel="stylesheet" type="text/css" href="./asset/css/styleswitcher.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <!-- ------- custom from register folder css -------- -->
     <link href="/asset/css/style.css" rel="stylesheet">
     <!------- login animate boot plugin  -->
     <link href="/asset/css/bootstrap-animate.min.css" rel="stylesheet"> <!-- ----- End animate plugin ------ -->

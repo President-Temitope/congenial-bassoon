@@ -31,8 +31,13 @@ class InvestmentsController extends Controller
      */
     public function index()
     {
+        $data = [];
+        $user_id = auth()->id();
+        if (auth()->user()->getRoleNames()[0] === 'user') {
+            $data[] = DB::table('payments')->where('user_id', $user_id)->where('status', 'Approved')->get();
+        }
         $investments = $this->investment->activePlans();
-        return view('investments::index')->with('investments', $investments);
+        return view('investments::index')->with('investments', $investments)->with('data', $data);
     }
 
     /**
@@ -131,6 +136,10 @@ class InvestmentsController extends Controller
     public function myPlans()
     {
         $user_id = Auth::id();
+        $data = [];
+        if (auth()->user()->getRoleNames()[0] === 'user') {
+            $data[] = DB::table('payments')->where('user_id', $user_id)->where('status', 'Approved')->get();
+        }
         //User plans based on status
         $myActivePlans = DB::table('payments')->where('user_id', $user_id)->where('status', 'Approved')->get();
         $myEndedPlans = DB::table('payments')->where('user_id', $user_id)->where('status', 'Approved')->where('approved_at', '<', Carbon::now())->get();
@@ -146,6 +155,7 @@ class InvestmentsController extends Controller
             ->with('myActivePlans', $myActivePlans)
             ->with('activePlansCount', $activePlansCount)
             ->with('inactivePlansCount', $inactivePlansCount)
+            ->with('data', $data)
             ->with('endedPlansCount', $endedPlansCount);
 
         //Getting plans data and passing it to an array
