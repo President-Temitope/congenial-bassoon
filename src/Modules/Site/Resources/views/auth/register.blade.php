@@ -577,7 +577,7 @@
          
                                     <div class="formControl input-box"><input type="text"  maxlength="15"  name="phone_number" id="phone" onfocusout="validatePhoneNumber()"/><br>
                                     <span id="error-msg" class="hide"></span></div>
-                                    <p id="result" style="margin: 12px 5px 35px!important; font-size: 14px; width: 100%;"></p>
+                                    <p id="result" style="margin: 0px 0px 20px!important; font-size: 14px; width: 100%;"></p>
                                     <div class="field eMail">
                                         <div class="form-gp input-field"> <label for="email">Email address</label> <input type="email" name="email" name="email" id="email" onfocusout="validateEmail()" /> <!-- <i class="ti-email"></i> --> <span class="helper-text"></span> </div>
                                     </div> 
