@@ -19,10 +19,19 @@
     <script src="./cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.2.0/zxcvbn.js"></script> <!-- END REG FORM PLUGIN  -->
 
     <!-- == Lookup ip phone plugin == -->
+    
     <link rel="stylesheet" href="../intl-tel-input/css/intlTelInput0d54.css">
     <link rel="stylesheet" href="./examples/css/prism.css">
     <link rel="stylesheet" href="./examples/css/examples0d54.css">
- 
+
+    <!-- ===== npm plugin ==== -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.15/css/intlTelInput.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+   <!-- ========= End Plugin npm ====== -->
+
     <!-- Template CSS Files -->
     <link rel="stylesheet" href="./asset/font-awesome.min.css">
     <link rel="stylesheet" href="./asset/css/skins/blue.css">
@@ -39,7 +48,16 @@
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet"> <!-- Styles -->
-
+    <style>
+        .form-control:focus {
+            color:#000!important;
+            background-color:#fff;
+            border-color:#86b7fe;
+            font-size: 15px!important;
+            width: 100%!important;
+            box-shadow:0 0 0 .25rem rgba(13,110,253,.25)
+}
+    </style>
     <style>
         .error
         {
@@ -556,13 +574,13 @@
                                     <div class="field lastName">
                                         <div class="form-gp input-field"> <label for="lastName">Last Name</label> <input type="text" name="lastname" id="lastName" onfocusout="validateLastName()" /> <span class="helper-text"></span> </div>
                                     </div>
-                                    <!-- <div class="formControl input-box"> <input class="input-field" type="text" placeholder="(201) 555-0123" name="phone_number" id="phone" onfocusout="validatePhoneValue()" />
-                                     <span class="helper-text"></span> </div> -->
-                                    <div class="formControl input-box"> <input type="text" placeholder="Phone Number" name="phone_number" id="phone" onfocusout="validatePhoneNumber()" /> <!-- <span class="helper-text"></span>  --> <span id="valid-msg" class="hide" style="color:green">valid</span><br>
-                                    <span id="error-msg" class="hide" style="color:red"></span> </div>
+         
+                                    <div class="formControl input-box"><input type="text"  maxlength="15"  name="phone_number" id="phone" onfocusout="validatePhoneNumber()"/><br>
+                                    <span id="error-msg" class="hide"></span></div>
+                                    <p id="result" style="margin: 12px 5px 35px!important; font-size: 14px; width: 100%;"></p>
                                     <div class="field eMail">
                                         <div class="form-gp input-field"> <label for="email">Email address</label> <input type="email" name="email" name="email" id="email" onfocusout="validateEmail()" /> <!-- <i class="ti-email"></i> --> <span class="helper-text"></span> </div>
-                                    </div>
+                                    </div> 
                                     <div class="field password">
                                         <div class="form-gp input-field"> <label for="passord">Password</label> <input type="password" name="password" class="active" id="pass1" onfocusout="validatePassword()" /> <span class="helper-text"></span> <i id="icon1" class="fa fa-eye-slash"></i><br>
                                             <div class="password_strength_box">
@@ -859,41 +877,152 @@
 </body>
 
 <script>
-    var input = document.querySelector('#phone'),
-        errorMsg = document.querySelector('#error-msg'),
-        validMsg = document.querySelector('#valid-msg');
-    var errorMap = ["Invalid number", "Invalid country code", "Too short", "Too long"];
+    // var input = document.querySelector('#phone'),
+    //     errorMsg = document.querySelector('#error-msg'),
+    //     validMsg = document.querySelector('#valid-msg');
+    // var errorMap = ["Invalid number", "Invalid country code", "Too short", "Too long"];
+    // // var iti = window.intlTelInput(input, {
+    // //     utilscript:
+    // //     "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    // // });
     // var iti = window.intlTelInput(input, {
-    //     utilscript:
-    //     "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+    //     utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
     // });
-    var iti = window.intlTelInput(input, {
-        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
-    });
-    var reset = function() {
-        input.classList.remove("error");
-        errorMsg.innerHTML = "";
-        errorMsg.classList.add("hide");
-        validMsg.classList.add("hide");
-    }
-    input.addEventListener('blur', function() {
-        reset();
-        if (input.value.trim()) {
-            if (iti.isValidNumber()) {
-                validMsg.classList.remove('hide');
-            } else {
-                input.classList.add('error');
-                var errorCode = iti.getValidationError();
-                errorMsg.innerHTML = errorMap[errorCode];
-                errorMsg.classList.remove("hide");
+    // var reset = function() {
+    //     input.classList.remove("error");
+    //     errorMsg.innerHTML = "";
+    //     errorMsg.classList.add("hide");
+    //     validMsg.classList.add("hide");
+    // }
+    // input.addEventListener('blur', function() {
+    //     reset();
+    //     if (input.value.trim()) {
+    //         if (iti.isValidNumber()) {
+    //             validMsg.classList.remove('hide');
+    //         } else {
+    //             input.classList.add('error');
+    //             var errorCode = iti.getValidationError();
+    //             errorMsg.innerHTML = errorMap[errorCode];
+    //             errorMsg.classList.remove("hide");
+    //         }
+    //     }
+    // });
+    // input.addEventListener('change', reset);
+    // input.addEventListener("keyup", reset);
+
+
+      var input = document.querySelector("#phone"),
+         errorMap = ["Invalid number", "Invalid country code", "Too short", "Too long", "Invalid number"],
+         result = document.querySelector("#result");
+      window.addEventListener("load", function() {
+         errorMsg = document.querySelector("#error-msg");
+
+         function getIp(callback) {
+            fetch('https://ipinfo.io', {
+               headers: {
+                  'Accept': 'application/json'
+               }
+            }).
+            then(resp => resp.json()).
+            catch(() => {
+               return {
+                  country: ''
+               };
+            }).
+            then(resp => callback(resp.country));
+         }
+         var iti = window.intlTelInput(input, {
+            // allowDropdown: false,
+            // dropdownContainer: document.body,
+            // excludeCountries: ["us"],
+            hiddenInput: "full_number",
+            nationalMode: false,
+            formatOnDisplay: true,
+            separateDialCode: true,
+            autoHideDialCode: true,
+            autoPlaceholder: "aggressive",
+            initialCountry: "auto",
+            placeholderNumberType: "MOBILE",
+            preferredCountries: ['il', 'ge'],
+            geoIpLookup: getIp,
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.15/js/utils.js"
+         });
+         input.addEventListener('keyup', formatIntlTelInput);
+         input.addEventListener('change', formatIntlTelInput);
+
+         function formatIntlTelInput() {
+            if (typeof intlTelInputUtils !== 'undefined') { // utils are lazy loaded, so must check
+               var currentText = iti.getNumber(intlTelInputUtils.numberFormat.E164);
+               if (typeof currentText === 'string') { // sometimes the currentText is an object :)
+                  iti.setNumber(currentText); // will autoformat because of formatOnDisplay=true
+               }
             }
-        }
-    });
-    input.addEventListener('change', reset);
-    input.addEventListener("keyup", reset);
+         }
+         input.addEventListener('keyup', function() {
+            reset();
+            if (input.value.trim()) {
+               if (iti.isValidNumber()) {
+                  $(input).addClass('form-control is-valid');
+               } else {
+                  $(input).addClass('form-control is-invalid');
+                  var errorCode = iti.getValidationError();
+                  errorMsg.innerHTML = errorMap[errorCode];
+                  $(errorMsg).show();
+               }
+            }
+         });
+         input.addEventListener('change', reset);
+         input.addEventListener('keyup', reset);
+         var reset = function() {
+            $(input).removeClass('form-control is-invalid');
+            errorMsg.innerHTML = "";
+            $(errorMsg).hide();
+         };
+         ////////////// testing - start //////////////
+         input.addEventListener('keyup', function(e) {
+            e.preventDefault();
+            var num = iti.getNumber(),
+               valid = iti.isValidNumber();
+            result.textContent = "Number: " + num + ", valid: " + valid;
+         }, false);
+         input.addEventListener("focus", function() {
+            result.textContent = "";
+         }, false);
+         $(input).on("focusout", function(e, countryData) {
+            var intlNumber = iti.getNumber();
+            console.log(intlNumber);
+         });
+         ////////////// testing - end //////////////
+      });
+      //-----------------------only-phone-number-input code (with +)-------------------------------start-------// 
+      function isPhoneNumberKey(evt) {
+         var charCode = evt.which ? evt.which : evt.keyCode;
+         if (charCode != 43 && charCode > 31 && (charCode < 48 || charCode > 57))
+            return false;
+         return true;
+      }
+    //   -----------------------only-phone-number-input code (with +)-------------------------------end-------//
+    //   # sourceURL=pen.js
+   </script>
+   
+   <script class="iti-load-utils" async="" src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.15/js/utils.js"></script>
 </script> <!-- REG VALI FORM JS  -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script> <!-- jquery latest version -->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.15/css/intlTelInput.css">
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.15/js/intlTelInput.js"></script>
+
+   <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+   <script type="text/javascript" src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+
+
+   <!-- === npm js ==== -->
+   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.15/js/intlTelInput.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+   <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+
 
 <!-- ====== IP LOOKUP ===== -->
 <script src="../intl-tel-input/js/intlTelInput0d54.js"></script>

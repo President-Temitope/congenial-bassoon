@@ -40,22 +40,10 @@
         input[type=password]:not(.browser-default)[readonly="readonly"],
         input[type=email]:not(.browser-default):disabled,
         input[type=email]:not(.browser-default)[readonly="readonly"],
-        input[type=url]:not(.browser-default):disabled,
-        input[type=url]:not(.browser-default)[readonly="readonly"],
-        input[type=time]:not(.browser-default):disabled,
-        input[type=time]:not(.browser-default)[readonly="readonly"],
-        input[type=date]:not(.browser-default):disabled,
-        input[type=date]:not(.browser-default)[readonly="readonly"],
-        input[type=datetime]:not(.browser-default):disabled,
-        input[type=datetime]:not(.browser-default)[readonly="readonly"],
-        input[type=datetime-local]:not(.browser-default):disabled,
-        input[type=datetime-local]:not(.browser-default)[readonly="readonly"],
         input[type=tel]:not(.browser-default):disabled,
         input[type=tel]:not(.browser-default)[readonly="readonly"],
         input[type=number]:not(.browser-default):disabled,
         input[type=number]:not(.browser-default)[readonly="readonly"],
-        input[type=search]:not(.browser-default):disabled,
-        input[type=search]:not(.browser-default)[readonly="readonly"],
         textarea.materialize-textarea:disabled,
         textarea.materialize-textarea[readonly="readonly"] {
             color: rgba(0, 0, 0, 0.42);
@@ -70,22 +58,10 @@
         input[type=password]:not(.browser-default)[readonly="readonly"]+label,
         input[type=email]:not(.browser-default):disabled+label,
         input[type=email]:not(.browser-default)[readonly="readonly"]+label,
-        input[type=url]:not(.browser-default):disabled+label,
-        input[type=url]:not(.browser-default)[readonly="readonly"]+label,
-        input[type=time]:not(.browser-default):disabled+label,
-        input[type=time]:not(.browser-default)[readonly="readonly"]+label,
-        input[type=date]:not(.browser-default):disabled+label,
-        input[type=date]:not(.browser-default)[readonly="readonly"]+label,
-        input[type=datetime]:not(.browser-default):disabled+label,
-        input[type=datetime]:not(.browser-default)[readonly="readonly"]+label,
-        input[type=datetime-local]:not(.browser-default):disabled+label,
-        input[type=datetime-local]:not(.browser-default)[readonly="readonly"]+label,
         input[type=tel]:not(.browser-default):disabled+label,
         input[type=tel]:not(.browser-default)[readonly="readonly"]+label,
         input[type=number]:not(.browser-default):disabled+label,
         input[type=number]:not(.browser-default)[readonly="readonly"]+label,
-        input[type=search]:not(.browser-default):disabled+label,
-        input[type=search]:not(.browser-default)[readonly="readonly"]+label,
         textarea.materialize-textarea:disabled+label,
         textarea.materialize-textarea[readonly="readonly"]+label {
             color: rgba(0, 0, 0, 0.42)
@@ -117,22 +93,10 @@
         input.valid[type=password]:not(.browser-default):focus,
         input.valid[type=email]:not(.browser-default),
         input.valid[type=email]:not(.browser-default):focus,
-        input.valid[type=url]:not(.browser-default),
-        input.valid[type=url]:not(.browser-default):focus,
-        input.valid[type=time]:not(.browser-default),
-        input.valid[type=time]:not(.browser-default):focus,
-        input.valid[type=date]:not(.browser-default),
-        input.valid[type=date]:not(.browser-default):focus,
-        input.valid[type=datetime]:not(.browser-default),
-        input.valid[type=datetime]:not(.browser-default):focus,
-        input.valid[type=datetime-local]:not(.browser-default),
-        input.valid[type=datetime-local]:not(.browser-default):focus,
         input.valid[type=tel]:not(.browser-default),
         input.valid[type=tel]:not(.browser-default):focus,
         input.valid[type=number]:not(.browser-default),
         input.valid[type=number]:not(.browser-default):focus,
-        input.valid[type=search]:not(.browser-default),
-        input.valid[type=search]:not(.browser-default):focus,
         textarea.materialize-textarea.valid,
         textarea.materialize-textarea.valid:focus,
         .select-wrapper.valid>input.select-dropdown {
@@ -143,7 +107,7 @@
 
     </style>
 
-    <style>
+<style>
         .input-box-wrapper .form-01 {
   margin: 40px 0;
 }
@@ -213,14 +177,6 @@
   color: #dc3545;
 }
 
-/* .input-box-wrapper .form-01 .field .alert {
-  display: none;
-} */
-
-/* .input-box-wrapper .form-01 .field.error .help-text,
-.input-box-wrapper .form-01 .field.shake .help-text {
-  display: block;
-} */
 
 .input-box-wrapper .form-01 .pass-text {
   text-align: left;
@@ -237,10 +193,10 @@
             margin-bottom: 0;
         }
 
-        .mt-5,
+        /* .mt-5,
         .my-5 {
             margin-top: 3rem !important;
-        }
+        } */
 
         .mb-4,
         .my-4 {
@@ -420,11 +376,6 @@
                                         <div class="form-gp input-field">
                                                 <label for="email">Email address</label> 
                                                 <input type="email" id="email" name="email" onfocusout="validateEmail()" />
-                                                <!-- <div class="wrap-input100 validate-input m-t-85 m-b-35" data-validate="Enter username"> -->
-                                                <!-- <input class="input100 first-001" type="email" id="exampleInputEmail1" name="email" required> -->
-                                                <!-- <span class="focus-input100" data-placeholder="Email address"></span> -->
-                                                <!-- <i class="ti-email"></i> -->
-                                                <!-- <div class="text-danger"></div> --> 
                                             <span class="helper-text"></span>
                                         </div>
                                     </div>
