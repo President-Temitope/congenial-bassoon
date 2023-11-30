@@ -28,6 +28,7 @@ class ListenToApprovePaymentEvent
     {
         $data = [
             'email' => $event->email,
+            'amount' => $event->amount
         ];
         $email = $data['email'];
         try {

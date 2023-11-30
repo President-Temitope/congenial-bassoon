@@ -9,15 +9,17 @@ class ApprovePayment
     use SerializesModels;
 
     public string $email;
+    public string $amount;
 
     /**
      * Create a new event instance.
      *
      * @return void
      */
-    public function __construct($email)
+    public function __construct($email, $amount)
     {
         $this->email = $email;
+        $this->amount = $amount;
     }
 
     /**

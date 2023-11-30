@@ -46,11 +46,11 @@ class PaymentsController extends Controller
      * @param int $id
      * @return \Illuminate\Http\RedirectResponse
      */
-    public function approvePayment($id, $email)
+    public function approvePayment($id, $email, $amount)
     {
         $this->core->update($this->model, $id, ['status' => 'Approved', 'approved_at' => Carbon::now()]);
 
-        event(new ApprovePayment($email));
+        event(new ApprovePayment($email, $amount));
         return redirect()->back()->with('success', 'Updated!');
     }
 
