@@ -657,27 +657,26 @@
 
         // Handle form
         // add submit eventlistener to form element0
+        // add submit eventlistener to form element0
+
             function submitForm() {
                 const form = document.getElementById('myForm');
                 form.addEventListener('submit', (event) => {
                 event.preventDefault();
+
                 // Perform validation and processing here
-                     validateForm();
+                //  validateForm();
+                
+                    validateFirstName() &&
+                    validateLastName() &&
+                    validatePhoneNumber() &&
+                    validatePassword() &&
+                    validateConfirmPassword() &&
+                    validateEmail()
+
                 });
 
                 form.submit();
-            }
-
-
-            function validateForm() {
-                const inputs = document.querySelectorAll('form input');
-                console.log(inputs);
-                if (
-                    validateEmail() &&
-                    validatePassword()
-                ) {
-                    document.querySelector('Form').submit();
-                }
             }
 
  
