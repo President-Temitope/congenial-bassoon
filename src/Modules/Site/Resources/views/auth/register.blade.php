@@ -704,6 +704,14 @@
         }
 
 
+        function validatePhoneNumber() {
+            if (checkIfEmpty(phoneNumber)) return;
+            if (!validatePhoneNumber(phoneNumber)) return;
+            return true;
+        }
+
+
+
 
         function validatePassword() {
             // Empty check
