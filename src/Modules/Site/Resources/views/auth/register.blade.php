@@ -625,8 +625,10 @@
                                             class="helper-text"></span> <i id="icon" class="fa fa-eye-slash"></i></div>
                                 </div>
                                 <div class="form-group">
-                                    <button id="form_submit" class="btn btn-primary" type="submit" name="submit">create
-                                        account <i class="ti-arrow-right"></i></button>
+                                    <!-- <button class="btn btn-primary" type="submit" name="" id="my_button">create
+                                        account <i class="ti-arrow-right"></i></button> -->
+                                        <button class="btn btn-primary"  type="submit" onclick="submitForm()">create
+                                        account&nbsp;<i class="ti-arrow-right"></i></button>
                                     <p class="text-center">already &nbsp;have&nbsp; an&nbsp;account? <a
                                             href="{{route('login')}}">&nbsp;Login</a>
                                 </div>
@@ -652,30 +654,38 @@
         // Validation colors
         const green = '#4CAF50';
         const red = '#F44336';
-        // Handle form
-        // add submit eventlistener to form element
-        form.addEventListener("submit", (e) => {
-            e.preventDefault();
-            // function to validate form fields
-            validateForm();
-        });
 
-        function validateForm() {
-            const inputs = document.querySelectorAll('form input');
-            // console.log(inputs);
-            if (
-                validateFirstName() &&
-                validateLastName() &&
-                validatePhoneNumber() &&
-                validatePassword() &&
-                validateConfirmPassword() &&
-                validateEmail()
-            ) {
-                // document.querySelector('Form').submit();
-                //if values are valid
-                document.getElementById('myform').addEventListener('submit', validateForm);
+        // Handle form
+        // add submit eventlistener to form element0
+            function submitForm() {
+                const form = document.getElementById('myForm');
+                form.addEventListener('submit', (event) => {
+                event.preventDefault();
+                // Perform validation and processing here
+                     validateForm();
+                });
+
+                form.submit();
             }
-        };
+
+
+            function validateForm() {
+                const inputs = document.querySelectorAll('form input');
+                console.log(inputs);
+                if (
+                    validateEmail() &&
+                    validatePassword()
+                ) {
+                    document.querySelector('Form').submit();
+                }
+            }
+
+ 
+
+        function validatePhoneNumber() {
+            var re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+            return re.test();
+        }
 
         // Validators
         function validateFirstName() {
@@ -694,11 +704,7 @@
             return true;
         }
 
-        function validatePhoneNumber() {
-            if (checkIfEmpty(phoneNumber)) return;
-            if (!validatePhoneNumber(phoneNumber)) return;
-            return true;
-        }
+
 
         function validatePassword() {
             // Empty check
@@ -893,11 +899,11 @@
             } else {
                 text.innerHTML = "";
             }
-            if (meter.value >= 3) {
-                register.disabled = false;
-            } else {
-                register.disabled = true;
-            }
+            // if (meter.value >= 3) {
+            //     register.disabled = false;
+            // } else {
+            //     register.disabled = true;
+            // }
         });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/zxcvbn/4.4.0/zxcvbn.js"></script> <!-- Template JS Files -->
@@ -1023,7 +1029,7 @@
         }, false);
         $(input).on("focusout", function (e, countryData) {
             var intlNumber = iti.getNumber();
-            console.log(intlNumber);
+            // console.log(intlNumber);
         });
         ////////////// testing - end //////////////
     });
