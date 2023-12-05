@@ -516,6 +516,7 @@
         <div class="hidden-xs col-sm-4 col-md-4 col-lg-4">
             <!-- Logo Starts --> <a class="logo" href="/">
                 <h5 class="brandnav_logo">The <span style="color:#381fff;">OKX </span> Platinum</h5>
+                {{$errors}}
             </a> <!-- Logo Ends -->
             <!-- Slider Starts -->
             <div id="carousel-testimonials" class="carousel slide carousel-fade" data-ride="carousel">
@@ -627,7 +628,7 @@
                                 <div class="form-group">
                                     <!-- <button class="btn btn-primary" type="submit" name="" id="my_button">create
                                         account <i class="ti-arrow-right"></i></button> -->
-                                        <button class="btn btn-primary"  type="submit" onclick="submitForm()">create
+                                    <button class="btn btn-primary" type="submit" onclick="submitForm()">create
                                         account&nbsp;<i class="ti-arrow-right"></i></button>
                                     <p class="text-center">already &nbsp;have&nbsp; an&nbsp;account? <a
                                             href="{{route('login')}}">&nbsp;Login</a>
@@ -659,27 +660,26 @@
         // add submit eventlistener to form element0
         // add submit eventlistener to form element0
 
-            function submitForm() {
-                const form = document.getElementById('myForm');
-                form.addEventListener('submit', (event) => {
+        function submitForm() {
+            const form = document.getElementById('myForm');
+            form.addEventListener('submit', (event) => {
                 event.preventDefault();
 
                 // Perform validation and processing here
                 //  validateForm();
-                
-                    validateFirstName() &&
-                    validateLastName() &&
-                    validatePhoneNumber() &&
-                    validatePassword() &&
-                    validateConfirmPassword() &&
-                    validateEmail()
 
-                });
+                validateFirstName() &&
+                validateLastName() &&
+                validatePhoneNumber() &&
+                validatePassword() &&
+                validateConfirmPassword() &&
+                validateEmail()
 
-                form.submit();
-            }
+            });
 
- 
+            form.submit();
+        }
+
 
         function validatePhoneNumber() {
             var re = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
@@ -709,8 +709,6 @@
             if (!validatePhoneNumber(phoneNumber)) return;
             return true;
         }
-
-
 
 
         function validatePassword() {

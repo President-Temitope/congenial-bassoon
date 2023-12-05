@@ -41,25 +41,30 @@ class SiteController extends Controller
         ]);
 
         if ($validator->fails()) {
-            return back()->with(['errors' => $validator->errors()->all()]);
+            return back()->withErrors($validator->errors()->all());
         }
+
         DB::beginTransaction();
+
         try {
             $user_data = [
                 'email' => $request->email,
                 'password' => bcrypt($request->password),
                 'firstname' => $request->firstname,
                 'lastname' => $request->lastname,
-                'phone_number' => $request->phone_number,
+                'phone_number' => str_replace(' ', '', $request->phone_number),
             ];
+
             $user = $this->auth->register($user_data);
             $this->auth->assignRole($user, 'user');
             $this->auth->createActivation($user);
+
             DB::commit();
+
             return redirect()->route('success')->with('success', 'Registration Successful');
         } catch (Exception $e) {
             DB::rollBack();
-            return \redirect()->back()->with('errors', $e);
+            return redirect()->back()->withErrors([$e->getMessage()]);
         }
     }
 
