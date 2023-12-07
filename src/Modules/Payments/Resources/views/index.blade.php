@@ -63,12 +63,7 @@
                                                 <input type="hidden" value="{{$payment->amount}}" name="amount"/>
                                                 <input type="submit" class="btn btn-outline-success" value="Approve"/>
                                             </form>
-                                            {{--  <a
-
-                                                                                                href="{{route('approve-payment',[$payment->id,$payment->user_email,$payment->amount])}}"
-                                                --}}
-                                            {{--  href="{{config('app_url')}}/payments/approve/{{$payment->id}}/{{$payment->user_email}}/{{$payment->amount}}"
-                                              class="btn btn-outline-success">Approve</a>--}} </span>
+                                           </span>
 
 
                                         <a href="" class="btn btn-outline-secondary" data-toggle="modal"
