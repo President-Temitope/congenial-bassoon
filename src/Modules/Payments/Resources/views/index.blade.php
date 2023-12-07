@@ -55,12 +55,22 @@
 
                                     <td>
                                         <span>  <a href="" class="btn btn-outline-success">View POP</a> </span>
-                                        <span>  <a
-                                                {{--
+                                        <span>
+                                            <form method="post" action="{{route('approve-payment')}}">
+                                                @csrf
+                                                <input type="hidden" value="{{$payment->id}}" name="id"/>
+                                                <input type="hidden" value="{{$payment->user_email}}" name="email"/>
+                                                <input type="hidden" value="{{$payment->amount}}" name="amount"/>
+                                                <input type="submit" class="btn btn-outline-success" value="Approve"/>
+                                            </form>
+                                            {{--  <a
+
                                                                                                 href="{{route('approve-payment',[$payment->id,$payment->user_email,$payment->amount])}}"
                                                 --}}
-                                                href="{{config('app_url')}}/payments/approve/{{$payment->id}}/{{$payment->user_email}}/{{$payment->amount}}"
-                                                class="btn btn-outline-success">Approve</a> </span>
+                                            {{--  href="{{config('app_url')}}/payments/approve/{{$payment->id}}/{{$payment->user_email}}/{{$payment->amount}}"
+                                              class="btn btn-outline-success">Approve</a>--}} </span>
+
+
                                         <a href="" class="btn btn-outline-secondary" data-toggle="modal"
                                            data-target="#{{Str::slug($payment->username)}}">Edit</a>
                                         <span><a href="{{route('delete-payment',[$payment->id])}}"
