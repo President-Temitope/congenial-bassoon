@@ -56,7 +56,10 @@
                                     <td>
                                         <span>  <a href="" class="btn btn-outline-success">View POP</a> </span>
                                         <span>  <a
-                                                href="{{route('approve-payment',[$payment->id,$payment->user_email,$payment->amount])}}"
+                                                {{--
+                                                                                                href="{{route('approve-payment',[$payment->id,$payment->user_email,$payment->amount])}}"
+                                                --}}
+                                                href="{{config('app_url')}}/payments/approve/{{$payment->id}}/{{$payment->user_email}}/{{$payment->amount}}"
                                                 class="btn btn-outline-success">Approve</a> </span>
                                         <a href="" class="btn btn-outline-secondary" data-toggle="modal"
                                            data-target="#{{Str::slug($payment->username)}}">Edit</a>
