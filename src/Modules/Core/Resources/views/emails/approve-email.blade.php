@@ -159,7 +159,7 @@
                 <tr>
                     <td align="left" bgcolor="#ffffff"
                         style="padding: 24px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; line-height: 24px;">
-                        <p style="margin: 0; text-align: center;">&nbsp;You deposit was done successfully.
+                        <p style="margin: 0; text-align: center;">&nbsp;Your deposit was done successfully.
                             <!-- <a href="https://blogdesire.com">Paste</a>, you can safely delete this email. -->
                         </p>
                     </td>
