@@ -212,16 +212,17 @@ Copyright: bdtask
     border-top:1px solid #e9ecef
    }
    .dropdown-item {
-    display:block;
-    width:100%;
-    padding:.25rem 1.5rem;
-    clear:both;
-    font-weight:400;
-    color:#212529;
-    text-align:inherit;
-    white-space:nowrap;
-    background-color:transparent;
-    border:0
+    display: block;
+    width: 100%;
+    padding: 1.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    font-size: 15px;
    }
    .dropdown-item:focus,
    .dropdown-item:hover {
@@ -575,6 +576,7 @@ Copyright: bdtask
     display: flex;
     justify-content: space-between;
     align-items: center;
+
   }
   .nav__logo {
     display: inline-flex;
@@ -592,9 +594,11 @@ Copyright: bdtask
   }
   
   .nav__toggle {
-    position: relative;
+    position: absolute;
     width: 32px;
     height: 32px;
+    left: 88%;
+
   }
   .nav__toggle-menu, .nav__toggle-close {
     font-size: 1.25rem;
@@ -691,7 +695,7 @@ Copyright: bdtask
   
   .header.scrolled {
   
-      background-color: #25258E!important;
+      background-color: #000!important;
       opacity: 0.98;
   }
   
@@ -1017,7 +1021,7 @@ a {
           padding: 2rem;
           position: relative!important;
           bottom: 0px!important;
-          left: 0px!important;
+          left: -15px!important;
           background: #f5f5f5!important;
       }
   
@@ -1519,9 +1523,10 @@ nav.navbar.bootsnav .navbar-toggle {
         border-top: solid 5px;
     }
     /* Navbar Center ------*/
-    nav.navbar-center .navbar-brand{
-        margin: 0 !important;
-    }
+    /* nav.navbar-center .navbar-brand{
+        margin: 10px 0px 8px 109px !important;
+
+    } */
     /* Navbar Brand Top ------*/
     nav.navbar-brand-top .navbar-brand{
         margin: 10px !important;
@@ -2274,7 +2279,7 @@ padding: 20px 15px;
 /********************************************/
 .features__content {
     position: relative;
-    background-color: #25258E;
+    background-color: #000;
     padding: 90px 0 40px;
 }
 .features__content .section_title h3 {
@@ -2285,7 +2290,7 @@ padding: 20px 15px;
     color: #AFAFF2;
 }
 .feature__box {
-    padding-left: 47px;
+    padding-left: 41px;
     position: relative;
     margin-bottom: 50px;
 }
@@ -3970,7 +3975,7 @@ table.dataTable thead .sorting_asc::after {
     font-size: 19px;
     color: rgb( 255, 255, 255 );
     line-height: 1.455;
-    background-color: #25258E;
+    background-color: #000;
     margin-left: -55px;
     padding: 30px 30px 30px 95px;
     -webkit-transform: translatey(-62px);
