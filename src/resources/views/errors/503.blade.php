@@ -64,7 +64,7 @@
 </head>
 <body>
 <div class="construction-message">
-    <h1 style="font-size: 30px;">503 | Server Error</h1>
+    <h1 style="font-size: 27px;">503 | Server Error</h1>
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
          width="100.001px" height="70px" viewBox="0 0 100 68">
         <g id="large">
