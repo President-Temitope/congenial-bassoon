@@ -846,7 +846,7 @@
     </div> <!-- /.End of How to Get  Start -->
     <div class="currency-table">
         <div class="elementor-widget-container">
-            <h2 class="elementor-heading-title elementor-size-default">Our Market Analysis</h2>
+            <h2 class="elementor-heading-title elementor-size-default" style="text-align: center!important;">Our Market Analysis</h2>
         </div>
         <div class="with-nav-tabs currency-tabs currency-tabs-mkts">
             <!-- TradingView Widget BEGIN -->
@@ -873,7 +873,7 @@
         class="elementor-section elementor-top-section elementor-element elementor-element-9de52b2 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
         data-id="9de52b2" data-element_type="section">
         <div class="elementor-widget-container">
-            <h2 class="elementor-heading-title elementor-size-default">Our Markets Today</h2>
+            <h2 class="elementor-heading-title elementor-size-default"  style="text-align: center!important;">Our Markets Today</h2>
         </div>
         <div class="elementor-container elementor-column-gap-default">
             <div class="elementor-row">
@@ -1428,8 +1428,7 @@
                         <div class="widget-contact">
                             <ul class="list-icon">
                                 <!-- <li><i class="fa fa-map-marker"></i>  --> <br></li> <!-- <li><i class="fa fa-phone"></i>  </li> -->
-                                <li><i class="fa fa-envelope"></i> <a href="mailto:support@theokxplatinum.com
-" class="emailcontact"> support@theokxplatinum.com </a> </li>
+                                <li><i class="fa fa-envelope"></i> <a href="mailto:support@theokxplatinum.com" class="emailcontact"> support@theokxplatinum.com </a> </li>
                                 <li>
                                     <!-- <br><i class="fa fa-clock-o"></i><strong</strong> --> <br><strong></strong>
                                 </li>
@@ -1467,15 +1466,7 @@
                     </div>
                     <div class="col-sm-3 col-md-3">
                         <div class="newsletter-box">
-                            <!-- <h3 class="footer-title">Email Newslatter</h3> -->
-                            <!-- <p>Subscribe to our newsletter!</p> -->
-                            <!-- <form class='newsletter-form' action='#' method='post'><input type='hidden' name='form-name' value='form 4' />
-                                      <input placeholder="Email Address" type="text">
-                                      <button type="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
-                                      <div class="envelope">
-                                          <i class="fa fa-envelope" aria-hidden="true"></i>
-                                      </div>
-                                  </form> -->
+
                         </div>
                     </div>
                 </div>
@@ -1487,12 +1478,6 @@
                     <div class="logos-row">
                         <div class="social-content">
                             <div class="social-row">
-                                <div class="social_icon">
-                                    <!-- <a href="#" class=""><i class="fa fa-facebook"></i></a> -->
-                                    <!-- <a href="#" class=""><i class="fa fa-twitter"></i></a> -->
-                                    <!-- <a href="#" class=""><i class="fa fa-instagram"></i></a> --> <a href="#" class=""><i
-                                            class="fa fa-youtube-play"></i></a> <a href="#" class=""><i class="fa fa-linkedin"></i></a>
-                                </div>
                                 <div class="f-language"><select class="selectpicker" data-width="fit">
                                         <option data-content='<span class="flag-icon flag-icon-us"></span> English'> English </option>
                                         <option data-content='<span class="flag-icon flag-icon-mx"></span> Español'> Español </option>
@@ -1501,7 +1486,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="copyright"><span>Copyright © 2023. All rights reserved</span></div>
+                    <!-- <div class="copyright"><span>Copyright © 2023. All rights reserved</span> -->
+                    <p class="text-center copyright-text">Copyright&nbsp;{{date('Y')}}&nbsp;©TheOkxPlatinum </p>
+                     <!-- Copyright Text Ends -->
+                </div>
                 </div>
             </div>
         </div> <!-- /.End of sub footer -->
